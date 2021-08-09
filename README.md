@@ -6,7 +6,7 @@
 
 * HTML/CSS
 * JavaScript
-* Bootstarp 
+* Bootstrap 
 
 バックエンド
 
