@@ -6,7 +6,7 @@
 
 * HTML/CSS
 * JavaScript
-* Bootstarp 5.0
+* Bootstarp 
 
 バックエンド
 
