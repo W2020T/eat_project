@@ -1,0 +1,17 @@
+<div class="main users-index">
+    <div class="container">
+        <h1 class="users-heading">ユーザー一覧</h1>
+        <%= link_to("検索する", "/users/search") %>
+        <% @users.each do |user| %>
+        <div class="users-index-item">
+            <div class="user-left">
+                <img src="<%= "/user_images/#{user.image_name}" %>">
+            </div>
+            <div class="user-right">
+                <%= link_to(user.name, "/users/#{user.id}") %>
+            </div>
+        </div>
+        <% end %>
+        <%= paginate @users %>
+    </div>
+</div>

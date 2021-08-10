@@ -1,0 +1,23 @@
+<div class="main user-show">
+    <div class="container">
+        <div class="user">
+            <h1>検索する</h1>
+
+            <%= form_with url: search_users_path, method: :get, local: true do |f| %>
+            <%= f.text_field :name %>
+            <%= f.submit :search %>
+            <% end %>
+            <h1>ユーザー名</h1>
+            <% @users.each do |user| %>
+            <div class="posts-index-item">
+                <div class="post-left">
+                    <img src="<%= "/user_images/#{user.image_name}" %>">
+                </div>
+                <div class="post-right">
+                    <div class="post-user-name">
+
+                        <%= link_to(user.name, "/users/#{user.id}") %>
+                    </div>
+                    <% end %>
+
+                </div>

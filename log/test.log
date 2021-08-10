@@ -1,0 +1,1751 @@
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'winnifred@hotmail.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'tuyet@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Collins', 'tuyet@gmail.com', '2021-08-04 14:22:48.961323', '2021-08-04 14:22:48.961323', '$2a$04$Hs7C93VEa4fW6qKCFikpCOCV5ji7fbCXh8IZUNU60QixC75MRXHZy')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'tuyet@gmail.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'harris@hotmail.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'nickie.baumbach@yahoo.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'delfina_russel@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hermann', 'delfina_russel@hotmail.com', '2021-08-04 14:24:41.730226', '2021-08-04 14:24:41.730226', '$2a$04$Yr0JxncgMsEdAFLmf3jPZO8O8V7HfMfioVQExnmM8FR4F3JiqS3IW')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'delfina_russel@hotmail.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'georgene.corkery@hotmail.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'latanya.hammes@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Schultz', 'latanya.hammes@gmail.com', '2021-08-05 05:59:29.762083', '2021-08-05 05:59:29.762083', '$2a$04$Zu8NbLAjV5oi9FxFEbv36.4Z0qEvLEuCh/WPVUPMaajW1YqZjl/yu')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'margeret@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Collins', 'margeret@hotmail.com', '2021-08-05 05:59:29.766411', '2021-08-05 05:59:29.766411', '$2a$04$kqoFh2ywy2G7FldztZ2kZePE14Bjbmmjo1OO86oOSl3h.5COx13Ge')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'florrie_corwin@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Kohler', 'florrie_corwin@hotmail.com', '2021-08-05 05:59:29.823074', '2021-08-05 05:59:29.823074', '$2a$04$UxfuiNlBjtiljMCIDGiu7uMuAwQRmSnm3ouE0gOgL1.zR/N78DQW6')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'trinh@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Stracke', 'trinh@gmail.com', '2021-08-05 05:59:29.828411', '2021-08-05 05:59:29.828411', '$2a$04$DBGmwSVvQTUZxJ.SftKkgeWM.y4KXoH5dOLErP59Gz4Q9Bx1T8mBC')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'jay_wilkinson@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Olson', 'jay_wilkinson@yahoo.com', '2021-08-05 05:59:29.835143', '2021-08-05 05:59:29.835143', '$2a$04$VsoJvoRRtgOrYhSsLEcx4eGmOkMa2wfaYiDY5toNVlTj5ApUp8itu')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mickey@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Russel', 'mickey@hotmail.com', '2021-08-05 05:59:29.838947', '2021-08-05 05:59:29.838947', '$2a$04$K9cFVeqLpNRvjnxMIS0vCuazRVYPZGeUUVceAEJScsnzkaBJAHw2a')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 7 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 8 LIMIT 1[0m
+  [1m[36mRelationship Create (1.1ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (7, 8, '2021-08-05 05:59:29.841395', '2021-08-05 05:59:29.841395')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'eddy@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Thompson', 'eddy@hotmail.com', '2021-08-05 05:59:29.850371', '2021-08-05 05:59:29.850371', '$2a$04$.XQfBuj91XKELxWLccVg2e3Xv/LbDI4SoR.rzk4HdiefbT6PNhZzm')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'dorothea@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Leuschke', 'dorothea@yahoo.com', '2021-08-05 05:59:29.855277', '2021-08-05 05:59:29.855277', '$2a$04$voRlYzTYt/oZRbKv0WqdYuguJAuL0zr/VwugdKYOm1hT1U9sCNR96')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 9 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'alita.kreiger@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Toy', 'alita.kreiger@hotmail.com', '2021-08-05 05:59:29.861008', '2021-08-05 05:59:29.861008', '$2a$04$FsqPX4scn.YOGoP0ZVwH/.zhXi4qAuemcM2UrPs9g4cX2Ej6r6I82')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'tiffanie@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Luettgen', 'tiffanie@yahoo.com', '2021-08-05 05:59:29.865511', '2021-08-05 05:59:29.865511', '$2a$04$me2LSkUlSll7t9q3a/VvgOW3yuhFwJfhyAfiF6P.6EMqmtWuf1BWy')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 11 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 12 LIMIT 1[0m
+  [1m[36mRelationship Create (0.2ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (11, 12, '2021-08-05 05:59:29.867624', '2021-08-05 05:59:29.867624')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'graham@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Reinger', 'graham@yahoo.com', '2021-08-05 05:59:29.873621', '2021-08-05 05:59:29.873621', '$2a$04$cD0Qp6BEEqDoomaFwb7bnOvv3j8l6f/vIXGBQMRL5EjkXdCm1DNV.')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'donnell.oconner@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Rippin', 'donnell.oconner@yahoo.com', '2021-08-05 05:59:29.878536', '2021-08-05 05:59:29.878536', '$2a$04$S9MFAs35X0RvOSKBaZal4uBF80q8UtGjCCcrfznvJXtnNOG5aQBqe')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 13 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'stanford@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Bins', 'stanford@yahoo.com', '2021-08-05 05:59:29.884905', '2021-08-05 05:59:29.884905', '$2a$04$ZuN1vLdSImE7gaA82eiKy.83C68sCTw/4mFHIA10ixQtuVFUoTzrm')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'annita_prohaska@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Mertz', 'annita_prohaska@hotmail.com', '2021-08-05 05:59:29.888486', '2021-08-05 05:59:29.888486', '$2a$04$6DkdKRr1amNZOr1EqWZCdOUzIDOQVOtWWmpfRVYT1flJKFTwcRPza')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 16 LIMIT 1[0m
+  [1m[36mRelationship Create (0.1ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (15, 16, '2021-08-05 05:59:29.890855', '2021-08-05 05:59:29.890855')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'vernetta.walker@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Marquardt', 'vernetta.walker@hotmail.com', '2021-08-05 05:59:29.894716', '2021-08-05 05:59:29.894716', '$2a$04$.ytvvavDEpdGi123GzmTP.foA2THYrmbJczq5.oJkykxjKt6ex2PS')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'cristen@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hermann', 'cristen@hotmail.com', '2021-08-05 05:59:29.898307', '2021-08-05 05:59:29.898307', '$2a$04$MmCh8NY59WwvFxnG04.tteAjFdxNcS8W2t8VWIizw12cwnZ7wylry')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 15 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 16 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'myra@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Kiehn', 'myra@gmail.com', '2021-08-05 05:59:29.905176', '2021-08-05 05:59:29.905176', '$2a$04$FUkqqgwFVtqE0yptmfTXpO5Frn3h27BEg51ZxQHDMl1uiVIXrnyXu')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'tracy_franecki@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Walker', 'tracy_franecki@yahoo.com', '2021-08-05 05:59:29.910503', '2021-08-05 05:59:29.910503', '$2a$04$v/rCJ4C9YqWRV2u9z7gewe94FdcLoj4M85QSEawT87h0ED/of7Kvq')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 19 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'ethan@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hettinger', 'ethan@yahoo.com', '2021-08-05 05:59:29.917196', '2021-08-05 05:59:29.917196', '$2a$04$vcv708vJRp1GvJ.DvMQxGuDsqF2q7BnjytHFWYNFpVQh5xqMbuN8G')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'venus@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Nitzsche', 'venus@yahoo.com', '2021-08-05 05:59:29.920878', '2021-08-05 05:59:29.920878', '$2a$04$wWbK06.ICSzCdhfE1UCyN.SZz7tvt1X13ItcahzETvYDRkE8uFZvC')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 21 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 22 LIMIT 1[0m
+  [1m[36mRelationship Create (0.2ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (21, 22, '2021-08-05 05:59:29.922757', '2021-08-05 05:59:29.922757')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'virginia@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Stamm', 'virginia@hotmail.com', '2021-08-05 05:59:29.926848', '2021-08-05 05:59:29.926848', '$2a$04$0q8cDj7GxV4c7dXSl36tD.ABSFTFqDIJKJjHvXrqqybT.Va0mXUz6')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'manie.huel@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Graham', 'manie.huel@yahoo.com', '2021-08-05 05:59:29.930739', '2021-08-05 05:59:29.930739', '$2a$04$CTBGEqlQi5mOXuyUGmdV0uJFG8.MJe0kvaug.0ruKHm51/R9nRHYW')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 21 LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 24 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'madalene@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Schuster', 'madalene@yahoo.com', '2021-08-05 05:59:29.938813', '2021-08-05 05:59:29.938813', '$2a$04$QdBU4DJkORAMpB6Mh2PsRusAszjAJuSnoc9mx7NqohozeZfv3/dEq')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'janine.conn@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Mann', 'janine.conn@hotmail.com', '2021-08-05 05:59:29.944048', '2021-08-05 05:59:29.944048', '$2a$04$T5IBXbDXEkHgbsbXl9XMN.HvWZw90NXmUWX82PV3PTIG2A2NbH2Re')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 25 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'estell.hackett@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hayes', 'estell.hackett@yahoo.com', '2021-08-05 05:59:29.950470', '2021-08-05 05:59:29.950470', '$2a$04$6hRVZ4.aGeoxprMkWt6wQuxAGTnvvz6.joGhu27QcDDO25g6AthCO')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'rolf_ratke@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Stoltenberg', 'rolf_ratke@hotmail.com', '2021-08-05 05:59:29.954205', '2021-08-05 05:59:29.954205', '$2a$04$nalCoVq7h2kZPQ/1pNt6OugQef34hniRgPW56oofItw2mT34QGr8q')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 27 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 28 LIMIT 1[0m
+  [1m[36mRelationship Create (0.1ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (27, 28, '2021-08-05 05:59:29.956101', '2021-08-05 05:59:29.956101')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'lauren@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Champlin', 'lauren@hotmail.com', '2021-08-05 05:59:29.960128', '2021-08-05 05:59:29.960128', '$2a$04$.My87GSF.P4yTjvnfRvVIOmCadUx.V0sDSQILzvMqxpUceRmen5y.')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'ned.roob@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Kulas', 'ned.roob@gmail.com', '2021-08-05 05:59:29.964091', '2021-08-05 05:59:29.964091', '$2a$04$tBuhsksA3s1qQB3qWa3F7utH1tLGWkZa.wAIW6DjNzzyUg1Bctb8a')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 29 LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 28 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'dorene@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Miller', 'dorene@yahoo.com', '2021-08-05 09:39:18.613710', '2021-08-05 09:39:18.613710', '$2a$04$JXu5CLNt18ArUUHNRTPfvuCqwfygTSF7EvXYStuPt6InmLwbifiDS')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'warren.fay@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Wisoky', 'warren.fay@hotmail.com', '2021-08-05 09:39:18.618184', '2021-08-05 09:39:18.618184', '$2a$04$nYr8CB.41YxE8xC4LmRllOLQct8QyxFu6AwIgrPthTub7mFS.oG9a')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 31 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'pinkie@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hansen', 'pinkie@yahoo.com', '2021-08-05 09:39:18.644734', '2021-08-05 09:39:18.644734', '$2a$04$ynwp5ecN1Ku6XpPxpzifYer8dhza36X/XsNcRW95YXsyQHGAoxCsK')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'winford@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Thiel', 'winford@gmail.com', '2021-08-05 09:39:18.650126', '2021-08-05 09:39:18.650126', '$2a$04$EuTLf4a94mFeObp.rSU1/uEjThEKdXi.hceqbYjGacrVZU5vptM8K')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 33 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'loren_herman@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Stiedemann', 'loren_herman@yahoo.com', '2021-08-05 09:39:18.656492', '2021-08-05 09:39:18.656492', '$2a$04$OYPyIj/U9LaIOOmfQGr3q.4U/GB84I0fisWF/TLfjwt2vnLMFmfFG')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'winona@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Jakubowski', 'winona@gmail.com', '2021-08-05 09:39:18.660501', '2021-08-05 09:39:18.660501', '$2a$04$.qBKOVWROXMBX.4ALgNqmemuAFQBU/3E10pPuW/SHjf6oZo2OcbCa')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 35 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 36 LIMIT 1[0m
+  [1m[36mRelationship Create (0.1ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (35, 36, '2021-08-05 09:39:18.663005', '2021-08-05 09:39:18.663005')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'magdalen@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hessel', 'magdalen@hotmail.com', '2021-08-05 09:39:18.670621', '2021-08-05 09:39:18.670621', '$2a$04$R7mvLulnIVIk4zqSzK06XOXxSRV8DmFn2aG0O0GFZSeWUSGfb76Zi')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'jessica_hagenes@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Altenwerth', 'jessica_hagenes@hotmail.com', '2021-08-05 09:39:18.675756', '2021-08-05 09:39:18.675756', '$2a$04$DicEapH4U6JfpPv9PhjU1eEeA/ky3JZffSE4nw5Wm/CQLNon.cF/e')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 37 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'sharlene@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hammes', 'sharlene@gmail.com', '2021-08-05 09:39:18.682055', '2021-08-05 09:39:18.682055', '$2a$04$YjUt3rdq7mka834GO3U1xuRHOJxQIr6zKG5cwaLpQGOhiXVkQPsYS')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'johanna@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Reichel', 'johanna@hotmail.com', '2021-08-05 09:39:18.686838', '2021-08-05 09:39:18.686838', '$2a$04$82.rdYnkz9fOVTtHdwyn1uziy3K2/82NOIXkDHhR9zrfyclw.xh4a')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 39 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 40 LIMIT 1[0m
+  [1m[36mRelationship Create (0.1ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (39, 40, '2021-08-05 09:39:18.689116', '2021-08-05 09:39:18.689116')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'bambi@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Bailey', 'bambi@yahoo.com', '2021-08-05 09:39:18.694931', '2021-08-05 09:39:18.694931', '$2a$04$EzJC7Jr70jqRWMTwUbO4p.a8o48kI6lUACmECSYJY8qCDtI3CJVW.')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mafalda.abbott@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('McDermott', 'mafalda.abbott@gmail.com', '2021-08-05 09:39:18.699981', '2021-08-05 09:39:18.699981', '$2a$04$sP8GQRFQYdZkO5vXVqjXIu1VOI0VAKdZIxRX66WEX.hiSWerj.Smi')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 41 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'monte.mraz@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Bashirian', 'monte.mraz@hotmail.com', '2021-08-05 09:39:18.706167', '2021-08-05 09:39:18.706167', '$2a$04$N9kTLamyj1kmiUav0MM3muCrJOGq8oSngezKSIa1fV/IYoYazLWYy')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'tyrell_labadie@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Berge', 'tyrell_labadie@gmail.com', '2021-08-05 09:39:18.709992', '2021-08-05 09:39:18.709992', '$2a$04$d7qvL.jodAfaKEcTHnATiO0Z.sDT2mWj8l7a5ipe/8C5ICVVn209u')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 43 LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 44 LIMIT 1[0m
+  [1m[36mRelationship Create (0.2ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (43, 44, '2021-08-05 09:39:18.712043', '2021-08-05 09:39:18.712043')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mellie@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Kertzmann', 'mellie@hotmail.com', '2021-08-05 09:39:18.716399', '2021-08-05 09:39:18.716399', '$2a$04$eCJmEAYm0OdUSqv2S.gTLegVjvVN8nZ0Wp18oO.qRSPOnys632DmS')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'kristi@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Effertz', 'kristi@gmail.com', '2021-08-05 09:39:18.720596', '2021-08-05 09:39:18.720596', '$2a$04$vPnJeQUxr/gPPhwf/fBxs.1npWDWzAhjm/61YY7Z413mmAHyHhgw.')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'josefina.kassulke@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Schaefer', 'josefina.kassulke@gmail.com', '2021-08-05 09:39:18.724754', '2021-08-05 09:39:18.724754', '$2a$04$AVGkKdjbD1x04xcUN6h/a.TW.8d5s5yXkH8X3Oy44jQcQqYtMHDcW')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 43 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 47 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'warren_king@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Little', 'warren_king@yahoo.com', '2021-08-05 09:39:18.731556', '2021-08-05 09:39:18.731556', '$2a$04$yrwdv7w5uzzK6piLp8vzl.eNculRQ/ahar8SDoN26JViuZVMa4hIu')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'selene@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Runolfsdottir', 'selene@hotmail.com', '2021-08-05 09:39:18.736602', '2021-08-05 09:39:18.736602', '$2a$04$KsEbxB/kbll0ahVJJmB3BeZnXWpP96H4IMFnH7zn//9If89DBNcVO')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 48 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'andrea@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Schulist', 'andrea@yahoo.com', '2021-08-05 09:39:18.742236', '2021-08-05 09:39:18.742236', '$2a$04$Yv67GR.pZVKABpHH3HlZy.lv0GHkatEf8aDV6zO4212gtThZSMfWW')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'doreen@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Trantow', 'doreen@yahoo.com', '2021-08-05 09:39:18.746073', '2021-08-05 09:39:18.746073', '$2a$04$0PYHWf6xMajUW7x3KnzEIuE/ysOb2/tsdst84VycEjOsDJGQ6G69u')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 50 LIMIT 1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 51 LIMIT 1[0m
+  [1m[36mRelationship Create (0.2ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (50, 51, '2021-08-05 09:39:18.748545', '2021-08-05 09:39:18.748545')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'gail@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Jast', 'gail@gmail.com', '2021-08-05 09:39:18.753142', '2021-08-05 09:39:18.753142', '$2a$04$N2eeIJGAN1Nw3IeWXOa2x.4peAk9NVm4OmYkI.SDepd/AxN6QnuwG')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'eddie_murray@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Farrell', 'eddie_murray@hotmail.com', '2021-08-05 09:39:18.757015', '2021-08-05 09:39:18.757015', '$2a$04$8LfJ7uakyYisOfeFdsZn1OiKX0IqOi5opFM2R9vzLvXO5NoUFR4BW')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'wm.muller@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Johnston', 'wm.muller@hotmail.com', '2021-08-05 09:39:18.760789', '2021-08-05 09:39:18.760789', '$2a$04$JHAFBNygfCpkUaEKxEchyuJn4EMcOtUdkLTxXe7npVrbld7ldN/Ne')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 50 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 54 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'claud.mcglynn@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Durgan', 'claud.mcglynn@gmail.com', '2021-08-05 09:39:18.767451', '2021-08-05 09:39:18.767451', '$2a$04$xc6hFAaxEbUMdcSIcPydN.7x.wE6zYpV43Dj9DJUPtYViVl981ngq')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'chanelle_hauck@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Tillman', 'chanelle_hauck@gmail.com', '2021-08-05 09:39:18.771802', '2021-08-05 09:39:18.771802', '$2a$04$5sEwhN18U1ufhevA2X.aWugSfbBqCsHcDYBYsXCC7uzd29kFeP7P2')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 55 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'josefa@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Johns', 'josefa@yahoo.com', '2021-08-05 09:39:18.777548', '2021-08-05 09:39:18.777548', '$2a$04$Uh0k6DcpLiz06UTI6pML7urwoQATgx1xD7ier0gLZ0pht6Ao65Oda')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'alfredo@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Reynolds', 'alfredo@yahoo.com', '2021-08-05 09:39:18.781272', '2021-08-05 09:39:18.781272', '$2a$04$v8I1frBpKWQl4/BGGsBU1.TNkbBZFhx9qSrkyDF2zw611Gn/bJE4q')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 57 LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 58 LIMIT 1[0m
+  [1m[36mRelationship Create (0.5ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (57, 58, '2021-08-05 09:39:18.784041', '2021-08-05 09:39:18.784041')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mabelle@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Baumbach', 'mabelle@hotmail.com', '2021-08-05 09:39:18.789682', '2021-08-05 09:39:18.789682', '$2a$04$gJH7TYepgGV/aUtCvnoFeuuHDHc1B/08srIjeCcIpIKjaxPgToxn6')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'meri@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Jenkins', 'meri@hotmail.com', '2021-08-05 09:39:18.793480', '2021-08-05 09:39:18.793480', '$2a$04$3grRmytpiDNO6q6kpj.6mu/E/TXz36J6mKRl6MOsCSYMkcDmcYPAG')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'leandra_franecki@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Kessler', 'leandra_franecki@hotmail.com', '2021-08-05 09:39:18.797607', '2021-08-05 09:39:18.797607', '$2a$04$2.t6I1iNeoWOUGgBI2TQAOhuWzbuFsjD6.Cwu945dJbeVi18d3xj.')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 59 LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 61 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'tamera_bergstrom@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hettinger', 'tamera_bergstrom@gmail.com', '2021-08-05 10:13:48.487865', '2021-08-05 10:13:48.487865', '$2a$04$0yK53DOYsGCFtGpjt2FOAeeM4GuAe97.1dSBWudvAtPxSJl5PYLQK')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'keenan@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Ebert', 'keenan@hotmail.com', '2021-08-05 10:13:48.492045', '2021-08-05 10:13:48.492045', '$2a$04$QESCC3RjE/LezMXIIwMLgOnSt34GpbBDmpIw3.OabTbKxwRvd2dQK')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 62 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'miguel_dooley@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Rutherford', 'miguel_dooley@gmail.com', '2021-08-05 10:13:48.517996', '2021-08-05 10:13:48.517996', '$2a$04$I3dfSeTuST7hwiD/6JdosemGeUw4/.VnKCafbud6qD5GSLtuqgOjy')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'winona@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Dach', 'winona@gmail.com', '2021-08-05 10:13:48.523339', '2021-08-05 10:13:48.523339', '$2a$04$rpD5wgrL3zWJbrYXZQLkKuOPPXaMDGGJS7JZkZtXebM54f48Ln4IG')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 64 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'donald@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Leffler', 'donald@yahoo.com', '2021-08-05 10:13:48.529296', '2021-08-05 10:13:48.529296', '$2a$04$sRwT6lS0CxHNWuWdFmLW1uWgTOKJWC2s/6LbDulWDsjxW8YY.9xBG')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'tessie@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Ratke', 'tessie@gmail.com', '2021-08-05 10:13:48.533400', '2021-08-05 10:13:48.533400', '$2a$04$Nhrfs0/0mYZP/VFb22lGT.wZkhUjCRIYwP2WBIN/sRTxvgrGEFbO6')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 66 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 67 LIMIT 1[0m
+  [1m[36mRelationship Create (0.1ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (66, 67, '2021-08-05 10:13:48.535616', '2021-08-05 10:13:48.535616')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'audry@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Stanton', 'audry@hotmail.com', '2021-08-05 10:13:48.542816', '2021-08-05 10:13:48.542816', '$2a$04$3sJnu4k2EsfgUHlGFFeP3OJenNV00DT6DIoZbBFEDQ5pi750xBYke')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'carter@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Nolan', 'carter@hotmail.com', '2021-08-05 10:13:48.547030', '2021-08-05 10:13:48.547030', '$2a$04$TtejY4zNeOtzou9cqPba.OgPq.KUugAa.b8ZQVG0aF8C9j5XuSIS6')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 68 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'deeanna@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Lueilwitz', 'deeanna@yahoo.com', '2021-08-05 10:13:48.552662', '2021-08-05 10:13:48.552662', '$2a$04$XKE90RxNeDc/vvkkkiR0kOPgRRf6OoFhwOi2vBh7pDz3ZlnkZFNQO')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'clinton_ziemann@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Ratke', 'clinton_ziemann@hotmail.com', '2021-08-05 10:13:48.556488', '2021-08-05 10:13:48.556488', '$2a$04$/9xILIuPxDh7BCFaRbjbs.zLYSMYJQxGU4mNmqfL8UDgmBpxn5R7q')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 70 LIMIT 1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 71 LIMIT 1[0m
+  [1m[36mRelationship Create (0.3ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (70, 71, '2021-08-05 10:13:48.559617', '2021-08-05 10:13:48.559617')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'kristopher@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Walter', 'kristopher@hotmail.com', '2021-08-05 10:13:48.566863', '2021-08-05 10:13:48.566863', '$2a$04$LUqNV77SnmCKYe3DjFMGDeNTopeU/68BRHhpkQJVaDPRjrD5pJkIq')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'altagracia@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Sanford', 'altagracia@gmail.com', '2021-08-05 10:13:48.570912', '2021-08-05 10:13:48.570912', '$2a$04$fZH/7ZeU9jSmZPQlLjpjmejsHNckhvD7U0hLJGzCTZgmihnCwA6nS')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 72 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'lucia.hane@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Doyle', 'lucia.hane@hotmail.com', '2021-08-05 10:13:48.578204', '2021-08-05 10:13:48.578204', '$2a$04$YRZWPPuwbEclotK2hfPYxOlNBq/KFooTXlXtU63FzUA4fbrpwqFPa')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'luis@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Boyer', 'luis@gmail.com', '2021-08-05 10:13:48.582832', '2021-08-05 10:13:48.582832', '$2a$04$BehOQG8BZDjQauXx9m7u5.6BvljSb4U.g0vgCFLzzU8YpzvhZ6Cf2')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 74 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 75 LIMIT 1[0m
+  [1m[36mRelationship Create (0.1ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (74, 75, '2021-08-05 10:13:48.584857', '2021-08-05 10:13:48.584857')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'nilda@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Rippin', 'nilda@yahoo.com', '2021-08-05 10:13:48.589160', '2021-08-05 10:13:48.589160', '$2a$04$CABWkj69r.scT.WixaiZYeONnGI3WTq3p6ON8k8poub/kikNeKngu')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'olinda@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Green', 'olinda@yahoo.com', '2021-08-05 10:13:48.593498', '2021-08-05 10:13:48.593498', '$2a$04$Qkw1IJhi/E1M9BZV318ByeGr0Sxzu2sxzyDaR8iiwg/Avu/6.Qur6')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'odette@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Emard', 'odette@gmail.com', '2021-08-05 10:13:48.599525', '2021-08-05 10:13:48.599525', '$2a$04$NoZZ/RcaxTG9Gy9riAVwTuOdDKQJaPjUIwYeGqx.AN5kkBhs3VqjK')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'donte.stiedemann@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Gislason', 'donte.stiedemann@yahoo.com', '2021-08-05 10:13:48.604577', '2021-08-05 10:13:48.604577', '$2a$04$yO9t8l0A1v0LOdnQ2DokMudFXpNMnOpJm/2mri/RT3AkYPldAZ4NW')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 78 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'alberta.fay@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('O\'Keefe', 'alberta.fay@gmail.com', '2021-08-05 10:13:48.610765', '2021-08-05 10:13:48.610765', '$2a$04$DN6j0VPnjsA1krs3Ws2gleIMyeA.n.2cM94wJ47FkHXyhV6dQMozW')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'aracely.ortiz@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Jacobs', 'aracely.ortiz@gmail.com', '2021-08-05 10:13:48.615188', '2021-08-05 10:13:48.615188', '$2a$04$EzLQvW23V5Rq/xRhVjc7uuK.HPniUTTLqqyN/U7tQYxPA7vR5QTuu')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 80 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 81 LIMIT 1[0m
+  [1m[36mRelationship Create (0.1ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (80, 81, '2021-08-05 10:13:48.617165', '2021-08-05 10:13:48.617165')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'morgan@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Larson', 'morgan@gmail.com', '2021-08-05 10:13:48.621241', '2021-08-05 10:13:48.621241', '$2a$04$kZ/0eiZlqkDNCGcv9mpFD.guSckHWzASS4Zy5R49FKjPMRu2GWtD.')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'bradford_hane@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Borer', 'bradford_hane@gmail.com', '2021-08-05 10:13:48.626037', '2021-08-05 10:13:48.626037', '$2a$04$.hxx3l6X72.bdxOzMGgpNORV95zRKQTMFILBhMeG9nA6woQALRzya')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'james@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Von', 'james@gmail.com', '2021-08-05 10:13:48.631813', '2021-08-05 10:13:48.631813', '$2a$04$4yRR4m0n85JXERNmLtnsFutBBsNC1nNdqtnxoT8dT9bRiTFPR.7uO')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'jeanna.kuphal@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Parker', 'jeanna.kuphal@gmail.com', '2021-08-05 10:13:48.635946', '2021-08-05 10:13:48.635946', '$2a$04$dJintWYyqzfSCCRjiRRVJuEpMQYd30dtS6BKx2/oSuABrVu7NhLSy')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 84 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'abram@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Jerde', 'abram@hotmail.com', '2021-08-05 10:13:48.641884', '2021-08-05 10:13:48.641884', '$2a$04$VxFs1QmODQJKnnk9yvCYAO3/NorWNfK233wYRFsqdglSuEu8ayene')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'filiberto@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Jacobs', 'filiberto@gmail.com', '2021-08-05 10:13:48.647044', '2021-08-05 10:13:48.647044', '$2a$04$sBG5Ae8Ktghfl/VVzO2Yhu7qLjmqALP6/.MI6v1aeKHdjJmjY/OL2')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 86 LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 87 LIMIT 1[0m
+  [1m[36mRelationship Create (0.2ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (86, 87, '2021-08-05 10:13:48.649478', '2021-08-05 10:13:48.649478')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'lakisha@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Blanda', 'lakisha@hotmail.com', '2021-08-05 10:13:48.653702', '2021-08-05 10:13:48.653702', '$2a$04$5KZbrIaEowsBWLF/h2HN8epORz/oq1qIEETkCU0JMmA4mAuup4xPu')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'lenora@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Jones', 'lenora@yahoo.com', '2021-08-05 10:13:48.658470', '2021-08-05 10:13:48.658470', '$2a$04$t0/HSRsDhuB727P6B6fQ5OnoSowgiSQRTck9dHNDGkLOC.Hn8ZktC')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'olin.buckridge@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Kulas', 'olin.buckridge@yahoo.com', '2021-08-05 10:13:48.662939', '2021-08-05 10:13:48.662939', '$2a$04$rmwM58PiwxwKp0zgUtZx1etK.OoZqQZNE8WaCIQ573IC7d3yGvOVS')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 88 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 90 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'justin@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Lemke', 'justin@gmail.com', '2021-08-05 10:15:02.423235', '2021-08-05 10:15:02.423235', '$2a$04$lnba8Rqbn8aB0WilI72SoO3gD8hIAEyHW3.v5B7ThknFt9wx5GYfq')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'jerald.zieme@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Senger', 'jerald.zieme@hotmail.com', '2021-08-05 10:15:02.427449', '2021-08-05 10:15:02.427449', '$2a$04$wPLZ9P0rSWGYMzuWT.rJ4.4SRGAxkEy5Y9aCn6GWZhtiPnRxvRc/y')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 91 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'renda@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Lubowitz', 'renda@gmail.com', '2021-08-05 10:15:02.453220', '2021-08-05 10:15:02.453220', '$2a$04$S1UhdxNG6V1RG3J08S/.G.f4RHM08gacoB2lxYGwMQ26Qw7RXo3.i')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'fermin@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hilll', 'fermin@hotmail.com', '2021-08-05 10:15:02.458042', '2021-08-05 10:15:02.458042', '$2a$04$Md9ljrolgxN9UdOQNzY1x.OU5kYRnNKxAKq0ii.hDiBkhTaZNC.n.')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 93 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'jeffery@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Considine', 'jeffery@yahoo.com', '2021-08-05 10:15:02.464925', '2021-08-05 10:15:02.464925', '$2a$04$t0UkmXjbN1fcftgAeCkjwui2al7hCLyGMz96zi6te/dz/D7gmg0hC')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'gerald@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hartmann', 'gerald@hotmail.com', '2021-08-05 10:15:02.468783', '2021-08-05 10:15:02.468783', '$2a$04$QDNbeiet5MXgICKdwnM00e34rZ0zLoShH8K.WC.TGc4HCMVqz49Y.')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 95 LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 96 LIMIT 1[0m
+  [1m[36mRelationship Create (0.2ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (95, 96, '2021-08-05 10:15:02.471073', '2021-08-05 10:15:02.471073')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'heide@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Davis', 'heide@gmail.com', '2021-08-05 10:15:02.477639', '2021-08-05 10:15:02.477639', '$2a$04$1jpQvkTqBl.YzHPGoTcDmuGegCDQ2Wo44UuTpw8MRVoDZVTC.h8zC')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'curtis@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Aufderhar', 'curtis@gmail.com', '2021-08-05 10:15:02.481583', '2021-08-05 10:15:02.481583', '$2a$04$Kc0yRrC8ccVgOyoUIZFbieswSN0WeIUpDKm9WUa.ha70VOsYV201K')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 97 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'chester_wolf@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Schneider', 'chester_wolf@hotmail.com', '2021-08-05 10:15:02.489635', '2021-08-05 10:15:02.489635', '$2a$04$pcMrE7S8YXJyW4EQPyH.uuR8oflR4uZC1/ZykoeNb2X2ls83Ehv2q')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'luther@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Price', 'luther@yahoo.com', '2021-08-05 10:15:02.493965', '2021-08-05 10:15:02.493965', '$2a$04$cJOCRNuPxtGidR4xt1kQC.Da9Ob0/qMbRg6Cg88xedJX94khNnCv2')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 99 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'kathleen@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Gerhold', 'kathleen@yahoo.com', '2021-08-05 10:15:02.501520', '2021-08-05 10:15:02.501520', '$2a$04$152uLI05uc54tJwK3D0VL.3bV3cDXD32J1Kig3kTkNbz6GXCJ3M5O')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'darren@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Kohler', 'darren@hotmail.com', '2021-08-05 10:15:02.505285', '2021-08-05 10:15:02.505285', '$2a$04$UkRpUNKXlY0jNpGDHhGgVebF2hqzAjFW8vwRhy5sNrxZ2LcST6f9q')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 101 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 102 LIMIT 1[0m
+  [1m[36mRelationship Create (0.2ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (101, 102, '2021-08-05 10:15:02.507313', '2021-08-05 10:15:02.507313')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'les_kemmer@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Schmidt', 'les_kemmer@gmail.com', '2021-08-05 10:15:02.511721', '2021-08-05 10:15:02.511721', '$2a$04$4DGAxU7X8aVaSWZgHX4zIOkV.dAEWX.Vl9M6s.1WhpMPEfrrCkOnO')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'kerry.treutel@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('MacGyver', 'kerry.treutel@hotmail.com', '2021-08-05 10:15:02.516501', '2021-08-05 10:15:02.516501', '$2a$04$kcaYlXpp5bvLvvOPZo30feqSHQDH/h3d4G.S2V7NO8aNNMPOaHGtC')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'irish@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Bosco', 'irish@gmail.com', '2021-08-05 10:15:02.522227', '2021-08-05 10:15:02.522227', '$2a$04$6Iqza5cWU1F5mD240ssOa.SHS2oQV9jobGir8zLIQfedJN/FtJD5C')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'marchelle.grady@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Romaguera', 'marchelle.grady@gmail.com', '2021-08-05 10:15:02.527373', '2021-08-05 10:15:02.527373', '$2a$04$TZ3s5msrVHA2Ybpqxqo74uVq6dcgwEPn2eDCOh2MOAwlqbDrM9.ue')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 105 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'eli@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('O\'Hara', 'eli@hotmail.com', '2021-08-05 10:15:02.534054', '2021-08-05 10:15:02.534054', '$2a$04$xMoMBtbusEM7zyZx1e9qDeXzKzFmPxu7FvmB7csGq0gBKWmDZRqUy')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'quentin@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Miller', 'quentin@yahoo.com', '2021-08-05 10:15:02.537935', '2021-08-05 10:15:02.537935', '$2a$04$u0.28XrNlQ4s6UlB3Bv73OlqqlQr98cQkNwvfDxrGIDwAf4PVh.ly')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 107 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 108 LIMIT 1[0m
+  [1m[36mRelationship Create (0.1ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (107, 108, '2021-08-05 10:15:02.540047', '2021-08-05 10:15:02.540047')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'bonnie@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Yundt', 'bonnie@yahoo.com', '2021-08-05 10:15:02.544270', '2021-08-05 10:15:02.544270', '$2a$04$dtSkcYJo2xREyiP4e2jA4eZYfSiR9V9avfoKe2B0990MtqTqCYF.q')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'lilliana_mitchell@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Kuphal', 'lilliana_mitchell@hotmail.com', '2021-08-05 10:15:02.548384', '2021-08-05 10:15:02.548384', '$2a$04$p9Ig7TwOIBfrVxoRjwhWXuZGQFeo/EFU2zmJoeU7QFoW57C8dAPoG')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'manuela_friesen@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Emard', 'manuela_friesen@gmail.com', '2021-08-05 10:15:02.554138', '2021-08-05 10:15:02.554138', '$2a$04$wjPanQ9XFvh0JjiAiRKG9ed2xZz3rDjcIjQieJkj1bgg3d.DLeriO')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'so_bailey@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Blick', 'so_bailey@hotmail.com', '2021-08-05 10:15:02.559272', '2021-08-05 10:15:02.559272', '$2a$04$a7uBuw9Jczd39gMfCuCQr.E.SkpCLTtkbrOxKcMnde8/tJeNIUQWy')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 111 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'tanner@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Kertzmann', 'tanner@hotmail.com', '2021-08-05 10:15:02.566066', '2021-08-05 10:15:02.566066', '$2a$04$uXqM0CG1sWWcR/dQNwcXzughmWgDqlQYUhjud5P0cExsJtxcdth66')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'lashon_corkery@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hilpert', 'lashon_corkery@yahoo.com', '2021-08-05 10:15:02.569849', '2021-08-05 10:15:02.569849', '$2a$04$eFwGvs4DgmcGKx2lzoEZwePQ60i1DI5Rm1xnqmJ9qHieUTvyrsIti')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 113 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 114 LIMIT 1[0m
+  [1m[36mRelationship Create (0.1ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (113, 114, '2021-08-05 10:15:02.571916', '2021-08-05 10:15:02.571916')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'robbyn@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Rogahn', 'robbyn@gmail.com', '2021-08-05 10:15:02.575693', '2021-08-05 10:15:02.575693', '$2a$04$DuB5iBzE1wsDww2YqdUos.1rmoxC4FhxlQ.n4KCylnlXFeCB6y4mm')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'jutta@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Moen', 'jutta@gmail.com', '2021-08-05 10:15:02.580257', '2021-08-05 10:15:02.580257', '$2a$04$fMBHHgCWPdeU9WE2pYdaauUyX3r64hNDzRBKKK0jc2W2EDw4z6p52')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'oralia_treutel@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Breitenberg', 'oralia_treutel@yahoo.com', '2021-08-05 10:15:02.584261', '2021-08-05 10:15:02.584261', '$2a$04$HURZol2.A51oiXbykrN17O7Fva1xTAwByHg0N2Gn5i1smM8JaFPJK')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 115 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 117 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'eddy@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Schamberger', 'eddy@yahoo.com', '2021-08-05 10:15:56.205215', '2021-08-05 10:15:56.205215', '$2a$04$pq/N9sIEbKR4u47SWqMzPe1nsG8OdAP/Sw3anXY0zN0HcKP9eFEkK')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'tom.fadel@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Daniel', 'tom.fadel@yahoo.com', '2021-08-05 10:15:56.209856', '2021-08-05 10:15:56.209856', '$2a$04$/FpcHFtObBKrRLBhMieT0OZLt7HEDhTIePl5lE7fNQ0J/gv45Y54i')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 118 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'lanie.bahringer@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hirthe', 'lanie.bahringer@gmail.com', '2021-08-05 10:15:56.236055', '2021-08-05 10:15:56.236055', '$2a$04$d6LSTkH4uuwjvRq0jfyx.ejv4.osTAx1ET.5zE86DSycevlsfJzoK')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'elias@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Kris', 'elias@gmail.com', '2021-08-05 10:15:56.240900', '2021-08-05 10:15:56.240900', '$2a$04$bmmf6N6I2I6R5knEzU5Ycu5mbnwMkPYRIBSrQC16apq3XMt45Ia9C')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 120 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'delmy@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Leannon', 'delmy@hotmail.com', '2021-08-05 10:15:56.247944', '2021-08-05 10:15:56.247944', '$2a$04$Ut/ojMQXorrz8ATMefsnAesQ96v539UHtvXtXYIv.JJ8OamnJ51SW')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'rodrigo.mayert@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Monahan', 'rodrigo.mayert@hotmail.com', '2021-08-05 10:15:56.251734', '2021-08-05 10:15:56.251734', '$2a$04$7OjkhlaykVQeA4q0rIOUg.m95YODHRg2OoLrhvGUJY3njPdVRLYeO')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 122 LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 123 LIMIT 1[0m
+  [1m[36mRelationship Create (0.3ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (122, 123, '2021-08-05 10:15:56.254581', '2021-08-05 10:15:56.254581')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'shanika.schmeler@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('VonRueden', 'shanika.schmeler@gmail.com', '2021-08-05 10:15:56.261664', '2021-08-05 10:15:56.261664', '$2a$04$qGC0X4ZZWxINLlJpwwz2HuQCOYo4apIE3LAR9b1Cg6Z9QVxkwMYVi')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'jarrett.reinger@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Harvey', 'jarrett.reinger@gmail.com', '2021-08-05 10:15:56.266716', '2021-08-05 10:15:56.266716', '$2a$04$QHXcVyV72njasGTfLjOz7OMEb3wv0ns3r6TNMM.idhQqTaPGmUlLe')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 124 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'diana@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hoppe', 'diana@gmail.com', '2021-08-05 10:15:56.280587', '2021-08-05 10:15:56.280587', '$2a$04$/yNkxsxQpmzZG7fLg40OjOiz9BVaT.pf93w0Z4ZjK.5izs9cWpvEW')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'yessenia_cartwright@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Bartell', 'yessenia_cartwright@yahoo.com', '2021-08-05 10:15:56.285187', '2021-08-05 10:15:56.285187', '$2a$04$xt82kaEg9ns9z4B4bEkkluvu/hvnm.9nxhV38bQZK/NhmPb3M5ddC')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 126 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'janyce@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Little', 'janyce@yahoo.com', '2021-08-05 10:15:56.290966', '2021-08-05 10:15:56.290966', '$2a$04$McukYruETRawuRIrwRD7w.mtPO1Idahabk3ngIplDO0sBa8ouWPbK')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'collen.lynch@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Macejkovic', 'collen.lynch@yahoo.com', '2021-08-05 10:15:56.296158', '2021-08-05 10:15:56.296158', '$2a$04$DZb0V2cCMf9aI5krBlCw9OU..UoHDBVUID3a9XHBJUDhGioIJvp5i')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 128 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 129 LIMIT 1[0m
+  [1m[36mRelationship Create (0.1ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (128, 129, '2021-08-05 10:15:56.298120', '2021-08-05 10:15:56.298120')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'victor@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hermann', 'victor@yahoo.com', '2021-08-05 10:15:56.302351', '2021-08-05 10:15:56.302351', '$2a$04$6jD7sUP3eXU9rdr.KfrtruT.vMFV6l650eElwOFoysFED2k49xcla')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'noah.murphy@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Gorczany', 'noah.murphy@hotmail.com', '2021-08-05 10:15:56.306483', '2021-08-05 10:15:56.306483', '$2a$04$vzMES8OVfTR82nbGsfrAyOUy0GXRW5e0I7/Mx9z48IWeS160VRrNC')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'fred.kuhic@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Greenholt', 'fred.kuhic@yahoo.com', '2021-08-05 10:15:56.312340', '2021-08-05 10:15:56.312340', '$2a$04$7yst0cwd/PMb4uS9w6iqfOUgGVStS7D4C288yrGGN96hhs7ax3uku')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'jackie@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Dach', 'jackie@yahoo.com', '2021-08-05 10:15:56.316128', '2021-08-05 10:15:56.316128', '$2a$04$Nt4bo5W7wqcaljv4WyMve.x5fJMo8ty6S/ugQZi7/riTk.Xz51lAK')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 132 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'darrel_purdy@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Zulauf', 'darrel_purdy@yahoo.com', '2021-08-05 10:15:56.322139', '2021-08-05 10:15:56.322139', '$2a$04$.L4ANHYMExv2dQOK8AOlCuBJmasYqL2XvNzWNhYAq7Up08TVHDRK2')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'suzi@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Gulgowski', 'suzi@yahoo.com', '2021-08-05 10:15:56.326983', '2021-08-05 10:15:56.326983', '$2a$04$EPfrJjrtXxe1icKhufNQw.TClkj0pdG5hLQtmaPcdeRl8W6veTCMe')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 134 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 135 LIMIT 1[0m
+  [1m[36mRelationship Create (0.1ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (134, 135, '2021-08-05 10:15:56.328988', '2021-08-05 10:15:56.328988')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'devon@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Boehm', 'devon@hotmail.com', '2021-08-05 10:15:56.332861', '2021-08-05 10:15:56.332861', '$2a$04$Was1Kj5uc57Inqdq4wEV8uYZmwN8f4n4NhvsGuNhZO/v9C.kqrSTS')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'ernest@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hessel', 'ernest@hotmail.com', '2021-08-05 10:15:56.336532', '2021-08-05 10:15:56.336532', '$2a$04$Z94TrUk96yRL87ruPOlTkuG4mgqVbFhbgs.yX3uETDTQ/m/LU1CtC')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'gayle_harris@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Luettgen', 'gayle_harris@yahoo.com', '2021-08-05 10:15:56.342445', '2021-08-05 10:15:56.342445', '$2a$04$AxIBvyaZUaHpcUJez0tMb.Kg5QIQcIjZrYsxD0oEodRXC2Sr2XcGS')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'clyde@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hermiston', 'clyde@yahoo.com', '2021-08-05 10:15:56.347852', '2021-08-05 10:15:56.347852', '$2a$04$pAF9LXlmWq3sHExTpk9fsuYPJvx4aj7gCBx0qh/7vyBh08im7Qg3u')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 138 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'brandon.okuneva@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Cormier', 'brandon.okuneva@gmail.com', '2021-08-05 10:15:56.353594', '2021-08-05 10:15:56.353594', '$2a$04$N0k1E5Q.aoubo0jJtXGDtOWVfq3ffZm0EpdCjoM7RplV1caQT7Mji')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mittie.donnelly@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Wehner', 'mittie.donnelly@hotmail.com', '2021-08-05 10:15:56.357777', '2021-08-05 10:15:56.357777', '$2a$04$L6i.SvZB1WOt8OsTvAp1g.NvQXuTT8m8T/Pk6aGk/nPXhCz/Fsfga')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 140 LIMIT 1[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 141 LIMIT 1[0m
+  [1m[36mRelationship Create (0.2ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (140, 141, '2021-08-05 10:15:56.361131', '2021-08-05 10:15:56.361131')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'marquis.langworth@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Fahey', 'marquis.langworth@gmail.com', '2021-08-05 10:15:56.365459', '2021-08-05 10:15:56.365459', '$2a$04$eLGGTVrmDBO3a/cZ5syJzuSzjCh7r5GlAqfWmOT/eZOyEtTebTCs6')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'rudolf_bruen@hotmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Hodkiewicz', 'rudolf_bruen@hotmail.com', '2021-08-05 10:15:56.369562', '2021-08-05 10:15:56.369562', '$2a$04$pelQvmcGMM1fntHggsW5V.WuGOU1CPwHkyu/JXxa8wcYGVVETJmw2')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'joleen@yahoo.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Kerluke', 'joleen@yahoo.com', '2021-08-05 10:15:56.373418', '2021-08-05 10:15:56.373418', '$2a$04$I44bUABdR98nDRx54EVwpej62tvNRQmbw31fI43phzNVyMkM9jJHq')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 142 LIMIT 1[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 144 LIMIT 1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (31.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `eat_project_test`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE `eat_project_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS `likes` CASCADE[0m
+  [1m[35m (14.5ms)[0m  [1m[35mCREATE TABLE `likes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `post_id` int, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL) DEFAULT CHARSET=utf8mb4[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `posts` CASCADE[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `content` text, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `user_id` int) DEFAULT CHARSET=utf8mb4[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `relationships` CASCADE[0m
+  [1m[35m (13.9ms)[0m  [1m[35mCREATE TABLE `relationships` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `follower_id` bigint, `followed_id` bigint, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, INDEX `index_relationships_on_followed_id` (`followed_id`), UNIQUE INDEX `index_relationships_on_follower_id_and_followed_id` (`follower_id`, `followed_id`), INDEX `index_relationships_on_follower_id` (`follower_id`)) DEFAULT CHARSET=utf8mb4[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS `users` CASCADE[0m
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, `image_name` varchar(255), `password_digest` varchar(255), `password` varchar(255)) DEFAULT CHARSET=utf8mb4[0m
+  [1m[35m (15.2ms)[0m  [1m[35mALTER TABLE `relationships` ADD CONSTRAINT `fk_rails_9f3075433a`
+FOREIGN KEY (`followed_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (14.9ms)[0m  [1m[35mALTER TABLE `relationships` ADD CONSTRAINT `fk_rails_8c9a6d4759`
+FOREIGN KEY (`follower_id`)
+  REFERENCES `users` (`id`)
+[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES (20210802023007)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (version) VALUES
+(20210801032534),
+(20210801033215),
+(20210801033458),
+(20210801033706),
+(20210801033934),
+(20210801034411),
+(20210801034754),
+(20210802021929);
+
+[0m
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'test', '2021-08-07 04:54:57.991424', '2021-08-07 04:54:57.991424')[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('schema_sha1', '99e1e44b5892caf8d3f277fa0bde46dbcf688b56', '2021-08-07 04:54:57.995005', '2021-08-07 04:54:57.995005')[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'carlotta@hotmail.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mickie_dietrich@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Armstrong', 'mickie_dietrich@gmail.com', '2021-08-07 08:04:09.560376', '2021-08-07 08:04:09.560376', '$2a$04$jM0VxSKD0kgzpa6d9LFlHOfeq23OCtfnP6KN/9x7uHcb9ClQr7gZu')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'mickie_dietrich@gmail.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'doug.hahn@yahoo.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'joey_kovacek@hotmail.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'michale_abernathy@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Harber', 'michale_abernathy@gmail.com', '2021-08-07 08:18:59.957944', '2021-08-07 08:18:59.957944', '$2a$04$gtYS06iCsCA4R6S/vKyb2OnqpBpv1cicfqv5cj40mVw7gzdafKU3a')[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'michale_abernathy@gmail.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'katlyn.mohr@gmail.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'schema_sha1'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'wilber@hotmail.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` IS NULL LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'chad@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Schaefer', 'chad@gmail.com', '2021-08-07 09:58:22.935883', '2021-08-07 09:58:22.935883', '$2a$04$ZLw2NEL.sz0MPIe1VTOT2eCh7Ws6KdhzXQGBfWAuPEKuUOYH8WFK6')[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'chad@gmail.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'elisha@yahoo.com' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
