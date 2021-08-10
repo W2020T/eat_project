@@ -8,7 +8,7 @@
     box-shadow: 0 2px 6px #c1ced7;
   }
 .post-left img{
-    width: 50px;
+  width: 50px;
   height: 50px;
   border-radius: 40%;
   box-shadow: 0 2px 6px #c1ced7;
@@ -83,15 +83,46 @@
     text-decoration: underline;
     font-size: 14px;
   }
-  .posts-new textarea {
-    font-size: 20px;
-    padding: 10px;
-    min-height: 140px;
-    border: 1px solid rgb(216, 218, 223);
-    resize: none;
-  }
+  
   .posts-new textarea::-webkit-input-placeholder {
     font-size: 24px;
     opacity: 0.5;
   }
+  .form input[type="submit"] {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: 300;
+    width: 120px;
+    border-radius: 2px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    }
+  .form textarea {
+    width: 100%;
+    min-height: 140px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    resize: none;
+  }
   
+  .form-heading {
+    font-weight: 300;
+    margin: 60px 0 20px;
+    font-size: 48px;
+    color: #bcc8d4;
+  }
+  
+  .form-body {
+    padding: 30px;
+  }
+  .formbody{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+    height: 100%;
+  }

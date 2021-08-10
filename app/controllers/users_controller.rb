@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 class UsersController < ApplicationController
-  before_action :authenticate_user, { only: %i[index show edit update] }
+  before_action :authenticate_user, { only: %i[index show edit update search] }
   before_action :forbid_login_user, { only: %i[new create login_form login] }
   before_action :ensure_correct_user, { only: %i[edit update] }
-  # before_action :guest_user, only: [:edit]
+
   def ensure_correct_user
     return unless @current_user.id != params[:id].to_i
 

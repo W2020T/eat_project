@@ -1,6 +1,6 @@
 <div class="main posts-index">
     <div class="container">
-        <%#<%= link_to("検索する", "/posts/search") %>
+
         <% @posts.each do |post| %>
         <div class="posts-index-item">
             <div class="post-left">
@@ -13,6 +13,7 @@
                 <%= link_to(post.content, "/posts/#{post.id}") %>
             </div>
         </div>
+
         <% end %>
         <%= paginate @posts %>
     </div>

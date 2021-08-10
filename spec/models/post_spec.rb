@@ -15,7 +15,7 @@ RSpec.describe Post, type: :model do
         expect(@post.errors.full_messages).to include('投稿を入力してください')
       end
 
-      it 'contentの文字数が141文字以上の場合エラーメッセージが返ってくるか' do
+      it 'contentの文字数が101文字以上の場合エラーメッセージが返ってくるか' do
         FactoryBot.build(:post, content: @post.content)
         @post.content = Faker::Lorem.characters(number: 101)
         @post.valid?

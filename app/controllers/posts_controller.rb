@@ -3,7 +3,7 @@
 class PostsController < ApplicationController
   before_action :ensure_correct_user, { only: %i[edit update destroy] }
   before_action :authenticate_user
-  # before_action :guest_user, only: [:create]
+  
   def ensure_correct_user
     @post = Post.find_by(id: params[:id])
     return unless @post.user_id != @current_user.id
