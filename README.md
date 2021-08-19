@@ -12,7 +12,7 @@
 
 * Ruby 2.6.6
 * Rails 6.1.4
-* Mysql 8.0.25
+* Mysql 
 
 
 
