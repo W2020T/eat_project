@@ -9,6 +9,8 @@ class User < ApplicationRecord
   has_many :followers, through: :reverse_of_relationships, source: :follower
   has_many :relationships, class_name: 'Relationship', foreign_key: 'follower_id', dependent: :destroy
   has_many :followings, through: :relationships, source: :followed
+  has_many :posts, dependent: :destroy
+  has_many :comments, dependent: :destroy
   def posts
     Post.where(user_id: id)
   end

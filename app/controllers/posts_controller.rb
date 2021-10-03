@@ -3,7 +3,7 @@
 class PostsController < ApplicationController
   before_action :ensure_correct_user, { only: %i[edit update destroy] }
   before_action :authenticate_user
-  
+
   def ensure_correct_user
     @post = Post.find_by(id: params[:id])
     return unless @post.user_id != @current_user.id
@@ -19,6 +19,9 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find_by(id: params[:id])
+
+    @comments = @post.comments
+    @comment = Comment.new
     @user = @post.user
     @likes_count = Like.where(post_id: @post.id).count
   end

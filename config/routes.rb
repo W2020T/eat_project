@@ -22,6 +22,12 @@ Rails.application.routes.draw do
   get 'posts/:id/edit' => 'posts#edit'
   post 'posts/:id/update' => 'posts#update'
   get 'posts/:id/destroy' => 'posts#destroy'
+  resources :users, only: %i[index show]
+  resources :posts, only: %i[index show create] do
+    resources :comments, only: [:create]
+  end
+  post 'comments/create' => 'comments#create'
+  get 'comments/:id/destroy' => 'comments#destroy'
   get 'posts/search' => 'posts#search'
 
   get '/' => 'home#top'
@@ -31,6 +37,7 @@ Rails.application.routes.draw do
     resource :relationships, only: %i[create destroy] do
     end
   end
+
   get 'relationships/:user_id/create' => 'relationships#create'
   get 'relationships/:user_id/destroy' => 'relationships#destroy'
   get 'relationships/:user_id/followed' => 'relationships#followers'

@@ -3,7 +3,7 @@
         <div class="user">
             <img src="<%= "/user_images/#{@user.image_name}" %>">
             <h2><%= @user.name %></h2>
-            <p><%= @user.email %></p>
+
             <p>フォロー数: <%=  @user.followings.count %></p>
             <p><%= link_to("フォロー中", "/relationships/#{@user.id}/followings") %></p>
             <p>フォロワー数:<%= @user.followers.count%></p>
