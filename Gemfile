@@ -11,7 +11,11 @@ gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use sqlite3 as the database for Active Record
 gem 'mysql2'
 # Use Puma as the app server
+<<<<<<< HEAD
 gem "puma", ">= 5.5.1"
+=======
+gem 'puma', '~> 5.5'
+>>>>>>> 58f89d16cddf9f590c87bb37b5f5b01506ea7dd9
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -30,7 +34,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rails-i18n'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
-gem 'bootstrap', '~> 4.1.1'
+gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem "actionpack", ">= 6.1.4.1"
