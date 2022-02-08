@@ -15,20 +15,23 @@ Rails.application.routes.draw do
   get 'logout' => 'users#logout'
   get 'login' => 'users#login_form'
   get 'users/:id/likes' => 'users#likes'
+  get 'users/:id/destroy' => 'users#destroy'
   get 'posts/index' => 'posts#index'
-  get 'posts/new' => 'posts#new'
-  get 'posts/:id' => 'posts#show'
-  post 'posts/create' => 'posts#create'
-  get 'posts/:id/edit' => 'posts#edit'
+  get 'posts/search' => 'posts#search'
+  resources :posts do
+    get :search, on: :collection
+  end
   post 'posts/:id/update' => 'posts#update'
   get 'posts/:id/destroy' => 'posts#destroy'
   resources :users, only: %i[index show]
   resources :posts, only: %i[index show create] do
-    resources :comments, only: [:create]
   end
-  post 'comments/create' => 'comments#create'
-  get 'comments/:id/destroy' => 'comments#destroy'
-  get 'posts/search' => 'posts#search'
+  get 'posts/new' => 'posts#new'
+
+  get 'posts/:id' => 'posts#show'
+  post 'posts/create' => 'posts#create'
+
+  get 'posts/:id/edit' => 'posts#edit'
 
   get '/' => 'home#top'
   get 'likes/:post_id/create' => 'likes#create'

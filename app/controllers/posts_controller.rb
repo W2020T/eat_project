@@ -19,9 +19,6 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find_by(id: params[:id])
-
-    @comments = @post.comments
-    @comment = Comment.new
     @user = @post.user
     @likes_count = Like.where(post_id: @post.id).count
   end
@@ -70,5 +67,13 @@ class PostsController < ApplicationController
     @post.destroy
     flash[:notice] = '投稿を削除しました'
     redirect_to('/posts/index')
+  end
+
+  def search
+    @posts = if params[:content].present?
+               Post.where('content LIKE ?', "%#{params[:content]}%")
+             else
+               Post.none
+             end
   end
 end

@@ -20,7 +20,7 @@ class CommentsController < ApplicationController
 
   def destroy
     @post = Post.find_by(params[:post_id])
-    @comments = Comment.find_by(id: params[:id])
+    @comments = Comment.find_by(params[:id])
     @comments.destroy
     flash[:notice] = 'コメントを削除しました'
     redirect_to("/posts/#{params[:post_id]}")

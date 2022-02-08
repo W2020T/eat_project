@@ -40,7 +40,9 @@
       <a class="p-2 text-muted" href="#">
         <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
       </a>
-
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("記事検索", "/posts/search") %>
+      </a>
       <a class="p-2 text-muted" href="#">
         <%= link_to("投稿一覧", "/posts/index") %>
       </a>
@@ -56,6 +58,11 @@
       <a class="p-2 text-muted" href="#">
         <%= link_to("ログアウト", "/logout", {method: "post"}) %>
       </a>
+      <% unless @current_user.email == "guest@exapmle.com" then %>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("退会", "/users/#{@current_user.id}/destroy", {method: "post"}) %>
+      </a>
+      <%end%>
       <% else %>
       <a class="p-2 text-muted" href="#">
         <%= link_to("新規登録", "/signup") %>

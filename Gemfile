@@ -9,9 +9,9 @@ ruby '2.6.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use sqlite3 as the database for Active Record
-gem 'mysql2' 
+gem 'mysql2'
 # Use Puma as the app server
-gem 'puma', '~> 5.0'
+gem "puma", ">= 5.5.1"
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -33,7 +33,10 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
+gem "actionpack", ">= 6.1.4.1"
 gem 'pry-rails'
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

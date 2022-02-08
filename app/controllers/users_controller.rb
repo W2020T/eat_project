@@ -87,6 +87,13 @@ class UsersController < ApplicationController
     render('users/new')
   end
 
+  def destroy
+    @user = User.find_by(params[:id])
+    @user.destroy
+    flash[:notice] = 'ユーザーを削除しました。'
+    redirect_to('/login')
+  end
+
   def login_form; end
 
   def likes
