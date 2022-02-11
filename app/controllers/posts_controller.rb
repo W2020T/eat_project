@@ -43,6 +43,7 @@ class PostsController < ApplicationController
     @post.transaction do
       @post.save!
     end
+
     flash[:notice] = '投稿を作成しました'
     redirect_to('/posts/index')
   rescue StandardError => e
