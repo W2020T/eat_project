@@ -12,6 +12,7 @@
                 </div>
                 <%= link_to(post.content, "/posts/#{post.id}") %>
             </div>
+            <p class="caption"><%= "#{post.comments.count} コメント" %></p>
         </div>
 
         <% end %>

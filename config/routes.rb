@@ -40,7 +40,11 @@ Rails.application.routes.draw do
     resource :relationships, only: %i[create destroy] do
     end
   end
-
+  post 'comments/create' => 'comments#create'
+  resources :posts do
+    resources :comments, only: %i[create destroy]
+  end
+  get 'comments/:id/destroy' => 'comments#destroy'
   get 'relationships/:user_id/create' => 'relationships#create'
   get 'relationships/:user_id/destroy' => 'relationships#destroy'
   get 'relationships/:user_id/followed' => 'relationships#followers'

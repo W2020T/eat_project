@@ -34,16 +34,40 @@
                 <%= link_to("削除", "/posts/#{@post.id}/destroy", {method: "post"}) %>
             </div>
             <% end %>
+            <div class="comments ml-5 mt-5">
+                <%= form_tag("/comments/create") do %>
+                <textarea name="content"><%= @comment.content %></textarea>
+                <input type="submit" value="コメントする">
+                <% end %>
 
+                <p>コメント件数：<%= @comments.count %></p>
+                <% @comments.each do |comment| %>
+                <div class="comments-index mb-2">
+                    <%= comment.user.name %>
+                    <%= comment.created_at.strftime('%Y/%m/%d') %><br>
+                    <div class="d-flex">
+                        <%= comment.content %>
+                        <% if comment.user == @current_user %>
+                        <div class="comment-delete">
+                            <%= link_to("削除", "/comments/#{comment.id}/destroy", {method: "post"}) %>
+                        </div>
+                    </div>
+                </div>
+                <% end %>
+                <% end %>
+                <%= paginate @comments %>
+            </div>
         </div>
 
-
-
-
-
-
-
     </div>
+
+
+
+
+
+
+
+</div>
 </div>
 
 </div>
