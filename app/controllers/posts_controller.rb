@@ -43,6 +43,7 @@ class PostsController < ApplicationController
       content: params[:content],
       user_id: @current_user.id
     )
+
     @post.transaction do
       @post.save!
     end
@@ -79,5 +80,11 @@ class PostsController < ApplicationController
              else
                Post.none
              end
+  end
+
+  private
+
+  def test_params
+    params.require(:post).permit(:text, :image)
   end
 end

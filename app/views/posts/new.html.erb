@@ -1,7 +1,7 @@
 <div class="text-center posts-new ">
     <div class="formbody text-center ">
         <div class="form-signin">
-            <%= form_tag("/posts/create") do %>
+            <%= form_tag("/posts/create", {multipart: true}) do  %>
             <div class="form">
                 <div class="form-body">
                     <h1 class="form-heading text-center ">投稿する</h1>
@@ -11,6 +11,9 @@
                     </div>
                     <% end %>
                     <textarea name="content"><%= @post.content %></textarea>
+
+                    <input name="image" type="file">
+
                     <input type="submit" value="投稿">
                 </div>
             </div>

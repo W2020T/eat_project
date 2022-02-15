@@ -37,7 +37,8 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem "actionpack", ">= 6.1.4.1"
 gem 'pry-rails'
-
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
 
 
 group :development, :test do
