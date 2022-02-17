@@ -27,8 +27,8 @@
                 <%=@likes_count%>
 
             </div>
-            <%#% if @post.image.attached? %>
-
+            <%#%if @post.image? %>
+            <%#% @post.image.url%>
             <%#% end %>
             <% if @post.user_id == @current_user.id %>
             <div class="post-menus">

@@ -42,50 +42,46 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(
       content: params[:content],
+      image_name: 'default_post.jpg',
       user_id: @current_user.id
     )
-
-    @post.transaction do
-      @post.save!
+    if params[:image]
+      @post.image_name = "#{@post.id}.jpg"
+      image = params[:image]
+      File.binwrite("public/post_images/#{@post.image_name}", image.read)
     end
-
-    flash[:notice] = '投稿を作成しました'
-    redirect_to('/posts/index')
-  rescue StandardError => e
-    flash[:notice] = '投稿の作成に失敗しました'
-    render('posts/new')
-  end
-
-  def update
-    @post = Post.find_by(id: params[:id])
-    @post.content = params[:content]
     if @post.save
-      flash[:notice] = '投稿を編集できました！'
+      flash[:notice] = '投稿を作成しました'
       redirect_to('/posts/index')
     else
-      flash[:notice] = '投稿は100文字以内で入力してください'
-      render('posts/edit')
+      render('posts/new')
     end
-  end
 
-  def destroy
-    @post = Post.find_by(id: params[:id])
-    @post.destroy
-    flash[:notice] = '投稿を削除しました'
-    redirect_to('/posts/index')
-  end
+    def update
+      @post = Post.find_by(id: params[:id])
+      @post.content = params[:content]
+      if @post.save
+        flash[:notice] = '投稿を編集できました！'
+        redirect_to('/posts/index')
+      else
+        flash[:notice] = '投稿は100文字以内で入力してください'
+        render('posts/edit')
+      end
+    end
 
-  def search
-    @posts = if params[:content].present?
-               Post.where('content LIKE ?', "%#{params[:content]}%")
-             else
-               Post.none
-             end
-  end
+    def destroy
+      @post = Post.find_by(id: params[:id])
+      @post.destroy
+      flash[:notice] = '投稿を削除しました'
+      redirect_to('/posts/index')
+    end
 
-  private
-
-  def test_params
-    params.require(:post).permit(:text, :image)
+    def search
+      @posts = if params[:content].present?
+                 Post.where('content LIKE ?', "%#{params[:content]}%")
+               else
+                 Post.none
+               end
+    end
   end
 end
