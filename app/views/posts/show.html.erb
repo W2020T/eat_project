@@ -27,9 +27,14 @@
                 <%=@likes_count%>
 
             </div>
-            <%#%if @post.image? %>
-            <%#% @post.image.url%>
-            <%#% end %>
+
+            <p>
+
+                <%=image_tag @post.image %>
+            </p>
+
+
+
             <% if @post.user_id == @current_user.id %>
             <div class="post-menus">
                 <%= link_to("編集", "/posts/#{@post.id}/edit") %>

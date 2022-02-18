@@ -20,7 +20,6 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find_by(id: params[:id])
-
     @user = @post.user
     @likes_count = Like.where(post_id: @post.id).count
     @comment = Comment.new
@@ -42,14 +41,11 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(
       content: params[:content],
-      image_name: 'default_post.jpg',
+
       user_id: @current_user.id
     )
-    if params[:image]
-      @post.image_name = "#{@post.id}.jpg"
-      image = params[:image]
-      File.binwrite("public/post_images/#{@post.image_name}", image.read)
-    end
+    @post.image.attach(params[:image])
+    image = params[:image] if params[:image]
     if @post.save
       flash[:notice] = '投稿を作成しました'
       redirect_to('/posts/index')
