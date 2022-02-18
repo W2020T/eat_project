@@ -38,6 +38,15 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
+  def destroy
+    @post = Post.find_by(id: params[:id])
+
+    @post.destroy
+    @post.image.purge if params[:image]
+    flash[:notice] = '投稿を削除しました'
+    redirect_to('/posts/index')
+  end
+
   def create
     @post = Post.new(
       content: params[:content],
@@ -63,13 +72,6 @@ class PostsController < ApplicationController
         flash[:notice] = '投稿は100文字以内で入力してください'
         render('posts/edit')
       end
-    end
-
-    def destroy
-      @post = Post.find_by(id: params[:id])
-      @post.destroy
-      flash[:notice] = '投稿を削除しました'
-      redirect_to('/posts/index')
     end
 
     def search
