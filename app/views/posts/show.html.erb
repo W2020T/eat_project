@@ -27,12 +27,12 @@
                 <%=@likes_count%>
 
             </div>
-
+            <% if @post.image.attached? %>
             <p>
 
                 <%=image_tag @post.image %>
             </p>
-
+            <% end %>
 
 
             <% if @post.user_id == @current_user.id %>
