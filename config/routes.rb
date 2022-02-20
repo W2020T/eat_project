@@ -10,10 +10,12 @@ Rails.application.routes.draw do
   resources :users do
     get :search, on: :collection
   end
-  get 'users/:id' => 'users#show'
-  post 'login' => 'users#login'
+
   get 'logout' => 'users#logout'
+
+  # post 'login' => 'users#login'
   get 'login' => 'users#login_form'
+  get 'users/:id' => 'users#show'
   get 'users/:id/likes' => 'users#likes'
   get 'users/:id/destroy' => 'users#destroy'
   get 'posts/index' => 'posts#index'
@@ -51,4 +53,8 @@ Rails.application.routes.draw do
   get 'relationships/:user_id/followings' => 'relationships#followings'
   get 'users/:id/likes' => 'users#likes'
   get '/guest_session' => 'guest_sessions#new_guest'
+  get 'auth/:provider/callback' => 'sessions#create'
+  get 'log_out' => 'sessions#destroy', as: 'log_out'
+  resources :sessions, only: %i[create destroy]
+  get 'auth/failure' => redirect('/')
 end
