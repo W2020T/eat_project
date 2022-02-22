@@ -10,19 +10,19 @@ Rails.application.routes.draw do
   resources :users do
     get :search, on: :collection
   end
-
+  get 'posts/search' => 'posts#search'
+  resources :posts do
+    get :search, on: :collection
+  end
   get 'logout' => 'users#logout'
 
-  # post 'login' => 'users#login'
+  post 'login' => 'users#login'
   get 'login' => 'users#login_form'
   get 'users/:id' => 'users#show'
   get 'users/:id/likes' => 'users#likes'
   get 'users/:id/destroy' => 'users#destroy'
   get 'posts/index' => 'posts#index'
-  get 'posts/search' => 'posts#search'
-  resources :posts do
-    get :search, on: :collection
-  end
+
   post 'posts/:id/update' => 'posts#update'
   get 'posts/:id/destroy' => 'posts#destroy'
   resources :users, only: %i[index show]
@@ -57,5 +57,5 @@ Rails.application.routes.draw do
   get 'auth/:provider/callback' => 'sessions#create'
   get 'log_out' => 'sessions#destroy', as: 'log_out'
   resources :sessions, only: %i[create destroy]
-  get 'auth/failure' => redirect('/')
+  get 'auth/failure' => 'users#login_form'
 end
