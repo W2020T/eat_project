@@ -42,38 +42,26 @@
             </div>
             <% end %>
             <div class="comments ml-5 mt-5">
-                <%= form_tag("/comments/create",{multipart: true}) do %>
+                <%= form_with(model: [@post, @comment], local: true) do |f| %>
                 <textarea name="content"><%= @comment.content %></textarea>
                 <input type="submit" value="コメントする">
                 <% end %>
 
                 <p>コメント件数：<%= @comments.count %></p>
-                <% @comments.each do |comment| %>
-                <div class="comments-index mb-2">
-                    <%= comment.user.name %>
-                    <%= comment.created_at.strftime('%Y/%m/%d') %><br>
-                    <div class="d-flex">
-                        <%= comment.content %>
-                        <% if comment.user == @current_user %>
-                        <div class="comment-delete">
-                            <%= link_to("削除", "/comments/#{comment.id}/destroy", {method: "post"}) %>
-                        </div>
-                    </div>
+                <% @comments.each do |c| %>
+                <div>
+                    <a href="/users/<%= c.user.id %>"><%= c.user.name %></a>
+                    <%= c.content %>
+
+
+                    <%= link_to("削除", "/comments/#{c.user.id}/destroy", {method: "post"}) %>
+                    <% end %>
                 </div>
-                <% end %>
-                <% end %>
                 <%= paginate @comments %>
             </div>
         </div>
 
     </div>
-
-
-
-
-
-
-
 </div>
 </div>
 

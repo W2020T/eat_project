@@ -1,14 +1,10 @@
 class CommentsController < ApplicationController
   protect_from_forgery except: [:create]
   def create
-    @post = Post.find_by(params[:post_id])
-    @comments = Comment.new(
-      content: params[:content],
-      user_id: @current_user.id,
-      post_id: @post.id
-    )
-
-    if @comments.save
+    post = Post.find(params[:post_id])
+    @comment = post.comments.new(comment_params)
+    @comment.user_id = current_user.id
+    if @comment.save
 
       flash[:notice] = 'コメントを作成しました'
       redirect_to("/posts/#{params[:post_id]}")
@@ -24,5 +20,11 @@ class CommentsController < ApplicationController
     @comments.destroy
     flash[:notice] = 'コメントを削除しました'
     redirect_to("/posts/#{params[:post_id]}")
+  end
+
+  private
+
+  def comment_params
+    params.permit(:content, :post)
   end
 end

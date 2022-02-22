@@ -42,7 +42,7 @@ Rails.application.routes.draw do
     resource :relationships, only: %i[create destroy] do
     end
   end
-  post 'comments/create' => 'comments#create'
+
   resources :posts do
     resources :comments, only: %i[create destroy]
   end
