@@ -10,10 +10,7 @@ Rails.application.routes.draw do
   resources :users do
     get :search, on: :collection
   end
-  get 'posts/search' => 'posts#search'
-  resources :posts do
-    get :search, on: :collection
-  end
+
   get 'logout' => 'users#logout'
 
   post 'login' => 'users#login'
@@ -22,19 +19,22 @@ Rails.application.routes.draw do
   get 'users/:id/likes' => 'users#likes'
   get 'users/:id/destroy' => 'users#destroy'
   get 'posts/index' => 'posts#index'
+  get 'posts/search' => 'posts#search'
+  resources :posts do
+    get :search, on: :collection
+  end
+  get 'posts/new' => 'posts#new'
+  post 'posts/create' => 'posts#create'
+
+  get 'posts/:id/edit' => 'posts#edit'
 
   post 'posts/:id/update' => 'posts#update'
   get 'posts/:id/destroy' => 'posts#destroy'
   resources :users, only: %i[index show]
   resources :posts, only: %i[index show create] do
   end
-  get 'posts/new' => 'posts#new'
 
   get 'posts/:id' => 'posts#show'
-  post 'posts/create' => 'posts#create'
-
-  get 'posts/:id/edit' => 'posts#edit'
-
   get '/' => 'home#top'
   get 'likes/:post_id/create' => 'likes#create'
   get 'likes/:post_id/destroy' => 'likes#destroy'

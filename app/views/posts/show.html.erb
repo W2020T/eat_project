@@ -42,7 +42,7 @@
             </div>
             <% end %>
             <div class="comments ml-5 mt-5">
-                <%= form_tag("/comments/create") do %>
+                <%= form_tag("/comments/create",{multipart: true}) do %>
                 <textarea name="content"><%= @comment.content %></textarea>
                 <input type="submit" value="コメントする">
                 <% end %>
