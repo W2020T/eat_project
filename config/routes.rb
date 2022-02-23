@@ -53,7 +53,7 @@ Rails.application.routes.draw do
   get 'relationships/:user_id/followings' => 'relationships#followings'
   get 'users/:id/likes' => 'users#likes'
   get '/guest_session' => 'guest_sessions#new_guest'
-  root 'post#index'
+  root to: 'post#index'
   get 'auth/:provider/callback' => 'sessions#create'
   get 'log_out' => 'sessions#destroy', as: 'log_out'
   resources :sessions, only: %i[create destroy]
