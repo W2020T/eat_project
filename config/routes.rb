@@ -10,9 +10,7 @@ Rails.application.routes.draw do
   resources :users do
     get :search, on: :collection
   end
-
   get 'logout' => 'users#logout'
-
   post 'login' => 'users#login'
   get 'login' => 'users#login_form'
   get 'users/:id' => 'users#show'
@@ -33,7 +31,6 @@ Rails.application.routes.draw do
   resources :users, only: %i[index show]
   resources :posts, only: %i[index show create] do
   end
-
   get 'posts/:id' => 'posts#show'
   get '/' => 'home#top'
   get 'likes/:post_id/create' => 'likes#create'
@@ -42,7 +39,6 @@ Rails.application.routes.draw do
     resource :relationships, only: %i[create destroy] do
     end
   end
-
   resources :posts do
     resources :comments, only: %i[create destroy]
   end
@@ -53,9 +49,12 @@ Rails.application.routes.draw do
   get 'relationships/:user_id/followings' => 'relationships#followings'
   get 'users/:id/likes' => 'users#likes'
   get '/guest_session' => 'guest_sessions#new_guest'
-  root to: 'post#index'
+  root to: 'posts#index'
+
   get 'auth/:provider/callback' => 'sessions#create'
+  get 'auth/failure' => 'users#login_form'
+  resources :home, only: %i[top]
   get 'log_out' => 'sessions#destroy', as: 'log_out'
   resources :sessions, only: %i[create destroy]
-  get 'auth/failure' => 'users#login_form'
+  resources :posts, only: %i[index]
 end

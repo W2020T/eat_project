@@ -61,25 +61,25 @@ class PostsController < ApplicationController
     else
       render('posts/new')
     end
+  end
 
-    def update
-      @post = Post.find_by(id: params[:id])
-      @post.content = params[:content]
-      if @post.save
-        flash[:notice] = '投稿を編集できました！'
-        redirect_to('/posts/index')
-      else
-        flash[:notice] = '投稿は100文字以内で入力してください'
-        render('posts/edit')
-      end
+  def update
+    @post = Post.find_by(id: params[:id])
+    @post.content = params[:content]
+    if @post.save
+      flash[:notice] = '投稿を編集できました！'
+      redirect_to('/posts/index')
+    else
+      flash[:notice] = '投稿は100文字以内で入力してください'
+      render('posts/edit')
     end
+  end
 
-    def search
-      @posts = if params[:content].present?
-                 Post.where('content LIKE ?', "%#{params[:content]}%")
-               else
-                 Post.none
-               end
-    end
+  def search
+    @posts = if params[:content].present?
+               Post.where('content LIKE ?', "%#{params[:content]}%")
+             else
+               Post.none
+             end
   end
 end
