@@ -36,13 +36,10 @@ class User < ApplicationRecord
 
     private
 
-    def user_params_from_auth_hash(auth_hash)
-      {
-        name: auth_hash.info.name,
-        email: auth_hash.info.email,
-        image: auth_hash.info.image,
-        password: auth_hash.info.password
-      }
+    def user_params_from_auth_hash(_auth_hash)
+      @user.name = auth.info.name
+      @user.email = auth.info.email
+      @user.image = auth.info.image
     end
   end
 end

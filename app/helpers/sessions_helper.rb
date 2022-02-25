@@ -5,10 +5,6 @@ module SessionsHelper
     @current_user ||= User.find_by(id: user_id)
   end
 
-  def log_in(_user)
-    session[:user_id] = @user.id
-  end
-
   def log_out
     session[:user_id] = nil
     flash[:notice] = 'ログアウトしました'
