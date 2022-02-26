@@ -51,7 +51,7 @@ Rails.application.routes.draw do
   get '/guest_session' => 'guest_sessions#new_guest'
   root to: 'posts#index'
 
-  get 'auth/:provider/callback' => 'sessions#create'
+  get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure' => 'users#login_form'
   resources :home, only: %i[top]
   get 'log_out' => 'sessions#destroy', as: 'log_out'
