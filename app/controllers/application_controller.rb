@@ -2,7 +2,7 @@
 
 class ApplicationController < ActionController::Base
   include SessionsHelper
-
+  before_action :forbid_login_user
   before_action :set_current_user
 
   def guest_user

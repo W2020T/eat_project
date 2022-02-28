@@ -1,18 +1,16 @@
 module SessionsHelper
   def current_user
-    return unless (@user_id = session[:user_id])
+    return unless (user_id = session[:user_id])
 
     @current_user ||= User.find_by(id: user_id)
   end
 
-  def log_out
-    session[:user_id] = nil
-    flash[:notice] = 'ログアウトしました'
+  def log_in(user)
+    session[:user_id] = user.id
   end
 
-  def check_logged_in
-    return if current_user
-
-    redirect_to root_path
+  def log_out
+    session.delete(:user_id)
+    @current_user = nil
   end
 end

@@ -1,6 +1,14 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  root to: 'home#top'
+  get 'auth/:provider/callback', to: 'sessions#create'
+
+  get 'auth/failure' => 'users#login_form'
+  resources :home, only: %i[top]
+  get 'log_out' => 'sessions#destroy', as: 'log_out'
+  resources :sessions, only: %i[create destroy]
+  resources :posts, only: %i[index]
   post 'users/:id/update' => 'users#update'
   get 'users/:id/edit' => 'users#edit'
   post 'users/create' => 'users#create'
@@ -49,12 +57,4 @@ Rails.application.routes.draw do
   get 'relationships/:user_id/followings' => 'relationships#followings'
   get 'users/:id/likes' => 'users#likes'
   get '/guest_session' => 'guest_sessions#new_guest'
-  root to: 'posts#index'
-
-  get 'auth/:provider/callback', to: 'sessions#create'
-  get 'auth/failure' => 'users#login_form'
-  resources :home, only: %i[top]
-  get 'log_out' => 'sessions#destroy', as: 'log_out'
-  resources :sessions, only: %i[create destroy]
-  resources :posts, only: %i[index]
 end
