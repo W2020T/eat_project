@@ -15,7 +15,7 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all.order(created_at: :desc)
     @posts = Post.all.page(params[:page]).per(1)
-    # @comments = @post.comments.page(params[:page]).per(7).reverse_order
+    @tag_list = Tag.all
   end
 
   def show
@@ -24,6 +24,7 @@ class PostsController < ApplicationController
     @likes_count = Like.where(post_id: @post.id).count
     @comment = Comment.new
     @comments = @post.comments.page(params[:page]).per(7).reverse_order
+    @post_tags = @post.tags
   end
 
   def edit
@@ -54,9 +55,11 @@ class PostsController < ApplicationController
       user_id: @current_user.id
     )
     @post.image.attach(params[:image])
+    tag_list = params[:post][:tag_name].split(nil)
     image = params[:image] if params[:image]
     if @post.save
       flash[:notice] = '投稿を作成しました'
+      @post.save_tag(tag_list)
       redirect_to('/posts/index')
     else
       render('posts/new')
