@@ -1,7 +1,7 @@
 <div class="text-center posts-new ">
     <div class="formbody text-center ">
         <div class="form-signin">
-            <%= form_tag("/posts/create", {multipart: true}) do  %>
+            <%=form_with(model: @post, url: posts_path, local: true) do |f| %>
             <div class="form">
                 <div class="form-body">
                     <h1 class="form-heading text-center ">投稿する</h1>
@@ -12,7 +12,7 @@
                     <% end %>
                     <h1>スペースを入力することで複数のタグを付けることができます。</h1>
                     <h3>例：音楽 文芸 スポーツ</h3>
-                    <textarea name="content"> <%= @post.tag_name %></textarea>
+                    <%= f.text_field :tag_name%>
 
                     <textarea name="content"><%= @post.content %></textarea>
 

@@ -54,12 +54,14 @@ class PostsController < ApplicationController
 
       user_id: @current_user.id
     )
-    @post.image.attach(params[:image])
+
     tag_list = params[:post][:tag_name].split(nil)
+    # @post.image.attach(params[:image])
     image = params[:image] if params[:image]
     if @post.save
-      flash[:notice] = '投稿を作成しました'
       @post.save_tag(tag_list)
+      flash[:notice] = '投稿を作成しました'
+
       redirect_to('/posts/index')
     else
       render('posts/new')

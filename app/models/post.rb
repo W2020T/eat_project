@@ -6,6 +6,8 @@ class Post < ApplicationRecord
   belongs_to :user
   has_many :comments, dependent: :destroy
   has_one_attached :image
+  has_many :tag_maps, dependent: :destroy
+  has_many :tags, through: :tag_maps
   def user
     User.find_by(id: user_id)
   end

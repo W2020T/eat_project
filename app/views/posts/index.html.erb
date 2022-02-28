@@ -1,12 +1,14 @@
 <div class="main posts-index">
     <div class="container">
         <h3> タグリスト</h3>
+        <% if @posts_tag.present?%>
         <%  @tag_list.each do |list|%>
 
         <%= link_to(list.tag_name, tag_posts_path(tag_id: list.id))%>
         <%="#{list.posts.count}"%>
 
 
+        <% end %>
         <% end %>
         <% @posts.each do |post| %>
         <div class="posts-index-item">

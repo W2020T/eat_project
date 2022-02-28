@@ -11,8 +11,7 @@ class User < ApplicationRecord
   has_many :followings, through: :relationships, source: :followed
   has_many :posts, dependent: :destroy
   has_many :comments, dependent: :destroy
-  has_many :tag_maps, dependent: :destroy
-  has_many :tags, through: :tag_maps
+
   def posts
     Post.where(user_id: id)
   end
