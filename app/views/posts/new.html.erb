@@ -10,6 +10,10 @@
                         <%= message %>
                     </div>
                     <% end %>
+                    <h1>スペースを入力することで複数のタグを付けることができます。</h1>
+                    <h3>例：音楽 文芸 スポーツ</h3>
+                    <textarea name="content"> <%= @post.tag_name %></textarea>
+
                     <textarea name="content"><%= @post.content %></textarea>
 
                     <input name="image" type="file">

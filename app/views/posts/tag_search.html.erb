@@ -1,0 +1,22 @@
+<h1>タグリスト</h1>
+<%@tag_list.each do |list|%>
+
+<%= link_to list.tag_name, tag_posts_path(post_tag_id: list.id)%>
+<%="#{list.posts.count}"%>
+
+<h1>タグによって絞り込んだ投稿一覧</h1>
+<p>タグが ─ <%"#{@tag.tag_name}"%> ─ の投稿一覧"</p>
+<% end %>
+<%=@posts.each do |post|%>
+<div class="posts-index-item">
+    <div class="post-left">
+        <img src="<%= "/user_images/#{post.user.image_name}" %>">
+    </div>
+    <div class="post-right">
+        <div class="post-user-name">
+            <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+        </div>
+        <%= link_to(post.content, "/posts/#{post.id}") %>
+    </div>
+</div>
+<% end %>

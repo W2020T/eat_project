@@ -85,4 +85,10 @@ class PostsController < ApplicationController
                Post.none
              end
   end
+
+  def tag_search
+    @tag_list = Tag.all
+    @tag = Tag.find(params[:tag_id])
+    @posts = @tag.posts.all
+  end
 end
