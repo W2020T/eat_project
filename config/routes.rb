@@ -52,6 +52,7 @@ Rails.application.routes.draw do
   end
   get 'comments/:id/destroy' => 'comments#destroy'
   get 'comments/:id/edit' => 'comments#edit'
+  post 'comments/:id/update' => 'comments#update'
   get 'relationships/:user_id/create' => 'relationships#create'
   get 'relationships/:user_id/destroy' => 'relationships#destroy'
   get 'relationships/:user_id/followed' => 'relationships#followers'
