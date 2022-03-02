@@ -16,7 +16,7 @@
 
                     <textarea name="content"><%= @post.content %></textarea>
 
-                    <input name="image" type="file">
+                    <%= f.file_field :image %>
 
                     <input type="submit" value="投稿">
                 </div>

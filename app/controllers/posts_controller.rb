@@ -56,8 +56,10 @@ class PostsController < ApplicationController
     )
 
     tag_list = params[:post][:tag_name].split(nil)
-    # @post.image.attach(params[:image])
-    image = params[:image] if params[:image]
+    if image = params[:post][:image]
+      @post.image.attach(image)
+
+    end
     if @post.save
       @post.save_tag(tag_list)
       flash[:notice] = '投稿を作成しました'
