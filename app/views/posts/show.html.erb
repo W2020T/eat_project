@@ -8,14 +8,14 @@
             <p>
                 <%= @post.content %>
             </p>
-            <% if @post_tag.present?%>
+
             <%=@post_tags.each do |tag|%>
 
             <%=link_to(tag.tag_name, tag_posts_path(tag_id: tag.id))%>
             <%="#{tag.posts.count}"%>
 
             <% end %>
-            <% end %>
+
             <div class="post-time">
                 <%= @post.created_at %>
                 <% if Like.find_by(user_id:@current_user.id,post_id:@post.id)%>
