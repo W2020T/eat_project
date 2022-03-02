@@ -24,14 +24,13 @@ class CommentsController < ApplicationController
   end
 
   def update
-    post = Post.find_by(params[:post_id])
     @comment = current_user.comments.find_by(params[:id])
     @comment.content = params[:content]
     if @comment.save
-      flash[:notice] = '投稿を編集できました！'
+      flash[:notice] = 'コメントを編集できました！'
       redirect_to("/posts/#{params[:post_id]}")
     else
-      flash[:notice] = '投稿は100文字以内で入力してください'
+      flash[:notice] = 'コメントの編集に失敗しました'
       redirect_to("/posts/#{params[:post_id]}")
     end
   end
