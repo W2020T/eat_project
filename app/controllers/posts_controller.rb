@@ -29,6 +29,7 @@ class PostsController < ApplicationController
 
   def edit
     @post = Post.find_by(id: params[:id])
+    @tag_list = @post.tags.pluck(:tag_name).join(',')
   end
 
   def new

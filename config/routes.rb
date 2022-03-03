@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  root to: 'home#top'
-  get 'auth/:provider/callback' => 'sessions#create'
+  root to: 'posts#index'
 
+  post 'auth/:provider/callback' => 'sessions#create'
   get 'auth/failure' => 'users#login_form'
   resources :home, only: %i[top]
   get 'log_out' => 'sessions#destroy', as: 'log_out'

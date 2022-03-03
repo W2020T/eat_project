@@ -11,7 +11,7 @@
 
             <%=@post_tags.each do |tag|%>
 
-            <h1> タグ名</h1> <%=link_to(tag.tag_name, tag_posts_path(tag_id: tag.id))%>
+            <%=link_to(tag.tag_name, tag_posts_path(tag_id: tag.id))%>
             <%="#{tag.posts.count}"%>
 
             <% end %>
