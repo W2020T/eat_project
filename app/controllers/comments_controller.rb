@@ -24,9 +24,9 @@ class CommentsController < ApplicationController
   end
 
   def update
-    @comment = Comment.find(params[:id])
-
-    if @comment.update(comment_params)
+    @comment = current_user.comments.find(params[:id])
+    @comment.content = params[:content]
+    if @comment.save
       flash[:notice] = 'コメントを編集できました！'
       redirect_to("/posts/#{params[:post_id]}")
     else
