@@ -2,7 +2,7 @@
 
 Rails.application.routes.draw do
   root to: 'home#top'
-  get 'auth/:provider/callback', to: 'sessions#create'
+  get 'auth/:provider/callback' => 'sessions#create'
 
   get 'auth/failure' => 'users#login_form'
   resources :home, only: %i[top]
