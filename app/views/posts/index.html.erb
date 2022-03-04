@@ -5,7 +5,7 @@
         <%  @tag_list.each do |list|%>
 
         <%= link_to(list.tag_name, tag_posts_path(tag_id: list.id))%>
-        <%="#{list.posts.count}"%>
+        <%="#{list.posts.count}"%>投稿
 
 
         <% end %>

@@ -60,6 +60,6 @@ Rails.application.routes.draw do
   get 'users/:id/likes' => 'users#likes'
   get '/guest_session' => 'guest_sessions#new_guest'
   resources :tags do
-    get 'posts', to: 'posts#search'
+    get 'posts', to: 'posts#tag_search'
   end
 end
