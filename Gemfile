@@ -44,6 +44,7 @@ gem 'omniauth-google-oauth2'
 gem "rake"
 gem 'omniauth'
 gem 'omniauth-rails_csrf_protection', '~> 0.1'
+gem 'gretel'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
