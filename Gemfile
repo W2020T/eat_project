@@ -36,7 +36,7 @@ gem 'bootstrap', '~> 4.3.1'
 gem "actionpack", ">= 6.1.4.1"
 gem 'bootstrap-sass'
 gem 'jquery-rails'
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.12'
 gem 'pry-rails'
 gem 'mini_magick'
 gem 'dotenv-rails'
