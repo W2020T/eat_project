@@ -1,5 +1,7 @@
 <div class="main posts-show">
     <div class="container">
+        <% breadcrumb :users_show %>
+        <%= breadcrumbs separator: " &rsaquo; " %>
         <div class="posts-show-item">
             <div class="post-user-name">
                 <img src="<%= "/user_images/#{@user.image_name}" %>">
