@@ -41,12 +41,14 @@ gem 'pry-rails'
 gem 'mini_magick'
 gem 'dotenv-rails'
 gem 'omniauth-google-oauth2'
-gem "rake"
 gem 'omniauth'
-gem 'omniauth-rails_csrf_protection', '~> 0.1'
-gem 'gretel'
-gem 'breadcrumbs_on_rails'
 
+gem "rake"
+
+
+
+gem 'gretel'
+gem 'omniauth-rails_csrf_protection', '~> 0.1'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

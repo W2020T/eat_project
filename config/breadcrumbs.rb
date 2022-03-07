@@ -1,8 +1,8 @@
 crumb :posts do
-  link '投稿一覧', 'posts/index'
+  link '投稿一覧', "posts#index"
 end
 crumb :users do
-  link 'ユーザ一覧', users_path
+  link 'ユーザ一覧', users / index
 end
 crumb :users_show do
   link 'ユーザー詳細', users_path
@@ -10,7 +10,7 @@ crumb :users_show do
 end
 
 crumb :user_edit do
-  link 'ユーザー編集'
+  link 'ユーザー編集' edit_user_path
   parent :users_show
 end
 
@@ -19,13 +19,14 @@ crumb :posts_new do
   parent :posts
 end
 
-rumb :posts_show do
-  link '投稿詳細', posts_path
+crumb :posts_show do
+  post = Post.find(params[:id])
+  link '投稿詳細', posts_path(post.id)
   parent :posts
 end
 crumb :post_edit do
-  link '投稿編集'
-  parent :post_show
+  link '投稿編集',edit_post_path
+  parent :posts_show
 end
 crumb :user do |user|
   link "#{user.name}さんの詳細", user_path(user)
