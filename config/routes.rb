@@ -3,12 +3,6 @@
 Rails.application.routes.draw do
   root to: 'posts#index'
 
-  post 'auth/:provider/callback' => 'sessions#create'
-  get 'auth/failure' => 'users#login_form'
-  resources :home, only: %i[top]
-  get 'log_out' => 'sessions#destroy', as: 'log_out'
-  resources :sessions, only: %i[create destroy]
-  resources :posts, only: %i[index]
   post 'users/:id/update' => 'users#update'
   get 'users/:id/edit' => 'users#edit'
   post 'users/create' => 'users#create'
