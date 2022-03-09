@@ -13,17 +13,18 @@
         <% end %>
 
         <% @posts.each do |post| %>
-        <div class="posts-index-item">
-            <div class="post-left">
-                <img src="<%= "/user_images/#{post.user.image_name}" %>">
-            </div>
+        <div class="card">
+
+            <img src="<%= "/user_images/#{post.user.image_name}" %>" class="rounded-circle">
+            </h5>
             <div class="post-right">
-                <div class="post-user-name">
+                <div class="card-body">
                     <%= link_to(post.user.name, "/users/#{post.user.id}") %>
                 </div>
                 <%= link_to(post.content, "/posts/#{post.id}") %>
+                <p class="caption"><%= "#{post.comments.count} コメント" %></p>
             </div>
-            <p class="caption"><%= "#{post.comments.count} コメント" %></p>
+
         </div>
 
         <% end %>
