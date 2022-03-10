@@ -2,25 +2,23 @@
     <div class="container">
         <div class="form-heading">新規ユーザー登録</div>
         <div class="form users-form">
-            <div class="form-body">
-                <% @user.errors.full_messages.each do |message| %>
-                <div class="form-error">
-                    <%= message %>
-                </div>
-                <% end %>
-                <%= form_tag("/users/create") do %>
-                <p>ユーザー名</p>
-                <input name="email" class="form-control" id="inputPassword2" placeholder="name"
-                    value="<%= @user.name %>">
-                <p>メールアドレス</p>
-                <input name="email" class="form-control" id="inputPassword2" placeholder="email"
-                    value="<%= @user.email %>">
-                <p>パスワード</p>
-                <input type="password" name="password" class="form-control" id="inputPassword2" placeholder="Password"
-                    value="<%= @user.password  %>">
-                <button type="submit" class="btn btn-primary">新規登録</button>
-                <% end %>
+
+            <% @user.errors.full_messages.each do |message| %>
+            <div class="form-error">
+                <%= message %>
             </div>
+            <% end %>
+            <%= form_tag("/users/create") do %>
+            <p>ユーザー名</p>
+            <input name="email" class="form-control" id="inputPassword2" placeholder="name" value="<%= @user.name %>">
+            <p>メールアドレス</p>
+            <input name="email" class="form-control" id="inputPassword2" placeholder="email" value="<%= @user.email %>">
+            <p>パスワード</p>
+            <input type="password" name="password" class="form-control" id="inputPassword2" placeholder="Password"
+                value="<%= @user.password  %>">
+            <button type="submit" class="btn btn-primary">新規登録</button>
+            <% end %>
+
         </div>
     </div>
 </div>
