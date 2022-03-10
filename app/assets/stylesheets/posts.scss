@@ -14,17 +14,6 @@
   box-shadow: 0 2px 6px #c1ced7;
   object-fit: cover;
   }
-  
-  .post-left{
-    float: left;
-    width: 10%;
-  }
-  .post-right {
-    float: left;
-    width: 90%;
-    padding-left: 25px;
-    text-align: left;
-  }
   .posts-show form {
     display: inline;
   }
@@ -83,13 +72,7 @@
     opacity: 0.5;
   }
   
-  .form textarea {
-    width: 100%;
-    min-height: 140px;
-    font-size: 16px;
-    letter-spacing: 2px;
-    resize: none;
-  }
+  
   
   .form-heading {
     font-weight: 300;
@@ -98,18 +81,5 @@
     color: #bcc8d4;
   }
   
-  .form-body {
-    padding: 30px;
-  }
-  .formbody{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #f5f5f5;
-    height: 100%;
-  }
-  
+ 
  

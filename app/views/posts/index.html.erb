@@ -15,15 +15,16 @@
         <% @posts.each do |post| %>
         <div class="card">
 
-            <img src="<%= "/user_images/#{post.user.image_name}" %>" class="rounded-circle">
+            <img src="<%= "/user_images/#{post.user.image_name}" %>" class="img-circle" width="50" height="50">
+            <%= link_to(post.user.name, "/users/#{post.user.id}") %>
 
-            <div class="post-right">
-                <div class="card-body">
-                    <%= link_to(post.user.name, "/users/#{post.user.id}") %>
-                </div>
+            <div class="card-body">
+
                 <%= link_to(post.content, "/posts/#{post.id}") %>
-                <p class="caption"><%= "#{post.comments.count} コメント" %></p>
+                <p class="caption"><%= "#{post.comments.count}コメント" %></p>
             </div>
+
+
 
         </div>
 
