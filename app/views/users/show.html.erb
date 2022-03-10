@@ -1,7 +1,6 @@
 <div class="main user-show">
     <div class="container">
-        <div class="card" style="width: 20rem;">
-
+        <div class="card mx-auto" style="width: 20rem;">
             <img class="mx-auto d-block" src="<%="/user_images/#{@user.image_name}"%>">
             <h2><%= @user.name %></h2>
             <p>フォロー数: <%=  @user.followings.count %></p>
