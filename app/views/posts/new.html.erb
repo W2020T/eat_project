@@ -3,13 +3,14 @@
         <div class="form-signin">
             <%=form_with(model: @post, url: posts_path, local: true) do |f| %>
 
-
-            投稿する
             <% @post.errors.full_messages.each do |message| %>
             <div class="form-error">
                 <%= message %>
             </div>
             <% end %>
+            投稿する
+
+
             <h2>スペースを入力することで複数のタグを付けることができます。</h2>
             <h2>例：たこ焼き お好み焼き たらこ</h2>
             <%= f.text_field :tag_name%>

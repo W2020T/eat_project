@@ -1,30 +1,30 @@
 <div class="main user-show">
     <h1>記事を検索する</h1>
-    <div class="search-form">
-        <%= form_with url: search_posts_path, method: :get, local: true do |f| %>
-        <div classs="form-box">
-            <%= text_field_tag :content %>
-        </div>
-        <div classs="form-btn">
-            <%= f.submit :検索 %>
-        </div>
-        <% end %>
 
-    </div>
-    <div class="post-list">
-        <% @posts.each do |post| %>
-        <div class="posts-index-item">
-            <div class="post-left">
-                <img src="<%= "/user_images/#{post.user.image_name}" %>">
-            </div>
-            <div class="post-right">
-                <div class="post-user-name">
-                    <%= link_to(post.user.name, "/users/#{post.user.id}") %>
-                </div>
-                <%= link_to(post.content, "/posts/#{post.id}") %>
-                投稿された日<%= post.created_at %>
-            </div>
+    <%= form_with url: search_posts_path, method: :get, local: true do |f| %>
+
+    <%= text_field_tag :content %>
+
+
+    <%= f.submit :検索 %>
+
+    <% end %>
+
+</div>
+<div class="post-list">
+    <% @posts.each do |post| %>
+    <div class="posts-index-item">
+        <div class="post-left">
+            <img src="<%= "/user_images/#{post.user.image_name}" %>">
         </div>
-        <% end %>
+        <div class="post-right">
+            <div class="post-user-name">
+                <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+            </div>
+            <%= link_to(post.content, "/posts/#{post.id}") %>
+            投稿された日<%= post.created_at %>
+        </div>
     </div>
+    <% end %>
+</div>
 </div>
