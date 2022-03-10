@@ -10,15 +10,15 @@
                         <%= message %>
                     </div>
                     <% end %>
-                    <h1>スペースを入力することで複数のタグを付けることができます。</h1>
-                    <h3>例：音楽 文芸 スポーツ</h3>
+                    <h2>スペースを入力することで複数のタグを付けることができます。</h2>
+                    例：たこ焼き お好み焼き たらこ
                     <%= f.text_field :tag_name%>
-
-                    <textarea name="content"><%= @post.content %></textarea>
+                    <textarea name="content" class="form-control" id="exampleFormControlTextarea1"
+                        rows="3"><%= @post.content %></textarea>
 
                     <%= f.file_field :image %>
 
-                    <input type="submit" value="投稿">
+                    <button type="submit" class="btn btn-primary btn-lg">投稿する</button>
                 </div>
             </div>
             <% end %>
