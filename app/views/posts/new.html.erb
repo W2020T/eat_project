@@ -8,7 +8,9 @@
     <h2 class="text-center">投稿する</h2>
     <h2>スペースを入力することで複数のタグを付けることができます。</h2>
     <h2>例：たこ焼き お好み焼き たらこ</h2>
-    <%= f.text_field :tag_name%>
+    <div class="center-block">
+        タグ入力欄<%= f.text_field :tag_name%>
+    </div>
     <textarea name="content" class="form-control" id="exampleFormControlTextarea1"
         rows="3"><%= @post.content %></textarea>
     <%= f.file_field :image %>
