@@ -42,10 +42,8 @@
   .user-show {
     text-align: center;
   }
-  .user{
-    margin-bottom: 20px;
-  }
-  .user img{
+  
+  .card img{
     width: 80px;
     height: 80px;
     border-radius: 40%;
@@ -53,26 +51,22 @@
     margin: 20px 0 10px;
     object-fit: cover;
   }
-  .user h1 {
+  .card h1 {
     font-size: 20px;
     font-weight: 600;
     line-height: 1.2;
     color: #ff4d75;
   }
-  .user p {
+  .card p {
     font-size: 13px;
     margin-bottom: 15px;
   }
-  .user a {
+  .card a {
     color: #2d7db9;
     text-decoration: underline;
     font-weight: 200;
   }
-  .user span {
-    color: #afb6bf;
-    font-weight: 200;
-    padding: 0 6px 0 8px;
-  }
+  
   .user-tabs {
     margin-top: 40px;
     background-color: white;
@@ -106,34 +100,8 @@
   .form-error {
     color: #ff4d75;
   }
-  .form-signin {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: auto;
-  }
-  .form-signin h1{
-    color: rgb(68, 0, 255);
-  }
-  
-  .form-signin .form-control {
-    position: relative;
-    box-sizing: border-box;
-    height: auto;
-    padding: 10px;
-    font-size: 16px;
-  }
+ 
   
   
   
-  
-  .user p {
-    font-size: 13px;
-    margin-bottom: 15px;
-    color: black;
-  }
-  .user h2{
-    font-size: 13px;
-    margin-bottom: 15px;
-    color: black;
-  }
+ 
