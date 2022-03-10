@@ -15,24 +15,24 @@
             <%="#{tag.posts.count}"%>
             <% end %>
 
-            <div class="post-time">
-                <%= @post.created_at %>
-                <% if Like.find_by(user_id:@current_user.id,post_id:@post.id)%>
 
-                <%=link_to("/likes/#{@post.id}/destroy",{method:"post"}, remote: true )do%>
-                <span class="fa fa-heart like-btn-unlike"></span>
+            <%= @post.created_at %>
+            <% if Like.find_by(user_id:@current_user.id,post_id:@post.id)%>
 
-                <% end %>
-                <%else%>
+            <%=link_to("/likes/#{@post.id}/destroy",{method:"post"}, remote: true )do%>
+            <span class="fa fa-heart like-btn-unlike"></span>
 
-                <%=link_to("/likes/#{@post.id}/create",{method:"post"}, remote: true )do%>
-                <span class="fa fa-heart like-btn"></span>
+            <% end %>
+            <%else%>
 
-                <%end%>
-                <%end%>
-                <%=@likes_count%>
+            <%=link_to("/likes/#{@post.id}/create",{method:"post"}, remote: true )do%>
+            <span class="fa fa-heart like-btn"></span>
 
-            </div>
+            <%end%>
+            <%end%>
+            <%=@likes_count%>
+
+
             <% if @post.image.attached? %>
             <p>
 
