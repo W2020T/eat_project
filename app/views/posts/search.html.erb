@@ -4,8 +4,6 @@
     <%= form_with url: search_posts_path, method: :get, local: true do |f| %>
 
     <%= text_field_tag :content %>
-
-
     <%= f.submit :検索 %>
 
     <% end %>
