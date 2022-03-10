@@ -1,34 +1,41 @@
 <div class="main posts-index">
-    <div class="container">
 
 
-        <h3> タグリスト</h3>
+    <div class="center-block">
+        タグリスト
+    </div>
+    <div class="center-block">
 
         <%  @tag_list.each do |list|%>
 
         <%= link_to(list.tag_name, tag_posts_path(tag_id: list.id))%>
         <%="#{list.posts.count}"%>投稿
-
-
         <% end %>
 
+    </div>
+
+    <div class="center-block">
         <% @posts.each do |post| %>
         <div class="card">
-
-            <img src="<%= "/user_images/#{post.user.image_name}" %>" class="img-circle" width="50" height="50">
-            <%= link_to(post.user.name, "/users/#{post.user.id}") %>
-
-            <div class="card-body">
-
-                <%= link_to(post.content, "/posts/#{post.id}") %>
-                <p class="caption"><%= "#{post.comments.count}コメント" %></p>
+            <div class="row">
+                <div class="col">
+                    <img src="<%= "/user_images/#{post.user.image_name}" %>" class="img-circle" width="50" height="50">
+                </div>
+                <div class="pull-left">
+                    <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+                </div>
             </div>
+            <%= link_to(post.content, "/posts/#{post.id}") %>
+            <p class="caption"><%= "#{post.comments.count}コメント" %></p>
+
 
 
 
         </div>
 
         <% end %>
+
         <%= paginate @posts %>
     </div>
+
 </div>

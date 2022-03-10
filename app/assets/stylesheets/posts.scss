@@ -71,3 +71,9 @@
     font-size: 48px;
     color: #bcc8d4;
   }
+  .flex-column{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
