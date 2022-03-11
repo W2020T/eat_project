@@ -46,7 +46,7 @@
   .like-btn-unlike {
       color: #ff2581;
   }
-  .posts-show-item .fa {
+  .cards-show-item .fa {
     font-size: 16px;
     margin-right: 3px;
   }
@@ -59,16 +59,7 @@
     font-size: 14px;
   }
   
-  .posts-new textarea::-webkit-input-placeholder {
-    font-size: 24px;
-    opacity: 0.5;
-  }
-  .form-heading {
-    font-weight: 300;
-    margin: 60px 0 20px;
-    font-size: 48px;
-    color: #010911;
-  }
+
   .flex-column{
     display:flex;
     flex-direction: row-reverse;
