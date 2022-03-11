@@ -4,17 +4,17 @@
             <img class="mx-auto d-block" src="<%="/user_images/#{@user.image_name}"%>">
             <h2><%= @user.name %></h2>
             <p>フォロー数: <%=  @user.followings.count %></p>
-            <p><%= link_to("フォロー中", "/relationships/#{@user.id}/followings") %></p>
+            <p><%= link_to("フォローしている人を見る", "/relationships/#{@user.id}/followings") %></p>
             <p>フォロワー数:<%= @user.followers.count%></p>
-            <p><%= link_to("フォロワー", "/relationships/#{@user.id}/followed") %></p>
+            <p><%= link_to("フォロワーを見る", "/relationships/#{@user.id}/followed") %></p>
             <% if @user.id==@current_user.id and @user.email!='guest@exapmle.com'%>
             <%=link_to("編集","/users/#{@user.id}/edit")%>
             <%end%>
             <% if  @user.id != @current_user.id  %>
             <% if @current_user.following?(@user) %>
-            <%=link_to("Unfollow","/relationships/#{@user.id}/destroy",{method:"post"})%>
+            <%=link_to("フォローをやめる","/relationships/#{@user.id}/destroy",{method:"post"})%>
             <%else%>
-            <%=link_to("Follow","/relationships/#{@user.id}/create",{method:"post"})%>
+            <%=link_to("フォローする","/relationships/#{@user.id}/create",{method:"post"})%>
             <%end%>
             <%end%>
         </div>
