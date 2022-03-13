@@ -5,20 +5,20 @@
     <%= f.submit :検索 %>
     <% end %>
 </div>
-<div class="post-list">
-    <% @posts.each do |post| %>
-    <div class="posts-index-item">
-        <div class="post-left">
+
+<% @posts.each do |post| %>
+<div class="card w-50 mx-auto">
+    <div class="row">
+        <div class="col">
             <img src="<%= "/user_images/#{post.user.image_name}" %>">
         </div>
-        <div class="post-right">
-            <div class="post-user-name">
-                <%= link_to(post.user.name, "/users/#{post.user.id}") %>
-            </div>
-            <%= link_to(post.content, "/posts/#{post.id}") %>
-            投稿された日<%= post.created_at %>
+        <div class="col d-flex align-items-center">
+            <%= link_to(post.user.name, "/users/#{post.user.id}") %>
         </div>
+        <%= link_to(post.content, "/posts/#{post.id}") %>
+        投稿された日<%= post.created_at %>
     </div>
-    <% end %>
 </div>
+<% end %>
+
 </div>
