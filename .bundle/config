@@ -1,3 +1,4 @@
----
-BUNDLE_BUILD__MYSQL2: "--with-ldflags=-L/usr/local/opt/openssl/lib"
-BUNDLE_WITHOUT: "production"
+Host eat_project
+  Hostname 54.168.213.106
+  User ec2-user
+  IdentityFile ~/.ssh/eat_project.pem
