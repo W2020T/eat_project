@@ -1,4 +1,5 @@
 Host eat_project
   Hostname 54.168.213.106
-  User ec2-user
+  User WTKUI
   IdentityFile ~/.ssh/eat_project.pem
+  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyLCQEf5VaumRb0Gt2XHOpgTkTK0gbYxKX6qu43Sr+CwlU75a/wUvIyRLoxhNeZqJSBrSY1iYPOshi+BbqLJX9OSjPi7PPegL1VLfda7QatDQe+oUK/QECNkE2s1/9rHSZn3FRIjifsCjL+G4GS8vONnMjCRus8biKJQhrF1TD6k+ITFD3G2F4TwLTfgtpFRJ5w1iefBiNzuvlKJLntldv1TGLSmkMaJ51BZeaDmLJTXAo84JWbD1z56/cbKPQTlbszaGov1luRs8bqu3tRPpJRI2QdcgSbkg3fmwQj/LgM5IplpCtXATqddmUIQl+HCBWUA8L3uwJz/iesJVmOr1x
