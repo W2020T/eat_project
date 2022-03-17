@@ -592,7 +592,7 @@
                 <mxCell id="167" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=1;fillColor=none;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#FFFFFF;" parent="166" vertex="1">
                     <mxGeometry y="30" width="180" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="168" value="1" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;fontColor=#FFFFFF;" parent="167" vertex="1">
+                <mxCell id="168" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;fontColor=#FFFFFF;" parent="167" vertex="1">
                     <mxGeometry width="40" height="30" as="geometry">
                         <mxRectangle width="40" height="30" as="alternateBounds"/>
                     </mxGeometry>
@@ -605,7 +605,7 @@
                 <mxCell id="170" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=1;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#FFFFFF;" parent="166" vertex="1">
                     <mxGeometry y="60" width="180" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="171" value="2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;fontColor=#FFFFFF;" parent="170" vertex="1">
+                <mxCell id="171" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;fontColor=#FFFFFF;" parent="170" vertex="1">
                     <mxGeometry width="40" height="30" as="geometry">
                         <mxRectangle width="40" height="30" as="alternateBounds"/>
                     </mxGeometry>
