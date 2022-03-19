@@ -51,5 +51,6 @@ test:
 production:
   <<: *default
   database: eat_project_production
-  username: eat_project
-  password: <%= ENV['EAT_PROJECT_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= Rails.application.credentials.db[:password] %>
+  host: <%= Rails.application.credentials.db[:hostname] %>
