@@ -1,0 +1,293 @@
+# Logfile created on 2022-03-22 18:10:22 +0900 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 18:10:22 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [0e02a925] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [0e02a925] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [0e02a925] Finished in 0.333 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-049c6349f75e1413e683.sh 0.0%
+  INFO Uploading /tmp/git-ssh-049c6349f75e1413e683.sh 100.0%
+  INFO [14d7b8bd] Running /usr/bin/env chmod 700 /tmp/git-ssh-049c6349f75e1413e683.sh as WTKUI@54.168.213.106
+ DEBUG [14d7b8bd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-049c6349f75e1413e683.sh )
+  INFO [14d7b8bd] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [261683e1] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [261683e1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-049c6349f75e1413e683.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [261683e1] 	Warning: Permanently added the ECDSA host key for IP address '52.69.186.44' to the list of known hosts.
+ DEBUG [261683e1] 	82cbbe84cd63c3ab437155292e7527b3dd82f9c9	HEAD
+  INFO [261683e1] Finished in 2.006 seconds with exit status 0 (successful).
+  INFO [03e703e3] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [03e703e3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+ DEBUG [03e703e3] 	mkdir: 
+ DEBUG [03e703e3] 	ディレクトリ `/var/www/eat_project/shared' を作成できません
+ DEBUG [03e703e3] 	: Permission denied
+ DEBUG [03e703e3] 	
+ DEBUG [03e703e3] 	mkdir: 
+ DEBUG [03e703e3] 	ディレクトリ `/var/www/eat_project/releases' を作成できません
+ DEBUG [03e703e3] 	: Permission denied
+ DEBUG [03e703e3] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 19:12:13 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [914acfaf] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [914acfaf] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [914acfaf] Finished in 0.413 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-875f96870c25e8f66d78.sh 0.0%
+  INFO Uploading /tmp/git-ssh-875f96870c25e8f66d78.sh 100.0%
+  INFO [178613c6] Running /usr/bin/env chmod 700 /tmp/git-ssh-875f96870c25e8f66d78.sh as WTKUI@54.168.213.106
+ DEBUG [178613c6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-875f96870c25e8f66d78.sh )
+  INFO [178613c6] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [3956a4f6] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [3956a4f6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-875f96870c25e8f66d78.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [3956a4f6] 	82cbbe84cd63c3ab437155292e7527b3dd82f9c9	HEAD
+  INFO [3956a4f6] Finished in 2.130 seconds with exit status 0 (successful).
+  INFO [9926018d] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [9926018d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+ DEBUG [9926018d] 	mkdir: 
+ DEBUG [9926018d] 	ディレクトリ `/var/www/eat_project/shared' を作成できません
+ DEBUG [9926018d] 	: Permission denied
+ DEBUG [9926018d] 	
+ DEBUG [9926018d] 	mkdir: 
+ DEBUG [9926018d] 	ディレクトリ `/var/www/eat_project/releases' を作成できません
+ DEBUG [9926018d] 	: Permission denied
+ DEBUG [9926018d] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 19:25:35 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [09d0aac6] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [09d0aac6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [09d0aac6] Finished in 0.313 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-88fe63bfcfe99a1ac479.sh 0.0%
+  INFO Uploading /tmp/git-ssh-88fe63bfcfe99a1ac479.sh 100.0%
+  INFO [04f6a7bd] Running /usr/bin/env chmod 700 /tmp/git-ssh-88fe63bfcfe99a1ac479.sh as WTKUI@54.168.213.106
+ DEBUG [04f6a7bd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-88fe63bfcfe99a1ac479.sh )
+  INFO [04f6a7bd] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [b510ea0c] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [b510ea0c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-88fe63bfcfe99a1ac479.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [b510ea0c] 	Warning: Permanently added the ECDSA host key for IP address '52.192.72.89' to the list of known hosts.
+ DEBUG [b510ea0c] 	82cbbe84cd63c3ab437155292e7527b3dd82f9c9	HEAD
+  INFO [b510ea0c] Finished in 1.931 seconds with exit status 0 (successful).
+  INFO [9a52413b] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [9a52413b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+ DEBUG [9a52413b] 	mkdir: 
+ DEBUG [9a52413b] 	ディレクトリ `/var/www/eat_project/shared' を作成できません
+ DEBUG [9a52413b] 	: Permission denied
+ DEBUG [9a52413b] 	
+ DEBUG [9a52413b] 	mkdir: 
+ DEBUG [9a52413b] 	ディレクトリ `/var/www/eat_project/releases' を作成できません
+ DEBUG [9a52413b] 	: Permission denied
+ DEBUG [9a52413b] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 19:26:23 +0900 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG Uploading /var/www/eat_project/shared/puma.rb 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 19:37:49 +0900 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG Uploading /var/www/eat_project/shared/puma.rb 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 19:38:53 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [ed8fe219] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [ed8fe219] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [ed8fe219] Finished in 0.310 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-165f81be6b5bd1ee50d5.sh 0.0%
+  INFO Uploading /tmp/git-ssh-165f81be6b5bd1ee50d5.sh 100.0%
+  INFO [18b2e277] Running /usr/bin/env chmod 700 /tmp/git-ssh-165f81be6b5bd1ee50d5.sh as WTKUI@54.168.213.106
+ DEBUG [18b2e277] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-165f81be6b5bd1ee50d5.sh )
+  INFO [18b2e277] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [c0eabb65] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [c0eabb65] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-165f81be6b5bd1ee50d5.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [c0eabb65] 	82cbbe84cd63c3ab437155292e7527b3dd82f9c9	HEAD
+  INFO [c0eabb65] Finished in 1.846 seconds with exit status 0 (successful).
+  INFO [c3da2535] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [c3da2535] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+ DEBUG [c3da2535] 	mkdir: 
+ DEBUG [c3da2535] 	ディレクトリ `/var/www/eat_project/shared' を作成できません
+ DEBUG [c3da2535] 	: Permission denied
+ DEBUG [c3da2535] 	
+ DEBUG [c3da2535] 	mkdir: 
+ DEBUG [c3da2535] 	ディレクトリ `/var/www/eat_project/releases' を作成できません
+ DEBUG [c3da2535] 	: Permission denied
+ DEBUG [c3da2535] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 20:11:58 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [1ec0b9bb] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [1ec0b9bb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [1ec0b9bb] Finished in 0.397 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-2ee8db5f0e4592a29134.sh 0.0%
+  INFO Uploading /tmp/git-ssh-2ee8db5f0e4592a29134.sh 100.0%
+  INFO [c297bf47] Running /usr/bin/env chmod 700 /tmp/git-ssh-2ee8db5f0e4592a29134.sh as WTKUI@54.168.213.106
+ DEBUG [c297bf47] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-2ee8db5f0e4592a29134.sh )
+  INFO [c297bf47] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [9125fc39] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [9125fc39] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2ee8db5f0e4592a29134.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [9125fc39] 	82cbbe84cd63c3ab437155292e7527b3dd82f9c9	HEAD
+  INFO [9125fc39] Finished in 2.138 seconds with exit status 0 (successful).
+  INFO [13bb5ffd] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [13bb5ffd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+ DEBUG [13bb5ffd] 	mkdir: 
+ DEBUG [13bb5ffd] 	ディレクトリ `/var/www/eat_project/shared' を作成できません
+ DEBUG [13bb5ffd] 	: Permission denied
+ DEBUG [13bb5ffd] 	
+ DEBUG [13bb5ffd] 	mkdir: 
+ DEBUG [13bb5ffd] 	ディレクトリ `/var/www/eat_project/releases' を作成できません
+ DEBUG [13bb5ffd] 	: Permission denied
+ DEBUG [13bb5ffd] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 20:18:24 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [71bbd99d] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [71bbd99d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [71bbd99d] Finished in 0.306 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-9f6e0ccfe804c71055ea.sh 0.0%
+  INFO Uploading /tmp/git-ssh-9f6e0ccfe804c71055ea.sh 100.0%
+  INFO [da6e60b1] Running /usr/bin/env chmod 700 /tmp/git-ssh-9f6e0ccfe804c71055ea.sh as WTKUI@54.168.213.106
+ DEBUG [da6e60b1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-9f6e0ccfe804c71055ea.sh )
+  INFO [da6e60b1] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [03aa734d] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [03aa734d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-9f6e0ccfe804c71055ea.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [03aa734d] 	82cbbe84cd63c3ab437155292e7527b3dd82f9c9	HEAD
+  INFO [03aa734d] Finished in 1.861 seconds with exit status 0 (successful).
+  INFO [40b518db] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [40b518db] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+ DEBUG [40b518db] 	mkdir: 
+ DEBUG [40b518db] 	ディレクトリ `/var/www/eat_project/shared' を作成できません
+ DEBUG [40b518db] 	: Permission denied
+ DEBUG [40b518db] 	
+ DEBUG [40b518db] 	mkdir: 
+ DEBUG [40b518db] 	ディレクトリ `/var/www/eat_project/releases' を作成できません
+ DEBUG [40b518db] 	: Permission denied
+ DEBUG [40b518db] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 20:35:19 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [019170c8] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [019170c8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [019170c8] Finished in 0.416 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-a41ee997953217962264.sh 0.0%
+  INFO Uploading /tmp/git-ssh-a41ee997953217962264.sh 100.0%
+  INFO [391575df] Running /usr/bin/env chmod 700 /tmp/git-ssh-a41ee997953217962264.sh as WTKUI@54.168.213.106
+ DEBUG [391575df] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-a41ee997953217962264.sh )
+  INFO [391575df] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [b6ebe797] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [b6ebe797] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a41ee997953217962264.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [b6ebe797] 	82cbbe84cd63c3ab437155292e7527b3dd82f9c9	HEAD
+  INFO [b6ebe797] Finished in 2.043 seconds with exit status 0 (successful).
+  INFO [c03334b8] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [c03334b8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+ DEBUG [c03334b8] 	mkdir: 
+ DEBUG [c03334b8] 	ディレクトリ `/var/www/eat_project/shared' を作成できません
+ DEBUG [c03334b8] 	: Permission denied
+ DEBUG [c03334b8] 	
+ DEBUG [c03334b8] 	mkdir: 
+ DEBUG [c03334b8] 	ディレクトリ `/var/www/eat_project/releases' を作成できません
+ DEBUG [c03334b8] 	: Permission denied
+ DEBUG [c03334b8] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 21:12:22 +0900 cap production deploy BRANCH=HEAD
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [5f090454] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [5f090454] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [5f090454] Finished in 0.312 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-7fb2d183df93f6ab84b7.sh 0.0%
+  INFO Uploading /tmp/git-ssh-7fb2d183df93f6ab84b7.sh 100.0%
+  INFO [79e68e9d] Running /usr/bin/env chmod 700 /tmp/git-ssh-7fb2d183df93f6ab84b7.sh as WTKUI@54.168.213.106
+ DEBUG [79e68e9d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-7fb2d183df93f6ab84b7.sh )
+  INFO [79e68e9d] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [6ccca2c6] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [6ccca2c6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7fb2d183df93f6ab84b7.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [6ccca2c6] 	82cbbe84cd63c3ab437155292e7527b3dd82f9c9	HEAD
+  INFO [6ccca2c6] Finished in 1.843 seconds with exit status 0 (successful).
+  INFO [1dfc56e8] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [1dfc56e8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+ DEBUG [1dfc56e8] 	mkdir: 
+ DEBUG [1dfc56e8] 	ディレクトリ `/var/www/eat_project/shared' を作成できません
+ DEBUG [1dfc56e8] 	: Permission denied
+ DEBUG [1dfc56e8] 	
+ DEBUG [1dfc56e8] 	mkdir: 
+ DEBUG [1dfc56e8] 	ディレクトリ `/var/www/eat_project/releases' を作成できません
+ DEBUG [1dfc56e8] 	: Permission denied
+ DEBUG [1dfc56e8] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 21:14:42 +0900 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG Uploading /var/www/eat_project/shared/puma.rb 0.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 21:16:43 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [05971db9] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [05971db9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [05971db9] Finished in 0.300 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ee02bb5f9bdf8054a534.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ee02bb5f9bdf8054a534.sh 100.0%
+  INFO [d676de11] Running /usr/bin/env chmod 700 /tmp/git-ssh-ee02bb5f9bdf8054a534.sh as WTKUI@54.168.213.106
+ DEBUG [d676de11] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-ee02bb5f9bdf8054a534.sh )
+  INFO [d676de11] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [a2108194] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [a2108194] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ee02bb5f9bdf8054a534.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [a2108194] 	82cbbe84cd63c3ab437155292e7527b3dd82f9c9	HEAD
+  INFO [a2108194] Finished in 1.991 seconds with exit status 0 (successful).
+  INFO [f45f6230] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [f45f6230] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+  INFO [f45f6230] Finished in 0.115 seconds with exit status 0 (successful).
+  INFO [ca3d4b1b] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets as WTKUI@54.168.213.106
+ DEBUG [ca3d4b1b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets )
+  INFO [ca3d4b1b] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [706b9b58] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/config as WTKUI@54.168.213.106
+ DEBUG [706b9b58] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/config )
+  INFO [706b9b58] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [4114ed80] Running [ -f /var/www/eat_project/shared/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [4114ed80] Command: [ -f /var/www/eat_project/shared/config/master.key ]
+ DEBUG [4114ed80] Finished in 0.053 seconds with exit status 1 (failed).
+ ERROR linked file /var/www/eat_project/shared/config/master.key does not exist on 54.168.213.106
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 21:18:37 +0900 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG Uploading /var/www/eat_project/shared/puma.rb 0.0%
+  INFO Uploading /var/www/eat_project/shared/puma.rb 100.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 21:18:43 +0900 cap production puma:systemd:config puma:systemd:enable
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG [c0170769] Running /usr/bin/env echo $HOME/.rbenv/bin/rbenv exec bundle as WTKUI@54.168.213.106
+ DEBUG [c0170769] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env echo $HOME/.rbenv/bin/rbenv exec bundle )
+ DEBUG [c0170769] 	/home/WTKUI/.rbenv/bin/rbenv exec bundle
+ DEBUG [c0170769] Finished in 0.299 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/puma_eat_project_production.service 0.0%
+  INFO Uploading /tmp/puma_eat_project_production.service 100.0%
+  INFO [8390db10] Running /usr/bin/env sudo mv /tmp/puma_eat_project_production.service /etc/systemd/system/ as WTKUI@54.168.213.106
+ DEBUG [8390db10] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env sudo mv /tmp/puma_eat_project_production.service /etc/systemd/system/ )
+  INFO [8390db10] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [861f55fc] Running /usr/bin/env sudo /bin/systemctl daemon-reload as WTKUI@54.168.213.106
+ DEBUG [861f55fc] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env sudo /bin/systemctl daemon-reload )
+  INFO [861f55fc] Finished in 0.215 seconds with exit status 0 (successful).
+  INFO [9683b863] Running /usr/bin/env sudo /bin/systemctl enable puma_eat_project_production as WTKUI@54.168.213.106
+ DEBUG [9683b863] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env sudo /bin/systemctl enable puma_eat_project_production )
+ DEBUG [9683b863] 	Created symlink from /etc/systemd/system/multi-user.target.wants/puma_eat_project_production.service to /etc/systemd/system/puma_eat_project_production.service.
+  INFO [9683b863] Finished in 0.165 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-22 21:21:27 +0900 cap production puma:nginx_config
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG Uploading /tmp/nginx_eat_project.conf 0.0%
+  INFO Uploading /tmp/nginx_eat_project.conf 100.0%
+  INFO [73049e0a] Running /usr/bin/env sudo mv /tmp/nginx_eat_project.conf /etc/nginx/sites-available/eat_project.conf as WTKUI@54.168.213.106
+ DEBUG [73049e0a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env sudo mv /tmp/nginx_eat_project.conf /etc/nginx/sites-available/eat_project.conf )
+  INFO [73049e0a] Finished in 0.118 seconds with exit status 0 (successful).
+  INFO [a2511fb1] Running /usr/bin/env sudo ln -fs /etc/nginx/sites-available/eat_project.conf /etc/nginx/conf.d/eat_project.conf as WTKUI@54.168.213.106
+ DEBUG [a2511fb1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env sudo ln -fs /etc/nginx/sites-available/eat_project.conf /etc/nginx/conf.d/eat_project.conf )
+  INFO [a2511fb1] Finished in 0.069 seconds with exit status 0 (successful).
