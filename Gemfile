@@ -32,9 +32,9 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rails-i18n'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
-gem 'bootstrap', '~> 4.3.1'
+#gem 'bootstrap', '~> 4.3.1'
 gem "actionpack", ">= 6.1.4.1"
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'jquery-rails'
 gem 'image_processing', '~> 1.12'
 gem 'pry-rails'

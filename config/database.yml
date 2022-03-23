@@ -17,6 +17,14 @@ default: &default
   password:
   socket: /tmp/mysql.sock
 
+production:
+  <<: *default
+  
+  database: eat_project_production
+  username: root               
+  password: <%= Rails.application.credentials.db[:password] %>
+  host: <%= Rails.application.credentials.db[:hostname] %>
+
 development:
   <<: *default
   database: eat_project_development
@@ -48,9 +56,3 @@ test:
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
-production:
-  <<: *default
-  database: eat_project_production
-  username: root
-  password: <%= Rails.application.credentials.db[:password] %>
-  host: <%= Rails.application.credentials.db[:hostname] %>
