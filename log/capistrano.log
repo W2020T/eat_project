@@ -659,3 +659,2113 @@ An error occurred while installing mysql2 (0.5.3), and Bundler cannot continue.
 
 In Gemfile:
   mysql2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-23 16:50:38 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [bc4b3f34] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [bc4b3f34] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [bc4b3f34] Finished in 0.306 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-57d1208a59cd2df3befa.sh 0.0%
+  INFO Uploading /tmp/git-ssh-57d1208a59cd2df3befa.sh 100.0%
+  INFO [48ee5a8d] Running /usr/bin/env chmod 700 /tmp/git-ssh-57d1208a59cd2df3befa.sh as WTKUI@54.168.213.106
+ DEBUG [48ee5a8d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-57d1208a59cd2df3befa.sh )
+  INFO [48ee5a8d] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [b089bfaa] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [b089bfaa] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-57d1208a59cd2df3befa.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [b089bfaa] 	e2f96fe98f851cdecc8ec6294affc59d838fda90	HEAD
+  INFO [b089bfaa] Finished in 2.014 seconds with exit status 0 (successful).
+  INFO [f0c8cbb0] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [f0c8cbb0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+  INFO [f0c8cbb0] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [6e4e7ae8] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets as WTKUI@54.168.213.106
+ DEBUG [6e4e7ae8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets )
+  INFO [6e4e7ae8] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [f3966d04] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/config as WTKUI@54.168.213.106
+ DEBUG [f3966d04] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/config )
+  INFO [f3966d04] Finished in 0.103 seconds with exit status 0 (successful).
+ DEBUG [4c8750af] Running [ -f /var/www/eat_project/shared/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [4c8750af] Command: [ -f /var/www/eat_project/shared/config/master.key ]
+ DEBUG [4c8750af] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [0dfbe2f0] Running [ -f /var/www/eat_project/shared/puma.rb ] as WTKUI@54.168.213.106
+ DEBUG [0dfbe2f0] Command: [ -f /var/www/eat_project/shared/puma.rb ]
+ DEBUG [0dfbe2f0] Finished in 0.085 seconds with exit status 0 (successful).
+ DEBUG [5d1f4829] Running [ -f /var/www/eat_project/current/REVISION ] as WTKUI@54.168.213.106
+ DEBUG [5d1f4829] Command: [ -f /var/www/eat_project/current/REVISION ]
+ DEBUG [5d1f4829] Finished in 0.052 seconds with exit status 1 (failed).
+ DEBUG [d97dadc8] Running [ -f /var/www/eat_project/repo/HEAD ] as WTKUI@54.168.213.106
+ DEBUG [d97dadc8] Command: [ -f /var/www/eat_project/repo/HEAD ]
+ DEBUG [d97dadc8] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/eat_project/repo
+ DEBUG [0f4299d5] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [0f4299d5] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [0f4299d5] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [1fbee216] Running /usr/bin/env git remote set-url origin git@github.com:W2020T/eat_project.git as WTKUI@54.168.213.106
+ DEBUG [1fbee216] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-57d1208a59cd2df3befa.sh" ; /usr/bin/env git remote set-url origin git@github.com:W2020T/eat_project.git )
+  INFO [1fbee216] Finished in 0.103 seconds with exit status 0 (successful).
+  INFO [fa3d3fe0] Running /usr/bin/env git remote update --prune as WTKUI@54.168.213.106
+ DEBUG [fa3d3fe0] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-57d1208a59cd2df3befa.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [fa3d3fe0] 	Fetching origin
+ DEBUG [fa3d3fe0] 	From github.com:W2020T/eat_project
+   0df04394a..e2f96fe98  main       -> main
+  INFO [fa3d3fe0] Finished in 6.145 seconds with exit status 0 (successful).
+ DEBUG [f1654cd4] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [f1654cd4] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [f1654cd4] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [5d8f8653] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323075041 as WTKUI@54.168.213.106
+ DEBUG [5d8f8653] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-57d1208a59cd2df3befa.sh" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323075041 )
+  INFO [5d8f8653] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [1796e8f3] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/eat_project/releases/20220323075041 as WTKUI@54.168.213.106
+ DEBUG [1796e8f3] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-57d1208a59cd2df3befa.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/eat_project/releases/20220323075041 )
+  INFO [1796e8f3] Finished in 8.757 seconds with exit status 0 (successful).
+ DEBUG [cd3b18cc] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [cd3b18cc] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [cd3b18cc] Finished in 0.240 seconds with exit status 0 (successful).
+ DEBUG [cf6579df] Running /usr/bin/env git rev-list --max-count=1 main as WTKUI@54.168.213.106
+ DEBUG [cf6579df] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-57d1208a59cd2df3befa.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [cf6579df] 	e2f96fe98f851cdecc8ec6294affc59d838fda90
+ DEBUG [cf6579df] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG [27ec7558] Running if test ! -d /var/www/eat_project/releases/20220323075041; then echo "Directory does not exist '/var/www/eat_project/releases/20220323075041'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [27ec7558] Command: if test ! -d /var/www/eat_project/releases/20220323075041; then echo "Directory does not exist '/var/www/eat_project/releases/20220323075041'" 1>&2; false; fi
+ DEBUG [27ec7558] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [02271bb8] Running /usr/bin/env echo "e2f96fe98f851cdecc8ec6294affc59d838fda90" > REVISION as WTKUI@54.168.213.106
+ DEBUG [02271bb8] Command: cd /var/www/eat_project/releases/20220323075041 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env echo "e2f96fe98f851cdecc8ec6294affc59d838fda90" > REVISION )
+  INFO [02271bb8] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [289ff94c] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323075041/config as WTKUI@54.168.213.106
+ DEBUG [289ff94c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323075041/config )
+  INFO [289ff94c] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [f4c395ff] Running [ -L /var/www/eat_project/releases/20220323075041/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [f4c395ff] Command: [ -L /var/www/eat_project/releases/20220323075041/config/master.key ]
+ DEBUG [f4c395ff] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [b4af27d1] Running [ -f /var/www/eat_project/releases/20220323075041/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [b4af27d1] Command: [ -f /var/www/eat_project/releases/20220323075041/config/master.key ]
+ DEBUG [b4af27d1] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [ed645e8e] Running /usr/bin/env rm /var/www/eat_project/releases/20220323075041/config/master.key as WTKUI@54.168.213.106
+ DEBUG [ed645e8e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm /var/www/eat_project/releases/20220323075041/config/master.key )
+  INFO [ed645e8e] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [b6681406] Running /usr/bin/env ln -s /var/www/eat_project/shared/config/master.key /var/www/eat_project/releases/20220323075041/config/master.key as WTKUI@54.168.213.106
+ DEBUG [b6681406] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/config/master.key /var/www/eat_project/releases/20220323075041/config/master.key )
+  INFO [b6681406] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [fac41eaa] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323075041 /var/www/eat_project/releases/20220323075041/tmp /var/www/eat_project/releases/20220323075041/public as WTKUI@54.168.213.106
+ DEBUG [fac41eaa] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323075041 /var/www/eat_project/releases/20220323075041/tmp /var/www/eat_project/releases/20220323075041/public )
+  INFO [fac41eaa] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [0044e3fa] Running [ -L /var/www/eat_project/releases/20220323075041/log ] as WTKUI@54.168.213.106
+ DEBUG [0044e3fa] Command: [ -L /var/www/eat_project/releases/20220323075041/log ]
+ DEBUG [0044e3fa] Finished in 0.054 seconds with exit status 1 (failed).
+ DEBUG [232b8606] Running [ -d /var/www/eat_project/releases/20220323075041/log ] as WTKUI@54.168.213.106
+ DEBUG [232b8606] Command: [ -d /var/www/eat_project/releases/20220323075041/log ]
+ DEBUG [232b8606] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [894366c4] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075041/log as WTKUI@54.168.213.106
+ DEBUG [894366c4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075041/log )
+  INFO [894366c4] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [75ecb789] Running /usr/bin/env ln -s /var/www/eat_project/shared/log /var/www/eat_project/releases/20220323075041/log as WTKUI@54.168.213.106
+ DEBUG [75ecb789] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/log /var/www/eat_project/releases/20220323075041/log )
+  INFO [75ecb789] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [5f568113] Running [ -L /var/www/eat_project/releases/20220323075041/tmp/pids ] as WTKUI@54.168.213.106
+ DEBUG [5f568113] Command: [ -L /var/www/eat_project/releases/20220323075041/tmp/pids ]
+ DEBUG [5f568113] Finished in 0.122 seconds with exit status 1 (failed).
+ DEBUG [015eddbb] Running [ -d /var/www/eat_project/releases/20220323075041/tmp/pids ] as WTKUI@54.168.213.106
+ DEBUG [015eddbb] Command: [ -d /var/www/eat_project/releases/20220323075041/tmp/pids ]
+ DEBUG [015eddbb] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [8baf6cc7] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075041/tmp/pids as WTKUI@54.168.213.106
+ DEBUG [8baf6cc7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075041/tmp/pids )
+  INFO [8baf6cc7] Finished in 0.316 seconds with exit status 0 (successful).
+  INFO [1389818c] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/pids /var/www/eat_project/releases/20220323075041/tmp/pids as WTKUI@54.168.213.106
+ DEBUG [1389818c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/pids /var/www/eat_project/releases/20220323075041/tmp/pids )
+  INFO [1389818c] Finished in 0.208 seconds with exit status 0 (successful).
+ DEBUG [a675b7c6] Running [ -L /var/www/eat_project/releases/20220323075041/tmp/cache ] as WTKUI@54.168.213.106
+ DEBUG [a675b7c6] Command: [ -L /var/www/eat_project/releases/20220323075041/tmp/cache ]
+ DEBUG [a675b7c6] Finished in 0.118 seconds with exit status 1 (failed).
+ DEBUG [1f904c08] Running [ -d /var/www/eat_project/releases/20220323075041/tmp/cache ] as WTKUI@54.168.213.106
+ DEBUG [1f904c08] Command: [ -d /var/www/eat_project/releases/20220323075041/tmp/cache ]
+ DEBUG [1f904c08] Finished in 0.107 seconds with exit status 0 (successful).
+  INFO [0cfe675e] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075041/tmp/cache as WTKUI@54.168.213.106
+ DEBUG [0cfe675e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075041/tmp/cache )
+  INFO [0cfe675e] Finished in 0.534 seconds with exit status 0 (successful).
+  INFO [bd06edd1] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/cache /var/www/eat_project/releases/20220323075041/tmp/cache as WTKUI@54.168.213.106
+ DEBUG [bd06edd1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/cache /var/www/eat_project/releases/20220323075041/tmp/cache )
+  INFO [bd06edd1] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [96511e7c] Running [ -L /var/www/eat_project/releases/20220323075041/tmp/sockets ] as WTKUI@54.168.213.106
+ DEBUG [96511e7c] Command: [ -L /var/www/eat_project/releases/20220323075041/tmp/sockets ]
+ DEBUG [96511e7c] Finished in 0.053 seconds with exit status 1 (failed).
+ DEBUG [d53ab0c6] Running [ -d /var/www/eat_project/releases/20220323075041/tmp/sockets ] as WTKUI@54.168.213.106
+ DEBUG [d53ab0c6] Command: [ -d /var/www/eat_project/releases/20220323075041/tmp/sockets ]
+ DEBUG [d53ab0c6] Finished in 0.095 seconds with exit status 1 (failed).
+  INFO [fd4d8024] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/releases/20220323075041/tmp/sockets as WTKUI@54.168.213.106
+ DEBUG [fd4d8024] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/releases/20220323075041/tmp/sockets )
+  INFO [fd4d8024] Finished in 0.052 seconds with exit status 0 (successful).
+ DEBUG [0dfa4f2d] Running [ -L /var/www/eat_project/releases/20220323075041/node_modules ] as WTKUI@54.168.213.106
+ DEBUG [0dfa4f2d] Command: [ -L /var/www/eat_project/releases/20220323075041/node_modules ]
+ DEBUG [0dfa4f2d] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [c5eb92b3] Running [ -d /var/www/eat_project/releases/20220323075041/node_modules ] as WTKUI@54.168.213.106
+ DEBUG [c5eb92b3] Command: [ -d /var/www/eat_project/releases/20220323075041/node_modules ]
+ DEBUG [c5eb92b3] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [8aeeab4a] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075041/node_modules as WTKUI@54.168.213.106
+ DEBUG [8aeeab4a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075041/node_modules )
+  INFO [8aeeab4a] Finished in 0.113 seconds with exit status 0 (successful).
+  INFO [2ec62ff0] Running /usr/bin/env ln -s /var/www/eat_project/shared/node_modules /var/www/eat_project/releases/20220323075041/node_modules as WTKUI@54.168.213.106
+ DEBUG [2ec62ff0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/node_modules /var/www/eat_project/releases/20220323075041/node_modules )
+  INFO [2ec62ff0] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [f1965c06] Running [ -L /var/www/eat_project/releases/20220323075041/public/assets ] as WTKUI@54.168.213.106
+ DEBUG [f1965c06] Command: [ -L /var/www/eat_project/releases/20220323075041/public/assets ]
+ DEBUG [f1965c06] Finished in 0.095 seconds with exit status 1 (failed).
+ DEBUG [cd08f766] Running [ -d /var/www/eat_project/releases/20220323075041/public/assets ] as WTKUI@54.168.213.106
+ DEBUG [cd08f766] Command: [ -d /var/www/eat_project/releases/20220323075041/public/assets ]
+ DEBUG [cd08f766] Finished in 0.052 seconds with exit status 1 (failed).
+  INFO [ca77afc4] Running /usr/bin/env ln -s /var/www/eat_project/shared/public/assets /var/www/eat_project/releases/20220323075041/public/assets as WTKUI@54.168.213.106
+ DEBUG [ca77afc4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/public/assets /var/www/eat_project/releases/20220323075041/public/assets )
+  INFO [ca77afc4] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [4ea5dc99] Running if test ! -d /var/www/eat_project/releases/20220323075041; then echo "Directory does not exist '/var/www/eat_project/releases/20220323075041'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [4ea5dc99] Command: if test ! -d /var/www/eat_project/releases/20220323075041; then echo "Directory does not exist '/var/www/eat_project/releases/20220323075041'" 1>&2; false; fi
+ DEBUG [4ea5dc99] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [697bc4e1] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as WTKUI@54.168.213.106
+ DEBUG [697bc4e1] Command: cd /var/www/eat_project/releases/20220323075041 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [697bc4e1] Finished in 0.465 seconds with exit status 0 (successful).
+  INFO [9735df1d] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/eat_project/shared/bundle as WTKUI@54.168.213.106
+ DEBUG [9735df1d] Command: cd /var/www/eat_project/releases/20220323075041 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/eat_project/shared/bundle )
+  INFO [9735df1d] Finished in 0.301 seconds with exit status 0 (successful).
+  INFO [608b432a] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as WTKUI@54.168.213.106
+ DEBUG [608b432a] Command: cd /var/www/eat_project/releases/20220323075041 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [608b432a] Finished in 0.322 seconds with exit status 0 (successful).
+ DEBUG [eb47900f] Running if test ! -d /var/www/eat_project/releases/20220323075041; then echo "Directory does not exist '/var/www/eat_project/releases/20220323075041'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [eb47900f] Command: if test ! -d /var/www/eat_project/releases/20220323075041; then echo "Directory does not exist '/var/www/eat_project/releases/20220323075041'" 1>&2; false; fi
+ DEBUG [eb47900f] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG [a7a3ddac] Running $HOME/.rbenv/bin/rbenv exec bundle check as WTKUI@54.168.213.106
+ DEBUG [a7a3ddac] Command: cd /var/www/eat_project/releases/20220323075041 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [a7a3ddac] 	The following gems are missing
+ DEBUG [a7a3ddac] 	 * rails (6.1.5)
+ DEBUG [a7a3ddac] 	 * mysql2 (0.5.3)
+ DEBUG [a7a3ddac] 	 * bcrypt (3.1.17)
+ DEBUG [a7a3ddac] 	 * rails-i18n (7.0.3)
+ DEBUG [a7a3ddac] 	 * bootsnap (1.11.1)
+ DEBUG [a7a3ddac] 	 * actionpack (6.1.5)
+ DEBUG [a7a3ddac] 	 * actioncable (6.1.5)
+ DEBUG [a7a3ddac] 	 * actionmailbox (6.1.5)
+ DEBUG [a7a3ddac] 	 * actionmailer (6.1.5)
+ DEBUG [a7a3ddac] 	 * actiontext (6.1.5)
+ DEBUG [a7a3ddac] 	 * actionview (6.1.5)
+ DEBUG [a7a3ddac] 	 * activejob (6.1.5)
+ DEBUG [a7a3ddac] 	 * activemodel (6.1.5)
+ DEBUG [a7a3ddac] 	 * activerecord (6.1.5)
+ DEBUG [a7a3ddac] 	 * activestorage (6.1.5)
+ DEBUG [a7a3ddac] 	 * activesupport (6.1.5)
+ DEBUG [a7a3ddac] 	 * railties (6.1.5)
+ DEBUG [a7a3ddac] 	 * concurrent-ruby (1.1.10)
+ DEBUG [a7a3ddac] 	 * sprockets (4.0.3)
+ DEBUG [a7a3ddac] 	 * loofah (2.15.0)
+ DEBUG [a7a3ddac] 	Install missing gems with `bundle install`
+ DEBUG [a7a3ddac] Finished in 0.521 seconds with exit status 1 (failed).
+  INFO [1e17965a] Running $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet as WTKUI@54.168.213.106
+ DEBUG [1e17965a] Command: cd /var/www/eat_project/releases/20220323075041 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet )
+ DEBUG [1e17965a] 	Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/var/www/eat_project/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/ext/mysql2
+/home/WTKUI/.rbenv/versions/2.6.5/bin/ruby -I
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0 -r
+./siteconf20220323-11386-myswk9.rb extconf.rb
+checking for rb_absint_size()... yes
+checking for rb_absint_singlebit_p()... yes
+checking for rb_wait_for_single_fd()... yes
+checking for -lmysqlclient... no
+-----
+mysql client is missing. You may need to 'sudo apt-get install libmariadb-dev',
+'sudo apt-get install libmysqlclient-dev' or 'sudo yum install mysql-devel', and
+try again.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/home/WTKUI/.rbenv/versions/2.6.5/bin/$(RUBY_BASE_NAME)
+	--with-mysql-dir
+	--without-mysql-dir
+	--with-mysql-include
+	--without-mysql-include=${mysql-dir}/include
+	--with-mysql-lib
+	--without-mysql-lib=${mysql-dir}/lib
+	--with-mysql-config
+	--without-mysql-config
+	--with-mysql-dir
+	--without-mysql-dir
+	--with-mysql-include
+	--without-mysql-include=${mysql-dir}/include
+	--with-mysql-lib
+	--without-mysql-lib=${mysql-dir}/lib
+	--with-mysqlclientlib
+	--without-mysqlclientlib
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/var/www/eat_project/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/var/www/eat_project/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3 for inspection.
+Results logged to
+/var/www/eat_project/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/gem_make.out
+
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:99:in
+`run'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:47:in
+`block in build'
+  /home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/tempfile.rb:295:in `open'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:29:in
+`build'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:185:in
+`block in build_extension'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in
+`mon_synchronize'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:181:in
+`build_extension'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:229:in
+`block in build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`each'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/installer.rb:830:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/rubygems_gem_installer.rb:71:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/rubygems_gem_installer.rb:28:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/source/rubygems.rb:204:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/parallel_installer.rb:186:in
+`do_install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/parallel_installer.rb:177:in
+`block in worker_pool'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:62:in
+`apply_func'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:54:in
+`loop'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:54:in
+`process_queue'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:91:in
+`block (2 levels) in create_threads'
+
+An error occurred while installing mysql2 (0.5.3), and Bundler cannot continue.
+
+In Gemfile:
+  mysql2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-23 16:55:33 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [4484d4f5] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [4484d4f5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [4484d4f5] Finished in 0.300 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-f04e9cd231bd3d48fe42.sh 0.0%
+  INFO Uploading /tmp/git-ssh-f04e9cd231bd3d48fe42.sh 100.0%
+  INFO [71c3c1ff] Running /usr/bin/env chmod 700 /tmp/git-ssh-f04e9cd231bd3d48fe42.sh as WTKUI@54.168.213.106
+ DEBUG [71c3c1ff] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-f04e9cd231bd3d48fe42.sh )
+  INFO [71c3c1ff] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [fea541a5] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [fea541a5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f04e9cd231bd3d48fe42.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [fea541a5] 	e2f96fe98f851cdecc8ec6294affc59d838fda90	HEAD
+  INFO [fea541a5] Finished in 1.914 seconds with exit status 0 (successful).
+  INFO [127ab077] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [127ab077] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+  INFO [127ab077] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [df489834] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets as WTKUI@54.168.213.106
+ DEBUG [df489834] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets )
+  INFO [df489834] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [ac6f4eb4] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/config as WTKUI@54.168.213.106
+ DEBUG [ac6f4eb4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/config )
+  INFO [ac6f4eb4] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [848929bf] Running [ -f /var/www/eat_project/shared/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [848929bf] Command: [ -f /var/www/eat_project/shared/config/master.key ]
+ DEBUG [848929bf] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [0c4c93a9] Running [ -f /var/www/eat_project/shared/puma.rb ] as WTKUI@54.168.213.106
+ DEBUG [0c4c93a9] Command: [ -f /var/www/eat_project/shared/puma.rb ]
+ DEBUG [0c4c93a9] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [1e6fc1b5] Running [ -f /var/www/eat_project/current/REVISION ] as WTKUI@54.168.213.106
+ DEBUG [1e6fc1b5] Command: [ -f /var/www/eat_project/current/REVISION ]
+ DEBUG [1e6fc1b5] Finished in 0.048 seconds with exit status 1 (failed).
+ DEBUG [ed06b5d6] Running [ -f /var/www/eat_project/repo/HEAD ] as WTKUI@54.168.213.106
+ DEBUG [ed06b5d6] Command: [ -f /var/www/eat_project/repo/HEAD ]
+ DEBUG [ed06b5d6] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/eat_project/repo
+ DEBUG [0ed674b0] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [0ed674b0] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [0ed674b0] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [cffb06a9] Running /usr/bin/env git remote set-url origin git@github.com:W2020T/eat_project.git as WTKUI@54.168.213.106
+ DEBUG [cffb06a9] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f04e9cd231bd3d48fe42.sh" ; /usr/bin/env git remote set-url origin git@github.com:W2020T/eat_project.git )
+  INFO [cffb06a9] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [ce361e2e] Running /usr/bin/env git remote update --prune as WTKUI@54.168.213.106
+ DEBUG [ce361e2e] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f04e9cd231bd3d48fe42.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ce361e2e] 	Fetching origin
+  INFO [ce361e2e] Finished in 1.792 seconds with exit status 0 (successful).
+ DEBUG [0ca2a19f] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [0ca2a19f] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [0ca2a19f] Finished in 0.108 seconds with exit status 0 (successful).
+  INFO [00024cb8] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323075536 as WTKUI@54.168.213.106
+ DEBUG [00024cb8] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f04e9cd231bd3d48fe42.sh" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323075536 )
+  INFO [00024cb8] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [08e734a7] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/eat_project/releases/20220323075536 as WTKUI@54.168.213.106
+ DEBUG [08e734a7] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f04e9cd231bd3d48fe42.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/eat_project/releases/20220323075536 )
+  INFO [08e734a7] Finished in 8.724 seconds with exit status 0 (successful).
+ DEBUG [4aae88fb] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [4aae88fb] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [4aae88fb] Finished in 0.071 seconds with exit status 0 (successful).
+ DEBUG [d1333733] Running /usr/bin/env git rev-list --max-count=1 main as WTKUI@54.168.213.106
+ DEBUG [d1333733] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-f04e9cd231bd3d48fe42.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [d1333733] 	e2f96fe98f851cdecc8ec6294affc59d838fda90
+ DEBUG [d1333733] Finished in 0.129 seconds with exit status 0 (successful).
+ DEBUG [178172c7] Running if test ! -d /var/www/eat_project/releases/20220323075536; then echo "Directory does not exist '/var/www/eat_project/releases/20220323075536'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [178172c7] Command: if test ! -d /var/www/eat_project/releases/20220323075536; then echo "Directory does not exist '/var/www/eat_project/releases/20220323075536'" 1>&2; false; fi
+ DEBUG [178172c7] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [34061f95] Running /usr/bin/env echo "e2f96fe98f851cdecc8ec6294affc59d838fda90" > REVISION as WTKUI@54.168.213.106
+ DEBUG [34061f95] Command: cd /var/www/eat_project/releases/20220323075536 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env echo "e2f96fe98f851cdecc8ec6294affc59d838fda90" > REVISION )
+  INFO [34061f95] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [4d77385d] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323075536/config as WTKUI@54.168.213.106
+ DEBUG [4d77385d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323075536/config )
+  INFO [4d77385d] Finished in 0.203 seconds with exit status 0 (successful).
+ DEBUG [7e484fdd] Running [ -L /var/www/eat_project/releases/20220323075536/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [7e484fdd] Command: [ -L /var/www/eat_project/releases/20220323075536/config/master.key ]
+ DEBUG [7e484fdd] Finished in 0.095 seconds with exit status 1 (failed).
+ DEBUG [74968187] Running [ -f /var/www/eat_project/releases/20220323075536/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [74968187] Command: [ -f /var/www/eat_project/releases/20220323075536/config/master.key ]
+ DEBUG [74968187] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [64e2e711] Running /usr/bin/env rm /var/www/eat_project/releases/20220323075536/config/master.key as WTKUI@54.168.213.106
+ DEBUG [64e2e711] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm /var/www/eat_project/releases/20220323075536/config/master.key )
+  INFO [64e2e711] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [47f40b94] Running /usr/bin/env ln -s /var/www/eat_project/shared/config/master.key /var/www/eat_project/releases/20220323075536/config/master.key as WTKUI@54.168.213.106
+ DEBUG [47f40b94] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/config/master.key /var/www/eat_project/releases/20220323075536/config/master.key )
+  INFO [47f40b94] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [75f06d8d] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323075536 /var/www/eat_project/releases/20220323075536/tmp /var/www/eat_project/releases/20220323075536/public as WTKUI@54.168.213.106
+ DEBUG [75f06d8d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323075536 /var/www/eat_project/releases/20220323075536/tmp /var/www/eat_project/releases/20220323075536/public )
+  INFO [75f06d8d] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [917713ff] Running [ -L /var/www/eat_project/releases/20220323075536/log ] as WTKUI@54.168.213.106
+ DEBUG [917713ff] Command: [ -L /var/www/eat_project/releases/20220323075536/log ]
+ DEBUG [917713ff] Finished in 0.075 seconds with exit status 1 (failed).
+ DEBUG [1e1d497f] Running [ -d /var/www/eat_project/releases/20220323075536/log ] as WTKUI@54.168.213.106
+ DEBUG [1e1d497f] Command: [ -d /var/www/eat_project/releases/20220323075536/log ]
+ DEBUG [1e1d497f] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [fbd19160] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075536/log as WTKUI@54.168.213.106
+ DEBUG [fbd19160] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075536/log )
+  INFO [fbd19160] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [ec6417b4] Running /usr/bin/env ln -s /var/www/eat_project/shared/log /var/www/eat_project/releases/20220323075536/log as WTKUI@54.168.213.106
+ DEBUG [ec6417b4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/log /var/www/eat_project/releases/20220323075536/log )
+  INFO [ec6417b4] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [02dc8c37] Running [ -L /var/www/eat_project/releases/20220323075536/tmp/pids ] as WTKUI@54.168.213.106
+ DEBUG [02dc8c37] Command: [ -L /var/www/eat_project/releases/20220323075536/tmp/pids ]
+ DEBUG [02dc8c37] Finished in 0.058 seconds with exit status 1 (failed).
+ DEBUG [02655141] Running [ -d /var/www/eat_project/releases/20220323075536/tmp/pids ] as WTKUI@54.168.213.106
+ DEBUG [02655141] Command: [ -d /var/www/eat_project/releases/20220323075536/tmp/pids ]
+ DEBUG [02655141] Finished in 0.108 seconds with exit status 0 (successful).
+  INFO [b33467cf] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075536/tmp/pids as WTKUI@54.168.213.106
+ DEBUG [b33467cf] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075536/tmp/pids )
+  INFO [b33467cf] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [5cfff5ea] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/pids /var/www/eat_project/releases/20220323075536/tmp/pids as WTKUI@54.168.213.106
+ DEBUG [5cfff5ea] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/pids /var/www/eat_project/releases/20220323075536/tmp/pids )
+  INFO [5cfff5ea] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG [9c8323a4] Running [ -L /var/www/eat_project/releases/20220323075536/tmp/cache ] as WTKUI@54.168.213.106
+ DEBUG [9c8323a4] Command: [ -L /var/www/eat_project/releases/20220323075536/tmp/cache ]
+ DEBUG [9c8323a4] Finished in 0.129 seconds with exit status 1 (failed).
+ DEBUG [10e39cfa] Running [ -d /var/www/eat_project/releases/20220323075536/tmp/cache ] as WTKUI@54.168.213.106
+ DEBUG [10e39cfa] Command: [ -d /var/www/eat_project/releases/20220323075536/tmp/cache ]
+ DEBUG [10e39cfa] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [c413fcff] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075536/tmp/cache as WTKUI@54.168.213.106
+ DEBUG [c413fcff] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075536/tmp/cache )
+  INFO [c413fcff] Finished in 0.599 seconds with exit status 0 (successful).
+  INFO [1e38efd1] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/cache /var/www/eat_project/releases/20220323075536/tmp/cache as WTKUI@54.168.213.106
+ DEBUG [1e38efd1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/cache /var/www/eat_project/releases/20220323075536/tmp/cache )
+  INFO [1e38efd1] Finished in 0.052 seconds with exit status 0 (successful).
+ DEBUG [8d1e297e] Running [ -L /var/www/eat_project/releases/20220323075536/tmp/sockets ] as WTKUI@54.168.213.106
+ DEBUG [8d1e297e] Command: [ -L /var/www/eat_project/releases/20220323075536/tmp/sockets ]
+ DEBUG [8d1e297e] Finished in 0.108 seconds with exit status 1 (failed).
+ DEBUG [8dedca8f] Running [ -d /var/www/eat_project/releases/20220323075536/tmp/sockets ] as WTKUI@54.168.213.106
+ DEBUG [8dedca8f] Command: [ -d /var/www/eat_project/releases/20220323075536/tmp/sockets ]
+ DEBUG [8dedca8f] Finished in 0.051 seconds with exit status 1 (failed).
+  INFO [8a47cfb2] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/releases/20220323075536/tmp/sockets as WTKUI@54.168.213.106
+ DEBUG [8a47cfb2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/releases/20220323075536/tmp/sockets )
+  INFO [8a47cfb2] Finished in 0.092 seconds with exit status 0 (successful).
+ DEBUG [5fe78ea3] Running [ -L /var/www/eat_project/releases/20220323075536/node_modules ] as WTKUI@54.168.213.106
+ DEBUG [5fe78ea3] Command: [ -L /var/www/eat_project/releases/20220323075536/node_modules ]
+ DEBUG [5fe78ea3] Finished in 0.052 seconds with exit status 1 (failed).
+ DEBUG [b16c232a] Running [ -d /var/www/eat_project/releases/20220323075536/node_modules ] as WTKUI@54.168.213.106
+ DEBUG [b16c232a] Command: [ -d /var/www/eat_project/releases/20220323075536/node_modules ]
+ DEBUG [b16c232a] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [9513ef82] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075536/node_modules as WTKUI@54.168.213.106
+ DEBUG [9513ef82] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323075536/node_modules )
+  INFO [9513ef82] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO [cd61db93] Running /usr/bin/env ln -s /var/www/eat_project/shared/node_modules /var/www/eat_project/releases/20220323075536/node_modules as WTKUI@54.168.213.106
+ DEBUG [cd61db93] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/node_modules /var/www/eat_project/releases/20220323075536/node_modules )
+  INFO [cd61db93] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [3856e879] Running [ -L /var/www/eat_project/releases/20220323075536/public/assets ] as WTKUI@54.168.213.106
+ DEBUG [3856e879] Command: [ -L /var/www/eat_project/releases/20220323075536/public/assets ]
+ DEBUG [3856e879] Finished in 0.075 seconds with exit status 1 (failed).
+ DEBUG [cfd942fd] Running [ -d /var/www/eat_project/releases/20220323075536/public/assets ] as WTKUI@54.168.213.106
+ DEBUG [cfd942fd] Command: [ -d /var/www/eat_project/releases/20220323075536/public/assets ]
+ DEBUG [cfd942fd] Finished in 0.107 seconds with exit status 1 (failed).
+  INFO [887e67c9] Running /usr/bin/env ln -s /var/www/eat_project/shared/public/assets /var/www/eat_project/releases/20220323075536/public/assets as WTKUI@54.168.213.106
+ DEBUG [887e67c9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/public/assets /var/www/eat_project/releases/20220323075536/public/assets )
+  INFO [887e67c9] Finished in 0.061 seconds with exit status 0 (successful).
+ DEBUG [d8cae132] Running if test ! -d /var/www/eat_project/releases/20220323075536; then echo "Directory does not exist '/var/www/eat_project/releases/20220323075536'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [d8cae132] Command: if test ! -d /var/www/eat_project/releases/20220323075536; then echo "Directory does not exist '/var/www/eat_project/releases/20220323075536'" 1>&2; false; fi
+ DEBUG [d8cae132] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [4fa63f4c] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as WTKUI@54.168.213.106
+ DEBUG [4fa63f4c] Command: cd /var/www/eat_project/releases/20220323075536 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [4fa63f4c] Finished in 0.478 seconds with exit status 0 (successful).
+  INFO [e928ecc7] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/eat_project/shared/bundle as WTKUI@54.168.213.106
+ DEBUG [e928ecc7] Command: cd /var/www/eat_project/releases/20220323075536 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/eat_project/shared/bundle )
+  INFO [e928ecc7] Finished in 0.302 seconds with exit status 0 (successful).
+  INFO [a30fc109] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as WTKUI@54.168.213.106
+ DEBUG [a30fc109] Command: cd /var/www/eat_project/releases/20220323075536 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [a30fc109] Finished in 0.245 seconds with exit status 0 (successful).
+ DEBUG [f8991d11] Running if test ! -d /var/www/eat_project/releases/20220323075536; then echo "Directory does not exist '/var/www/eat_project/releases/20220323075536'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [f8991d11] Command: if test ! -d /var/www/eat_project/releases/20220323075536; then echo "Directory does not exist '/var/www/eat_project/releases/20220323075536'" 1>&2; false; fi
+ DEBUG [f8991d11] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [cd406c98] Running $HOME/.rbenv/bin/rbenv exec bundle check as WTKUI@54.168.213.106
+ DEBUG [cd406c98] Command: cd /var/www/eat_project/releases/20220323075536 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [cd406c98] 	The following gems are missing
+ DEBUG [cd406c98] 	 * mysql2 (0.5.3)
+ DEBUG [cd406c98] 	Install missing gems with `bundle install`
+ DEBUG [cd406c98] Finished in 0.579 seconds with exit status 1 (failed).
+  INFO [c1d7088b] Running $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet as WTKUI@54.168.213.106
+ DEBUG [c1d7088b] Command: cd /var/www/eat_project/releases/20220323075536 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet )
+ DEBUG [c1d7088b] 	Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/var/www/eat_project/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/ext/mysql2
+/home/WTKUI/.rbenv/versions/2.6.5/bin/ruby -I
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0 -r
+./siteconf20220323-12224-1hrltcr.rb extconf.rb
+checking for rb_absint_size()... yes
+checking for rb_absint_singlebit_p()... yes
+checking for rb_wait_for_single_fd()... yes
+checking for -lmysqlclient... no
+-----
+mysql client is missing. You may need to 'sudo apt-get install libmariadb-dev',
+'sudo apt-get install libmysqlclient-dev' or 'sudo yum install mysql-devel', and
+try again.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/home/WTKUI/.rbenv/versions/2.6.5/bin/$(RUBY_BASE_NAME)
+	--with-mysql-dir
+	--without-mysql-dir
+	--with-mysql-include
+	--without-mysql-include=${mysql-dir}/include
+	--with-mysql-lib
+	--without-mysql-lib=${mysql-dir}/lib
+	--with-mysql-config
+	--without-mysql-config
+	--with-mysql-dir
+	--without-mysql-dir
+	--with-mysql-include
+	--without-mysql-include=${mysql-dir}/include
+	--with-mysql-lib
+	--without-mysql-lib=${mysql-dir}/lib
+	--with-mysqlclientlib
+	--without-mysqlclientlib
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/var/www/eat_project/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/var/www/eat_project/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3 for inspection.
+Results logged to
+/var/www/eat_project/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/gem_make.out
+
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:99:in
+`run'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:47:in
+`block in build'
+  /home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/tempfile.rb:295:in `open'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:29:in
+`build'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:185:in
+`block in build_extension'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in
+`mon_synchronize'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:181:in
+`build_extension'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:229:in
+`block in build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`each'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/installer.rb:830:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/rubygems_gem_installer.rb:71:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/rubygems_gem_installer.rb:28:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/source/rubygems.rb:204:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/parallel_installer.rb:186:in
+`do_install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/parallel_installer.rb:177:in
+`block in worker_pool'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:62:in
+`apply_func'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:54:in
+`loop'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:54:in
+`process_queue'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:91:in
+`block (2 levels) in create_threads'
+
+An error occurred while installing mysql2 (0.5.3), and Bundler cannot continue.
+
+In Gemfile:
+  mysql2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-23 17:03:54 +0900 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG Uploading /var/www/eat_project/shared/puma.rb 0.0%
+  INFO Uploading /var/www/eat_project/shared/puma.rb 100.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-23 17:04:07 +0900 cap production puma:systemd:config puma:systemd:enable
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG [199c40d3] Running /usr/bin/env echo $HOME/.rbenv/bin/rbenv exec bundle as WTKUI@54.168.213.106
+ DEBUG [199c40d3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env echo $HOME/.rbenv/bin/rbenv exec bundle )
+ DEBUG [199c40d3] 	/home/WTKUI/.rbenv/bin/rbenv exec bundle
+ DEBUG [199c40d3] Finished in 0.350 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/puma_eat_project_production.service 0.0%
+  INFO Uploading /tmp/puma_eat_project_production.service 100.0%
+  INFO [dc3f968d] Running /usr/bin/env sudo mv /tmp/puma_eat_project_production.service /etc/systemd/system/ as WTKUI@54.168.213.106
+ DEBUG [dc3f968d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env sudo mv /tmp/puma_eat_project_production.service /etc/systemd/system/ )
+  INFO [dc3f968d] Finished in 0.078 seconds with exit status 0 (successful).
+  INFO [1aa4a8b0] Running /usr/bin/env sudo /bin/systemctl daemon-reload as WTKUI@54.168.213.106
+ DEBUG [1aa4a8b0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env sudo /bin/systemctl daemon-reload )
+  INFO [1aa4a8b0] Finished in 0.303 seconds with exit status 0 (successful).
+  INFO [3cbe8b53] Running /usr/bin/env sudo /bin/systemctl enable puma_eat_project_production as WTKUI@54.168.213.106
+ DEBUG [3cbe8b53] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env sudo /bin/systemctl enable puma_eat_project_production )
+  INFO [3cbe8b53] Finished in 0.167 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-23 17:04:18 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [edbba313] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [edbba313] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [edbba313] Finished in 0.290 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-e22a9ffbb4a607e1fb02.sh 0.0%
+  INFO Uploading /tmp/git-ssh-e22a9ffbb4a607e1fb02.sh 100.0%
+  INFO [2eaa3a5b] Running /usr/bin/env chmod 700 /tmp/git-ssh-e22a9ffbb4a607e1fb02.sh as WTKUI@54.168.213.106
+ DEBUG [2eaa3a5b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-e22a9ffbb4a607e1fb02.sh )
+  INFO [2eaa3a5b] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [192cea28] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [192cea28] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e22a9ffbb4a607e1fb02.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [192cea28] 	e2f96fe98f851cdecc8ec6294affc59d838fda90	HEAD
+  INFO [192cea28] Finished in 1.871 seconds with exit status 0 (successful).
+  INFO [2e3097f2] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [2e3097f2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+  INFO [2e3097f2] Finished in 0.113 seconds with exit status 0 (successful).
+  INFO [a99f79e0] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets as WTKUI@54.168.213.106
+ DEBUG [a99f79e0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets )
+  INFO [a99f79e0] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [86241350] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/config as WTKUI@54.168.213.106
+ DEBUG [86241350] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/config )
+  INFO [86241350] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [893234fc] Running [ -f /var/www/eat_project/shared/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [893234fc] Command: [ -f /var/www/eat_project/shared/config/master.key ]
+ DEBUG [893234fc] Finished in 0.052 seconds with exit status 0 (successful).
+ DEBUG [73c7d648] Running [ -f /var/www/eat_project/shared/puma.rb ] as WTKUI@54.168.213.106
+ DEBUG [73c7d648] Command: [ -f /var/www/eat_project/shared/puma.rb ]
+ DEBUG [73c7d648] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [0a0eb7de] Running [ -f /var/www/eat_project/current/REVISION ] as WTKUI@54.168.213.106
+ DEBUG [0a0eb7de] Command: [ -f /var/www/eat_project/current/REVISION ]
+ DEBUG [0a0eb7de] Finished in 0.075 seconds with exit status 1 (failed).
+ DEBUG [e2588298] Running [ -f /var/www/eat_project/repo/HEAD ] as WTKUI@54.168.213.106
+ DEBUG [e2588298] Command: [ -f /var/www/eat_project/repo/HEAD ]
+ DEBUG [e2588298] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/eat_project/repo
+ DEBUG [00f55563] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [00f55563] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [00f55563] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [a15baf0d] Running /usr/bin/env git remote set-url origin git@github.com:W2020T/eat_project.git as WTKUI@54.168.213.106
+ DEBUG [a15baf0d] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e22a9ffbb4a607e1fb02.sh" ; /usr/bin/env git remote set-url origin git@github.com:W2020T/eat_project.git )
+  INFO [a15baf0d] Finished in 0.106 seconds with exit status 0 (successful).
+  INFO [e03ab2ea] Running /usr/bin/env git remote update --prune as WTKUI@54.168.213.106
+ DEBUG [e03ab2ea] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e22a9ffbb4a607e1fb02.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [e03ab2ea] 	Fetching origin
+  INFO [e03ab2ea] Finished in 1.800 seconds with exit status 0 (successful).
+ DEBUG [bd89d6ef] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [bd89d6ef] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [bd89d6ef] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [1a302fa8] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323080421 as WTKUI@54.168.213.106
+ DEBUG [1a302fa8] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e22a9ffbb4a607e1fb02.sh" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323080421 )
+  INFO [1a302fa8] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [5c44e7f3] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/eat_project/releases/20220323080421 as WTKUI@54.168.213.106
+ DEBUG [5c44e7f3] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e22a9ffbb4a607e1fb02.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/eat_project/releases/20220323080421 )
+  INFO [5c44e7f3] Finished in 8.829 seconds with exit status 0 (successful).
+ DEBUG [6bbd4a29] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [6bbd4a29] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [6bbd4a29] Finished in 0.072 seconds with exit status 0 (successful).
+ DEBUG [4d33e477] Running /usr/bin/env git rev-list --max-count=1 main as WTKUI@54.168.213.106
+ DEBUG [4d33e477] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e22a9ffbb4a607e1fb02.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [4d33e477] 	e2f96fe98f851cdecc8ec6294affc59d838fda90
+ DEBUG [4d33e477] Finished in 0.125 seconds with exit status 0 (successful).
+ DEBUG [235acf51] Running if test ! -d /var/www/eat_project/releases/20220323080421; then echo "Directory does not exist '/var/www/eat_project/releases/20220323080421'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [235acf51] Command: if test ! -d /var/www/eat_project/releases/20220323080421; then echo "Directory does not exist '/var/www/eat_project/releases/20220323080421'" 1>&2; false; fi
+ DEBUG [235acf51] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [d5be5d0e] Running /usr/bin/env echo "e2f96fe98f851cdecc8ec6294affc59d838fda90" > REVISION as WTKUI@54.168.213.106
+ DEBUG [d5be5d0e] Command: cd /var/www/eat_project/releases/20220323080421 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env echo "e2f96fe98f851cdecc8ec6294affc59d838fda90" > REVISION )
+  INFO [d5be5d0e] Finished in 0.104 seconds with exit status 0 (successful).
+  INFO [49b9ab1c] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323080421/config as WTKUI@54.168.213.106
+ DEBUG [49b9ab1c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323080421/config )
+  INFO [49b9ab1c] Finished in 0.062 seconds with exit status 0 (successful).
+ DEBUG [67478bb3] Running [ -L /var/www/eat_project/releases/20220323080421/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [67478bb3] Command: [ -L /var/www/eat_project/releases/20220323080421/config/master.key ]
+ DEBUG [67478bb3] Finished in 0.103 seconds with exit status 1 (failed).
+ DEBUG [4f3be15d] Running [ -f /var/www/eat_project/releases/20220323080421/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [4f3be15d] Command: [ -f /var/www/eat_project/releases/20220323080421/config/master.key ]
+ DEBUG [4f3be15d] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [7267c547] Running /usr/bin/env rm /var/www/eat_project/releases/20220323080421/config/master.key as WTKUI@54.168.213.106
+ DEBUG [7267c547] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm /var/www/eat_project/releases/20220323080421/config/master.key )
+  INFO [7267c547] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [5b089f6b] Running /usr/bin/env ln -s /var/www/eat_project/shared/config/master.key /var/www/eat_project/releases/20220323080421/config/master.key as WTKUI@54.168.213.106
+ DEBUG [5b089f6b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/config/master.key /var/www/eat_project/releases/20220323080421/config/master.key )
+  INFO [5b089f6b] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [de8dc79a] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323080421 /var/www/eat_project/releases/20220323080421/tmp /var/www/eat_project/releases/20220323080421/public as WTKUI@54.168.213.106
+ DEBUG [de8dc79a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323080421 /var/www/eat_project/releases/20220323080421/tmp /var/www/eat_project/releases/20220323080421/public )
+  INFO [de8dc79a] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG [4d1b812c] Running [ -L /var/www/eat_project/releases/20220323080421/log ] as WTKUI@54.168.213.106
+ DEBUG [4d1b812c] Command: [ -L /var/www/eat_project/releases/20220323080421/log ]
+ DEBUG [4d1b812c] Finished in 0.058 seconds with exit status 1 (failed).
+ DEBUG [2d42d6ac] Running [ -d /var/www/eat_project/releases/20220323080421/log ] as WTKUI@54.168.213.106
+ DEBUG [2d42d6ac] Command: [ -d /var/www/eat_project/releases/20220323080421/log ]
+ DEBUG [2d42d6ac] Finished in 0.115 seconds with exit status 0 (successful).
+  INFO [04abd8de] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080421/log as WTKUI@54.168.213.106
+ DEBUG [04abd8de] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080421/log )
+  INFO [04abd8de] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [0129d3f4] Running /usr/bin/env ln -s /var/www/eat_project/shared/log /var/www/eat_project/releases/20220323080421/log as WTKUI@54.168.213.106
+ DEBUG [0129d3f4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/log /var/www/eat_project/releases/20220323080421/log )
+  INFO [0129d3f4] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [22eb4151] Running [ -L /var/www/eat_project/releases/20220323080421/tmp/pids ] as WTKUI@54.168.213.106
+ DEBUG [22eb4151] Command: [ -L /var/www/eat_project/releases/20220323080421/tmp/pids ]
+ DEBUG [22eb4151] Finished in 0.055 seconds with exit status 1 (failed).
+ DEBUG [edc500b1] Running [ -d /var/www/eat_project/releases/20220323080421/tmp/pids ] as WTKUI@54.168.213.106
+ DEBUG [edc500b1] Command: [ -d /var/www/eat_project/releases/20220323080421/tmp/pids ]
+ DEBUG [edc500b1] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [a3062550] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080421/tmp/pids as WTKUI@54.168.213.106
+ DEBUG [a3062550] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080421/tmp/pids )
+  INFO [a3062550] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [575c7794] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/pids /var/www/eat_project/releases/20220323080421/tmp/pids as WTKUI@54.168.213.106
+ DEBUG [575c7794] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/pids /var/www/eat_project/releases/20220323080421/tmp/pids )
+  INFO [575c7794] Finished in 0.118 seconds with exit status 0 (successful).
+ DEBUG [d6ca428f] Running [ -L /var/www/eat_project/releases/20220323080421/tmp/cache ] as WTKUI@54.168.213.106
+ DEBUG [d6ca428f] Command: [ -L /var/www/eat_project/releases/20220323080421/tmp/cache ]
+ DEBUG [d6ca428f] Finished in 0.053 seconds with exit status 1 (failed).
+ DEBUG [fd0ba454] Running [ -d /var/www/eat_project/releases/20220323080421/tmp/cache ] as WTKUI@54.168.213.106
+ DEBUG [fd0ba454] Command: [ -d /var/www/eat_project/releases/20220323080421/tmp/cache ]
+ DEBUG [fd0ba454] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [d46e1b33] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080421/tmp/cache as WTKUI@54.168.213.106
+ DEBUG [d46e1b33] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080421/tmp/cache )
+  INFO [d46e1b33] Finished in 0.561 seconds with exit status 0 (successful).
+  INFO [04c714a0] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/cache /var/www/eat_project/releases/20220323080421/tmp/cache as WTKUI@54.168.213.106
+ DEBUG [04c714a0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/cache /var/www/eat_project/releases/20220323080421/tmp/cache )
+  INFO [04c714a0] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [f7f760f3] Running [ -L /var/www/eat_project/releases/20220323080421/tmp/sockets ] as WTKUI@54.168.213.106
+ DEBUG [f7f760f3] Command: [ -L /var/www/eat_project/releases/20220323080421/tmp/sockets ]
+ DEBUG [f7f760f3] Finished in 0.050 seconds with exit status 1 (failed).
+ DEBUG [ec86a77d] Running [ -d /var/www/eat_project/releases/20220323080421/tmp/sockets ] as WTKUI@54.168.213.106
+ DEBUG [ec86a77d] Command: [ -d /var/www/eat_project/releases/20220323080421/tmp/sockets ]
+ DEBUG [ec86a77d] Finished in 0.098 seconds with exit status 1 (failed).
+  INFO [a226172f] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/releases/20220323080421/tmp/sockets as WTKUI@54.168.213.106
+ DEBUG [a226172f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/releases/20220323080421/tmp/sockets )
+  INFO [a226172f] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [805c0bc6] Running [ -L /var/www/eat_project/releases/20220323080421/node_modules ] as WTKUI@54.168.213.106
+ DEBUG [805c0bc6] Command: [ -L /var/www/eat_project/releases/20220323080421/node_modules ]
+ DEBUG [805c0bc6] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [60903ae6] Running [ -d /var/www/eat_project/releases/20220323080421/node_modules ] as WTKUI@54.168.213.106
+ DEBUG [60903ae6] Command: [ -d /var/www/eat_project/releases/20220323080421/node_modules ]
+ DEBUG [60903ae6] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [7e0ab8c0] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080421/node_modules as WTKUI@54.168.213.106
+ DEBUG [7e0ab8c0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080421/node_modules )
+  INFO [7e0ab8c0] Finished in 0.115 seconds with exit status 0 (successful).
+  INFO [e255016f] Running /usr/bin/env ln -s /var/www/eat_project/shared/node_modules /var/www/eat_project/releases/20220323080421/node_modules as WTKUI@54.168.213.106
+ DEBUG [e255016f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/node_modules /var/www/eat_project/releases/20220323080421/node_modules )
+  INFO [e255016f] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [9bc24120] Running [ -L /var/www/eat_project/releases/20220323080421/public/assets ] as WTKUI@54.168.213.106
+ DEBUG [9bc24120] Command: [ -L /var/www/eat_project/releases/20220323080421/public/assets ]
+ DEBUG [9bc24120] Finished in 0.102 seconds with exit status 1 (failed).
+ DEBUG [25e66ecc] Running [ -d /var/www/eat_project/releases/20220323080421/public/assets ] as WTKUI@54.168.213.106
+ DEBUG [25e66ecc] Command: [ -d /var/www/eat_project/releases/20220323080421/public/assets ]
+ DEBUG [25e66ecc] Finished in 0.058 seconds with exit status 1 (failed).
+  INFO [0c95a113] Running /usr/bin/env ln -s /var/www/eat_project/shared/public/assets /var/www/eat_project/releases/20220323080421/public/assets as WTKUI@54.168.213.106
+ DEBUG [0c95a113] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/public/assets /var/www/eat_project/releases/20220323080421/public/assets )
+  INFO [0c95a113] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG [135635ba] Running if test ! -d /var/www/eat_project/releases/20220323080421; then echo "Directory does not exist '/var/www/eat_project/releases/20220323080421'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [135635ba] Command: if test ! -d /var/www/eat_project/releases/20220323080421; then echo "Directory does not exist '/var/www/eat_project/releases/20220323080421'" 1>&2; false; fi
+ DEBUG [135635ba] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [7cede646] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as WTKUI@54.168.213.106
+ DEBUG [7cede646] Command: cd /var/www/eat_project/releases/20220323080421 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [7cede646] Finished in 0.353 seconds with exit status 0 (successful).
+  INFO [11b735b5] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/eat_project/shared/bundle as WTKUI@54.168.213.106
+ DEBUG [11b735b5] Command: cd /var/www/eat_project/releases/20220323080421 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/eat_project/shared/bundle )
+  INFO [11b735b5] Finished in 0.308 seconds with exit status 0 (successful).
+  INFO [7aa06aa7] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as WTKUI@54.168.213.106
+ DEBUG [7aa06aa7] Command: cd /var/www/eat_project/releases/20220323080421 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [7aa06aa7] Finished in 0.294 seconds with exit status 0 (successful).
+ DEBUG [d69201b4] Running if test ! -d /var/www/eat_project/releases/20220323080421; then echo "Directory does not exist '/var/www/eat_project/releases/20220323080421'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [d69201b4] Command: if test ! -d /var/www/eat_project/releases/20220323080421; then echo "Directory does not exist '/var/www/eat_project/releases/20220323080421'" 1>&2; false; fi
+ DEBUG [d69201b4] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [0f0e8526] Running $HOME/.rbenv/bin/rbenv exec bundle check as WTKUI@54.168.213.106
+ DEBUG [0f0e8526] Command: cd /var/www/eat_project/releases/20220323080421 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [0f0e8526] 	The following gems are missing
+ DEBUG [0f0e8526] 	 * mysql2 (0.5.3)
+ DEBUG [0f0e8526] 	Install missing gems with `bundle install`
+ DEBUG [0f0e8526] Finished in 0.680 seconds with exit status 1 (failed).
+  INFO [58672432] Running $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet as WTKUI@54.168.213.106
+ DEBUG [58672432] Command: cd /var/www/eat_project/releases/20220323080421 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet )
+ DEBUG [58672432] 	Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/var/www/eat_project/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/ext/mysql2
+/home/WTKUI/.rbenv/versions/2.6.5/bin/ruby -I
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0 -r
+./siteconf20220323-13130-1qa7ubn.rb extconf.rb
+checking for rb_absint_size()... yes
+checking for rb_absint_singlebit_p()... yes
+checking for rb_wait_for_single_fd()... yes
+checking for -lmysqlclient... no
+-----
+mysql client is missing. You may need to 'sudo apt-get install libmariadb-dev',
+'sudo apt-get install libmysqlclient-dev' or 'sudo yum install mysql-devel', and
+try again.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/home/WTKUI/.rbenv/versions/2.6.5/bin/$(RUBY_BASE_NAME)
+	--with-mysql-dir
+	--without-mysql-dir
+	--with-mysql-include
+	--without-mysql-include=${mysql-dir}/include
+	--with-mysql-lib
+	--without-mysql-lib=${mysql-dir}/lib
+	--with-mysql-config
+	--without-mysql-config
+	--with-mysql-dir
+	--without-mysql-dir
+	--with-mysql-include
+	--without-mysql-include=${mysql-dir}/include
+	--with-mysql-lib
+	--without-mysql-lib=${mysql-dir}/lib
+	--with-mysqlclientlib
+	--without-mysqlclientlib
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/var/www/eat_project/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/var/www/eat_project/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3 for inspection.
+Results logged to
+/var/www/eat_project/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/gem_make.out
+
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:99:in
+`run'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:47:in
+`block in build'
+  /home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/tempfile.rb:295:in `open'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:29:in
+`build'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:185:in
+`block in build_extension'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in
+`mon_synchronize'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:181:in
+`build_extension'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:229:in
+`block in build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`each'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/installer.rb:830:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/rubygems_gem_installer.rb:71:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/rubygems_gem_installer.rb:28:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/source/rubygems.rb:204:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/parallel_installer.rb:186:in
+`do_install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/parallel_installer.rb:177:in
+`block in worker_pool'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:62:in
+`apply_func'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:54:in
+`loop'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:54:in
+`process_queue'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:91:in
+`block (2 levels) in create_threads'
+
+An error occurred while installing mysql2 (0.5.3), and Bundler cannot continue.
+
+In Gemfile:
+  mysql2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-23 17:09:04 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [a7eade3c] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [a7eade3c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [a7eade3c] Finished in 0.344 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-a109043b980b919781de.sh 0.0%
+  INFO Uploading /tmp/git-ssh-a109043b980b919781de.sh 100.0%
+  INFO [ebf65519] Running /usr/bin/env chmod 700 /tmp/git-ssh-a109043b980b919781de.sh as WTKUI@54.168.213.106
+ DEBUG [ebf65519] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-a109043b980b919781de.sh )
+  INFO [ebf65519] Finished in 0.076 seconds with exit status 0 (successful).
+  INFO [8ea548da] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [8ea548da] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a109043b980b919781de.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [8ea548da] 	e2f96fe98f851cdecc8ec6294affc59d838fda90	HEAD
+  INFO [8ea548da] Finished in 1.899 seconds with exit status 0 (successful).
+  INFO [b812bd2f] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [b812bd2f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+  INFO [b812bd2f] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [a8ef8f51] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets as WTKUI@54.168.213.106
+ DEBUG [a8ef8f51] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets )
+  INFO [a8ef8f51] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [218861a6] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/config as WTKUI@54.168.213.106
+ DEBUG [218861a6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/config )
+  INFO [218861a6] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [07de5684] Running [ -f /var/www/eat_project/shared/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [07de5684] Command: [ -f /var/www/eat_project/shared/config/master.key ]
+ DEBUG [07de5684] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [8e97aa63] Running [ -f /var/www/eat_project/shared/puma.rb ] as WTKUI@54.168.213.106
+ DEBUG [8e97aa63] Command: [ -f /var/www/eat_project/shared/puma.rb ]
+ DEBUG [8e97aa63] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [7ca768f1] Running [ -f /var/www/eat_project/current/REVISION ] as WTKUI@54.168.213.106
+ DEBUG [7ca768f1] Command: [ -f /var/www/eat_project/current/REVISION ]
+ DEBUG [7ca768f1] Finished in 0.048 seconds with exit status 1 (failed).
+ DEBUG [c8ad0d1c] Running [ -f /var/www/eat_project/repo/HEAD ] as WTKUI@54.168.213.106
+ DEBUG [c8ad0d1c] Command: [ -f /var/www/eat_project/repo/HEAD ]
+ DEBUG [c8ad0d1c] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/eat_project/repo
+ DEBUG [3bea4607] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [3bea4607] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [3bea4607] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [aa57c210] Running /usr/bin/env git remote set-url origin git@github.com:W2020T/eat_project.git as WTKUI@54.168.213.106
+ DEBUG [aa57c210] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a109043b980b919781de.sh" ; /usr/bin/env git remote set-url origin git@github.com:W2020T/eat_project.git )
+  INFO [aa57c210] Finished in 0.194 seconds with exit status 0 (successful).
+  INFO [8b41bba7] Running /usr/bin/env git remote update --prune as WTKUI@54.168.213.106
+ DEBUG [8b41bba7] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a109043b980b919781de.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [8b41bba7] 	Fetching origin
+  INFO [8b41bba7] Finished in 1.918 seconds with exit status 0 (successful).
+ DEBUG [421c4be9] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [421c4be9] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [421c4be9] Finished in 0.092 seconds with exit status 0 (successful).
+  INFO [26a14527] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323080907 as WTKUI@54.168.213.106
+ DEBUG [26a14527] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a109043b980b919781de.sh" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323080907 )
+  INFO [26a14527] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [176c5269] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/eat_project/releases/20220323080907 as WTKUI@54.168.213.106
+ DEBUG [176c5269] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a109043b980b919781de.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/eat_project/releases/20220323080907 )
+  INFO [176c5269] Finished in 8.916 seconds with exit status 0 (successful).
+ DEBUG [cd57c3b6] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [cd57c3b6] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [cd57c3b6] Finished in 0.110 seconds with exit status 0 (successful).
+ DEBUG [77622cd4] Running /usr/bin/env git rev-list --max-count=1 main as WTKUI@54.168.213.106
+ DEBUG [77622cd4] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a109043b980b919781de.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [77622cd4] 	e2f96fe98f851cdecc8ec6294affc59d838fda90
+ DEBUG [77622cd4] Finished in 0.276 seconds with exit status 0 (successful).
+ DEBUG [7c204832] Running if test ! -d /var/www/eat_project/releases/20220323080907; then echo "Directory does not exist '/var/www/eat_project/releases/20220323080907'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [7c204832] Command: if test ! -d /var/www/eat_project/releases/20220323080907; then echo "Directory does not exist '/var/www/eat_project/releases/20220323080907'" 1>&2; false; fi
+ DEBUG [7c204832] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [ecac2999] Running /usr/bin/env echo "e2f96fe98f851cdecc8ec6294affc59d838fda90" > REVISION as WTKUI@54.168.213.106
+ DEBUG [ecac2999] Command: cd /var/www/eat_project/releases/20220323080907 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env echo "e2f96fe98f851cdecc8ec6294affc59d838fda90" > REVISION )
+  INFO [ecac2999] Finished in 0.158 seconds with exit status 0 (successful).
+  INFO [65a1e009] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323080907/config as WTKUI@54.168.213.106
+ DEBUG [65a1e009] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323080907/config )
+  INFO [65a1e009] Finished in 0.083 seconds with exit status 0 (successful).
+ DEBUG [53f8059c] Running [ -L /var/www/eat_project/releases/20220323080907/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [53f8059c] Command: [ -L /var/www/eat_project/releases/20220323080907/config/master.key ]
+ DEBUG [53f8059c] Finished in 0.107 seconds with exit status 1 (failed).
+ DEBUG [2e166072] Running [ -f /var/www/eat_project/releases/20220323080907/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [2e166072] Command: [ -f /var/www/eat_project/releases/20220323080907/config/master.key ]
+ DEBUG [2e166072] Finished in 0.079 seconds with exit status 0 (successful).
+  INFO [e25cd40a] Running /usr/bin/env rm /var/www/eat_project/releases/20220323080907/config/master.key as WTKUI@54.168.213.106
+ DEBUG [e25cd40a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm /var/www/eat_project/releases/20220323080907/config/master.key )
+  INFO [e25cd40a] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [075290a0] Running /usr/bin/env ln -s /var/www/eat_project/shared/config/master.key /var/www/eat_project/releases/20220323080907/config/master.key as WTKUI@54.168.213.106
+ DEBUG [075290a0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/config/master.key /var/www/eat_project/releases/20220323080907/config/master.key )
+  INFO [075290a0] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [b98deec6] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323080907 /var/www/eat_project/releases/20220323080907/tmp /var/www/eat_project/releases/20220323080907/public as WTKUI@54.168.213.106
+ DEBUG [b98deec6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220323080907 /var/www/eat_project/releases/20220323080907/tmp /var/www/eat_project/releases/20220323080907/public )
+  INFO [b98deec6] Finished in 0.097 seconds with exit status 0 (successful).
+ DEBUG [543c2ee5] Running [ -L /var/www/eat_project/releases/20220323080907/log ] as WTKUI@54.168.213.106
+ DEBUG [543c2ee5] Command: [ -L /var/www/eat_project/releases/20220323080907/log ]
+ DEBUG [543c2ee5] Finished in 0.054 seconds with exit status 1 (failed).
+ DEBUG [5efc3d9e] Running [ -d /var/www/eat_project/releases/20220323080907/log ] as WTKUI@54.168.213.106
+ DEBUG [5efc3d9e] Command: [ -d /var/www/eat_project/releases/20220323080907/log ]
+ DEBUG [5efc3d9e] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [abb59c95] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080907/log as WTKUI@54.168.213.106
+ DEBUG [abb59c95] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080907/log )
+  INFO [abb59c95] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [648e3635] Running /usr/bin/env ln -s /var/www/eat_project/shared/log /var/www/eat_project/releases/20220323080907/log as WTKUI@54.168.213.106
+ DEBUG [648e3635] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/log /var/www/eat_project/releases/20220323080907/log )
+  INFO [648e3635] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [c7a7e81d] Running [ -L /var/www/eat_project/releases/20220323080907/tmp/pids ] as WTKUI@54.168.213.106
+ DEBUG [c7a7e81d] Command: [ -L /var/www/eat_project/releases/20220323080907/tmp/pids ]
+ DEBUG [c7a7e81d] Finished in 0.060 seconds with exit status 1 (failed).
+ DEBUG [eff073ff] Running [ -d /var/www/eat_project/releases/20220323080907/tmp/pids ] as WTKUI@54.168.213.106
+ DEBUG [eff073ff] Command: [ -d /var/www/eat_project/releases/20220323080907/tmp/pids ]
+ DEBUG [eff073ff] Finished in 0.119 seconds with exit status 0 (successful).
+  INFO [3faf2b8c] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080907/tmp/pids as WTKUI@54.168.213.106
+ DEBUG [3faf2b8c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080907/tmp/pids )
+  INFO [3faf2b8c] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [b9897c77] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/pids /var/www/eat_project/releases/20220323080907/tmp/pids as WTKUI@54.168.213.106
+ DEBUG [b9897c77] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/pids /var/www/eat_project/releases/20220323080907/tmp/pids )
+  INFO [b9897c77] Finished in 0.108 seconds with exit status 0 (successful).
+ DEBUG [8d624c3b] Running [ -L /var/www/eat_project/releases/20220323080907/tmp/cache ] as WTKUI@54.168.213.106
+ DEBUG [8d624c3b] Command: [ -L /var/www/eat_project/releases/20220323080907/tmp/cache ]
+ DEBUG [8d624c3b] Finished in 0.064 seconds with exit status 1 (failed).
+ DEBUG [1e5cfc36] Running [ -d /var/www/eat_project/releases/20220323080907/tmp/cache ] as WTKUI@54.168.213.106
+ DEBUG [1e5cfc36] Command: [ -d /var/www/eat_project/releases/20220323080907/tmp/cache ]
+ DEBUG [1e5cfc36] Finished in 0.105 seconds with exit status 0 (successful).
+  INFO [8607dc74] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080907/tmp/cache as WTKUI@54.168.213.106
+ DEBUG [8607dc74] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080907/tmp/cache )
+  INFO [8607dc74] Finished in 0.600 seconds with exit status 0 (successful).
+  INFO [b790ce69] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/cache /var/www/eat_project/releases/20220323080907/tmp/cache as WTKUI@54.168.213.106
+ DEBUG [b790ce69] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/cache /var/www/eat_project/releases/20220323080907/tmp/cache )
+  INFO [b790ce69] Finished in 0.105 seconds with exit status 0 (successful).
+ DEBUG [0a3a2b3b] Running [ -L /var/www/eat_project/releases/20220323080907/tmp/sockets ] as WTKUI@54.168.213.106
+ DEBUG [0a3a2b3b] Command: [ -L /var/www/eat_project/releases/20220323080907/tmp/sockets ]
+ DEBUG [0a3a2b3b] Finished in 0.052 seconds with exit status 1 (failed).
+ DEBUG [89194125] Running [ -d /var/www/eat_project/releases/20220323080907/tmp/sockets ] as WTKUI@54.168.213.106
+ DEBUG [89194125] Command: [ -d /var/www/eat_project/releases/20220323080907/tmp/sockets ]
+ DEBUG [89194125] Finished in 0.106 seconds with exit status 1 (failed).
+  INFO [18df300c] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/releases/20220323080907/tmp/sockets as WTKUI@54.168.213.106
+ DEBUG [18df300c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/releases/20220323080907/tmp/sockets )
+  INFO [18df300c] Finished in 0.069 seconds with exit status 0 (successful).
+ DEBUG [f43a1f48] Running [ -L /var/www/eat_project/releases/20220323080907/node_modules ] as WTKUI@54.168.213.106
+ DEBUG [f43a1f48] Command: [ -L /var/www/eat_project/releases/20220323080907/node_modules ]
+ DEBUG [f43a1f48] Finished in 0.099 seconds with exit status 1 (failed).
+ DEBUG [19ae17e2] Running [ -d /var/www/eat_project/releases/20220323080907/node_modules ] as WTKUI@54.168.213.106
+ DEBUG [19ae17e2] Command: [ -d /var/www/eat_project/releases/20220323080907/node_modules ]
+ DEBUG [19ae17e2] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [a3381470] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080907/node_modules as WTKUI@54.168.213.106
+ DEBUG [a3381470] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220323080907/node_modules )
+  INFO [a3381470] Finished in 0.132 seconds with exit status 0 (successful).
+  INFO [28f25470] Running /usr/bin/env ln -s /var/www/eat_project/shared/node_modules /var/www/eat_project/releases/20220323080907/node_modules as WTKUI@54.168.213.106
+ DEBUG [28f25470] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/node_modules /var/www/eat_project/releases/20220323080907/node_modules )
+  INFO [28f25470] Finished in 0.071 seconds with exit status 0 (successful).
+ DEBUG [14829f7e] Running [ -L /var/www/eat_project/releases/20220323080907/public/assets ] as WTKUI@54.168.213.106
+ DEBUG [14829f7e] Command: [ -L /var/www/eat_project/releases/20220323080907/public/assets ]
+ DEBUG [14829f7e] Finished in 0.103 seconds with exit status 1 (failed).
+ DEBUG [93798a1b] Running [ -d /var/www/eat_project/releases/20220323080907/public/assets ] as WTKUI@54.168.213.106
+ DEBUG [93798a1b] Command: [ -d /var/www/eat_project/releases/20220323080907/public/assets ]
+ DEBUG [93798a1b] Finished in 0.065 seconds with exit status 1 (failed).
+  INFO [f4d04a33] Running /usr/bin/env ln -s /var/www/eat_project/shared/public/assets /var/www/eat_project/releases/20220323080907/public/assets as WTKUI@54.168.213.106
+ DEBUG [f4d04a33] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/public/assets /var/www/eat_project/releases/20220323080907/public/assets )
+  INFO [f4d04a33] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [5d2fe36f] Running if test ! -d /var/www/eat_project/releases/20220323080907; then echo "Directory does not exist '/var/www/eat_project/releases/20220323080907'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [5d2fe36f] Command: if test ! -d /var/www/eat_project/releases/20220323080907; then echo "Directory does not exist '/var/www/eat_project/releases/20220323080907'" 1>&2; false; fi
+ DEBUG [5d2fe36f] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [7c5c1aff] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as WTKUI@54.168.213.106
+ DEBUG [7c5c1aff] Command: cd /var/www/eat_project/releases/20220323080907 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [7c5c1aff] Finished in 0.308 seconds with exit status 0 (successful).
+  INFO [0a078306] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/eat_project/shared/bundle as WTKUI@54.168.213.106
+ DEBUG [0a078306] Command: cd /var/www/eat_project/releases/20220323080907 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/eat_project/shared/bundle )
+  INFO [0a078306] Finished in 0.241 seconds with exit status 0 (successful).
+  INFO [4f44be6c] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as WTKUI@54.168.213.106
+ DEBUG [4f44be6c] Command: cd /var/www/eat_project/releases/20220323080907 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [4f44be6c] Finished in 0.294 seconds with exit status 0 (successful).
+ DEBUG [c3833cdf] Running if test ! -d /var/www/eat_project/releases/20220323080907; then echo "Directory does not exist '/var/www/eat_project/releases/20220323080907'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [c3833cdf] Command: if test ! -d /var/www/eat_project/releases/20220323080907; then echo "Directory does not exist '/var/www/eat_project/releases/20220323080907'" 1>&2; false; fi
+ DEBUG [c3833cdf] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [fcd6ecb5] Running $HOME/.rbenv/bin/rbenv exec bundle check as WTKUI@54.168.213.106
+ DEBUG [fcd6ecb5] Command: cd /var/www/eat_project/releases/20220323080907 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [fcd6ecb5] 	The following gems are missing
+ DEBUG [fcd6ecb5] 	 * mysql2 (0.5.3)
+ DEBUG [fcd6ecb5] 	Install missing gems with `bundle install`
+ DEBUG [fcd6ecb5] Finished in 0.448 seconds with exit status 1 (failed).
+  INFO [b086cc93] Running $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet as WTKUI@54.168.213.106
+ DEBUG [b086cc93] Command: cd /var/www/eat_project/releases/20220323080907 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet )
+ DEBUG [b086cc93] 	Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/var/www/eat_project/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/ext/mysql2
+/home/WTKUI/.rbenv/versions/2.6.5/bin/ruby -I
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0 -r
+./siteconf20220323-13821-iczc4c.rb extconf.rb
+checking for rb_absint_size()... yes
+checking for rb_absint_singlebit_p()... yes
+checking for rb_wait_for_single_fd()... yes
+checking for -lmysqlclient... no
+-----
+mysql client is missing. You may need to 'sudo apt-get install libmariadb-dev',
+'sudo apt-get install libmysqlclient-dev' or 'sudo yum install mysql-devel', and
+try again.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/home/WTKUI/.rbenv/versions/2.6.5/bin/$(RUBY_BASE_NAME)
+	--with-mysql-dir
+	--without-mysql-dir
+	--with-mysql-include
+	--without-mysql-include=${mysql-dir}/include
+	--with-mysql-lib
+	--without-mysql-lib=${mysql-dir}/lib
+	--with-mysql-config
+	--without-mysql-config
+	--with-mysql-dir
+	--without-mysql-dir
+	--with-mysql-include
+	--without-mysql-include=${mysql-dir}/include
+	--with-mysql-lib
+	--without-mysql-lib=${mysql-dir}/lib
+	--with-mysqlclientlib
+	--without-mysqlclientlib
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/var/www/eat_project/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/var/www/eat_project/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3 for inspection.
+Results logged to
+/var/www/eat_project/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/gem_make.out
+
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:99:in
+`run'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:47:in
+`block in build'
+  /home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/tempfile.rb:295:in `open'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:29:in
+`build'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:185:in
+`block in build_extension'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in
+`mon_synchronize'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:181:in
+`build_extension'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:229:in
+`block in build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`each'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/installer.rb:830:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/rubygems_gem_installer.rb:71:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/rubygems_gem_installer.rb:28:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/source/rubygems.rb:204:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/parallel_installer.rb:186:in
+`do_install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/parallel_installer.rb:177:in
+`block in worker_pool'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:62:in
+`apply_func'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:54:in
+`loop'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:54:in
+`process_queue'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:91:in
+`block (2 levels) in create_threads'
+
+An error occurred while installing mysql2 (0.5.3), and Bundler cannot continue.
+
+In Gemfile:
+  mysql2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-24 14:26:46 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [53c7f18d] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [53c7f18d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [53c7f18d] Finished in 0.297 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-df353f8e222d89a1b137.sh 0.0%
+  INFO Uploading /tmp/git-ssh-df353f8e222d89a1b137.sh 100.0%
+  INFO [2055ae34] Running /usr/bin/env chmod 700 /tmp/git-ssh-df353f8e222d89a1b137.sh as WTKUI@54.168.213.106
+ DEBUG [2055ae34] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-df353f8e222d89a1b137.sh )
+  INFO [2055ae34] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [895244ec] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [895244ec] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-df353f8e222d89a1b137.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [895244ec] 	e2f96fe98f851cdecc8ec6294affc59d838fda90	HEAD
+  INFO [895244ec] Finished in 1.986 seconds with exit status 0 (successful).
+  INFO [a840b958] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [a840b958] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+  INFO [a840b958] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [9526bc3c] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets as WTKUI@54.168.213.106
+ DEBUG [9526bc3c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets )
+  INFO [9526bc3c] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [c81dab99] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/config as WTKUI@54.168.213.106
+ DEBUG [c81dab99] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/config )
+  INFO [c81dab99] Finished in 0.092 seconds with exit status 0 (successful).
+ DEBUG [e1de27e4] Running [ -f /var/www/eat_project/shared/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [e1de27e4] Command: [ -f /var/www/eat_project/shared/config/master.key ]
+ DEBUG [e1de27e4] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [89bb6b85] Running [ -f /var/www/eat_project/shared/puma.rb ] as WTKUI@54.168.213.106
+ DEBUG [89bb6b85] Command: [ -f /var/www/eat_project/shared/puma.rb ]
+ DEBUG [89bb6b85] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [7b302f88] Running [ -f /var/www/eat_project/current/REVISION ] as WTKUI@54.168.213.106
+ DEBUG [7b302f88] Command: [ -f /var/www/eat_project/current/REVISION ]
+ DEBUG [7b302f88] Finished in 0.053 seconds with exit status 1 (failed).
+ DEBUG [43b6e1fa] Running [ -f /var/www/eat_project/repo/HEAD ] as WTKUI@54.168.213.106
+ DEBUG [43b6e1fa] Command: [ -f /var/www/eat_project/repo/HEAD ]
+ DEBUG [43b6e1fa] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/eat_project/repo
+ DEBUG [e89a0e79] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [e89a0e79] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [e89a0e79] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [dbf98524] Running /usr/bin/env git remote set-url origin git@github.com:W2020T/eat_project.git as WTKUI@54.168.213.106
+ DEBUG [dbf98524] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-df353f8e222d89a1b137.sh" ; /usr/bin/env git remote set-url origin git@github.com:W2020T/eat_project.git )
+  INFO [dbf98524] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [64439561] Running /usr/bin/env git remote update --prune as WTKUI@54.168.213.106
+ DEBUG [64439561] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-df353f8e222d89a1b137.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [64439561] 	Fetching origin
+  INFO [64439561] Finished in 1.921 seconds with exit status 0 (successful).
+ DEBUG [38fc9df8] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [38fc9df8] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [38fc9df8] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [187d77f8] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324052649 as WTKUI@54.168.213.106
+ DEBUG [187d77f8] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-df353f8e222d89a1b137.sh" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324052649 )
+  INFO [187d77f8] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [48fcc27a] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/eat_project/releases/20220324052649 as WTKUI@54.168.213.106
+ DEBUG [48fcc27a] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-df353f8e222d89a1b137.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/eat_project/releases/20220324052649 )
+  INFO [48fcc27a] Finished in 8.862 seconds with exit status 0 (successful).
+ DEBUG [d1c139bc] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [d1c139bc] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [d1c139bc] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [5dc521ad] Running /usr/bin/env git rev-list --max-count=1 main as WTKUI@54.168.213.106
+ DEBUG [5dc521ad] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-df353f8e222d89a1b137.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [5dc521ad] 	e2f96fe98f851cdecc8ec6294affc59d838fda90
+ DEBUG [5dc521ad] Finished in 0.110 seconds with exit status 0 (successful).
+ DEBUG [5e28cc7d] Running if test ! -d /var/www/eat_project/releases/20220324052649; then echo "Directory does not exist '/var/www/eat_project/releases/20220324052649'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [5e28cc7d] Command: if test ! -d /var/www/eat_project/releases/20220324052649; then echo "Directory does not exist '/var/www/eat_project/releases/20220324052649'" 1>&2; false; fi
+ DEBUG [5e28cc7d] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [783105eb] Running /usr/bin/env echo "e2f96fe98f851cdecc8ec6294affc59d838fda90" > REVISION as WTKUI@54.168.213.106
+ DEBUG [783105eb] Command: cd /var/www/eat_project/releases/20220324052649 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env echo "e2f96fe98f851cdecc8ec6294affc59d838fda90" > REVISION )
+  INFO [783105eb] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [fa70b4ab] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324052649/config as WTKUI@54.168.213.106
+ DEBUG [fa70b4ab] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324052649/config )
+  INFO [fa70b4ab] Finished in 0.063 seconds with exit status 0 (successful).
+ DEBUG [a7e29b75] Running [ -L /var/www/eat_project/releases/20220324052649/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [a7e29b75] Command: [ -L /var/www/eat_project/releases/20220324052649/config/master.key ]
+ DEBUG [a7e29b75] Finished in 0.098 seconds with exit status 1 (failed).
+ DEBUG [78670674] Running [ -f /var/www/eat_project/releases/20220324052649/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [78670674] Command: [ -f /var/www/eat_project/releases/20220324052649/config/master.key ]
+ DEBUG [78670674] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [9a508f6c] Running /usr/bin/env rm /var/www/eat_project/releases/20220324052649/config/master.key as WTKUI@54.168.213.106
+ DEBUG [9a508f6c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm /var/www/eat_project/releases/20220324052649/config/master.key )
+  INFO [9a508f6c] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [5bc91173] Running /usr/bin/env ln -s /var/www/eat_project/shared/config/master.key /var/www/eat_project/releases/20220324052649/config/master.key as WTKUI@54.168.213.106
+ DEBUG [5bc91173] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/config/master.key /var/www/eat_project/releases/20220324052649/config/master.key )
+  INFO [5bc91173] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [6faa01b8] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324052649 /var/www/eat_project/releases/20220324052649/tmp /var/www/eat_project/releases/20220324052649/public as WTKUI@54.168.213.106
+ DEBUG [6faa01b8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324052649 /var/www/eat_project/releases/20220324052649/tmp /var/www/eat_project/releases/20220324052649/public )
+  INFO [6faa01b8] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [ec88bc6b] Running [ -L /var/www/eat_project/releases/20220324052649/log ] as WTKUI@54.168.213.106
+ DEBUG [ec88bc6b] Command: [ -L /var/www/eat_project/releases/20220324052649/log ]
+ DEBUG [ec88bc6b] Finished in 0.047 seconds with exit status 1 (failed).
+ DEBUG [38deaa73] Running [ -d /var/www/eat_project/releases/20220324052649/log ] as WTKUI@54.168.213.106
+ DEBUG [38deaa73] Command: [ -d /var/www/eat_project/releases/20220324052649/log ]
+ DEBUG [38deaa73] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [d093633d] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220324052649/log as WTKUI@54.168.213.106
+ DEBUG [d093633d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220324052649/log )
+  INFO [d093633d] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [52b15694] Running /usr/bin/env ln -s /var/www/eat_project/shared/log /var/www/eat_project/releases/20220324052649/log as WTKUI@54.168.213.106
+ DEBUG [52b15694] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/log /var/www/eat_project/releases/20220324052649/log )
+  INFO [52b15694] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [6f12f236] Running [ -L /var/www/eat_project/releases/20220324052649/tmp/pids ] as WTKUI@54.168.213.106
+ DEBUG [6f12f236] Command: [ -L /var/www/eat_project/releases/20220324052649/tmp/pids ]
+ DEBUG [6f12f236] Finished in 0.047 seconds with exit status 1 (failed).
+ DEBUG [095db2b6] Running [ -d /var/www/eat_project/releases/20220324052649/tmp/pids ] as WTKUI@54.168.213.106
+ DEBUG [095db2b6] Command: [ -d /var/www/eat_project/releases/20220324052649/tmp/pids ]
+ DEBUG [095db2b6] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [fe7f74f8] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220324052649/tmp/pids as WTKUI@54.168.213.106
+ DEBUG [fe7f74f8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220324052649/tmp/pids )
+  INFO [fe7f74f8] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [b632ce64] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/pids /var/www/eat_project/releases/20220324052649/tmp/pids as WTKUI@54.168.213.106
+ DEBUG [b632ce64] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/pids /var/www/eat_project/releases/20220324052649/tmp/pids )
+  INFO [b632ce64] Finished in 0.092 seconds with exit status 0 (successful).
+ DEBUG [1fd0be5b] Running [ -L /var/www/eat_project/releases/20220324052649/tmp/cache ] as WTKUI@54.168.213.106
+ DEBUG [1fd0be5b] Command: [ -L /var/www/eat_project/releases/20220324052649/tmp/cache ]
+ DEBUG [1fd0be5b] Finished in 0.051 seconds with exit status 1 (failed).
+ DEBUG [cd636a09] Running [ -d /var/www/eat_project/releases/20220324052649/tmp/cache ] as WTKUI@54.168.213.106
+ DEBUG [cd636a09] Command: [ -d /var/www/eat_project/releases/20220324052649/tmp/cache ]
+ DEBUG [cd636a09] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [16cb95d3] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220324052649/tmp/cache as WTKUI@54.168.213.106
+ DEBUG [16cb95d3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220324052649/tmp/cache )
+  INFO [16cb95d3] Finished in 0.595 seconds with exit status 0 (successful).
+  INFO [74eb5f65] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/cache /var/www/eat_project/releases/20220324052649/tmp/cache as WTKUI@54.168.213.106
+ DEBUG [74eb5f65] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/cache /var/www/eat_project/releases/20220324052649/tmp/cache )
+  INFO [74eb5f65] Finished in 0.111 seconds with exit status 0 (successful).
+ DEBUG [042def0c] Running [ -L /var/www/eat_project/releases/20220324052649/tmp/sockets ] as WTKUI@54.168.213.106
+ DEBUG [042def0c] Command: [ -L /var/www/eat_project/releases/20220324052649/tmp/sockets ]
+ DEBUG [042def0c] Finished in 0.051 seconds with exit status 1 (failed).
+ DEBUG [9256bb1a] Running [ -d /var/www/eat_project/releases/20220324052649/tmp/sockets ] as WTKUI@54.168.213.106
+ DEBUG [9256bb1a] Command: [ -d /var/www/eat_project/releases/20220324052649/tmp/sockets ]
+ DEBUG [9256bb1a] Finished in 0.094 seconds with exit status 1 (failed).
+  INFO [095ecbe4] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/releases/20220324052649/tmp/sockets as WTKUI@54.168.213.106
+ DEBUG [095ecbe4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/releases/20220324052649/tmp/sockets )
+  INFO [095ecbe4] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [a43e876a] Running [ -L /var/www/eat_project/releases/20220324052649/node_modules ] as WTKUI@54.168.213.106
+ DEBUG [a43e876a] Command: [ -L /var/www/eat_project/releases/20220324052649/node_modules ]
+ DEBUG [a43e876a] Finished in 0.111 seconds with exit status 1 (failed).
+ DEBUG [19607647] Running [ -d /var/www/eat_project/releases/20220324052649/node_modules ] as WTKUI@54.168.213.106
+ DEBUG [19607647] Command: [ -d /var/www/eat_project/releases/20220324052649/node_modules ]
+ DEBUG [19607647] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [4c9b3a11] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220324052649/node_modules as WTKUI@54.168.213.106
+ DEBUG [4c9b3a11] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220324052649/node_modules )
+  INFO [4c9b3a11] Finished in 0.111 seconds with exit status 0 (successful).
+  INFO [3f48785d] Running /usr/bin/env ln -s /var/www/eat_project/shared/node_modules /var/www/eat_project/releases/20220324052649/node_modules as WTKUI@54.168.213.106
+ DEBUG [3f48785d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/node_modules /var/www/eat_project/releases/20220324052649/node_modules )
+  INFO [3f48785d] Finished in 0.051 seconds with exit status 0 (successful).
+ DEBUG [bac4182a] Running [ -L /var/www/eat_project/releases/20220324052649/public/assets ] as WTKUI@54.168.213.106
+ DEBUG [bac4182a] Command: [ -L /var/www/eat_project/releases/20220324052649/public/assets ]
+ DEBUG [bac4182a] Finished in 0.096 seconds with exit status 1 (failed).
+ DEBUG [93f46a88] Running [ -d /var/www/eat_project/releases/20220324052649/public/assets ] as WTKUI@54.168.213.106
+ DEBUG [93f46a88] Command: [ -d /var/www/eat_project/releases/20220324052649/public/assets ]
+ DEBUG [93f46a88] Finished in 0.052 seconds with exit status 1 (failed).
+  INFO [4d2c3c14] Running /usr/bin/env ln -s /var/www/eat_project/shared/public/assets /var/www/eat_project/releases/20220324052649/public/assets as WTKUI@54.168.213.106
+ DEBUG [4d2c3c14] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/public/assets /var/www/eat_project/releases/20220324052649/public/assets )
+  INFO [4d2c3c14] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [0980cbac] Running if test ! -d /var/www/eat_project/releases/20220324052649; then echo "Directory does not exist '/var/www/eat_project/releases/20220324052649'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [0980cbac] Command: if test ! -d /var/www/eat_project/releases/20220324052649; then echo "Directory does not exist '/var/www/eat_project/releases/20220324052649'" 1>&2; false; fi
+ DEBUG [0980cbac] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [7a2ffd94] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as WTKUI@54.168.213.106
+ DEBUG [7a2ffd94] Command: cd /var/www/eat_project/releases/20220324052649 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [7a2ffd94] Finished in 0.459 seconds with exit status 0 (successful).
+  INFO [76981e6c] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/eat_project/shared/bundle as WTKUI@54.168.213.106
+ DEBUG [76981e6c] Command: cd /var/www/eat_project/releases/20220324052649 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/eat_project/shared/bundle )
+  INFO [76981e6c] Finished in 0.236 seconds with exit status 0 (successful).
+  INFO [d95d7978] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as WTKUI@54.168.213.106
+ DEBUG [d95d7978] Command: cd /var/www/eat_project/releases/20220324052649 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [d95d7978] Finished in 0.289 seconds with exit status 0 (successful).
+ DEBUG [adb8ad9b] Running if test ! -d /var/www/eat_project/releases/20220324052649; then echo "Directory does not exist '/var/www/eat_project/releases/20220324052649'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [adb8ad9b] Command: if test ! -d /var/www/eat_project/releases/20220324052649; then echo "Directory does not exist '/var/www/eat_project/releases/20220324052649'" 1>&2; false; fi
+ DEBUG [adb8ad9b] Finished in 0.053 seconds with exit status 0 (successful).
+ DEBUG [3c3a634e] Running $HOME/.rbenv/bin/rbenv exec bundle check as WTKUI@54.168.213.106
+ DEBUG [3c3a634e] Command: cd /var/www/eat_project/releases/20220324052649 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [3c3a634e] 	The following gems are missing
+ DEBUG [3c3a634e] 	 * mysql2 (0.5.3)
+ DEBUG [3c3a634e] 	Install missing gems with `bundle install`
+ DEBUG [3c3a634e] Finished in 0.521 seconds with exit status 1 (failed).
+  INFO [02711abd] Running $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet as WTKUI@54.168.213.106
+ DEBUG [02711abd] Command: cd /var/www/eat_project/releases/20220324052649 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet )
+ DEBUG [02711abd] 	Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/var/www/eat_project/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/ext/mysql2
+/home/WTKUI/.rbenv/versions/2.6.5/bin/ruby -I
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0 -r
+./siteconf20220324-19697-q2q5bd.rb extconf.rb
+checking for rb_absint_size()... yes
+checking for rb_absint_singlebit_p()... yes
+checking for rb_wait_for_single_fd()... yes
+checking for -lmysqlclient... no
+-----
+mysql client is missing. You may need to 'sudo apt-get install libmariadb-dev',
+'sudo apt-get install libmysqlclient-dev' or 'sudo yum install mysql-devel', and
+try again.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/home/WTKUI/.rbenv/versions/2.6.5/bin/$(RUBY_BASE_NAME)
+	--with-mysql-dir
+	--without-mysql-dir
+	--with-mysql-include
+	--without-mysql-include=${mysql-dir}/include
+	--with-mysql-lib
+	--without-mysql-lib=${mysql-dir}/lib
+	--with-mysql-config
+	--without-mysql-config
+	--with-mysql-dir
+	--without-mysql-dir
+	--with-mysql-include
+	--without-mysql-include=${mysql-dir}/include
+	--with-mysql-lib
+	--without-mysql-lib=${mysql-dir}/lib
+	--with-mysqlclientlib
+	--without-mysqlclientlib
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/var/www/eat_project/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/var/www/eat_project/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3 for inspection.
+Results logged to
+/var/www/eat_project/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/gem_make.out
+
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:99:in
+`run'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:47:in
+`block in build'
+  /home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/tempfile.rb:295:in `open'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:29:in
+`build'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:185:in
+`block in build_extension'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in
+`mon_synchronize'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:181:in
+`build_extension'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:229:in
+`block in build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`each'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/installer.rb:830:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/rubygems_gem_installer.rb:71:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/rubygems_gem_installer.rb:28:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/source/rubygems.rb:204:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/parallel_installer.rb:186:in
+`do_install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/parallel_installer.rb:177:in
+`block in worker_pool'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:62:in
+`apply_func'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:54:in
+`loop'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:54:in
+`process_queue'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:91:in
+`block (2 levels) in create_threads'
+
+An error occurred while installing mysql2 (0.5.3), and Bundler cannot continue.
+
+In Gemfile:
+  mysql2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-24 14:39:41 +0900 cap production puma:nginx_config
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG Uploading /tmp/nginx_eat_project.conf 0.0%
+  INFO Uploading /tmp/nginx_eat_project.conf 100.0%
+  INFO [e9ab8528] Running /usr/bin/env sudo mv /tmp/nginx_eat_project.conf /etc/nginx/sites-available/eat_project.conf as WTKUI@54.168.213.106
+ DEBUG [e9ab8528] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env sudo mv /tmp/nginx_eat_project.conf /etc/nginx/sites-available/eat_project.conf )
+  INFO [e9ab8528] Finished in 0.114 seconds with exit status 0 (successful).
+  INFO [a9d7dfe8] Running /usr/bin/env sudo ln -fs /etc/nginx/sites-available/eat_project.conf /etc/nginx/conf.d/eat_project.conf as WTKUI@54.168.213.106
+ DEBUG [a9d7dfe8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env sudo ln -fs /etc/nginx/sites-available/eat_project.conf /etc/nginx/conf.d/eat_project.conf )
+  INFO [a9d7dfe8] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-24 14:51:03 +0900 cap production puma:config]
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-24 14:51:07 +0900 cap production puma:config
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG Uploading /var/www/eat_project/shared/puma.rb 0.0%
+  INFO Uploading /var/www/eat_project/shared/puma.rb 100.0%
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-24 14:51:19 +0900 cap production puma:systemd:config puma:systemd:enable
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+ DEBUG [2da28831] Running /usr/bin/env echo $HOME/.rbenv/bin/rbenv exec bundle as WTKUI@54.168.213.106
+ DEBUG [2da28831] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env echo $HOME/.rbenv/bin/rbenv exec bundle )
+ DEBUG [2da28831] 	/home/WTKUI/.rbenv/bin/rbenv exec bundle
+ DEBUG [2da28831] Finished in 0.298 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/puma_eat_project_production.service 0.0%
+  INFO Uploading /tmp/puma_eat_project_production.service 100.0%
+  INFO [d888622c] Running /usr/bin/env sudo mv /tmp/puma_eat_project_production.service /etc/systemd/system/ as WTKUI@54.168.213.106
+ DEBUG [d888622c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env sudo mv /tmp/puma_eat_project_production.service /etc/systemd/system/ )
+  INFO [d888622c] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [e9256a5d] Running /usr/bin/env sudo /bin/systemctl daemon-reload as WTKUI@54.168.213.106
+ DEBUG [e9256a5d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env sudo /bin/systemctl daemon-reload )
+  INFO [e9256a5d] Finished in 0.427 seconds with exit status 0 (successful).
+  INFO [6806e4fd] Running /usr/bin/env sudo /bin/systemctl enable puma_eat_project_production as WTKUI@54.168.213.106
+ DEBUG [6806e4fd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env sudo /bin/systemctl enable puma_eat_project_production )
+  INFO [6806e4fd] Finished in 0.158 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-24 14:55:09 +0900 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [0704c555] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [0704c555] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [0704c555] Finished in 0.291 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ac4b72df623545c27a2d.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ac4b72df623545c27a2d.sh 100.0%
+  INFO [170dfb03] Running /usr/bin/env chmod 700 /tmp/git-ssh-ac4b72df623545c27a2d.sh as WTKUI@54.168.213.106
+ DEBUG [170dfb03] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-ac4b72df623545c27a2d.sh )
+  INFO [170dfb03] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [046f14a4] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [046f14a4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ac4b72df623545c27a2d.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [046f14a4] 	e2f96fe98f851cdecc8ec6294affc59d838fda90	HEAD
+  INFO [046f14a4] Finished in 1.948 seconds with exit status 0 (successful).
+  INFO [98d451a0] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [98d451a0] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+  INFO [98d451a0] Finished in 0.094 seconds with exit status 0 (successful).
+  INFO [dc181230] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets as WTKUI@54.168.213.106
+ DEBUG [dc181230] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets )
+  INFO [dc181230] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [05c87d06] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/config as WTKUI@54.168.213.106
+ DEBUG [05c87d06] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/config )
+  INFO [05c87d06] Finished in 0.096 seconds with exit status 0 (successful).
+ DEBUG [42d34621] Running [ -f /var/www/eat_project/shared/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [42d34621] Command: [ -f /var/www/eat_project/shared/config/master.key ]
+ DEBUG [42d34621] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [64c81036] Running [ -f /var/www/eat_project/shared/puma.rb ] as WTKUI@54.168.213.106
+ DEBUG [64c81036] Command: [ -f /var/www/eat_project/shared/puma.rb ]
+ DEBUG [64c81036] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [65d72e7c] Running [ -f /var/www/eat_project/current/REVISION ] as WTKUI@54.168.213.106
+ DEBUG [65d72e7c] Command: [ -f /var/www/eat_project/current/REVISION ]
+ DEBUG [65d72e7c] Finished in 0.059 seconds with exit status 1 (failed).
+ DEBUG [01cdbe0e] Running [ -f /var/www/eat_project/repo/HEAD ] as WTKUI@54.168.213.106
+ DEBUG [01cdbe0e] Command: [ -f /var/www/eat_project/repo/HEAD ]
+ DEBUG [01cdbe0e] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/eat_project/repo
+ DEBUG [2ab2d814] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [2ab2d814] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [2ab2d814] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [98e1aefb] Running /usr/bin/env git remote set-url origin git@github.com:W2020T/eat_project.git as WTKUI@54.168.213.106
+ DEBUG [98e1aefb] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ac4b72df623545c27a2d.sh" ; /usr/bin/env git remote set-url origin git@github.com:W2020T/eat_project.git )
+  INFO [98e1aefb] Finished in 0.098 seconds with exit status 0 (successful).
+  INFO [72207652] Running /usr/bin/env git remote update --prune as WTKUI@54.168.213.106
+ DEBUG [72207652] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ac4b72df623545c27a2d.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [72207652] 	Fetching origin
+  INFO [72207652] Finished in 1.904 seconds with exit status 0 (successful).
+ DEBUG [30b25711] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [30b25711] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [30b25711] Finished in 0.109 seconds with exit status 0 (successful).
+  INFO [a3cac991] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324055512 as WTKUI@54.168.213.106
+ DEBUG [a3cac991] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ac4b72df623545c27a2d.sh" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324055512 )
+  INFO [a3cac991] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [32a9537a] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/eat_project/releases/20220324055512 as WTKUI@54.168.213.106
+ DEBUG [32a9537a] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ac4b72df623545c27a2d.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/eat_project/releases/20220324055512 )
+  INFO [32a9537a] Finished in 8.859 seconds with exit status 0 (successful).
+ DEBUG [2117b41a] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [2117b41a] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [2117b41a] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG [ae4921cb] Running /usr/bin/env git rev-list --max-count=1 main as WTKUI@54.168.213.106
+ DEBUG [ae4921cb] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ac4b72df623545c27a2d.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [ae4921cb] 	e2f96fe98f851cdecc8ec6294affc59d838fda90
+ DEBUG [ae4921cb] Finished in 0.117 seconds with exit status 0 (successful).
+ DEBUG [ff61d109] Running if test ! -d /var/www/eat_project/releases/20220324055512; then echo "Directory does not exist '/var/www/eat_project/releases/20220324055512'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [ff61d109] Command: if test ! -d /var/www/eat_project/releases/20220324055512; then echo "Directory does not exist '/var/www/eat_project/releases/20220324055512'" 1>&2; false; fi
+ DEBUG [ff61d109] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [af8071ce] Running /usr/bin/env echo "e2f96fe98f851cdecc8ec6294affc59d838fda90" > REVISION as WTKUI@54.168.213.106
+ DEBUG [af8071ce] Command: cd /var/www/eat_project/releases/20220324055512 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env echo "e2f96fe98f851cdecc8ec6294affc59d838fda90" > REVISION )
+  INFO [af8071ce] Finished in 0.109 seconds with exit status 0 (successful).
+  INFO [1e923e8b] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324055512/config as WTKUI@54.168.213.106
+ DEBUG [1e923e8b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324055512/config )
+  INFO [1e923e8b] Finished in 0.057 seconds with exit status 0 (successful).
+ DEBUG [de10a0e6] Running [ -L /var/www/eat_project/releases/20220324055512/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [de10a0e6] Command: [ -L /var/www/eat_project/releases/20220324055512/config/master.key ]
+ DEBUG [de10a0e6] Finished in 0.097 seconds with exit status 1 (failed).
+ DEBUG [94ce3d8d] Running [ -f /var/www/eat_project/releases/20220324055512/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [94ce3d8d] Command: [ -f /var/www/eat_project/releases/20220324055512/config/master.key ]
+ DEBUG [94ce3d8d] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [7a529ec4] Running /usr/bin/env rm /var/www/eat_project/releases/20220324055512/config/master.key as WTKUI@54.168.213.106
+ DEBUG [7a529ec4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm /var/www/eat_project/releases/20220324055512/config/master.key )
+  INFO [7a529ec4] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [ea85bf53] Running /usr/bin/env ln -s /var/www/eat_project/shared/config/master.key /var/www/eat_project/releases/20220324055512/config/master.key as WTKUI@54.168.213.106
+ DEBUG [ea85bf53] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/config/master.key /var/www/eat_project/releases/20220324055512/config/master.key )
+  INFO [ea85bf53] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [441bbc8f] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324055512 /var/www/eat_project/releases/20220324055512/tmp /var/www/eat_project/releases/20220324055512/public as WTKUI@54.168.213.106
+ DEBUG [441bbc8f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324055512 /var/www/eat_project/releases/20220324055512/tmp /var/www/eat_project/releases/20220324055512/public )
+  INFO [441bbc8f] Finished in 0.099 seconds with exit status 0 (successful).
+ DEBUG [51be167e] Running [ -L /var/www/eat_project/releases/20220324055512/log ] as WTKUI@54.168.213.106
+ DEBUG [51be167e] Command: [ -L /var/www/eat_project/releases/20220324055512/log ]
+ DEBUG [51be167e] Finished in 0.058 seconds with exit status 1 (failed).
+ DEBUG [3ff4e23d] Running [ -d /var/www/eat_project/releases/20220324055512/log ] as WTKUI@54.168.213.106
+ DEBUG [3ff4e23d] Command: [ -d /var/www/eat_project/releases/20220324055512/log ]
+ DEBUG [3ff4e23d] Finished in 0.101 seconds with exit status 0 (successful).
+  INFO [4c5718b2] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220324055512/log as WTKUI@54.168.213.106
+ DEBUG [4c5718b2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220324055512/log )
+  INFO [4c5718b2] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [84222dd3] Running /usr/bin/env ln -s /var/www/eat_project/shared/log /var/www/eat_project/releases/20220324055512/log as WTKUI@54.168.213.106
+ DEBUG [84222dd3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/log /var/www/eat_project/releases/20220324055512/log )
+  INFO [84222dd3] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [e7210310] Running [ -L /var/www/eat_project/releases/20220324055512/tmp/pids ] as WTKUI@54.168.213.106
+ DEBUG [e7210310] Command: [ -L /var/www/eat_project/releases/20220324055512/tmp/pids ]
+ DEBUG [e7210310] Finished in 0.057 seconds with exit status 1 (failed).
+ DEBUG [ff0bf70a] Running [ -d /var/www/eat_project/releases/20220324055512/tmp/pids ] as WTKUI@54.168.213.106
+ DEBUG [ff0bf70a] Command: [ -d /var/www/eat_project/releases/20220324055512/tmp/pids ]
+ DEBUG [ff0bf70a] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [474ca5ba] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220324055512/tmp/pids as WTKUI@54.168.213.106
+ DEBUG [474ca5ba] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220324055512/tmp/pids )
+  INFO [474ca5ba] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [f177f18f] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/pids /var/www/eat_project/releases/20220324055512/tmp/pids as WTKUI@54.168.213.106
+ DEBUG [f177f18f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/pids /var/www/eat_project/releases/20220324055512/tmp/pids )
+  INFO [f177f18f] Finished in 0.094 seconds with exit status 0 (successful).
+ DEBUG [9faf1bcc] Running [ -L /var/www/eat_project/releases/20220324055512/tmp/cache ] as WTKUI@54.168.213.106
+ DEBUG [9faf1bcc] Command: [ -L /var/www/eat_project/releases/20220324055512/tmp/cache ]
+ DEBUG [9faf1bcc] Finished in 0.086 seconds with exit status 1 (failed).
+ DEBUG [e7516236] Running [ -d /var/www/eat_project/releases/20220324055512/tmp/cache ] as WTKUI@54.168.213.106
+ DEBUG [e7516236] Command: [ -d /var/www/eat_project/releases/20220324055512/tmp/cache ]
+ DEBUG [e7516236] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [6f3e21ed] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220324055512/tmp/cache as WTKUI@54.168.213.106
+ DEBUG [6f3e21ed] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220324055512/tmp/cache )
+  INFO [6f3e21ed] Finished in 0.580 seconds with exit status 0 (successful).
+  INFO [b6b35127] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/cache /var/www/eat_project/releases/20220324055512/tmp/cache as WTKUI@54.168.213.106
+ DEBUG [b6b35127] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/cache /var/www/eat_project/releases/20220324055512/tmp/cache )
+  INFO [b6b35127] Finished in 0.102 seconds with exit status 0 (successful).
+ DEBUG [6e574bc7] Running [ -L /var/www/eat_project/releases/20220324055512/tmp/sockets ] as WTKUI@54.168.213.106
+ DEBUG [6e574bc7] Command: [ -L /var/www/eat_project/releases/20220324055512/tmp/sockets ]
+ DEBUG [6e574bc7] Finished in 0.056 seconds with exit status 1 (failed).
+ DEBUG [dadc547d] Running [ -d /var/www/eat_project/releases/20220324055512/tmp/sockets ] as WTKUI@54.168.213.106
+ DEBUG [dadc547d] Command: [ -d /var/www/eat_project/releases/20220324055512/tmp/sockets ]
+ DEBUG [dadc547d] Finished in 0.095 seconds with exit status 1 (failed).
+  INFO [24f3e6a4] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/releases/20220324055512/tmp/sockets as WTKUI@54.168.213.106
+ DEBUG [24f3e6a4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/releases/20220324055512/tmp/sockets )
+  INFO [24f3e6a4] Finished in 0.059 seconds with exit status 0 (successful).
+ DEBUG [025af5f3] Running [ -L /var/www/eat_project/releases/20220324055512/node_modules ] as WTKUI@54.168.213.106
+ DEBUG [025af5f3] Command: [ -L /var/www/eat_project/releases/20220324055512/node_modules ]
+ DEBUG [025af5f3] Finished in 0.104 seconds with exit status 1 (failed).
+ DEBUG [a3181c96] Running [ -d /var/www/eat_project/releases/20220324055512/node_modules ] as WTKUI@54.168.213.106
+ DEBUG [a3181c96] Command: [ -d /var/www/eat_project/releases/20220324055512/node_modules ]
+ DEBUG [a3181c96] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [867dacf6] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220324055512/node_modules as WTKUI@54.168.213.106
+ DEBUG [867dacf6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220324055512/node_modules )
+  INFO [867dacf6] Finished in 0.110 seconds with exit status 0 (successful).
+  INFO [4c63d5f8] Running /usr/bin/env ln -s /var/www/eat_project/shared/node_modules /var/www/eat_project/releases/20220324055512/node_modules as WTKUI@54.168.213.106
+ DEBUG [4c63d5f8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/node_modules /var/www/eat_project/releases/20220324055512/node_modules )
+  INFO [4c63d5f8] Finished in 0.055 seconds with exit status 0 (successful).
+ DEBUG [1fc8456a] Running [ -L /var/www/eat_project/releases/20220324055512/public/assets ] as WTKUI@54.168.213.106
+ DEBUG [1fc8456a] Command: [ -L /var/www/eat_project/releases/20220324055512/public/assets ]
+ DEBUG [1fc8456a] Finished in 0.104 seconds with exit status 1 (failed).
+ DEBUG [4f2c4f44] Running [ -d /var/www/eat_project/releases/20220324055512/public/assets ] as WTKUI@54.168.213.106
+ DEBUG [4f2c4f44] Command: [ -d /var/www/eat_project/releases/20220324055512/public/assets ]
+ DEBUG [4f2c4f44] Finished in 0.054 seconds with exit status 1 (failed).
+  INFO [df573f32] Running /usr/bin/env ln -s /var/www/eat_project/shared/public/assets /var/www/eat_project/releases/20220324055512/public/assets as WTKUI@54.168.213.106
+ DEBUG [df573f32] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/public/assets /var/www/eat_project/releases/20220324055512/public/assets )
+  INFO [df573f32] Finished in 0.101 seconds with exit status 0 (successful).
+ DEBUG [f925df25] Running if test ! -d /var/www/eat_project/releases/20220324055512; then echo "Directory does not exist '/var/www/eat_project/releases/20220324055512'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [f925df25] Command: if test ! -d /var/www/eat_project/releases/20220324055512; then echo "Directory does not exist '/var/www/eat_project/releases/20220324055512'" 1>&2; false; fi
+ DEBUG [f925df25] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [b82beba9] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as WTKUI@54.168.213.106
+ DEBUG [b82beba9] Command: cd /var/www/eat_project/releases/20220324055512 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [b82beba9] Finished in 0.458 seconds with exit status 0 (successful).
+  INFO [5f10b787] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/eat_project/shared/bundle as WTKUI@54.168.213.106
+ DEBUG [5f10b787] Command: cd /var/www/eat_project/releases/20220324055512 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/eat_project/shared/bundle )
+  INFO [5f10b787] Finished in 0.307 seconds with exit status 0 (successful).
+  INFO [c195e6a6] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as WTKUI@54.168.213.106
+ DEBUG [c195e6a6] Command: cd /var/www/eat_project/releases/20220324055512 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [c195e6a6] Finished in 0.285 seconds with exit status 0 (successful).
+ DEBUG [84ae46fe] Running if test ! -d /var/www/eat_project/releases/20220324055512; then echo "Directory does not exist '/var/www/eat_project/releases/20220324055512'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [84ae46fe] Command: if test ! -d /var/www/eat_project/releases/20220324055512; then echo "Directory does not exist '/var/www/eat_project/releases/20220324055512'" 1>&2; false; fi
+ DEBUG [84ae46fe] Finished in 0.090 seconds with exit status 0 (successful).
+ DEBUG [09e1c4b5] Running $HOME/.rbenv/bin/rbenv exec bundle check as WTKUI@54.168.213.106
+ DEBUG [09e1c4b5] Command: cd /var/www/eat_project/releases/20220324055512 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [09e1c4b5] 	The following gems are missing
+ DEBUG [09e1c4b5] 	 * mysql2 (0.5.3)
+ DEBUG [09e1c4b5] 	Install missing gems with `bundle install`
+ DEBUG [09e1c4b5] Finished in 0.662 seconds with exit status 1 (failed).
+  INFO [a403c6bd] Running $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet as WTKUI@54.168.213.106
+ DEBUG [a403c6bd] Command: cd /var/www/eat_project/releases/20220324055512 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet )
+ DEBUG [a403c6bd] 	Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/var/www/eat_project/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/ext/mysql2
+/home/WTKUI/.rbenv/versions/2.6.5/bin/ruby -I
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0 -r
+./siteconf20220324-20843-e8cmmq.rb extconf.rb
+checking for rb_absint_size()... yes
+checking for rb_absint_singlebit_p()... yes
+checking for rb_wait_for_single_fd()... yes
+checking for -lmysqlclient... no
+-----
+mysql client is missing. You may need to 'sudo apt-get install libmariadb-dev',
+'sudo apt-get install libmysqlclient-dev' or 'sudo yum install mysql-devel', and
+try again.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/home/WTKUI/.rbenv/versions/2.6.5/bin/$(RUBY_BASE_NAME)
+	--with-mysql-dir
+	--without-mysql-dir
+	--with-mysql-include
+	--without-mysql-include=${mysql-dir}/include
+	--with-mysql-lib
+	--without-mysql-lib=${mysql-dir}/lib
+	--with-mysql-config
+	--without-mysql-config
+	--with-mysql-dir
+	--without-mysql-dir
+	--with-mysql-include
+	--without-mysql-include=${mysql-dir}/include
+	--with-mysql-lib
+	--without-mysql-lib=${mysql-dir}/lib
+	--with-mysqlclientlib
+	--without-mysqlclientlib
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/var/www/eat_project/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/var/www/eat_project/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3 for inspection.
+Results logged to
+/var/www/eat_project/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/gem_make.out
+
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:99:in
+`run'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:47:in
+`block in build'
+  /home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/tempfile.rb:295:in `open'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:29:in
+`build'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:185:in
+`block in build_extension'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in
+`mon_synchronize'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:181:in
+`build_extension'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:229:in
+`block in build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`each'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/installer.rb:830:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/rubygems_gem_installer.rb:71:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/rubygems_gem_installer.rb:28:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/source/rubygems.rb:204:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/parallel_installer.rb:186:in
+`do_install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/parallel_installer.rb:177:in
+`block in worker_pool'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:62:in
+`apply_func'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:54:in
+`loop'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:54:in
+`process_queue'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:91:in
+`block (2 levels) in create_threads'
+
+An error occurred while installing mysql2 (0.5.3), and Bundler cannot continue.
+
+In Gemfile:
+  mysql2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2022-03-24 17:31:02 +0900 cap production deploy BRANCH=HEAD
+  INFO ---------------------------------------------------------------------------
+  INFO rbenv: rbenv_ruby is not set; ruby version will be defined by the remote hosts via rbenv
+  INFO [75b1f962] Running /usr/bin/env mkdir -p /tmp as WTKUI@54.168.213.106
+ DEBUG [75b1f962] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /tmp )
+  INFO [75b1f962] Finished in 0.307 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-6c72aeda88761fd10e6f.sh 0.0%
+  INFO Uploading /tmp/git-ssh-6c72aeda88761fd10e6f.sh 100.0%
+  INFO [175f4724] Running /usr/bin/env chmod 700 /tmp/git-ssh-6c72aeda88761fd10e6f.sh as WTKUI@54.168.213.106
+ DEBUG [175f4724] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env chmod 700 /tmp/git-ssh-6c72aeda88761fd10e6f.sh )
+  INFO [175f4724] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [9969ba58] Running /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD as WTKUI@54.168.213.106
+ DEBUG [9969ba58] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6c72aeda88761fd10e6f.sh" ; /usr/bin/env git ls-remote git@github.com:W2020T/eat_project.git HEAD )
+ DEBUG [9969ba58] 	e2f96fe98f851cdecc8ec6294affc59d838fda90	HEAD
+  INFO [9969ba58] Finished in 1.981 seconds with exit status 0 (successful).
+  INFO [dc271053] Running /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases as WTKUI@54.168.213.106
+ DEBUG [dc271053] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared /var/www/eat_project/releases )
+  INFO [dc271053] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [03ffae82] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets as WTKUI@54.168.213.106
+ DEBUG [03ffae82] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/log /var/www/eat_project/shared/tmp/pids /var/www/eat_project/shared/tmp/cache /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/shared/node_modules /var/www/eat_project/shared/public/assets )
+  INFO [03ffae82] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [cc29873d] Running /usr/bin/env mkdir -p /var/www/eat_project/shared/config as WTKUI@54.168.213.106
+ DEBUG [cc29873d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/shared/config )
+  INFO [cc29873d] Finished in 0.111 seconds with exit status 0 (successful).
+ DEBUG [17c92437] Running [ -f /var/www/eat_project/shared/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [17c92437] Command: [ -f /var/www/eat_project/shared/config/master.key ]
+ DEBUG [17c92437] Finished in 0.059 seconds with exit status 0 (successful).
+ DEBUG [614e62c8] Running [ -f /var/www/eat_project/shared/puma.rb ] as WTKUI@54.168.213.106
+ DEBUG [614e62c8] Command: [ -f /var/www/eat_project/shared/puma.rb ]
+ DEBUG [614e62c8] Finished in 0.100 seconds with exit status 0 (successful).
+ DEBUG [e350d7c8] Running [ -f /var/www/eat_project/current/REVISION ] as WTKUI@54.168.213.106
+ DEBUG [e350d7c8] Command: [ -f /var/www/eat_project/current/REVISION ]
+ DEBUG [e350d7c8] Finished in 0.058 seconds with exit status 1 (failed).
+ DEBUG [8f1bc89b] Running [ -f /var/www/eat_project/repo/HEAD ] as WTKUI@54.168.213.106
+ DEBUG [8f1bc89b] Command: [ -f /var/www/eat_project/repo/HEAD ]
+ DEBUG [8f1bc89b] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/eat_project/repo
+ DEBUG [1746ea70] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [1746ea70] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [1746ea70] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [3a565729] Running /usr/bin/env git remote set-url origin git@github.com:W2020T/eat_project.git as WTKUI@54.168.213.106
+ DEBUG [3a565729] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6c72aeda88761fd10e6f.sh" ; /usr/bin/env git remote set-url origin git@github.com:W2020T/eat_project.git )
+  INFO [3a565729] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [49e9d95d] Running /usr/bin/env git remote update --prune as WTKUI@54.168.213.106
+ DEBUG [49e9d95d] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6c72aeda88761fd10e6f.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [49e9d95d] 	Fetching origin
+  INFO [49e9d95d] Finished in 1.877 seconds with exit status 0 (successful).
+ DEBUG [ead49fdf] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [ead49fdf] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [ead49fdf] Finished in 0.115 seconds with exit status 0 (successful).
+  INFO [8a767847] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324083105 as WTKUI@54.168.213.106
+ DEBUG [8a767847] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6c72aeda88761fd10e6f.sh" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324083105 )
+  INFO [8a767847] Finished in 0.093 seconds with exit status 0 (successful).
+  INFO [1ff94a74] Running /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/eat_project/releases/20220324083105 as WTKUI@54.168.213.106
+ DEBUG [1ff94a74] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6c72aeda88761fd10e6f.sh" ; /usr/bin/env git archive main | /usr/bin/env tar -x -f - -C /var/www/eat_project/releases/20220324083105 )
+  INFO [1ff94a74] Finished in 8.993 seconds with exit status 0 (successful).
+ DEBUG [acfbfb73] Running if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [acfbfb73] Command: if test ! -d /var/www/eat_project/repo; then echo "Directory does not exist '/var/www/eat_project/repo'" 1>&2; false; fi
+ DEBUG [acfbfb73] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [08fa85e1] Running /usr/bin/env git rev-list --max-count=1 main as WTKUI@54.168.213.106
+ DEBUG [08fa85e1] Command: cd /var/www/eat_project/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6c72aeda88761fd10e6f.sh" ; /usr/bin/env git rev-list --max-count=1 main )
+ DEBUG [08fa85e1] 	e2f96fe98f851cdecc8ec6294affc59d838fda90
+ DEBUG [08fa85e1] Finished in 0.118 seconds with exit status 0 (successful).
+ DEBUG [35e3d2ed] Running if test ! -d /var/www/eat_project/releases/20220324083105; then echo "Directory does not exist '/var/www/eat_project/releases/20220324083105'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [35e3d2ed] Command: if test ! -d /var/www/eat_project/releases/20220324083105; then echo "Directory does not exist '/var/www/eat_project/releases/20220324083105'" 1>&2; false; fi
+ DEBUG [35e3d2ed] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [a0cb28b6] Running /usr/bin/env echo "e2f96fe98f851cdecc8ec6294affc59d838fda90" > REVISION as WTKUI@54.168.213.106
+ DEBUG [a0cb28b6] Command: cd /var/www/eat_project/releases/20220324083105 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env echo "e2f96fe98f851cdecc8ec6294affc59d838fda90" > REVISION )
+  INFO [a0cb28b6] Finished in 0.116 seconds with exit status 0 (successful).
+  INFO [2784ff9d] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324083105/config as WTKUI@54.168.213.106
+ DEBUG [2784ff9d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324083105/config )
+  INFO [2784ff9d] Finished in 0.058 seconds with exit status 0 (successful).
+ DEBUG [7ff03845] Running [ -L /var/www/eat_project/releases/20220324083105/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [7ff03845] Command: [ -L /var/www/eat_project/releases/20220324083105/config/master.key ]
+ DEBUG [7ff03845] Finished in 0.103 seconds with exit status 1 (failed).
+ DEBUG [78acfaeb] Running [ -f /var/www/eat_project/releases/20220324083105/config/master.key ] as WTKUI@54.168.213.106
+ DEBUG [78acfaeb] Command: [ -f /var/www/eat_project/releases/20220324083105/config/master.key ]
+ DEBUG [78acfaeb] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [a732a2b5] Running /usr/bin/env rm /var/www/eat_project/releases/20220324083105/config/master.key as WTKUI@54.168.213.106
+ DEBUG [a732a2b5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm /var/www/eat_project/releases/20220324083105/config/master.key )
+  INFO [a732a2b5] Finished in 0.102 seconds with exit status 0 (successful).
+  INFO [30da2e52] Running /usr/bin/env ln -s /var/www/eat_project/shared/config/master.key /var/www/eat_project/releases/20220324083105/config/master.key as WTKUI@54.168.213.106
+ DEBUG [30da2e52] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/config/master.key /var/www/eat_project/releases/20220324083105/config/master.key )
+  INFO [30da2e52] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [a34dc274] Running /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324083105 /var/www/eat_project/releases/20220324083105/tmp /var/www/eat_project/releases/20220324083105/public as WTKUI@54.168.213.106
+ DEBUG [a34dc274] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env mkdir -p /var/www/eat_project/releases/20220324083105 /var/www/eat_project/releases/20220324083105/tmp /var/www/eat_project/releases/20220324083105/public )
+  INFO [a34dc274] Finished in 0.098 seconds with exit status 0 (successful).
+ DEBUG [d0399adc] Running [ -L /var/www/eat_project/releases/20220324083105/log ] as WTKUI@54.168.213.106
+ DEBUG [d0399adc] Command: [ -L /var/www/eat_project/releases/20220324083105/log ]
+ DEBUG [d0399adc] Finished in 0.054 seconds with exit status 1 (failed).
+ DEBUG [99973fed] Running [ -d /var/www/eat_project/releases/20220324083105/log ] as WTKUI@54.168.213.106
+ DEBUG [99973fed] Command: [ -d /var/www/eat_project/releases/20220324083105/log ]
+ DEBUG [99973fed] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [e5189d5c] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220324083105/log as WTKUI@54.168.213.106
+ DEBUG [e5189d5c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220324083105/log )
+  INFO [e5189d5c] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [ec6418ee] Running /usr/bin/env ln -s /var/www/eat_project/shared/log /var/www/eat_project/releases/20220324083105/log as WTKUI@54.168.213.106
+ DEBUG [ec6418ee] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/log /var/www/eat_project/releases/20220324083105/log )
+  INFO [ec6418ee] Finished in 0.095 seconds with exit status 0 (successful).
+ DEBUG [92e03324] Running [ -L /var/www/eat_project/releases/20220324083105/tmp/pids ] as WTKUI@54.168.213.106
+ DEBUG [92e03324] Command: [ -L /var/www/eat_project/releases/20220324083105/tmp/pids ]
+ DEBUG [92e03324] Finished in 0.054 seconds with exit status 1 (failed).
+ DEBUG [e50f8eda] Running [ -d /var/www/eat_project/releases/20220324083105/tmp/pids ] as WTKUI@54.168.213.106
+ DEBUG [e50f8eda] Command: [ -d /var/www/eat_project/releases/20220324083105/tmp/pids ]
+ DEBUG [e50f8eda] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [7996c941] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220324083105/tmp/pids as WTKUI@54.168.213.106
+ DEBUG [7996c941] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220324083105/tmp/pids )
+  INFO [7996c941] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [ce57b37c] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/pids /var/www/eat_project/releases/20220324083105/tmp/pids as WTKUI@54.168.213.106
+ DEBUG [ce57b37c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/pids /var/www/eat_project/releases/20220324083105/tmp/pids )
+  INFO [ce57b37c] Finished in 0.126 seconds with exit status 0 (successful).
+ DEBUG [11b3eb89] Running [ -L /var/www/eat_project/releases/20220324083105/tmp/cache ] as WTKUI@54.168.213.106
+ DEBUG [11b3eb89] Command: [ -L /var/www/eat_project/releases/20220324083105/tmp/cache ]
+ DEBUG [11b3eb89] Finished in 0.051 seconds with exit status 1 (failed).
+ DEBUG [ef425a8b] Running [ -d /var/www/eat_project/releases/20220324083105/tmp/cache ] as WTKUI@54.168.213.106
+ DEBUG [ef425a8b] Command: [ -d /var/www/eat_project/releases/20220324083105/tmp/cache ]
+ DEBUG [ef425a8b] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [9beb62a3] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220324083105/tmp/cache as WTKUI@54.168.213.106
+ DEBUG [9beb62a3] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220324083105/tmp/cache )
+  INFO [9beb62a3] Finished in 0.566 seconds with exit status 0 (successful).
+  INFO [60e1844f] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/cache /var/www/eat_project/releases/20220324083105/tmp/cache as WTKUI@54.168.213.106
+ DEBUG [60e1844f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/cache /var/www/eat_project/releases/20220324083105/tmp/cache )
+  INFO [60e1844f] Finished in 0.107 seconds with exit status 0 (successful).
+ DEBUG [4639b3e5] Running [ -L /var/www/eat_project/releases/20220324083105/tmp/sockets ] as WTKUI@54.168.213.106
+ DEBUG [4639b3e5] Command: [ -L /var/www/eat_project/releases/20220324083105/tmp/sockets ]
+ DEBUG [4639b3e5] Finished in 0.054 seconds with exit status 1 (failed).
+ DEBUG [2869bd23] Running [ -d /var/www/eat_project/releases/20220324083105/tmp/sockets ] as WTKUI@54.168.213.106
+ DEBUG [2869bd23] Command: [ -d /var/www/eat_project/releases/20220324083105/tmp/sockets ]
+ DEBUG [2869bd23] Finished in 0.096 seconds with exit status 1 (failed).
+  INFO [ae8d6b3b] Running /usr/bin/env ln -s /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/releases/20220324083105/tmp/sockets as WTKUI@54.168.213.106
+ DEBUG [ae8d6b3b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/tmp/sockets /var/www/eat_project/releases/20220324083105/tmp/sockets )
+  INFO [ae8d6b3b] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [602d00bd] Running [ -L /var/www/eat_project/releases/20220324083105/node_modules ] as WTKUI@54.168.213.106
+ DEBUG [602d00bd] Command: [ -L /var/www/eat_project/releases/20220324083105/node_modules ]
+ DEBUG [602d00bd] Finished in 0.105 seconds with exit status 1 (failed).
+ DEBUG [169b51a1] Running [ -d /var/www/eat_project/releases/20220324083105/node_modules ] as WTKUI@54.168.213.106
+ DEBUG [169b51a1] Command: [ -d /var/www/eat_project/releases/20220324083105/node_modules ]
+ DEBUG [169b51a1] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [ff22a171] Running /usr/bin/env rm -rf /var/www/eat_project/releases/20220324083105/node_modules as WTKUI@54.168.213.106
+ DEBUG [ff22a171] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env rm -rf /var/www/eat_project/releases/20220324083105/node_modules )
+  INFO [ff22a171] Finished in 0.114 seconds with exit status 0 (successful).
+  INFO [09877538] Running /usr/bin/env ln -s /var/www/eat_project/shared/node_modules /var/www/eat_project/releases/20220324083105/node_modules as WTKUI@54.168.213.106
+ DEBUG [09877538] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/node_modules /var/www/eat_project/releases/20220324083105/node_modules )
+  INFO [09877538] Finished in 0.070 seconds with exit status 0 (successful).
+ DEBUG [ecbbaaf6] Running [ -L /var/www/eat_project/releases/20220324083105/public/assets ] as WTKUI@54.168.213.106
+ DEBUG [ecbbaaf6] Command: [ -L /var/www/eat_project/releases/20220324083105/public/assets ]
+ DEBUG [ecbbaaf6] Finished in 0.096 seconds with exit status 1 (failed).
+ DEBUG [aa5a8e16] Running [ -d /var/www/eat_project/releases/20220324083105/public/assets ] as WTKUI@54.168.213.106
+ DEBUG [aa5a8e16] Command: [ -d /var/www/eat_project/releases/20220324083105/public/assets ]
+ DEBUG [aa5a8e16] Finished in 0.058 seconds with exit status 1 (failed).
+  INFO [fe8daf2d] Running /usr/bin/env ln -s /var/www/eat_project/shared/public/assets /var/www/eat_project/releases/20220324083105/public/assets as WTKUI@54.168.213.106
+ DEBUG [fe8daf2d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; /usr/bin/env ln -s /var/www/eat_project/shared/public/assets /var/www/eat_project/releases/20220324083105/public/assets )
+  INFO [fe8daf2d] Finished in 0.104 seconds with exit status 0 (successful).
+ DEBUG [d61939f2] Running if test ! -d /var/www/eat_project/releases/20220324083105; then echo "Directory does not exist '/var/www/eat_project/releases/20220324083105'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [d61939f2] Command: if test ! -d /var/www/eat_project/releases/20220324083105; then echo "Directory does not exist '/var/www/eat_project/releases/20220324083105'" 1>&2; false; fi
+ DEBUG [d61939f2] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [e8627e7a] Running $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true as WTKUI@54.168.213.106
+ DEBUG [e8627e7a] Command: cd /var/www/eat_project/releases/20220324083105 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local deployment true )
+  INFO [e8627e7a] Finished in 0.391 seconds with exit status 0 (successful).
+  INFO [a5264687] Running $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/eat_project/shared/bundle as WTKUI@54.168.213.106
+ DEBUG [a5264687] Command: cd /var/www/eat_project/releases/20220324083105 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local path /var/www/eat_project/shared/bundle )
+  INFO [a5264687] Finished in 0.252 seconds with exit status 0 (successful).
+  INFO [a9bdc951] Running $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test as WTKUI@54.168.213.106
+ DEBUG [a9bdc951] Command: cd /var/www/eat_project/releases/20220324083105 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle config --local without development:test )
+  INFO [a9bdc951] Finished in 0.288 seconds with exit status 0 (successful).
+ DEBUG [8554503e] Running if test ! -d /var/www/eat_project/releases/20220324083105; then echo "Directory does not exist '/var/www/eat_project/releases/20220324083105'" 1>&2; false; fi as WTKUI@54.168.213.106
+ DEBUG [8554503e] Command: if test ! -d /var/www/eat_project/releases/20220324083105; then echo "Directory does not exist '/var/www/eat_project/releases/20220324083105'" 1>&2; false; fi
+ DEBUG [8554503e] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [b4577c4f] Running $HOME/.rbenv/bin/rbenv exec bundle check as WTKUI@54.168.213.106
+ DEBUG [b4577c4f] Command: cd /var/www/eat_project/releases/20220324083105 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle check )
+ DEBUG [b4577c4f] 	The following gems are missing
+ DEBUG [b4577c4f] 	 * mysql2 (0.5.3)
+ DEBUG [b4577c4f] 	Install missing gems with `bundle install`
+ DEBUG [b4577c4f] Finished in 0.464 seconds with exit status 1 (failed).
+  INFO [f3f54311] Running $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet as WTKUI@54.168.213.106
+ DEBUG [f3f54311] Command: cd /var/www/eat_project/releases/20220324083105 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="" ; $HOME/.rbenv/bin/rbenv exec bundle install --jobs 4 --quiet )
+ DEBUG [f3f54311] 	Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/var/www/eat_project/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3/ext/mysql2
+/home/WTKUI/.rbenv/versions/2.6.5/bin/ruby -I
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0 -r
+./siteconf20220324-22237-r04n3z.rb extconf.rb
+checking for rb_absint_size()... yes
+checking for rb_absint_singlebit_p()... yes
+checking for rb_wait_for_single_fd()... yes
+checking for -lmysqlclient... no
+-----
+mysql client is missing. You may need to 'sudo apt-get install libmariadb-dev',
+'sudo apt-get install libmysqlclient-dev' or 'sudo yum install mysql-devel', and
+try again.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/home/WTKUI/.rbenv/versions/2.6.5/bin/$(RUBY_BASE_NAME)
+	--with-mysql-dir
+	--without-mysql-dir
+	--with-mysql-include
+	--without-mysql-include=${mysql-dir}/include
+	--with-mysql-lib
+	--without-mysql-lib=${mysql-dir}/lib
+	--with-mysql-config
+	--without-mysql-config
+	--with-mysql-dir
+	--without-mysql-dir
+	--with-mysql-include
+	--without-mysql-include=${mysql-dir}/include
+	--with-mysql-lib
+	--without-mysql-lib=${mysql-dir}/lib
+	--with-mysqlclientlib
+	--without-mysqlclientlib
+
+To see why this extension failed to compile, please check the mkmf.log which can
+be found here:
+
+/var/www/eat_project/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/mkmf.log
+
+extconf failed, exit code 1
+
+Gem files will remain installed in
+/var/www/eat_project/shared/bundle/ruby/2.6.0/gems/mysql2-0.5.3 for inspection.
+Results logged to
+/var/www/eat_project/shared/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/mysql2-0.5.3/gem_make.out
+
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:99:in
+`run'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:47:in
+`block in build'
+  /home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/tempfile.rb:295:in `open'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/ext_conf_builder.rb:29:in
+`build'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:185:in
+`block in build_extension'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/monitor.rb:235:in
+`mon_synchronize'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:181:in
+`build_extension'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:229:in
+`block in build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`each'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/ext/builder.rb:226:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/2.6.0/rubygems/installer.rb:830:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/rubygems_gem_installer.rb:71:in
+`build_extensions'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/rubygems_gem_installer.rb:28:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/source/rubygems.rb:204:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/gem_installer.rb:54:in
+`install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/gem_installer.rb:16:in
+`install_from_spec'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/parallel_installer.rb:186:in
+`do_install'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/installer/parallel_installer.rb:177:in
+`block in worker_pool'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:62:in
+`apply_func'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:57:in
+`block in process_queue'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:54:in
+`loop'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:54:in
+`process_queue'
+/home/WTKUI/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/bundler-2.3.9/lib/bundler/worker.rb:91:in
+`block (2 levels) in create_threads'
+
+An error occurred while installing mysql2 (0.5.3), and Bundler cannot continue.
+
+In Gemfile:
+  mysql2
