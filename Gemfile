@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
@@ -11,8 +11,6 @@ gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use sqlite3 as the database for Active Record
 gem 'mysql2', '~>0.5.3'
 # Use Puma as the app server
-
-
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
@@ -32,18 +30,18 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rails-i18n'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
-#gem 'bootstrap', '~> 4.3.1'
-gem "actionpack", ">= 6.1.4.1"
+# gem 'bootstrap', '~> 4.3.1'
+gem 'actionpack', '>= 6.1.4.1'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
-gem 'jquery-rails'
-gem 'image_processing', '~> 1.12'
-gem 'pry-rails'
-gem 'mini_magick'
 gem 'dotenv-rails'
-gem "rake"
+gem 'image_processing', '~> 1.12'
+gem 'jquery-rails'
+gem 'mini_magick'
+gem 'pry-rails'
+gem 'rake'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
 
 group :development do
@@ -55,15 +53,14 @@ group :development do
   gem 'listen', '~> 3.3'
   gem 'rack-mini-profiler', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'rubocop', require: false
-  gem 'spring'
-  gem "capistrano", "~> 3.10", require: false
-  gem "capistrano-rails", "~> 1.6", require: false
+  gem 'capistrano', '~> 3.10', require: false
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails', '~> 1.6', require: false
   gem 'capistrano-rbenv', '~> 2.2'
   gem 'capistrano-rbenv-vars', '~> 0.1'
-  gem 'capistrano3-puma'
+  gem 'rubocop', require: false
+  gem 'spring'
 end
-
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
@@ -73,10 +70,10 @@ group :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'webdrivers'
-  
+
   gem 'rspec-rails'
- end
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'kaminari'
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

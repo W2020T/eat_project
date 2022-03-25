@@ -4,13 +4,12 @@ class CommentsController < ApplicationController
     post = Post.find(params[:post_id])
     @comment = post.comments.new(comment_params)
     @comment.user_id = current_user.id
-    if @comment.save
-      flash[:notice] = 'コメントを作成しました'
-      redirect_to("/posts/#{params[:post_id]}")
-    else
-      flash[:notice] = 'コメントの作成に失敗しました'
-      redirect_to("/posts/#{params[:post_id]}")
-    end
+    flash[:notice] = if @comment.save
+                       'コメントを作成しました'
+                     else
+                       'コメントの作成に失敗しました'
+                     end
+    redirect_to("/posts/#{params[:post_id]}")
   end
 
   def destroy
@@ -26,13 +25,12 @@ class CommentsController < ApplicationController
   def update
     @comment = current_user.comments.find(params[:id])
     @comment.content = params[:content]
-    if @comment.save
-      flash[:notice] = 'コメントを編集できました！'
-      redirect_to("/posts/#{params[:post_id]}")
-    else
-      flash[:notice] = 'コメントの編集に失敗しました'
-      redirect_to("/posts/#{params[:post_id]}")
-    end
+    flash[:notice] = if @comment.save
+                       'コメントを編集できました！'
+                     else
+                       'コメントの編集に失敗しました'
+                     end
+    redirect_to("/posts/#{params[:post_id]}")
   end
 
   private
