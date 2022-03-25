@@ -21,8 +21,8 @@ production:
   <<: *default
   database: eat_project_production
   username: root               
-  password: <%= Rails.application.credentials.db[:password] %>
-  host: <%= Rails.application.credentials.db[:hostname] %>
+  password: qazwsxed
+  host: eat-project-db.cxwzcqfcyuut.ap-northeast-1.rds.amazonaws.com
 
 development:
   <<: *default
