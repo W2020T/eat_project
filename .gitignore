@@ -1,4 +1,4 @@
-master.key
+/config/master.key
 .env
 /public/packs
 /public/packs-test
