@@ -7,7 +7,7 @@ set :rbenv_ruby, '2.6.5'
 set :branch, 'main'
 set :nginx_config_name, "#{fetch(:application)}.conf"
 set :nginx_sites_enabled_path, '/etc/nginx/conf.d'
-append :linked_files, 'config/database.yml', 'config/master.key'
+append :linked_files, 'config/master.key'
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'node_modules'
 
 # Default branch is :master
