@@ -1,5 +1,5 @@
-/config/master.key
 .env
+config/master.key
 /public/packs
 /public/packs-test
 /node_modules
