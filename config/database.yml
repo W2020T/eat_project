@@ -14,7 +14,9 @@ test:
   database: eat_project_test
 production:
   <<: *default
+  <% if Rails.application.credentials.db.present? %>
   database: eat_project_production
   username: root  
   password: <%=Rails.application.credentials.db[:password]%>
   host: <%=Rails.application.credentials.db[:hostname]%>  
+  <% end %>

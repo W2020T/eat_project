@@ -4,7 +4,7 @@ lock '~> 3.17.0'
 set :application, 'eat_project'
 set :repo_url, 'git@github.com:W2020T/eat_project.git'
 set :rbenv_ruby, '2.6.5'
-set :branch, 'main'
+set :branch, 'main' || 'master'
 set :nginx_config_name, "#{fetch(:application)}.conf"
 set :nginx_sites_enabled_path, '/etc/nginx/conf.d'
 set :linked_files, %w[config/master.key]
