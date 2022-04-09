@@ -7397,3 +7397,96 @@ Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 2.1ms | Allocations: 617
   [1m[36mActiveRecord::InternalMetadata Load (5.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/posts/index" for ::1 at 2022-04-10 00:57:32 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+Redirected to http://localhost:3000/login
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 29ms (ActiveRecord: 6.5ms | Allocations: 8787)
+
+
+Started GET "/login" for ::1 at 2022-04-10 00:57:32 +0900
+Processing by UsersController#login_form as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 2.9ms | Allocations: 482)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.3ms | Allocations: 9231)
+Completed 200 OK in 56ms (Views: 48.3ms | ActiveRecord: 1.9ms | Allocations: 12211)
+
+
+Started GET "/login" for ::1 at 2022-04-10 00:57:32 +0900
+Processing by UsersController#login_form as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 0.6ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 7798)
+Completed 200 OK in 44ms (Views: 34.1ms | ActiveRecord: 2.9ms | Allocations: 9887)
+
+
+Started GET "/guest_session" for ::1 at 2022-04-10 00:57:35 +0900
+Processing by GuestSessionsController#new_guest as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'guest@exapmle.com' LIMIT 1[0m
+  ↳ app/controllers/guest_sessions_controller.rb:5:in `new_guest'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/guest_sessions_controller.rb:5:in `new_guest'
+  [1m[36mUser Exists? (8.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'guest@exapmle.com' LIMIT 1[0m
+  ↳ app/controllers/guest_sessions_controller.rb:5:in `new_guest'
+  [1m[36mUser Create (10.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('ゲストユーザー', 'guest@exapmle.com', '2022-04-10 00:57:35.828014', '2022-04-10 00:57:35.828014', '$2a$12$Yq7JtoHTrl22zgiWsa370u28PTxGUMETbiQXasOMlP18/VJFW1x1q')[0m
+  ↳ app/controllers/guest_sessions_controller.rb:5:in `new_guest'
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/guest_sessions_controller.rb:5:in `new_guest'
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 305ms (ActiveRecord: 31.8ms | Allocations: 12118)
+
+
+Started GET "/posts/index" for ::1 at 2022-04-10 00:57:35 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2698)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 7426)
+Completed 200 OK in 24ms (Views: 9.5ms | ActiveRecord: 3.5ms | Allocations: 15400)
+
+
+Started GET "/users/index" for ::1 at 2022-04-10 00:57:37 +0900
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 3359)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 8080)
+Completed 200 OK in 20ms (Views: 11.5ms | ActiveRecord: 5.6ms | Allocations: 9760)
+
+
+Started GET "/user_images/" for ::1 at 2022-04-10 00:57:37 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
