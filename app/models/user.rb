@@ -11,7 +11,12 @@ class User < ApplicationRecord
   has_many :followings, through: :relationships, source: :followed
   has_many :posts, dependent: :destroy
   has_many :comments, dependent: :destroy
-
+  has_many :outgoing_messages, class_name: 'Message',
+                               foreign_key: 'from_id',
+                               dependent: :destroy
+  has_many :incoming_messages, class_name: 'Message',
+                               foreign_key: 'to_id',
+                               dependent: :destroy
   def posts
     Post.where(user_id: id)
   end
