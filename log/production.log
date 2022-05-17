@@ -1,0 +1,280 @@
+I, [2022-04-10T15:48:29.174569 #7379]  INFO -- : [f1d3ef6d-9fa4-43ab-b3ef-97b73619ab4b] Started GET "/posts/search" for 127.0.0.1 at 2022-04-10 15:48:29 +0900
+I, [2022-04-10T15:48:29.176860 #7379]  INFO -- : [f1d3ef6d-9fa4-43ab-b3ef-97b73619ab4b] Processing by PostsController#search as HTML
+I, [2022-04-10T15:48:29.192049 #7379]  INFO -- : [f1d3ef6d-9fa4-43ab-b3ef-97b73619ab4b] Completed 500 Internal Server Error in 15ms (ActiveRecord: 6.4ms | Allocations: 1874)
+F, [2022-04-10T15:48:29.192566 #7379] FATAL -- : [f1d3ef6d-9fa4-43ab-b3ef-97b73619ab4b]   
+[f1d3ef6d-9fa4-43ab-b3ef-97b73619ab4b] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[f1d3ef6d-9fa4-43ab-b3ef-97b73619ab4b]   
+[f1d3ef6d-9fa4-43ab-b3ef-97b73619ab4b] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:48:33.612222 #7379]  INFO -- : [5d133dba-2011-4f06-b8cb-4608a5cb3757] Started GET "/posts/search" for 127.0.0.1 at 2022-04-10 15:48:33 +0900
+I, [2022-04-10T15:48:33.612933 #7379]  INFO -- : [5d133dba-2011-4f06-b8cb-4608a5cb3757] Processing by PostsController#search as HTML
+I, [2022-04-10T15:48:33.614641 #7379]  INFO -- : [5d133dba-2011-4f06-b8cb-4608a5cb3757] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.4ms | Allocations: 930)
+F, [2022-04-10T15:48:33.615387 #7379] FATAL -- : [5d133dba-2011-4f06-b8cb-4608a5cb3757]   
+[5d133dba-2011-4f06-b8cb-4608a5cb3757] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[5d133dba-2011-4f06-b8cb-4608a5cb3757]   
+[5d133dba-2011-4f06-b8cb-4608a5cb3757] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:48:34.006082 #7379]  INFO -- : [c3209688-f849-443d-ba74-503757e1eac0] Started GET "/posts/search" for 127.0.0.1 at 2022-04-10 15:48:34 +0900
+I, [2022-04-10T15:48:34.006920 #7379]  INFO -- : [c3209688-f849-443d-ba74-503757e1eac0] Processing by PostsController#search as HTML
+I, [2022-04-10T15:48:34.008751 #7379]  INFO -- : [c3209688-f849-443d-ba74-503757e1eac0] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms | Allocations: 928)
+F, [2022-04-10T15:48:34.009363 #7379] FATAL -- : [c3209688-f849-443d-ba74-503757e1eac0]   
+[c3209688-f849-443d-ba74-503757e1eac0] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[c3209688-f849-443d-ba74-503757e1eac0]   
+[c3209688-f849-443d-ba74-503757e1eac0] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:48:34.259530 #7379]  INFO -- : [bd77878c-3a24-4db6-b66c-7a1f8aac367b] Started GET "/posts/search" for 127.0.0.1 at 2022-04-10 15:48:34 +0900
+I, [2022-04-10T15:48:34.260259 #7379]  INFO -- : [bd77878c-3a24-4db6-b66c-7a1f8aac367b] Processing by PostsController#search as HTML
+I, [2022-04-10T15:48:34.262147 #7379]  INFO -- : [bd77878c-3a24-4db6-b66c-7a1f8aac367b] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.4ms | Allocations: 928)
+F, [2022-04-10T15:48:34.262920 #7379] FATAL -- : [bd77878c-3a24-4db6-b66c-7a1f8aac367b]   
+[bd77878c-3a24-4db6-b66c-7a1f8aac367b] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[bd77878c-3a24-4db6-b66c-7a1f8aac367b]   
+[bd77878c-3a24-4db6-b66c-7a1f8aac367b] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:48:34.538584 #7379]  INFO -- : [5c9132a6-8bf6-4157-98e5-482c76231703] Started GET "/posts/search" for 127.0.0.1 at 2022-04-10 15:48:34 +0900
+I, [2022-04-10T15:48:34.539743 #7379]  INFO -- : [5c9132a6-8bf6-4157-98e5-482c76231703] Processing by PostsController#search as HTML
+I, [2022-04-10T15:48:34.542107 #7379]  INFO -- : [5c9132a6-8bf6-4157-98e5-482c76231703] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.4ms | Allocations: 928)
+F, [2022-04-10T15:48:34.542859 #7379] FATAL -- : [5c9132a6-8bf6-4157-98e5-482c76231703]   
+[5c9132a6-8bf6-4157-98e5-482c76231703] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[5c9132a6-8bf6-4157-98e5-482c76231703]   
+[5c9132a6-8bf6-4157-98e5-482c76231703] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:48:34.785082 #7379]  INFO -- : [c541dd68-0f4f-4128-bb09-b1121fdf500c] Started GET "/posts/search" for 127.0.0.1 at 2022-04-10 15:48:34 +0900
+I, [2022-04-10T15:48:34.785872 #7379]  INFO -- : [c541dd68-0f4f-4128-bb09-b1121fdf500c] Processing by PostsController#search as HTML
+I, [2022-04-10T15:48:34.788668 #7379]  INFO -- : [c541dd68-0f4f-4128-bb09-b1121fdf500c] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.6ms | Allocations: 916)
+F, [2022-04-10T15:48:34.789407 #7379] FATAL -- : [c541dd68-0f4f-4128-bb09-b1121fdf500c]   
+[c541dd68-0f4f-4128-bb09-b1121fdf500c] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[c541dd68-0f4f-4128-bb09-b1121fdf500c]   
+[c541dd68-0f4f-4128-bb09-b1121fdf500c] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:48:34.964260 #7379]  INFO -- : [57fc976e-9fe6-4306-9817-5dc39361a514] Started GET "/posts/search" for 127.0.0.1 at 2022-04-10 15:48:34 +0900
+I, [2022-04-10T15:48:34.965137 #7379]  INFO -- : [57fc976e-9fe6-4306-9817-5dc39361a514] Processing by PostsController#search as HTML
+I, [2022-04-10T15:48:34.967425 #7379]  INFO -- : [57fc976e-9fe6-4306-9817-5dc39361a514] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms | Allocations: 916)
+F, [2022-04-10T15:48:34.968138 #7379] FATAL -- : [57fc976e-9fe6-4306-9817-5dc39361a514]   
+[57fc976e-9fe6-4306-9817-5dc39361a514] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[57fc976e-9fe6-4306-9817-5dc39361a514]   
+[57fc976e-9fe6-4306-9817-5dc39361a514] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:48:35.886354 #7379]  INFO -- : [4eff61b5-470d-4d19-88bb-ebeb2e5c2f23] Started GET "/posts/search" for 127.0.0.1 at 2022-04-10 15:48:35 +0900
+I, [2022-04-10T15:48:35.887498 #7379]  INFO -- : [4eff61b5-470d-4d19-88bb-ebeb2e5c2f23] Processing by PostsController#search as HTML
+I, [2022-04-10T15:48:35.890183 #7379]  INFO -- : [4eff61b5-470d-4d19-88bb-ebeb2e5c2f23] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.4ms | Allocations: 916)
+F, [2022-04-10T15:48:35.890743 #7379] FATAL -- : [4eff61b5-470d-4d19-88bb-ebeb2e5c2f23]   
+[4eff61b5-470d-4d19-88bb-ebeb2e5c2f23] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[4eff61b5-470d-4d19-88bb-ebeb2e5c2f23]   
+[4eff61b5-470d-4d19-88bb-ebeb2e5c2f23] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:48:37.023606 #7379]  INFO -- : [5c3c7d94-d7c9-4d80-88d5-65ecb78cf3af] Started GET "/users/index" for 127.0.0.1 at 2022-04-10 15:48:37 +0900
+I, [2022-04-10T15:48:37.024564 #7379]  INFO -- : [5c3c7d94-d7c9-4d80-88d5-65ecb78cf3af] Processing by UsersController#index as HTML
+I, [2022-04-10T15:48:37.026908 #7379]  INFO -- : [5c3c7d94-d7c9-4d80-88d5-65ecb78cf3af] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms | Allocations: 993)
+F, [2022-04-10T15:48:37.027562 #7379] FATAL -- : [5c3c7d94-d7c9-4d80-88d5-65ecb78cf3af]   
+[5c3c7d94-d7c9-4d80-88d5-65ecb78cf3af] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[5c3c7d94-d7c9-4d80-88d5-65ecb78cf3af]   
+[5c3c7d94-d7c9-4d80-88d5-65ecb78cf3af] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:48:39.713551 #7379]  INFO -- : [784c290a-986e-43bf-a2af-324c0c4d4dd9] Started GET "/users/index" for 127.0.0.1 at 2022-04-10 15:48:39 +0900
+I, [2022-04-10T15:48:39.714312 #7379]  INFO -- : [784c290a-986e-43bf-a2af-324c0c4d4dd9] Processing by UsersController#index as HTML
+I, [2022-04-10T15:48:39.716366 #7379]  INFO -- : [784c290a-986e-43bf-a2af-324c0c4d4dd9] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.4ms | Allocations: 910)
+F, [2022-04-10T15:48:39.716998 #7379] FATAL -- : [784c290a-986e-43bf-a2af-324c0c4d4dd9]   
+[784c290a-986e-43bf-a2af-324c0c4d4dd9] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[784c290a-986e-43bf-a2af-324c0c4d4dd9]   
+[784c290a-986e-43bf-a2af-324c0c4d4dd9] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:48:40.039239 #7379]  INFO -- : [476a05e8-186a-4d8d-8807-75a8e1bd5865] Started GET "/users/index" for 127.0.0.1 at 2022-04-10 15:48:40 +0900
+I, [2022-04-10T15:48:40.040394 #7379]  INFO -- : [476a05e8-186a-4d8d-8807-75a8e1bd5865] Processing by UsersController#index as HTML
+I, [2022-04-10T15:48:40.043520 #7379]  INFO -- : [476a05e8-186a-4d8d-8807-75a8e1bd5865] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.7ms | Allocations: 910)
+F, [2022-04-10T15:48:40.044202 #7379] FATAL -- : [476a05e8-186a-4d8d-8807-75a8e1bd5865]   
+[476a05e8-186a-4d8d-8807-75a8e1bd5865] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[476a05e8-186a-4d8d-8807-75a8e1bd5865]   
+[476a05e8-186a-4d8d-8807-75a8e1bd5865] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:48:40.202629 #7379]  INFO -- : [a7edb4df-1e21-47a5-84ad-ea4c221bad5f] Started GET "/users/index" for 127.0.0.1 at 2022-04-10 15:48:40 +0900
+I, [2022-04-10T15:48:40.203231 #7379]  INFO -- : [a7edb4df-1e21-47a5-84ad-ea4c221bad5f] Processing by UsersController#index as HTML
+I, [2022-04-10T15:48:40.205511 #7379]  INFO -- : [a7edb4df-1e21-47a5-84ad-ea4c221bad5f] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms | Allocations: 910)
+F, [2022-04-10T15:48:40.206146 #7379] FATAL -- : [a7edb4df-1e21-47a5-84ad-ea4c221bad5f]   
+[a7edb4df-1e21-47a5-84ad-ea4c221bad5f] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[a7edb4df-1e21-47a5-84ad-ea4c221bad5f]   
+[a7edb4df-1e21-47a5-84ad-ea4c221bad5f] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:48:41.452652 #7379]  INFO -- : [814e42fb-f04b-4ba7-9c20-54163aad31c0] Started GET "/posts/search" for 127.0.0.1 at 2022-04-10 15:48:41 +0900
+I, [2022-04-10T15:48:41.453497 #7379]  INFO -- : [814e42fb-f04b-4ba7-9c20-54163aad31c0] Processing by PostsController#search as HTML
+I, [2022-04-10T15:48:41.455816 #7379]  INFO -- : [814e42fb-f04b-4ba7-9c20-54163aad31c0] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms | Allocations: 916)
+F, [2022-04-10T15:48:41.456480 #7379] FATAL -- : [814e42fb-f04b-4ba7-9c20-54163aad31c0]   
+[814e42fb-f04b-4ba7-9c20-54163aad31c0] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[814e42fb-f04b-4ba7-9c20-54163aad31c0]   
+[814e42fb-f04b-4ba7-9c20-54163aad31c0] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:48:42.859940 #7379]  INFO -- : [ecc231c8-a9fc-433d-a77d-ff4cb0e3e8fb] Started GET "/posts/index" for 127.0.0.1 at 2022-04-10 15:48:42 +0900
+I, [2022-04-10T15:48:42.860736 #7379]  INFO -- : [ecc231c8-a9fc-433d-a77d-ff4cb0e3e8fb] Processing by PostsController#index as HTML
+I, [2022-04-10T15:48:42.863187 #7379]  INFO -- : [ecc231c8-a9fc-433d-a77d-ff4cb0e3e8fb] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms | Allocations: 916)
+F, [2022-04-10T15:48:42.864048 #7379] FATAL -- : [ecc231c8-a9fc-433d-a77d-ff4cb0e3e8fb]   
+[ecc231c8-a9fc-433d-a77d-ff4cb0e3e8fb] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[ecc231c8-a9fc-433d-a77d-ff4cb0e3e8fb]   
+[ecc231c8-a9fc-433d-a77d-ff4cb0e3e8fb] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:48:43.043193 #7379]  INFO -- : [8f1962e0-4a35-418d-a9ab-336fa81b2f00] Started GET "/posts/new" for 127.0.0.1 at 2022-04-10 15:48:43 +0900
+I, [2022-04-10T15:48:43.044019 #7379]  INFO -- : [8f1962e0-4a35-418d-a9ab-336fa81b2f00] Processing by PostsController#new as HTML
+I, [2022-04-10T15:48:43.047486 #7379]  INFO -- : [8f1962e0-4a35-418d-a9ab-336fa81b2f00] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms | Allocations: 916)
+F, [2022-04-10T15:48:43.049531 #7379] FATAL -- : [8f1962e0-4a35-418d-a9ab-336fa81b2f00]   
+[8f1962e0-4a35-418d-a9ab-336fa81b2f00] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[8f1962e0-4a35-418d-a9ab-336fa81b2f00]   
+[8f1962e0-4a35-418d-a9ab-336fa81b2f00] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:49:01.638082 #7379]  INFO -- : [12d78854-3fcc-407f-8748-12b9472902d4] Started GET "/posts/index" for 127.0.0.1 at 2022-04-10 15:49:01 +0900
+I, [2022-04-10T15:49:01.639607 #7379]  INFO -- : [12d78854-3fcc-407f-8748-12b9472902d4] Processing by PostsController#index as HTML
+I, [2022-04-10T15:49:01.645145 #7379]  INFO -- : [12d78854-3fcc-407f-8748-12b9472902d4] Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 916)
+F, [2022-04-10T15:49:01.647351 #7379] FATAL -- : [12d78854-3fcc-407f-8748-12b9472902d4]   
+[12d78854-3fcc-407f-8748-12b9472902d4] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[12d78854-3fcc-407f-8748-12b9472902d4]   
+[12d78854-3fcc-407f-8748-12b9472902d4] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:49:02.164318 #7379]  INFO -- : [d91dab64-270b-4fe9-be12-a861da6b672e] Started GET "/posts/index" for 127.0.0.1 at 2022-04-10 15:49:02 +0900
+I, [2022-04-10T15:49:02.166929 #7379]  INFO -- : [d91dab64-270b-4fe9-be12-a861da6b672e] Processing by PostsController#index as HTML
+I, [2022-04-10T15:49:02.170990 #7379]  INFO -- : [d91dab64-270b-4fe9-be12-a861da6b672e] Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 916)
+F, [2022-04-10T15:49:02.172796 #7379] FATAL -- : [d91dab64-270b-4fe9-be12-a861da6b672e]   
+[d91dab64-270b-4fe9-be12-a861da6b672e] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[d91dab64-270b-4fe9-be12-a861da6b672e]   
+[d91dab64-270b-4fe9-be12-a861da6b672e] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:49:02.674373 #7379]  INFO -- : [ca7dab07-30c4-43cc-81ac-bbad1905b8e4] Started GET "/posts/index" for 127.0.0.1 at 2022-04-10 15:49:02 +0900
+I, [2022-04-10T15:49:02.675135 #7379]  INFO -- : [ca7dab07-30c4-43cc-81ac-bbad1905b8e4] Processing by PostsController#index as HTML
+I, [2022-04-10T15:49:02.680205 #7379]  INFO -- : [ca7dab07-30c4-43cc-81ac-bbad1905b8e4] Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms | Allocations: 916)
+F, [2022-04-10T15:49:02.681731 #7379] FATAL -- : [ca7dab07-30c4-43cc-81ac-bbad1905b8e4]   
+[ca7dab07-30c4-43cc-81ac-bbad1905b8e4] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[ca7dab07-30c4-43cc-81ac-bbad1905b8e4]   
+[ca7dab07-30c4-43cc-81ac-bbad1905b8e4] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:49:02.910880 #7379]  INFO -- : [82f5e536-369e-4c41-990e-146b44f1e60f] Started GET "/posts/index" for 127.0.0.1 at 2022-04-10 15:49:02 +0900
+I, [2022-04-10T15:49:02.913353 #7379]  INFO -- : [82f5e536-369e-4c41-990e-146b44f1e60f] Processing by PostsController#index as HTML
+I, [2022-04-10T15:49:02.917720 #7379]  INFO -- : [82f5e536-369e-4c41-990e-146b44f1e60f] Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.6ms | Allocations: 916)
+F, [2022-04-10T15:49:02.918411 #7379] FATAL -- : [82f5e536-369e-4c41-990e-146b44f1e60f]   
+[82f5e536-369e-4c41-990e-146b44f1e60f] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[82f5e536-369e-4c41-990e-146b44f1e60f]   
+[82f5e536-369e-4c41-990e-146b44f1e60f] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:49:03.072262 #7379]  INFO -- : [9410c023-da7c-4db1-b5a0-3afc2ded455c] Started GET "/posts/index" for 127.0.0.1 at 2022-04-10 15:49:03 +0900
+I, [2022-04-10T15:49:03.073537 #7379]  INFO -- : [9410c023-da7c-4db1-b5a0-3afc2ded455c] Processing by PostsController#index as HTML
+I, [2022-04-10T15:49:03.076545 #7379]  INFO -- : [9410c023-da7c-4db1-b5a0-3afc2ded455c] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms | Allocations: 916)
+F, [2022-04-10T15:49:03.077609 #7379] FATAL -- : [9410c023-da7c-4db1-b5a0-3afc2ded455c]   
+[9410c023-da7c-4db1-b5a0-3afc2ded455c] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[9410c023-da7c-4db1-b5a0-3afc2ded455c]   
+[9410c023-da7c-4db1-b5a0-3afc2ded455c] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:49:03.238278 #7379]  INFO -- : [c718cdab-7bc4-47a5-a6ce-48b7ec78cbe8] Started GET "/posts/index" for 127.0.0.1 at 2022-04-10 15:49:03 +0900
+I, [2022-04-10T15:49:03.239200 #7379]  INFO -- : [c718cdab-7bc4-47a5-a6ce-48b7ec78cbe8] Processing by PostsController#index as HTML
+I, [2022-04-10T15:49:03.242705 #7379]  INFO -- : [c718cdab-7bc4-47a5-a6ce-48b7ec78cbe8] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms | Allocations: 916)
+F, [2022-04-10T15:49:03.244383 #7379] FATAL -- : [c718cdab-7bc4-47a5-a6ce-48b7ec78cbe8]   
+[c718cdab-7bc4-47a5-a6ce-48b7ec78cbe8] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[c718cdab-7bc4-47a5-a6ce-48b7ec78cbe8]   
+[c718cdab-7bc4-47a5-a6ce-48b7ec78cbe8] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:49:03.485682 #7379]  INFO -- : [9f6b19f6-8643-4190-94a9-1af5fc0a72fd] Started GET "/posts/index" for 127.0.0.1 at 2022-04-10 15:49:03 +0900
+I, [2022-04-10T15:49:03.487985 #7379]  INFO -- : [9f6b19f6-8643-4190-94a9-1af5fc0a72fd] Processing by PostsController#index as HTML
+I, [2022-04-10T15:49:03.491812 #7379]  INFO -- : [9f6b19f6-8643-4190-94a9-1af5fc0a72fd] Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.7ms | Allocations: 916)
+F, [2022-04-10T15:49:03.493424 #7379] FATAL -- : [9f6b19f6-8643-4190-94a9-1af5fc0a72fd]   
+[9f6b19f6-8643-4190-94a9-1af5fc0a72fd] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[9f6b19f6-8643-4190-94a9-1af5fc0a72fd]   
+[9f6b19f6-8643-4190-94a9-1af5fc0a72fd] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:49:03.599065 #7379]  INFO -- : [58d7afd8-107b-4e78-9b29-fcea928608d2] Started GET "/posts/index" for 127.0.0.1 at 2022-04-10 15:49:03 +0900
+I, [2022-04-10T15:49:03.599713 #7379]  INFO -- : [58d7afd8-107b-4e78-9b29-fcea928608d2] Processing by PostsController#index as HTML
+I, [2022-04-10T15:49:03.603021 #7379]  INFO -- : [58d7afd8-107b-4e78-9b29-fcea928608d2] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms | Allocations: 916)
+F, [2022-04-10T15:49:03.603398 #7379] FATAL -- : [58d7afd8-107b-4e78-9b29-fcea928608d2]   
+[58d7afd8-107b-4e78-9b29-fcea928608d2] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[58d7afd8-107b-4e78-9b29-fcea928608d2]   
+[58d7afd8-107b-4e78-9b29-fcea928608d2] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T15:49:03.825490 #7379]  INFO -- : [5dceb034-4df0-4385-ad8f-b781c1c40af4] Started GET "/posts/index" for 127.0.0.1 at 2022-04-10 15:49:03 +0900
+I, [2022-04-10T15:49:03.826959 #7379]  INFO -- : [5dceb034-4df0-4385-ad8f-b781c1c40af4] Processing by PostsController#index as HTML
+I, [2022-04-10T15:49:03.831406 #7379]  INFO -- : [5dceb034-4df0-4385-ad8f-b781c1c40af4] Completed 500 Internal Server Error in 4ms (ActiveRecord: 2.2ms | Allocations: 916)
+F, [2022-04-10T15:49:03.833392 #7379] FATAL -- : [5dceb034-4df0-4385-ad8f-b781c1c40af4]   
+[5dceb034-4df0-4385-ad8f-b781c1c40af4] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[5dceb034-4df0-4385-ad8f-b781c1c40af4]   
+[5dceb034-4df0-4385-ad8f-b781c1c40af4] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:17.935460 #7379]  INFO -- : [ded2c2af-0dba-43db-8ee9-cf87664f1ea2] Started GET "/posts/index" for 127.0.0.1 at 2022-04-10 16:22:17 +0900
+I, [2022-04-10T16:22:17.937684 #7379]  INFO -- : [ded2c2af-0dba-43db-8ee9-cf87664f1ea2] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:17.940490 #7379]  INFO -- : [ded2c2af-0dba-43db-8ee9-cf87664f1ea2] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms | Allocations: 1034)
+F, [2022-04-10T16:22:17.941331 #7379] FATAL -- : [ded2c2af-0dba-43db-8ee9-cf87664f1ea2]   
+[ded2c2af-0dba-43db-8ee9-cf87664f1ea2] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[ded2c2af-0dba-43db-8ee9-cf87664f1ea2]   
+[ded2c2af-0dba-43db-8ee9-cf87664f1ea2] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:21.356056 #7379]  INFO -- : [8b916a03-6ad4-4e5d-be10-4d5b76c87cb3] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:21 +0900
+I, [2022-04-10T16:22:21.356843 #7379]  INFO -- : [8b916a03-6ad4-4e5d-be10-4d5b76c87cb3] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:21.359209 #7379]  INFO -- : [8b916a03-6ad4-4e5d-be10-4d5b76c87cb3] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.4ms | Allocations: 916)
+F, [2022-04-10T16:22:21.359644 #7379] FATAL -- : [8b916a03-6ad4-4e5d-be10-4d5b76c87cb3]   
+[8b916a03-6ad4-4e5d-be10-4d5b76c87cb3] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[8b916a03-6ad4-4e5d-be10-4d5b76c87cb3]   
+[8b916a03-6ad4-4e5d-be10-4d5b76c87cb3] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:38.358948 #7379]  INFO -- : [e0f8c4cb-5f97-489c-ba4f-e08e0c1062a7] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:38 +0900
+I, [2022-04-10T16:22:38.360223 #7379]  INFO -- : [e0f8c4cb-5f97-489c-ba4f-e08e0c1062a7] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:38.362834 #7379]  INFO -- : [e0f8c4cb-5f97-489c-ba4f-e08e0c1062a7] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms | Allocations: 916)
+F, [2022-04-10T16:22:38.363672 #7379] FATAL -- : [e0f8c4cb-5f97-489c-ba4f-e08e0c1062a7]   
+[e0f8c4cb-5f97-489c-ba4f-e08e0c1062a7] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[e0f8c4cb-5f97-489c-ba4f-e08e0c1062a7]   
+[e0f8c4cb-5f97-489c-ba4f-e08e0c1062a7] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:39.060333 #7379]  INFO -- : [4c444d4b-5c24-4cab-9095-9d993fbef64a] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:39 +0900
+I, [2022-04-10T16:22:39.061160 #7379]  INFO -- : [4c444d4b-5c24-4cab-9095-9d993fbef64a] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:39.063733 #7379]  INFO -- : [4c444d4b-5c24-4cab-9095-9d993fbef64a] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms | Allocations: 916)
+F, [2022-04-10T16:22:39.064545 #7379] FATAL -- : [4c444d4b-5c24-4cab-9095-9d993fbef64a]   
+[4c444d4b-5c24-4cab-9095-9d993fbef64a] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[4c444d4b-5c24-4cab-9095-9d993fbef64a]   
+[4c444d4b-5c24-4cab-9095-9d993fbef64a] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:39.264989 #7379]  INFO -- : [19182133-7937-474d-bbc7-7486b4d7633d] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:39 +0900
+I, [2022-04-10T16:22:39.265887 #7379]  INFO -- : [19182133-7937-474d-bbc7-7486b4d7633d] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:39.268590 #7379]  INFO -- : [19182133-7937-474d-bbc7-7486b4d7633d] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms | Allocations: 916)
+F, [2022-04-10T16:22:39.269252 #7379] FATAL -- : [19182133-7937-474d-bbc7-7486b4d7633d]   
+[19182133-7937-474d-bbc7-7486b4d7633d] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[19182133-7937-474d-bbc7-7486b4d7633d]   
+[19182133-7937-474d-bbc7-7486b4d7633d] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:39.370721 #7379]  INFO -- : [8a3ffbc3-125c-4fbf-9f47-b243ae833814] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:39 +0900
+I, [2022-04-10T16:22:39.371191 #7379]  INFO -- : [8a3ffbc3-125c-4fbf-9f47-b243ae833814] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:39.372978 #7379]  INFO -- : [8a3ffbc3-125c-4fbf-9f47-b243ae833814] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms | Allocations: 916)
+F, [2022-04-10T16:22:39.373382 #7379] FATAL -- : [8a3ffbc3-125c-4fbf-9f47-b243ae833814]   
+[8a3ffbc3-125c-4fbf-9f47-b243ae833814] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[8a3ffbc3-125c-4fbf-9f47-b243ae833814]   
+[8a3ffbc3-125c-4fbf-9f47-b243ae833814] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:39.493464 #7379]  INFO -- : [0e1b471e-e780-45c7-854e-d1dd1d17e8ba] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:39 +0900
+I, [2022-04-10T16:22:39.494316 #7379]  INFO -- : [0e1b471e-e780-45c7-854e-d1dd1d17e8ba] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:39.496992 #7379]  INFO -- : [0e1b471e-e780-45c7-854e-d1dd1d17e8ba] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms | Allocations: 916)
+F, [2022-04-10T16:22:39.497885 #7379] FATAL -- : [0e1b471e-e780-45c7-854e-d1dd1d17e8ba]   
+[0e1b471e-e780-45c7-854e-d1dd1d17e8ba] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[0e1b471e-e780-45c7-854e-d1dd1d17e8ba]   
+[0e1b471e-e780-45c7-854e-d1dd1d17e8ba] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:39.585155 #7379]  INFO -- : [02598f3f-5abb-4a64-b2cc-06184fc057c2] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:39 +0900
+I, [2022-04-10T16:22:39.585713 #7379]  INFO -- : [02598f3f-5abb-4a64-b2cc-06184fc057c2] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:39.587010 #7379]  INFO -- : [02598f3f-5abb-4a64-b2cc-06184fc057c2] Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.2ms | Allocations: 916)
+F, [2022-04-10T16:22:39.587629 #7379] FATAL -- : [02598f3f-5abb-4a64-b2cc-06184fc057c2]   
+[02598f3f-5abb-4a64-b2cc-06184fc057c2] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[02598f3f-5abb-4a64-b2cc-06184fc057c2]   
+[02598f3f-5abb-4a64-b2cc-06184fc057c2] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:39.749548 #7379]  INFO -- : [db2a2a0a-ea8c-42b8-8e82-c6be8ce77593] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:39 +0900
+I, [2022-04-10T16:22:39.750251 #7379]  INFO -- : [db2a2a0a-ea8c-42b8-8e82-c6be8ce77593] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:39.752812 #7379]  INFO -- : [db2a2a0a-ea8c-42b8-8e82-c6be8ce77593] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.7ms | Allocations: 916)
+F, [2022-04-10T16:22:39.753481 #7379] FATAL -- : [db2a2a0a-ea8c-42b8-8e82-c6be8ce77593]   
+[db2a2a0a-ea8c-42b8-8e82-c6be8ce77593] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[db2a2a0a-ea8c-42b8-8e82-c6be8ce77593]   
+[db2a2a0a-ea8c-42b8-8e82-c6be8ce77593] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:40.108023 #7379]  INFO -- : [c0605c3b-02a5-4566-98b4-2f37c78d5d7a] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:40 +0900
+I, [2022-04-10T16:22:40.108810 #7379]  INFO -- : [c0605c3b-02a5-4566-98b4-2f37c78d5d7a] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:40.111284 #7379]  INFO -- : [c0605c3b-02a5-4566-98b4-2f37c78d5d7a] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms | Allocations: 916)
+F, [2022-04-10T16:22:40.112088 #7379] FATAL -- : [c0605c3b-02a5-4566-98b4-2f37c78d5d7a]   
+[c0605c3b-02a5-4566-98b4-2f37c78d5d7a] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[c0605c3b-02a5-4566-98b4-2f37c78d5d7a]   
+[c0605c3b-02a5-4566-98b4-2f37c78d5d7a] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:40.358797 #7379]  INFO -- : [4fcb7432-9bfc-44b7-9d85-bd91da89008a] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:40 +0900
+I, [2022-04-10T16:22:40.359830 #7379]  INFO -- : [4fcb7432-9bfc-44b7-9d85-bd91da89008a] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:40.362480 #7379]  INFO -- : [4fcb7432-9bfc-44b7-9d85-bd91da89008a] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms | Allocations: 916)
+F, [2022-04-10T16:22:40.363317 #7379] FATAL -- : [4fcb7432-9bfc-44b7-9d85-bd91da89008a]   
+[4fcb7432-9bfc-44b7-9d85-bd91da89008a] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[4fcb7432-9bfc-44b7-9d85-bd91da89008a]   
+[4fcb7432-9bfc-44b7-9d85-bd91da89008a] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:40.486297 #7379]  INFO -- : [946ffd37-d226-4992-82b9-a8b32bd9342b] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:40 +0900
+I, [2022-04-10T16:22:40.487100 #7379]  INFO -- : [946ffd37-d226-4992-82b9-a8b32bd9342b] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:40.489885 #7379]  INFO -- : [946ffd37-d226-4992-82b9-a8b32bd9342b] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms | Allocations: 916)
+F, [2022-04-10T16:22:40.490604 #7379] FATAL -- : [946ffd37-d226-4992-82b9-a8b32bd9342b]   
+[946ffd37-d226-4992-82b9-a8b32bd9342b] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[946ffd37-d226-4992-82b9-a8b32bd9342b]   
+[946ffd37-d226-4992-82b9-a8b32bd9342b] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:40.595167 #7379]  INFO -- : [550308e1-6ce4-4a38-8c5e-affa73909330] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:40 +0900
+I, [2022-04-10T16:22:40.596304 #7379]  INFO -- : [550308e1-6ce4-4a38-8c5e-affa73909330] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:40.599485 #7379]  INFO -- : [550308e1-6ce4-4a38-8c5e-affa73909330] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.6ms | Allocations: 916)
+F, [2022-04-10T16:22:40.600143 #7379] FATAL -- : [550308e1-6ce4-4a38-8c5e-affa73909330]   
+[550308e1-6ce4-4a38-8c5e-affa73909330] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[550308e1-6ce4-4a38-8c5e-affa73909330]   
+[550308e1-6ce4-4a38-8c5e-affa73909330] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:40.706535 #7379]  INFO -- : [d05b95c4-9ff5-4527-b3ac-0339eda34e9f] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:40 +0900
+I, [2022-04-10T16:22:40.707392 #7379]  INFO -- : [d05b95c4-9ff5-4527-b3ac-0339eda34e9f] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:40.710043 #7379]  INFO -- : [d05b95c4-9ff5-4527-b3ac-0339eda34e9f] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms | Allocations: 916)
+F, [2022-04-10T16:22:40.710679 #7379] FATAL -- : [d05b95c4-9ff5-4527-b3ac-0339eda34e9f]   
+[d05b95c4-9ff5-4527-b3ac-0339eda34e9f] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[d05b95c4-9ff5-4527-b3ac-0339eda34e9f]   
+[d05b95c4-9ff5-4527-b3ac-0339eda34e9f] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:40.863148 #7379]  INFO -- : [58edcd37-caa2-4afa-b301-00021576e554] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:40 +0900
+I, [2022-04-10T16:22:40.864160 #7379]  INFO -- : [58edcd37-caa2-4afa-b301-00021576e554] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:40.866844 #7379]  INFO -- : [58edcd37-caa2-4afa-b301-00021576e554] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.4ms | Allocations: 916)
+F, [2022-04-10T16:22:40.867708 #7379] FATAL -- : [58edcd37-caa2-4afa-b301-00021576e554]   
+[58edcd37-caa2-4afa-b301-00021576e554] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[58edcd37-caa2-4afa-b301-00021576e554]   
+[58edcd37-caa2-4afa-b301-00021576e554] app/controllers/application_controller.rb:13:in `set_current_user'
+I, [2022-04-10T16:22:41.061293 #7379]  INFO -- : [e63521d6-a958-4aa1-9534-c106917b1148] Started GET "/" for 127.0.0.1 at 2022-04-10 16:22:41 +0900
+I, [2022-04-10T16:22:41.062108 #7379]  INFO -- : [e63521d6-a958-4aa1-9534-c106917b1148] Processing by PostsController#index as HTML
+I, [2022-04-10T16:22:41.064669 #7379]  INFO -- : [e63521d6-a958-4aa1-9534-c106917b1148] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms | Allocations: 916)
+F, [2022-04-10T16:22:41.065515 #7379] FATAL -- : [e63521d6-a958-4aa1-9534-c106917b1148]   
+[e63521d6-a958-4aa1-9534-c106917b1148] ActiveRecord::StatementInvalid (Mysql2::Error: No database selected):
+[e63521d6-a958-4aa1-9534-c106917b1148]   
+[e63521d6-a958-4aa1-9534-c106917b1148] app/controllers/application_controller.rb:13:in `set_current_user'
