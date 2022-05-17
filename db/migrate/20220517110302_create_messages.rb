@@ -8,5 +8,7 @@ class CreateMessages < ActiveRecord::Migration[6.1]
       t.references :user, foreign_key: true
       t.timestamps
     end
+    add_index :messages, :from_id
+    add_index :messages, :to_id
   end
 end
