@@ -7734,3 +7734,212 @@ Migrating to CreateMessages (20220517110302)
   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/posts/index" for ::1 at 2022-05-18 17:57:41 +0900
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.7ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2820)
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 10967)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 8.6ms | Allocations: 32640)
+
+
+  
+ActionView::Template::Error (Error: Undefined variable: "$gray-medium-light".
+        on line 18:20 of app/assets/stylesheets/custom.scss
+>>         background:$gray-medium-light;
+
+   -------------------^
+):
+     6:   <meta name="viewport" content="width=device-width,initial-scale=1">
+     7:   <%= csrf_meta_tags %>
+     8:   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     9:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    11:     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    12:   <%= csp_meta_tag %>
+  
+app/assets/stylesheets/custom.scss:18
+app/views/layouts/application.html.erb:9
+Started GET "/posts/index" for ::1 at 2022-05-18 17:58:04 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (2.3ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 8456)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 5.7ms | Allocations: 9958)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "    }": expected selector or at-rule, was "}"
+        on line 47:6 of app/assets/stylesheets/custom.scss
+>>     }
+
+   -----^
+):
+     6:   <meta name="viewport" content="width=device-width,initial-scale=1">
+     7:   <%= csrf_meta_tags %>
+     8:   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     9:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    11:     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    12:   <%= csp_meta_tag %>
+  
+app/assets/stylesheets/custom.scss:47
+app/views/layouts/application.html.erb:9
+Started GET "/posts/index" for ::1 at 2022-05-18 17:58:12 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (2.1ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 9039)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 4.7ms | Allocations: 10538)
+
+
+  
+ActionView::Template::Error (Error: Undefined variable: "$gray-medium-light".
+        on line 18:20 of app/assets/stylesheets/custom.scss
+>>         background:$gray-medium-light;
+
+   -------------------^
+):
+     6:   <meta name="viewport" content="width=device-width,initial-scale=1">
+     7:   <%= csrf_meta_tags %>
+     8:   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     9:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    11:     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    12:   <%= csp_meta_tag %>
+  
+app/assets/stylesheets/custom.scss:18
+app/views/layouts/application.html.erb:9
+Started GET "/posts/index" for ::1 at 2022-05-18 17:58:22 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (2.2ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2363)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 8570)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 6.4ms | Allocations: 10069)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "      }": expected selector or at-rule, was "}"
+        on line 47:8 of app/assets/stylesheets/custom.scss
+>>       }
+
+   -------^
+):
+     6:   <meta name="viewport" content="width=device-width,initial-scale=1">
+     7:   <%= csrf_meta_tags %>
+     8:   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     9:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    11:     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    12:   <%= csp_meta_tag %>
+  
+app/assets/stylesheets/custom.scss:47
+app/views/layouts/application.html.erb:9
+Started GET "/posts/index" for ::1 at 2022-05-18 17:58:32 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (2.3ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2362)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 8565)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 5.6ms | Allocations: 10048)
+
+
+  
+ActionView::Template::Error (Error: Undefined variable: "$gray-medium-light".
+        on line 18:20 of app/assets/stylesheets/custom.scss
+>>         background:$gray-medium-light;
+
+   -------------------^
+):
+     6:   <meta name="viewport" content="width=device-width,initial-scale=1">
+     7:   <%= csrf_meta_tags %>
+     8:   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     9:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    11:     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    12:   <%= csp_meta_tag %>
+  
+app/assets/stylesheets/custom.scss:18
+app/views/layouts/application.html.erb:9
+Started GET "/posts/index" for ::1 at 2022-05-18 18:08:48 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (2.1ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2362)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 8566)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 6.9ms | Allocations: 10653)
+
+
+  
+ActionView::Template::Error (Error: Undefined variable: "$gray-light".
+        on line 23:16 of app/assets/stylesheets/custom.scss
+>>         color: $gray-light;
+
+   ---------------^
+):
+     6:   <meta name="viewport" content="width=device-width,initial-scale=1">
+     7:   <%= csrf_meta_tags %>
+     8:   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     9:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    11:     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    12:   <%= csp_meta_tag %>
+  
+app/assets/stylesheets/custom.scss:23
+app/views/layouts/application.html.erb:9
+Started GET "/posts/index" for ::1 at 2022-05-18 18:12:13 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (2.3ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2363)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 84.6ms | Allocations: 28707)
+Completed 200 OK in 89ms (Views: 81.3ms | ActiveRecord: 5.4ms | Allocations: 30243)
+
+
