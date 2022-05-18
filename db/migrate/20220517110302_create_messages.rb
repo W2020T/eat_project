@@ -22,4 +22,15 @@ class CreateMessages < ActiveRecord::Migration[6.1]
       format.js { render 'create' }
     end
   end
+
+  private
+
+  def message_params
+    params.require(:message).permit(:content)
+  end
+
+  def setup_users
+    @to_user = User.find(params[:id])
+    @ids = [@to_user.id, current_user.id]
+  end
 end
