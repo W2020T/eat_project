@@ -11,12 +11,21 @@
             <%=link_to("編集","/users/#{@user.id}/edit")%>
             <%end%>
             <% if  @user.id != @current_user.id  %>
-            <% if @current_user.following?(@user) %>
-            <%=link_to("フォローをやめる","/relationships/#{@user.id}/destroy",{method:"post"})%>
-            <%else%>
-            <%=link_to("フォローする","/relationships/#{@user.id}/create",{method:"post"})%>
-            <%end%>
-            <%end%>
+            <% if @isRoom == true %>
+            <p><a href="/rooms/<%= @roomId %>">チャットへ</a>
+                <% else %>
+                <%= form_for @room do |f| %>
+                <%= fields_for @entry do |e| %>
+                <%= e.hidden_field :user_id, :value=> @user.id %>
+                <% end %>
+                <%= f.submit "チャットを始める" %>
+                <% end %>
+                <% if @current_user.following?(@user) %>
+                <%=link_to("フォローをやめる","/relationships/#{@user.id}/destroy",{method:"post"})%>
+                <%else%>
+                <%=link_to("フォローする","/relationships/#{@user.id}/create",{method:"post"})%>
+                <%end%>
+                <%end%>
         </div>
 
         <ul class="nav nav-tabs nav-pills">
