@@ -56,9 +56,6 @@ Rails.application.routes.draw do
   resources :tags do
     get 'posts', to: 'posts#tag_search'
   end
-  resources :users do
-    member do
-      resources :messages, only: %i[create index]
-    end
-  end
+  resources :messages, only: [:create]
+  resources :rooms, only: %i[create show index]
 end

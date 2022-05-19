@@ -8129,3 +8129,488 @@ Completed 200 OK in 28ms (Views: 7.1ms | ActiveRecord: 1.9ms | Allocations: 1378
   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/posts/index" for ::1 at 2022-05-19 12:34:43 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.2ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2362)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 7153)
+Completed 200 OK in 38ms (Views: 14.2ms | ActiveRecord: 4.7ms | Allocations: 24125)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateEntries (20220519034631)
+  [1m[35m (18.7ms)[0m  [1m[35mCREATE TABLE `entries` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` bigint NOT NULL, `room_id` bigint NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, INDEX `index_entries_on_user_id` (`user_id`), INDEX `index_entries_on_room_id` (`room_id`), CONSTRAINT `fk_rails_99dc12d4fd`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+, CONSTRAINT `fk_rails_f9d3a4412c`
+FOREIGN KEY (`room_id`)
+  REFERENCES `rooms` (`id`)
+)[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220519034631')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/users/1" for ::1 at 2022-05-19 12:46:55 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1608)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1689)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.4ms | Allocations: 14716)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main user-show">
+    <div class="container">
+        <div class="card mx-auto" style="width: 20rem;">
+            <img class="mx-auto d-block" src="<%="/user_images/#{@user.image_name}"%>">
+            <h2><%= @user.name %></h2>
+            <p>フォロー数: <%=  @user.followings.count %></p>
+            <p><%= link_to("フォローしている人を見る", "/relationships/#{@user.id}/followings") %></p>
+            <p>フォロワー数:<%= @user.followers.count%></p>
+            <p><%= link_to("フォロワーを見る", "/relationships/#{@user.id}/followed") %></p>
+            <% if @user.id==@current_user.id and @user.email!='guest@exapmle.com'%>
+            <%=link_to("編集","/users/#{@user.id}/edit")%>
+            <%end%>
+            <% if  @user.id != @current_user.id  %>
+            <% if @isRoom == true %>
+            <p><a href="/rooms/<%= @roomId %>">チャットへ</a>
+                <% else %>
+                <%= form_for @room do |f| %>
+                <%= fields_for @entry do |e| %>
+                <%= e.hidden_field :user_id, :value=> @user.id %>
+                <% end %>
+                <%= f.submit "チャットを始める" %>
+                <% end %>
+                <% if @current_user.following?(@user) %>
+                <%=link_to("フォローをやめる","/relationships/#{@user.id}/destroy",{method:"post"})%>
+                <%else%>
+                <%=link_to("フォローする","/relationships/#{@user.id}/create",{method:"post"})%>
+                <%end%>
+                <%end%>
+        </div>
+
+        <ul class="nav nav-tabs nav-pills">
+            <li class="active"><%= link_to("投稿", "/users/#{@user.id}") %></li>
+            <% if @user.email!='guest@exapmle.com'%>
+            <li><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
+            <%end%>
+        </ul>
+        <% @user.posts.each do |post| %>
+        <div class="posts-index-item">
+            <div class="post-left">
+                <img src="<%= "/user_images/#{post.user.image_name}" %>">
+            </div>
+            <div class="post-right">
+                <div class="post-user-name">
+                    <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+                </div>
+                <%= link_to(post.content, "/posts/#{post.id}") %>
+            </div>
+        </div>
+        <%end%>
+    </div>
+</div>
+):
+1:    <div class="main user-show">
+2:        <div class="container">
+3:            <div class="card mx-auto" style="width: 20rem;">
+4:                <img class="mx-auto d-block" src="<%="/user_images/#{@user.image_name}"%>">
+5:                <h2><%= @user.name %></h2>
+6:                <p>フォロー数: <%=  @user.followings.count %></p>
+7:                <p><%= link_to("フォローしている人を見る", "/relationships/#{@user.id}/followings") %></p>
+8:                <p>フォロワー数:<%= @user.followers.count%></p>
+9:                <p><%= link_to("フォロワーを見る", "/relationships/#{@user.id}/followed") %></p>
+10:                <% if @user.id==@current_user.id and @user.email!='guest@exapmle.com'%>
+11:                <%=link_to("編集","/users/#{@user.id}/edit")%>
+12:                <%end%>
+13:                <% if  @user.id != @current_user.id  %>
+14:                <% if @isRoom == true %>
+15:                <p><a href="/rooms/<%= @roomId %>">チャットへ</a>
+16:                    <% else %>
+17:                    <%= form_for @room do |f| %>
+18:                    <%= fields_for @entry do |e| %>
+19:                    <%= e.hidden_field :user_id, :value=> @user.id %>
+20:                    <% end %>
+21:                    <%= f.submit "チャットを始める" %>
+22:                    <% end %>
+23:                    <% if @current_user.following?(@user) %>
+24:                    <%=link_to("フォローをやめる","/relationships/#{@user.id}/destroy",{method:"post"})%>
+25:                    <%else%>
+26:                    <%=link_to("フォローする","/relationships/#{@user.id}/create",{method:"post"})%>
+27:                    <%end%>
+28:                    <%end%>
+29:            </div>
+30:    
+31:            <ul class="nav nav-tabs nav-pills">
+32:                <li class="active"><%= link_to("投稿", "/users/#{@user.id}") %></li>
+33:                <% if @user.email!='guest@exapmle.com'%>
+34:                <li><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
+35:                <%end%>
+36:            </ul>
+37:            <% @user.posts.each do |post| %>
+38:            <div class="posts-index-item">
+39:                <div class="post-left">
+40:                    <img src="<%= "/user_images/#{post.user.image_name}" %>">
+41:                </div>
+42:                <div class="post-right">
+43:                    <div class="post-user-name">
+44:                        <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+45:                    </div>
+46:                    <%= link_to(post.content, "/posts/#{post.id}") %>
+47:                </div>
+48:            </div>
+49:            <%end%>
+50:        </div>
+51:    </div>
+  
+app/views/users/show.html.erb:53: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:53: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:53: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:53: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:53: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:53: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/1" for ::1 at 2022-05-19 12:51:10 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1622)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1703)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.3ms | Allocations: 4388)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main user-show">
+    <div class="container">
+        <div class="card mx-auto" style="width: 20rem;">
+            <img class="mx-auto d-block" src="<%="/user_images/#{@user.image_name}"%>">
+            <h2><%= @user.name %></h2>
+            <p>フォロー数: <%=  @user.followings.count %></p>
+            <p><%= link_to("フォローしている人を見る", "/relationships/#{@user.id}/followings") %></p>
+            <p>フォロワー数:<%= @user.followers.count%></p>
+            <p><%= link_to("フォロワーを見る", "/relationships/#{@user.id}/followed") %></p>
+            <% if @user.id==@current_user.id and @user.email!='guest@exapmle.com'%>
+            <%=link_to("編集","/users/#{@user.id}/edit")%>
+            <%end%>
+            <% if  @user.id != @current_user.id  %>
+            <% if @isRoom == true %>
+            <p><a href="/rooms/<%= @roomId %>">チャットへ</a>
+                <% else %>
+                <%= form_for @room do |f| %>
+                <%= fields_for @entry do |e| %>
+                <%= e.hidden_field :user_id, :value=> @user.id %>
+                <% end %>
+                <%= f.submit "チャットを始める" %>
+                <% end %>
+                <% if @current_user.following?(@user) %>
+                <%=link_to("フォローをやめる","/relationships/#{@user.id}/destroy",{method:"post"})%>
+                <%else%>
+                <%=link_to("フォローする","/relationships/#{@user.id}/create",{method:"post"})%>
+                <%end%>
+                <%end%>
+        </div>
+
+        <ul class="nav nav-tabs nav-pills">
+            <li class="active"><%= link_to("投稿", "/users/#{@user.id}") %></li>
+            <% if @user.email!='guest@exapmle.com'%>
+            <li><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
+            <%end%>
+        </ul>
+        <% @user.posts.each do |post| %>
+        <div class="posts-index-item">
+            <div class="post-left">
+                <img src="<%= "/user_images/#{post.user.image_name}" %>">
+            </div>
+            <div class="post-right">
+                <div class="post-user-name">
+                    <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+                </div>
+                <%= link_to(post.content, "/posts/#{post.id}") %>
+            </div>
+        </div>
+        <%end%>
+    </div>
+</div>
+</div>
+):
+1:    <div class="main user-show">
+2:        <div class="container">
+3:            <div class="card mx-auto" style="width: 20rem;">
+4:                <img class="mx-auto d-block" src="<%="/user_images/#{@user.image_name}"%>">
+5:                <h2><%= @user.name %></h2>
+6:                <p>フォロー数: <%=  @user.followings.count %></p>
+7:                <p><%= link_to("フォローしている人を見る", "/relationships/#{@user.id}/followings") %></p>
+8:                <p>フォロワー数:<%= @user.followers.count%></p>
+9:                <p><%= link_to("フォロワーを見る", "/relationships/#{@user.id}/followed") %></p>
+10:                <% if @user.id==@current_user.id and @user.email!='guest@exapmle.com'%>
+11:                <%=link_to("編集","/users/#{@user.id}/edit")%>
+12:                <%end%>
+13:                <% if  @user.id != @current_user.id  %>
+14:                <% if @isRoom == true %>
+15:                <p><a href="/rooms/<%= @roomId %>">チャットへ</a>
+16:                    <% else %>
+17:                    <%= form_for @room do |f| %>
+18:                    <%= fields_for @entry do |e| %>
+19:                    <%= e.hidden_field :user_id, :value=> @user.id %>
+20:                    <% end %>
+21:                    <%= f.submit "チャットを始める" %>
+22:                    <% end %>
+23:                    <% if @current_user.following?(@user) %>
+24:                    <%=link_to("フォローをやめる","/relationships/#{@user.id}/destroy",{method:"post"})%>
+25:                    <%else%>
+26:                    <%=link_to("フォローする","/relationships/#{@user.id}/create",{method:"post"})%>
+27:                    <%end%>
+28:                    <%end%>
+29:            </div>
+30:    
+31:            <ul class="nav nav-tabs nav-pills">
+32:                <li class="active"><%= link_to("投稿", "/users/#{@user.id}") %></li>
+33:                <% if @user.email!='guest@exapmle.com'%>
+34:                <li><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
+35:                <%end%>
+36:            </ul>
+37:            <% @user.posts.each do |post| %>
+38:            <div class="posts-index-item">
+39:                <div class="post-left">
+40:                    <img src="<%= "/user_images/#{post.user.image_name}" %>">
+41:                </div>
+42:                <div class="post-right">
+43:                    <div class="post-user-name">
+44:                        <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+45:                    </div>
+46:                    <%= link_to(post.content, "/posts/#{post.id}") %>
+47:                </div>
+48:            </div>
+49:            <%end%>
+50:        </div>
+51:    </div>
+52:    </div>
+  
+app/views/users/show.html.erb:54: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:54: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:54: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:54: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:54: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:54: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/1" for ::1 at 2022-05-19 12:52:28 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1621)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1702)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.4ms | Allocations: 4374)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="main user-show">
+    <div class="container">
+        <div class="card mx-auto" style="width: 20rem;">
+            <img class="mx-auto d-block" src="<%="/user_images/#{@user.image_name}"%>">
+            <h2><%= @user.name %></h2>
+            <p>フォロー数: <%=  @user.followings.count %></p>
+            <p><%= link_to("フォローしている人を見る", "/relationships/#{@user.id}/followings") %></p>
+            <p>フォロワー数:<%= @user.followers.count%></p>
+            <p><%= link_to("フォロワーを見る", "/relationships/#{@user.id}/followed") %></p>
+            <% if @user.id==@current_user.id and @user.email!='guest@exapmle.com'%>
+            <%=link_to("編集","/users/#{@user.id}/edit")%>
+            <%end%>
+            <% if  @user.id != @current_user.id  %>
+            <% if @isRoom == true %>
+            <p><a href="/rooms/<%= @roomId %>">チャットへ</a>
+                <% else %>
+                <%= form_for @room do |f| %>
+                <%= fields_for @entry do |e| %>
+                <%= e.hidden_field :user_id, :value=> @user.id %>
+                <% end %>
+                <%= f.submit "チャットを始める" %>
+                <% end %>
+                <% if @current_user.following?(@user) %>
+                <%=link_to("フォローをやめる","/relationships/#{@user.id}/destroy",{method:"post"})%>
+                <%else%>
+                <%=link_to("フォローする","/relationships/#{@user.id}/create",{method:"post"})%>
+                <%end%>
+                <%end%>
+        </div>
+
+        <ul class="nav nav-tabs nav-pills">
+            <li class="active"><%= link_to("投稿", "/users/#{@user.id}") %></li>
+            <% if @user.email!='guest@exapmle.com'%>
+            <li><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
+            <%end%>
+        </ul>
+        <% @user.posts.each do |post| %>
+        <div class="posts-index-item">
+            <div class="post-left">
+                <img src="<%= "/user_images/#{post.user.image_name}" %>">
+            </div>
+            <div class="post-right">
+                <div class="post-user-name">
+                    <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+                </div>
+                <%= link_to(post.content, "/posts/#{post.id}") %>
+            </div>
+        </div>
+        <%end%>
+    </div>
+</div>
+):
+1:    <div class="main user-show">
+2:        <div class="container">
+3:            <div class="card mx-auto" style="width: 20rem;">
+4:                <img class="mx-auto d-block" src="<%="/user_images/#{@user.image_name}"%>">
+5:                <h2><%= @user.name %></h2>
+6:                <p>フォロー数: <%=  @user.followings.count %></p>
+7:                <p><%= link_to("フォローしている人を見る", "/relationships/#{@user.id}/followings") %></p>
+8:                <p>フォロワー数:<%= @user.followers.count%></p>
+9:                <p><%= link_to("フォロワーを見る", "/relationships/#{@user.id}/followed") %></p>
+10:                <% if @user.id==@current_user.id and @user.email!='guest@exapmle.com'%>
+11:                <%=link_to("編集","/users/#{@user.id}/edit")%>
+12:                <%end%>
+13:                <% if  @user.id != @current_user.id  %>
+14:                <% if @isRoom == true %>
+15:                <p><a href="/rooms/<%= @roomId %>">チャットへ</a>
+16:                    <% else %>
+17:                    <%= form_for @room do |f| %>
+18:                    <%= fields_for @entry do |e| %>
+19:                    <%= e.hidden_field :user_id, :value=> @user.id %>
+20:                    <% end %>
+21:                    <%= f.submit "チャットを始める" %>
+22:                    <% end %>
+23:                    <% if @current_user.following?(@user) %>
+24:                    <%=link_to("フォローをやめる","/relationships/#{@user.id}/destroy",{method:"post"})%>
+25:                    <%else%>
+26:                    <%=link_to("フォローする","/relationships/#{@user.id}/create",{method:"post"})%>
+27:                    <%end%>
+28:                    <%end%>
+29:            </div>
+30:    
+31:            <ul class="nav nav-tabs nav-pills">
+32:                <li class="active"><%= link_to("投稿", "/users/#{@user.id}") %></li>
+33:                <% if @user.email!='guest@exapmle.com'%>
+34:                <li><%= link_to("いいね!", "/users/#{@user.id}/likes") %></li>
+35:                <%end%>
+36:            </ul>
+37:            <% @user.posts.each do |post| %>
+38:            <div class="posts-index-item">
+39:                <div class="post-left">
+40:                    <img src="<%= "/user_images/#{post.user.image_name}" %>">
+41:                </div>
+42:                <div class="post-right">
+43:                    <div class="post-user-name">
+44:                        <%= link_to(post.user.name, "/users/#{post.user.id}") %>
+45:                    </div>
+46:                    <%= link_to(post.content, "/posts/#{post.id}") %>
+47:                </div>
+48:            </div>
+49:            <%end%>
+50:        </div>
+51:    </div>
+  
+app/views/users/show.html.erb:53: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:53: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:53: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:53: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:53: syntax error, unexpected end-of-input, expecting end
+app/views/users/show.html.erb:53: syntax error, unexpected end-of-input, expecting end
+Started GET "/users/1" for ::1 at 2022-05-19 12:54:53 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (9.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:38
+  Rendered users/show.html.erb within layouts/application (Duration: 51.5ms | Allocations: 20231)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 65.8ms | Allocations: 25634)
+Completed 200 OK in 74ms (Views: 55.9ms | ActiveRecord: 14.0ms | Allocations: 28335)
+
+
+Started GET "/user_images/" for ::1 at 2022-05-19 12:54:53 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/users/1" for ::1 at 2022-05-19 12:59:43 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:38
+  Rendered users/show.html.erb within layouts/application (Duration: 13.1ms | Allocations: 11379)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 16090)
+Completed 200 OK in 36ms (Views: 13.8ms | ActiveRecord: 8.8ms | Allocations: 30163)
+
+
+Started GET "/user_images/" for ::1 at 2022-05-19 12:59:43 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/users/1" for ::1 at 2022-05-19 12:59:44 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:38
+  Rendered users/show.html.erb within layouts/application (Duration: 14.0ms | Allocations: 4219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 9023)
+Completed 200 OK in 30ms (Views: 17.3ms | ActiveRecord: 8.8ms | Allocations: 10884)
+
+
+Started GET "/user_images/" for ::1 at 2022-05-19 12:59:44 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  

@@ -20,6 +20,7 @@
                 <% end %>
                 <%= f.submit "チャットを始める" %>
                 <% end %>
+                <% end %>
                 <% if @current_user.following?(@user) %>
                 <%=link_to("フォローをやめる","/relationships/#{@user.id}/destroy",{method:"post"})%>
                 <%else%>
