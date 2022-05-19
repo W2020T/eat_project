@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
+  has_secure_password
   validates :name, { presence: true }
   validates :email, { presence: true, uniqueness: true }
 
-  has_secure_password
   has_many :reverse_of_relationships, class_name: 'Relationship', foreign_key: 'followed_id', dependent: :destroy
   has_many :followers, through: :reverse_of_relationships, source: :follower
   has_many :relationships, class_name: 'Relationship', foreign_key: 'follower_id', dependent: :destroy
