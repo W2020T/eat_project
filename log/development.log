@@ -9701,3 +9701,723 @@ ActionView::Template::Error (Mysql2::Error: Unknown column 'messages.room_id' in
     13: <hr>
   
 app/views/rooms/show.html.erb:10
+Started GET "/rooms/1" for ::1 at 2022-05-21 14:18:31 +0900
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRoom Load (0.9ms)[0m  [1m[34mSELECT `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:13:in `show'
+  [1m[36mEntry Load (1.1ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2 AND `entries`.`room_id` = 1[0m
+  ↳ app/controllers/rooms_controller.rb:14:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mEntry Load (1.0ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:10
+  Rendered rooms/show.html.erb within layouts/application (Duration: 8.7ms | Allocations: 6843)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 6925)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 6.5ms | Allocations: 29124)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'messages.room_id' in 'where clause'):
+     7: 
+     8: <hr>
+     9: <%# if @messages.present? %>
+    10: <% @messages.each do |m| %>
+    11: <strong><%= m.content %></strong>
+    12: <small>by <strong><a href="/users/<%= m.user_id %>"><%= m.user.email %>さん</a></strong></small>
+    13: <hr>
+  
+app/views/rooms/show.html.erb:10
+Started GET "/rooms/1" for ::1 at 2022-05-21 14:18:32 +0900
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRoom Load (1.2ms)[0m  [1m[34mSELECT `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:13:in `show'
+  [1m[36mEntry Load (1.6ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2 AND `entries`.`room_id` = 1[0m
+  ↳ app/controllers/rooms_controller.rb:14:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mEntry Load (1.6ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:10
+  Rendered rooms/show.html.erb within layouts/application (Duration: 9.5ms | Allocations: 5361)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 5444)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 7.5ms | Allocations: 8853)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'messages.room_id' in 'where clause'):
+     7: 
+     8: <hr>
+     9: <%# if @messages.present? %>
+    10: <% @messages.each do |m| %>
+    11: <strong><%= m.content %></strong>
+    12: <small>by <strong><a href="/users/<%= m.user_id %>"><%= m.user.email %>さん</a></strong></small>
+    13: <hr>
+  
+app/views/rooms/show.html.erb:10
+Started GET "/rooms/1" for ::1 at 2022-05-21 14:18:33 +0900
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRoom Load (1.3ms)[0m  [1m[34mSELECT `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:13:in `show'
+  [1m[36mEntry Load (1.2ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2 AND `entries`.`room_id` = 1[0m
+  ↳ app/controllers/rooms_controller.rb:14:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mEntry Load (1.3ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:10
+  Rendered rooms/show.html.erb within layouts/application (Duration: 8.7ms | Allocations: 5360)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5442)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 7.0ms | Allocations: 8833)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'messages.room_id' in 'where clause'):
+     7: 
+     8: <hr>
+     9: <%# if @messages.present? %>
+    10: <% @messages.each do |m| %>
+    11: <strong><%= m.content %></strong>
+    12: <small>by <strong><a href="/users/<%= m.user_id %>"><%= m.user.email %>さん</a></strong></small>
+    13: <hr>
+  
+app/views/rooms/show.html.erb:10
+Started GET "/rooms/1" for ::1 at 2022-05-21 14:19:14 +0900
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:13:in `show'
+  [1m[36mEntry Load (0.6ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2 AND `entries`.`room_id` = 1[0m
+  ↳ app/controllers/rooms_controller.rb:14:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mEntry Load (1.5ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:9
+  Rendered rooms/show.html.erb within layouts/application (Duration: 12.0ms | Allocations: 7212)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 7292)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 14.5ms | Allocations: 34559)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'messages.room_id' in 'where clause'):
+     6: <% end %>
+     7: 
+     8: <hr>
+     9: <% if @messages.present? %>
+    10: <% @messages.each do |m| %>
+    11: <strong><%= m.content %></strong>
+    12: <small>by <strong><a href="/users/<%= m.user_id %>"><%= m.user.email %>さん</a></strong></small>
+  
+app/views/rooms/show.html.erb:9
+Started GET "/users/1" for ::1 at 2022-05-21 14:37:38 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.9ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 1[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  Rendered users/show.html.erb within layouts/application (Duration: 10.3ms | Allocations: 8604)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 8684)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 7.4ms | Allocations: 14576)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    12:             <%end%>
+    13:             <% if  @user.id != @current_user.id  %>
+    14:             <% if @isRoom == true %>
+    15:             <p><a href="/rooms/<%= @room.id %>">チャットへ</a>
+    16:                 <% else %>
+    17:                 <%= form_for @room do |f| %>
+    18:                 <%= fields_for @entry do |e| %>
+  
+app/views/users/show.html.erb:15
+Started GET "/users/index" for ::1 at 2022-05-21 14:37:39 +0900
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 6185)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 11705)
+Completed 200 OK in 25ms (Views: 17.3ms | ActiveRecord: 4.0ms | Allocations: 13374)
+
+
+Started GET "/users/1" for ::1 at 2022-05-21 14:37:40 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.9ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (1.0ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 1[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  Rendered users/show.html.erb within layouts/application (Duration: 9.8ms | Allocations: 4350)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4432)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 7.8ms | Allocations: 8796)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    12:             <%end%>
+    13:             <% if  @user.id != @current_user.id  %>
+    14:             <% if @isRoom == true %>
+    15:             <p><a href="/rooms/<%= @room.id %>">チャットへ</a>
+    16:                 <% else %>
+    17:                 <%= form_for @room do |f| %>
+    18:                 <%= fields_for @entry do |e| %>
+  
+app/views/users/show.html.erb:15
+Started GET "/users/1" for ::1 at 2022-05-21 14:38:16 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (1.2ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (1.1ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 1[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2 AND `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:29:in `following?'
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:38
+  Rendered users/show.html.erb within layouts/application (Duration: 28.0ms | Allocations: 16738)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 22160)
+Completed 200 OK in 48ms (Views: 30.1ms | ActiveRecord: 10.8ms | Allocations: 27390)
+
+
+Started GET "/user_images/" for ::1 at 2022-05-21 14:38:16 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/rooms/1" for ::1 at 2022-05-21 14:38:18 +0900
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRoom Load (0.9ms)[0m  [1m[34mSELECT `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:13:in `show'
+  [1m[36mEntry Load (0.9ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2 AND `entries`.`room_id` = 1[0m
+  ↳ app/controllers/rooms_controller.rb:14:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mEntry Load (1.5ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:9
+  Rendered rooms/show.html.erb within layouts/application (Duration: 9.0ms | Allocations: 5730)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5810)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 6.0ms | Allocations: 9816)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'messages.room_id' in 'where clause'):
+     6: <% end %>
+     7: 
+     8: <hr>
+     9: <% if @messages.present? %>
+    10: <% @messages.each do |m| %>
+    11: <strong><%= m.content %></strong>
+    12: <small>by <strong><a href="/users/<%= m.user_id %>"><%= m.user.email %>さん</a></strong></small>
+  
+app/views/rooms/show.html.erb:9
+Started GET "/rooms/1" for ::1 at 2022-05-21 14:47:57 +0900
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRoom Load (0.8ms)[0m  [1m[34mSELECT `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:13:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2 AND `entries`.`room_id` = 1[0m
+  ↳ app/controllers/rooms_controller.rb:14:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mEntry Load (1.0ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:9
+  Rendered rooms/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 6853)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 6935)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 5.7ms | Allocations: 29112)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'messages.room_id' in 'where clause'):
+     6: <% end %>
+     7: 
+     8: <hr>
+     9: <% if @messages.present? %>
+    10: <% @messages.each do |m| %>
+    11: <strong><%= m.content %></strong>
+    12: <small>by <strong><a href="/users/<%= m.user_id %>"><%= m.user.email %>さん</a></strong></small>
+  
+app/views/rooms/show.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/rooms/1" for ::1 at 2022-05-21 14:59:01 +0900
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.6ms | Allocations: 13491)
+
+
+  
+NoMethodError (undefined method `authenticate_user!' for #<RoomsController:0x007fc632e72b38>
+Did you mean?  authenticate_user):
+  
+activesupport (6.1.5) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.5) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.5) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.5) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.5) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.5) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.5) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.5) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+actiontext (6.1.5) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.5) lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.5) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.5) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.5) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.5) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.5) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.5) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.5) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.5) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.5) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.5) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.5) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.5) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.5) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.5) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.5) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.5) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.5) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.5) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.5) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.5) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.5) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.5) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.5) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.5) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.5) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/rooms/1" for ::1 at 2022-05-21 14:59:20 +0900
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:14:in `show'
+  [1m[36mEntry Load (0.7ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2 AND `entries`.`room_id` = 1[0m
+  ↳ app/controllers/rooms_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mEntry Load (1.4ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:9
+  Rendered rooms/show.html.erb within layouts/application (Duration: 9.1ms | Allocations: 6853)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 6935)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 13.7ms | Allocations: 33475)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'messages.room_id' in 'where clause'):
+     6: <% end %>
+     7: 
+     8: <hr>
+     9: <% if @messages.present? %>
+    10: <% @messages.each do |m| %>
+    11: <strong><%= m.content %></strong>
+    12: <small>by <strong><a href="/users/<%= m.user_id %>"><%= m.user.email %>さん</a></strong></small>
+  
+app/views/rooms/show.html.erb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateMessages (20220521062202)
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE `messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` bigint NOT NULL, `room_id` bigint NOT NULL, `content` text, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, INDEX `index_messages_on_user_id` (`user_id`), INDEX `index_messages_on_room_id` (`room_id`), CONSTRAINT `fk_rails_273a25a7a6`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+, CONSTRAINT `fk_rails_a8db0fb63a`
+FOREIGN KEY (`room_id`)
+  REFERENCES `rooms` (`id`)
+)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateMessages (20220521062317)
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE `messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` bigint NOT NULL, `room_id` bigint NOT NULL, `content` text, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, INDEX `index_messages_on_user_id` (`user_id`), INDEX `index_messages_on_room_id` (`room_id`), CONSTRAINT `fk_rails_273a25a7a6`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+, CONSTRAINT `fk_rails_a8db0fb63a`
+FOREIGN KEY (`room_id`)
+  REFERENCES `rooms` (`id`)
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+Started GET "/rooms/1" for ::1 at 2022-05-21 15:31:04 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220521062317_create_messages.rb
+
+
+):
+  
+activerecord (6.1.5) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.5) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.5) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activesupport (6.1.5) lib/active_support/evented_file_update_checker.rb:65:in `execute_if_updated'
+activerecord (6.1.5) lib/active_record/migration.rb:597:in `block in call'
+activerecord (6.1.5) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.5) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.5) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.5) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2022-05-21 15:31:06 +0900
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateMessages (20220521062317)
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE `messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` bigint NOT NULL, `room_id` bigint NOT NULL, `content` text, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, INDEX `index_messages_on_user_id` (`user_id`), INDEX `index_messages_on_room_id` (`room_id`), CONSTRAINT `fk_rails_273a25a7a6`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+, CONSTRAINT `fk_rails_a8db0fb63a`
+FOREIGN KEY (`room_id`)
+  REFERENCES `rooms` (`id`)
+)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  
+StandardError (An error has occurred, all later migrations canceled:
+
+Mysql2::Error: Table 'messages' already exists):
+  
+mysql2 (0.5.3) lib/mysql2/client.rb:131:in `_query'
+mysql2 (0.5.3) lib/mysql2/client.rb:131:in `block in query'
+mysql2 (0.5.3) lib/mysql2/client.rb:130:in `handle_interrupt'
+mysql2 (0.5.3) lib/mysql2/client.rb:130:in `query'
+rack-mini-profiler (2.3.4) lib/patches/db/mysql2/alias_method.rb:25:in `block in query'
+rack-mini-profiler (2.3.4) lib/patches/sql_patches.rb:12:in `record_sql'
+rack-mini-profiler (2.3.4) lib/patches/db/mysql2/alias_method.rb:24:in `query'
+activerecord (6.1.5) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:206:in `block (2 levels) in execute'
+activesupport (6.1.5) lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+activesupport (6.1.5) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (6.1.5) lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+activerecord (6.1.5) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:205:in `block in execute'
+activerecord (6.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:696:in `block (2 levels) in log'
+activesupport (6.1.5) lib/active_support/concurrency/load_interlock_aware_monitor.rb:26:in `block (2 levels) in synchronize'
+activesupport (6.1.5) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `handle_interrupt'
+activesupport (6.1.5) lib/active_support/concurrency/load_interlock_aware_monitor.rb:25:in `block in synchronize'
+activesupport (6.1.5) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `handle_interrupt'
+activesupport (6.1.5) lib/active_support/concurrency/load_interlock_aware_monitor.rb:21:in `synchronize'
+activerecord (6.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:695:in `block in log'
+activesupport (6.1.5) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activerecord (6.1.5) lib/active_record/connection_adapters/abstract_adapter.rb:687:in `log'
+activerecord (6.1.5) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:204:in `execute'
+activerecord (6.1.5) lib/active_record/connection_adapters/mysql/database_statements.rb:52:in `execute'
+activerecord (6.1.5) lib/active_record/connection_adapters/abstract/schema_statements.rb:322:in `create_table'
+activerecord (6.1.5) lib/active_record/connection_adapters/mysql/schema_statements.rb:81:in `create_table'
+activerecord (6.1.5) lib/active_record/migration.rb:929:in `block in method_missing'
+activerecord (6.1.5) lib/active_record/migration.rb:897:in `block in say_with_time'
+/Users/watanabe/.rbenv/versions/2.6.5/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+activerecord (6.1.5) lib/active_record/migration.rb:897:in `say_with_time'
+activerecord (6.1.5) lib/active_record/migration.rb:918:in `method_missing'
+db/migrate/20220521062317_create_messages.rb:3:in `change'
+activerecord (6.1.5) lib/active_record/migration.rb:867:in `exec_migration'
+activerecord (6.1.5) lib/active_record/migration.rb:851:in `block (2 levels) in migrate'
+/Users/watanabe/.rbenv/versions/2.6.5/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+activerecord (6.1.5) lib/active_record/migration.rb:850:in `block in migrate'
+activerecord (6.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:462:in `with_connection'
+activerecord (6.1.5) lib/active_record/migration.rb:849:in `migrate'
+activerecord (6.1.5) lib/active_record/migration.rb:1037:in `migrate'
+activerecord (6.1.5) lib/active_record/migration.rb:1329:in `block in execute_migration_in_transaction'
+activerecord (6.1.5) lib/active_record/migration.rb:1382:in `ddl_transaction'
+activerecord (6.1.5) lib/active_record/migration.rb:1328:in `execute_migration_in_transaction'
+activerecord (6.1.5) lib/active_record/migration.rb:1302:in `each'
+activerecord (6.1.5) lib/active_record/migration.rb:1302:in `migrate_without_lock'
+activerecord (6.1.5) lib/active_record/migration.rb:1251:in `block in migrate'
+activerecord (6.1.5) lib/active_record/migration.rb:1401:in `block in with_advisory_lock'
+activerecord (6.1.5) lib/active_record/migration.rb:1416:in `block in with_advisory_lock_connection'
+activerecord (6.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:462:in `with_connection'
+activerecord (6.1.5) lib/active_record/migration.rb:1416:in `with_advisory_lock_connection'
+activerecord (6.1.5) lib/active_record/migration.rb:1397:in `with_advisory_lock'
+activerecord (6.1.5) lib/active_record/migration.rb:1251:in `migrate'
+activerecord (6.1.5) lib/active_record/migration.rb:1086:in `up'
+activerecord (6.1.5) lib/active_record/migration.rb:1061:in `migrate'
+activerecord (6.1.5) lib/active_record/tasks/database_tasks.rb:237:in `migrate'
+activerecord (6.1.5) lib/active_record/migration.rb:137:in `block in <class:PendingMigrationError>'
+activesupport (6.1.5) lib/active_support/actionable_error.rb:28:in `dispatch'
+actionpack (6.1.5) lib/action_dispatch/middleware/actionable_exceptions.rb:20:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.5) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.5) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.5) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.5) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.5) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateMessages (20220521062317)
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE `messages` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` bigint NOT NULL, `room_id` bigint NOT NULL, `content` text, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, INDEX `index_messages_on_user_id` (`user_id`), INDEX `index_messages_on_room_id` (`room_id`), CONSTRAINT `fk_rails_273a25a7a6`
+FOREIGN KEY (`user_id`)
+  REFERENCES `users` (`id`)
+, CONSTRAINT `fk_rails_a8db0fb63a`
+FOREIGN KEY (`room_id`)
+  REFERENCES `rooms` (`id`)
+)[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (3.8ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220521062317')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started POST "/rails/actions" for ::1 at 2022-05-21 15:36:58 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/rooms/1" for ::1 at 2022-05-21 15:36:58 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRoom Load (0.6ms)[0m  [1m[34mSELECT `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:14:in `show'
+  [1m[36mEntry Load (0.9ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2 AND `entries`.`room_id` = 1[0m
+  ↳ app/controllers/rooms_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mEntry Load (1.1ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:9
+  Rendered rooms/show.html.erb within layouts/application (Duration: 11.9ms | Allocations: 6457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 11187)
+Completed 200 OK in 56ms (Views: 15.5ms | ActiveRecord: 12.2ms | Allocations: 38778)
+
+
+Started GET "/rooms/1" for ::1 at 2022-05-21 19:33:53 +0900
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRoom Load (0.8ms)[0m  [1m[34mSELECT `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:14:in `show'
+  [1m[36mEntry Load (0.9ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2 AND `entries`.`room_id` = 1[0m
+  ↳ app/controllers/rooms_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mEntry Load (1.2ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`room_id` = 1[0m
+  ↳ app/views/rooms/show.html.erb:9
+  Rendered rooms/show.html.erb within layouts/application (Duration: 10.5ms | Allocations: 6708)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 12130)
+Completed 200 OK in 61ms (Views: 24.2ms | ActiveRecord: 6.9ms | Allocations: 36484)
+
+
