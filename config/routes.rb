@@ -58,4 +58,5 @@ Rails.application.routes.draw do
   end
   resources :messages, only: [:create]
   resources :rooms, only: %i[create show index]
+  resources :notifications, only: :index
 end
