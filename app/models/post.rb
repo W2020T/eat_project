@@ -8,6 +8,7 @@ class Post < ApplicationRecord
   has_one_attached :image
   has_many :tag_maps, dependent: :destroy
   has_many :tags, through: :tag_maps
+  has_many :notifications, dependent: :destroy
   def user
     User.find_by(id: user_id)
   end
