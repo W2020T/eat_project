@@ -4,12 +4,12 @@ class RelationshipsController < ApplicationController
   before_action :authenticate_user
   def create
     following = @current_user.follow(params[:user_id])
-    flash[:notice] = if following.save
-                       @user.create_notification_follow!(current_user)
-                       'ユーザーをフォローしました'
-                     else
-                       'ユーザーのフォローに失敗しました'
-                     end
+    if following.save
+      @user.create_notification_follow!(current_user)
+      flash[:notice] = 'ユーザーをフォローしました'
+    else
+      'ユーザーのフォローに失敗しました'
+    end
     redirect_to("/users/#{params[:user_id]}")
   end
 
