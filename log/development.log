@@ -10880,3 +10880,983 @@ Migrating to CreateNotifications (20220529035630)
   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/posts/index" for ::1 at 2022-06-01 09:23:45 +0900
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (6.6ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 2820)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 116.8ms | Allocations: 31914)
+Completed 200 OK in 197ms (Views: 114.3ms | ActiveRecord: 20.5ms | Allocations: 55772)
+
+
+Started GET "/posts/index" for ::1 at 2022-06-01 09:23:46 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.7ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (3.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 4075)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | Allocations: 11035)
+Completed 200 OK in 49ms (Views: 40.1ms | ActiveRecord: 6.5ms | Allocations: 12568)
+
+
+Started GET "/posts/index" for ::1 at 2022-06-01 09:32:54 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.7ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 20.3ms | Allocations: 2670)
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 10674)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 7.7ms | Allocations: 13609)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+
+<head>
+  <title>EatProject</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <header class="blog-header py-3">
+    <div class="col-4 text-center">
+      <% if @current_user %>
+      <%= link_to("eat_project", "/posts/index") %>
+      <% else %>
+      <%= link_to("eat_project", "/") %>
+      <% end %>
+    </div>
+  </header>
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <% if @current_user%>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("記事検索", "/posts/search") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("投稿一覧", "/posts/index") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("新規投稿をする", "/posts/new") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("ユーザー一覧", "/users/index") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("ユーザー検索", "/users/search") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("ログアウト", "/logout", {method: "post"}) %>
+      </a>
+      <a class="notification">
+        <%=link_to ('通知', notifications_path, class:"btn"  )%>
+        <% if unchecked_notifications.any? %>
+        <i class="fa fa-circle notification-circle"></i>
+        <% end %>
+      </a>
+      <% unless @current_user.email == "guest@exapmle.com" then %>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("退会", "/users/#{@current_user.id}/destroy", {method: "post"}) %>
+      </a>
+      <%end%>
+
+      <% else %>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("新規登録", "/signup") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("ログイン", "/login") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("ゲストログイン", "/guest_session", {method: "post"}) %>
+      </a>
+
+      <% end %>
+    </nav>
+  </div>
+
+
+
+
+  <% if flash[:notice] %>
+  <div class="flash">
+    <%= flash[:notice] %>
+  </div>
+  <% end %>
+
+  <%= yield %>
+</body>
+
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    
+4:    <head>
+5:      <title>EatProject</title>
+6:      <meta name="viewport" content="width=device-width,initial-scale=1">
+7:      <%= csrf_meta_tags %>
+8:      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+9:      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+11:        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+12:      <%= csp_meta_tag %>
+13:      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+14:      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+15:      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+16:      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+17:        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+18:      </script>
+19:      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+20:        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+21:      </script>
+22:      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+23:    
+24:    </head>
+25:    
+26:    <body>
+27:    
+28:      <header class="blog-header py-3">
+29:        <div class="col-4 text-center">
+30:          <% if @current_user %>
+31:          <%= link_to("eat_project", "/posts/index") %>
+32:          <% else %>
+33:          <%= link_to("eat_project", "/") %>
+34:          <% end %>
+35:        </div>
+36:      </header>
+37:      <div class="nav-scroller py-1 mb-2">
+38:        <nav class="nav d-flex justify-content-between">
+39:          <% if @current_user%>
+40:          <a class="p-2 text-muted" href="#">
+41:            <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
+42:          </a>
+43:          <a class="p-2 text-muted" href="#">
+44:            <%= link_to("記事検索", "/posts/search") %>
+45:          </a>
+46:          <a class="p-2 text-muted" href="#">
+47:            <%= link_to("投稿一覧", "/posts/index") %>
+48:          </a>
+49:          <a class="p-2 text-muted" href="#">
+50:            <%= link_to("新規投稿をする", "/posts/new") %>
+51:          </a>
+52:          <a class="p-2 text-muted" href="#">
+53:            <%= link_to("ユーザー一覧", "/users/index") %>
+54:          </a>
+55:          <a class="p-2 text-muted" href="#">
+56:            <%= link_to("ユーザー検索", "/users/search") %>
+57:          </a>
+58:          <a class="p-2 text-muted" href="#">
+59:            <%= link_to("ログアウト", "/logout", {method: "post"}) %>
+60:          </a>
+61:          <a class="notification">
+62:            <%=link_to ('通知', notifications_path, class:"btn"  )%>
+63:            <% if unchecked_notifications.any? %>
+64:            <i class="fa fa-circle notification-circle"></i>
+65:            <% end %>
+66:          </a>
+67:          <% unless @current_user.email == "guest@exapmle.com" then %>
+68:          <a class="p-2 text-muted" href="#">
+69:            <%= link_to("退会", "/users/#{@current_user.id}/destroy", {method: "post"}) %>
+70:          </a>
+71:          <%end%>
+72:    
+73:          <% else %>
+74:          <a class="p-2 text-muted" href="#">
+75:            <%= link_to("新規登録", "/signup") %>
+76:          </a>
+77:          <a class="p-2 text-muted" href="#">
+78:            <%= link_to("ログイン", "/login") %>
+79:          </a>
+80:          <a class="p-2 text-muted" href="#">
+81:            <%= link_to("ゲストログイン", "/guest_session", {method: "post"}) %>
+82:          </a>
+83:    
+84:          <% end %>
+85:        </nav>
+86:      </div>
+87:    
+88:    
+89:    
+90:    
+91:      <% if flash[:notice] %>
+92:      <div class="flash">
+93:        <%= flash[:notice] %>
+94:      </div>
+95:      <% end %>
+96:    
+97:      <%= yield %>
+98:    </body>
+99:    
+100:    </html>
+  
+app/views/layouts/application.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:62: syntax error, unexpected ')', expecting end
+app/views/layouts/application.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:62: syntax error, unexpected ')', expecting end
+app/views/layouts/application.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:62: syntax error, unexpected ')', expecting end
+app/views/layouts/application.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:62: syntax error, unexpected ')', expecting end
+app/views/layouts/application.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:62: syntax error, unexpected ')', expecting end
+app/views/layouts/application.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:62: syntax error, unexpected ')', expecting end
+Started GET "/posts/index" for ::1 at 2022-06-01 09:34:32 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.3ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2666)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4416)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 4.3ms | Allocations: 6743)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+
+<head>
+  <title>EatProject</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <header class="blog-header py-3">
+    <div class="col-4 text-center">
+      <% if @current_user %>
+      <%= link_to("eat_project", "/posts/index") %>
+      <% else %>
+      <%= link_to("eat_project", "/") %>
+      <% end %>
+    </div>
+  </header>
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <% if @current_user%>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("記事検索", "/posts/search") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("投稿一覧", "/posts/index") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("新規投稿をする", "/posts/new") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("ユーザー一覧", "/users/index") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("ユーザー検索", "/users/search") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("ログアウト", "/logout", {method: "post"}) %>
+      </a>
+      <a class="notification">
+        <%=link_to ('通知', notifications_path  )%>
+        <% if unchecked_notifications.any? %>
+        <i class="fa fa-circle notification-circle"></i>
+        <% end %>
+      </a>
+      <% unless @current_user.email == "guest@exapmle.com" then %>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("退会", "/users/#{@current_user.id}/destroy", {method: "post"}) %>
+      </a>
+      <%end%>
+
+      <% else %>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("新規登録", "/signup") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("ログイン", "/login") %>
+      </a>
+      <a class="p-2 text-muted" href="#">
+        <%= link_to("ゲストログイン", "/guest_session", {method: "post"}) %>
+      </a>
+
+      <% end %>
+    </nav>
+  </div>
+
+
+
+
+  <% if flash[:notice] %>
+  <div class="flash">
+    <%= flash[:notice] %>
+  </div>
+  <% end %>
+
+  <%= yield %>
+</body>
+
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    
+4:    <head>
+5:      <title>EatProject</title>
+6:      <meta name="viewport" content="width=device-width,initial-scale=1">
+7:      <%= csrf_meta_tags %>
+8:      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+9:      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+11:        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+12:      <%= csp_meta_tag %>
+13:      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+14:      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+15:      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+16:      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+17:        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+18:      </script>
+19:      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+20:        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+21:      </script>
+22:      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+23:    
+24:    </head>
+25:    
+26:    <body>
+27:    
+28:      <header class="blog-header py-3">
+29:        <div class="col-4 text-center">
+30:          <% if @current_user %>
+31:          <%= link_to("eat_project", "/posts/index") %>
+32:          <% else %>
+33:          <%= link_to("eat_project", "/") %>
+34:          <% end %>
+35:        </div>
+36:      </header>
+37:      <div class="nav-scroller py-1 mb-2">
+38:        <nav class="nav d-flex justify-content-between">
+39:          <% if @current_user%>
+40:          <a class="p-2 text-muted" href="#">
+41:            <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
+42:          </a>
+43:          <a class="p-2 text-muted" href="#">
+44:            <%= link_to("記事検索", "/posts/search") %>
+45:          </a>
+46:          <a class="p-2 text-muted" href="#">
+47:            <%= link_to("投稿一覧", "/posts/index") %>
+48:          </a>
+49:          <a class="p-2 text-muted" href="#">
+50:            <%= link_to("新規投稿をする", "/posts/new") %>
+51:          </a>
+52:          <a class="p-2 text-muted" href="#">
+53:            <%= link_to("ユーザー一覧", "/users/index") %>
+54:          </a>
+55:          <a class="p-2 text-muted" href="#">
+56:            <%= link_to("ユーザー検索", "/users/search") %>
+57:          </a>
+58:          <a class="p-2 text-muted" href="#">
+59:            <%= link_to("ログアウト", "/logout", {method: "post"}) %>
+60:          </a>
+61:          <a class="notification">
+62:            <%=link_to ('通知', notifications_path  )%>
+63:            <% if unchecked_notifications.any? %>
+64:            <i class="fa fa-circle notification-circle"></i>
+65:            <% end %>
+66:          </a>
+67:          <% unless @current_user.email == "guest@exapmle.com" then %>
+68:          <a class="p-2 text-muted" href="#">
+69:            <%= link_to("退会", "/users/#{@current_user.id}/destroy", {method: "post"}) %>
+70:          </a>
+71:          <%end%>
+72:    
+73:          <% else %>
+74:          <a class="p-2 text-muted" href="#">
+75:            <%= link_to("新規登録", "/signup") %>
+76:          </a>
+77:          <a class="p-2 text-muted" href="#">
+78:            <%= link_to("ログイン", "/login") %>
+79:          </a>
+80:          <a class="p-2 text-muted" href="#">
+81:            <%= link_to("ゲストログイン", "/guest_session", {method: "post"}) %>
+82:          </a>
+83:    
+84:          <% end %>
+85:        </nav>
+86:      </div>
+87:    
+88:    
+89:    
+90:    
+91:      <% if flash[:notice] %>
+92:      <div class="flash">
+93:        <%= flash[:notice] %>
+94:      </div>
+95:      <% end %>
+96:    
+97:      <%= yield %>
+98:    </body>
+99:    
+100:    </html>
+  
+app/views/layouts/application.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/layouts/application.html.erb:62: syntax error, unexpected ',', expecting ')'
+Started GET "/posts/index" for ::1 at 2022-06-01 09:35:00 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.2ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2666)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 11648)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 3.6ms | Allocations: 13975)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `unchecked_notifications' for #<ActionView::Base:0x007fd3acd863a0>):
+    60:       </a>
+    61:       <a class="notification">
+    62:         <%= link_to('通知', notifications_path )%>
+    63:         <% if unchecked_notifications.any? %>
+    64:         <i class="fa fa-circle notification-circle"></i>
+    65:         <% end %>
+    66:       </a>
+  
+app/views/layouts/application.html.erb:63
+Started GET "/posts/index" for ::1 at 2022-06-01 09:38:33 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2362)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mNotification Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:63
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 13371)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 13.2ms | Allocations: 33471)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'notifications.visited_id' in 'where clause'):
+    60:       </a>
+    61:       <a class="notification">
+    62:         <%= link_to('通知', notifications_path )%>
+    63:         <% if unchecked_notifications.any? %>
+    64:         <i class="fa fa-circle notification-circle"></i>
+    65:         <% end %>
+    66:       </a>
+  
+app/views/layouts/application.html.erb:63
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/posts/index" for ::1 at 2022-06-01 09:44:26 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.6ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2362)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mNotification Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:63
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 10795)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 5.2ms | Allocations: 28754)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'notifications.visited_id' in 'where clause'):
+    60:       </a>
+    61:       <a class="notification">
+    62:         <%= link_to('通知', notifications_path )%>
+    63:         <% if unchecked_notifications.any? %>
+    64:         <i class="fa fa-circle notification-circle"></i>
+    65:         <% end %>
+    66:       </a>
+  
+app/views/layouts/application.html.erb:63
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/posts/index" for ::1 at 2022-06-01 09:45:46 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.0ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2362)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mNotification Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:63
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 11672)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 7.1ms | Allocations: 30333)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'notifications.visited_id' in 'where clause'):
+    60:       </a>
+    61:       <a class="notification">
+    62:         <%= link_to('通知', notifications_path )%>
+    63:         <% if unchecked_notifications.any? %>
+    64:         <i class="fa fa-circle notification-circle"></i>
+    65:         <% end %>
+    66:       </a>
+  
+app/views/layouts/application.html.erb:63
+Started GET "/posts/index" for ::1 at 2022-06-01 09:45:47 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.2ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2362)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mNotification Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 1[0m
+  ↳ app/views/layouts/application.html.erb:63
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 9390)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 3.9ms | Allocations: 10878)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'notifications.visited_id' in 'where clause'):
+    60:       </a>
+    61:       <a class="notification">
+    62:         <%= link_to('通知', notifications_path )%>
+    63:         <% if unchecked_notifications.any? %>
+    64:         <i class="fa fa-circle notification-circle"></i>
+    65:         <% end %>
+    66:       </a>
+  
+app/views/layouts/application.html.erb:63
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/posts/index" for ::1 at 2022-06-01 09:57:12 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.0ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2671)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 8266)
+Completed 200 OK in 31ms (Views: 9.7ms | ActiveRecord: 2.8ms | Allocations: 26293)
+
+
+Started GET "/notifications" for ::1 at 2022-06-01 09:57:18 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (0.7ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE ORDER BY `notifications`.`created_at` DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:4:in `index'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.6ms | Allocations: 4288)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'notifications.visited_id' in 'where clause'):
+  
+app/controllers/notifications_controller.rb:4:in `index'
+Started GET "/posts/index" for ::1 at 2022-06-01 09:57:37 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.0ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2363)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 7227)
+Completed 200 OK in 15ms (Views: 8.8ms | ActiveRecord: 3.3ms | Allocations: 8757)
+
+
+Started GET "/posts/index" for ::1 at 2022-06-01 09:57:39 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.3ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2361)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 7222)
+Completed 200 OK in 16ms (Views: 9.1ms | ActiveRecord: 4.2ms | Allocations: 8734)
+
+
+Started GET "/posts/new" for ::1 at 2022-06-01 09:57:41 +0900
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 818)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 5669)
+Completed 200 OK in 17ms (Views: 9.8ms | ActiveRecord: 1.9ms | Allocations: 10388)
+
+
+Started POST "/posts" for ::1 at 2022-06-01 09:58:00 +0900
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"tag_name"=>"たこ焼き　お好み焼き"}, "content"=>"ご飯が食べたいです。"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:64:in `create'
+  [1m[36mPost Create (2.6ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`, `user_id`) VALUES ('ご飯が食べたいです。', '2022-06-01 09:58:00.551283', '2022-06-01 09:58:00.551283', 1)[0m
+  ↳ app/controllers/posts_controller.rb:64:in `create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:64:in `create'
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT `tags`.`tag_name` FROM `tags` INNER JOIN `tag_maps` ON `tags`.`id` = `tag_maps`.`tag_id` WHERE `tag_maps`.`post_id` = 1[0m
+  ↳ app/models/post.rb:17:in `save_tag'
+  [1m[36mTag Load (1.5ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` WHERE `tags`.`tag_name` = 'たこ焼き　お好み焼き' LIMIT 1[0m
+  ↳ app/models/post.rb:26:in `block in save_tag'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/post.rb:26:in `block in save_tag'
+  [1m[36mTag Create (0.8ms)[0m  [1m[32mINSERT INTO `tags` (`tag_name`, `created_at`, `updated_at`) VALUES ('たこ焼き　お好み焼き', '2022-06-01 09:58:00.584744', '2022-06-01 09:58:00.584744')[0m
+  ↳ app/models/post.rb:26:in `block in save_tag'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/post.rb:26:in `block in save_tag'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/post.rb:27:in `block in save_tag'
+  [1m[36mTagMap Create (4.8ms)[0m  [1m[32mINSERT INTO `tag_maps` (`post_id`, `tag_id`, `created_at`, `updated_at`) VALUES (1, 1, '2022-06-01 09:58:00.600646', '2022-06-01 09:58:00.600646')[0m
+  ↳ app/models/post.rb:27:in `block in save_tag'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/post.rb:27:in `block in save_tag'
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 64ms (ActiveRecord: 27.4ms | Allocations: 27143)
+
+
+Started GET "/posts/index" for ::1 at 2022-06-01 09:58:00 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.0ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `comments` WHERE `comments`.`post_id` = 1[0m
+  ↳ app/views/posts/index.html.erb:30
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:34
+  Rendered posts/index.html.erb within layouts/application (Duration: 26.7ms | Allocations: 12078)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 16845)
+Completed 200 OK in 35ms (Views: 23.0ms | ActiveRecord: 10.4ms | Allocations: 18367)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 09:58:00 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/users/index" for ::1 at 2022-06-01 09:58:06 +0900
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 127.5ms | Allocations: 101919)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 132.4ms | Allocations: 106776)
+Completed 200 OK in 139ms (Views: 132.1ms | ActiveRecord: 3.9ms | Allocations: 109010)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 09:58:06 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/users/index?page=2" for ::1 at 2022-06-01 09:58:07 +0900
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` LIMIT 1 OFFSET 1[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 4234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 9091)
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 3.8ms | Allocations: 10570)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-01 09:58:07 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
+Started GET "/logout" for ::1 at 2022-06-01 09:58:09 +0900
+Processing by UsersController#logout as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms | Allocations: 1215)
+
+
+Started GET "/login" for ::1 at 2022-06-01 09:58:09 +0900
+Processing by UsersController#login_form as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 1.4ms | Allocations: 342)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 5135)
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 0.8ms | Allocations: 6810)
+
+
+Started POST "/login" for ::1 at 2022-06-01 09:58:21 +0900
+Processing by UsersController#login as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"engineering@science.jp", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'engineering@science.jp' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:71:in `login'
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 265ms (ActiveRecord: 2.2ms | Allocations: 2522)
+
+
+Started GET "/posts/index" for ::1 at 2022-06-01 09:58:21 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `comments` WHERE `comments`.`post_id` = 1[0m
+  ↳ app/views/posts/index.html.erb:30
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:34
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 8664)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 13545)
+Completed 200 OK in 22ms (Views: 13.2ms | ActiveRecord: 6.8ms | Allocations: 15070)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 09:58:21 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/posts/1" for ::1 at 2022-06-01 09:58:30 +0900
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:22:in `show'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `likes` WHERE `likes`.`post_id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mTag Load (1.0ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `tag_maps` ON `tags`.`id` = `tag_maps`.`tag_id` WHERE `tag_maps`.`post_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:13
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:15
+  [1m[36mLike Load (0.9ms)[0m  [1m[34mSELECT `likes`.* FROM `likes` WHERE `likes`.`user_id` = 2 AND `likes`.`post_id` = 1 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (3.1ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Post' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:36
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 0) subquery_for_count[0m
+  ↳ app/views/posts/show.html.erb:56
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 0[0m
+  ↳ app/views/posts/show.html.erb:57
+  Rendered posts/show.html.erb within layouts/application (Duration: 22.1ms | Allocations: 11916)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 16691)
+Completed 200 OK in 44ms (Views: 18.5ms | ActiveRecord: 14.2ms | Allocations: 25836)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 09:58:30 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 09:58:42 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (1.7ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 09:58:43.010406', '2022-06-01 09:58:43.010406')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 5.0ms | Allocations: 8556)
+
+
+  
+NoMethodError (undefined method `create_notification_comment!' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 09:59:27 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 09:59:27.960053', '2022-06-01 09:59:27.960053')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 11.1ms | Allocations: 33472)
+
+
+  
+NoMethodError (undefined method `create_notification_comment!' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:8:in `create'

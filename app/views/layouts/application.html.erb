@@ -58,6 +58,12 @@
       <a class="p-2 text-muted" href="#">
         <%= link_to("ログアウト", "/logout", {method: "post"}) %>
       </a>
+      <a class="notification">
+        <%= link_to('通知', notifications_path )%>
+        <%# if unchecked_notifications.any? %>
+        <i class="fa fa-circle notification-circle"></i>
+        <% #end %>
+      </a>
       <% unless @current_user.email == "guest@exapmle.com" then %>
       <a class="p-2 text-muted" href="#">
         <%= link_to("退会", "/users/#{@current_user.id}/destroy", {method: "post"}) %>
