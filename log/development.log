@@ -18545,3 +18545,143 @@ ActionView::Template::Error (Missing partial notifications/_notification with {:
     6: <p>通知はありません</p>
   
 app/views/notifications/index.html.erb:3
+Started GET "/notifications" for ::1 at 2022-06-01 18:32:39 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (1.4ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (1.2ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  Rendered collection of notifications/_notification.html.erb [3 times] (Duration: 1.0ms | Allocations: 1654)
+  Rendered notifications/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 4516)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4597)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 6.8ms | Allocations: 8616)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%=visitor = notification.visitor%>
+<%= visited = notification.visited%>
+<div class="col-md-6.mx-auto">
+    <div class="form-inline">
+
+        <%=link_to user_path(visitor) do%>
+        <%=mage_tag avatar_url(visitor).to_s, class: "icon_mini"%>
+        <%=visitor.name%>
+        <%='さんが'%>
+
+        <%=case notification.action%>
+        <%= when 'follow' then%>
+        <%="あなたをフォローしました"%>
+        <%= when 'like' then%>
+        <%= link_to 'あなたの投稿', notification.post, style: "font-weight: bold;"%>
+        <%= "にいいねしました"%>
+        <%= when 'comment' then%>
+        <%if notification.post.user_id == visited.id%>
+        <%=link_to "あなたの投稿", notification.post, style: "font-weight: bold;"%>
+        <% else %>
+
+        <%=link_to post_path(notification.post) do%>
+        <%= image_tag avatar_url(notification.post.user).to_s, class: "icon_mini"%>
+
+        <%= notification.post.user.name + 'さんの投稿'%>
+        <%= "にコメントしました"%>
+        <div class="p.text-muted.mb-0">
+            <%= Comment.find_by(id: notification.comment_id)&.comment%>
+
+            <div class="small.text-muted.text-right">
+                <%= time_ago_in_words(notification.created_at).upcase%>
+            </div>
+        </div>
+    </div>
+</div>
+):
+1:    <%=visitor = notification.visitor%>
+2:    <%= visited = notification.visited%>
+3:    <div class="col-md-6.mx-auto">
+4:        <div class="form-inline">
+5:    
+6:            <%=link_to user_path(visitor) do%>
+7:            <%=mage_tag avatar_url(visitor).to_s, class: "icon_mini"%>
+8:            <%=visitor.name%>
+9:            <%='さんが'%>
+10:    
+11:            <%=case notification.action%>
+12:            <%= when 'follow' then%>
+13:            <%="あなたをフォローしました"%>
+14:            <%= when 'like' then%>
+15:            <%= link_to 'あなたの投稿', notification.post, style: "font-weight: bold;"%>
+16:            <%= "にいいねしました"%>
+17:            <%= when 'comment' then%>
+18:            <%if notification.post.user_id == visited.id%>
+19:            <%=link_to "あなたの投稿", notification.post, style: "font-weight: bold;"%>
+20:            <% else %>
+21:    
+22:            <%=link_to post_path(notification.post) do%>
+23:            <%= image_tag avatar_url(notification.post.user).to_s, class: "icon_mini"%>
+24:    
+25:            <%= notification.post.user.name + 'さんの投稿'%>
+26:            <%= "にコメントしました"%>
+27:            <div class="p.text-muted.mb-0">
+28:                <%= Comment.find_by(id: notification.comment_id)&.comment%>
+29:    
+30:                <div class="small.text-muted.text-right">
+31:                    <%= time_ago_in_words(notification.created_at).upcase%>
+32:                </div>
+33:            </div>
+34:        </div>
+35:    </div>
+  
+app/views/notifications/_notification.html.erb:11: syntax error, unexpected ')', expecting when
+app/views/notifications/_notification.html.erb:12: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:12: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:14: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:14: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:17: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:17: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/notifications/_notification.html.erb:11: syntax error, unexpected ')', expecting when
+app/views/notifications/_notification.html.erb:12: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:12: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:14: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:14: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:17: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:17: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/notifications/_notification.html.erb:11: syntax error, unexpected ')', expecting when
+app/views/notifications/_notification.html.erb:12: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:12: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:14: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:14: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:17: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:17: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/notifications/_notification.html.erb:11: syntax error, unexpected ')', expecting when
+app/views/notifications/_notification.html.erb:12: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:12: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:14: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:14: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:17: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:17: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/notifications/_notification.html.erb:11: syntax error, unexpected ')', expecting when
+app/views/notifications/_notification.html.erb:12: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:12: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:14: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:14: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:17: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:17: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/notifications/_notification.html.erb:11: syntax error, unexpected ')', expecting when
+app/views/notifications/_notification.html.erb:12: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:12: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:14: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:14: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:17: syntax error, unexpected when
+app/views/notifications/_notification.html.erb:17: syntax error, unexpected then, expecting ')'
+app/views/notifications/_notification.html.erb:37: syntax error, unexpected end-of-input, expecting end
+app/views/notifications/index.html.erb:3
