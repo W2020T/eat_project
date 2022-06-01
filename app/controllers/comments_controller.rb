@@ -4,12 +4,12 @@ class CommentsController < ApplicationController
     post = Post.find(params[:post_id])
     @comment = post.comments.new(comment_params)
     @comment.user_id = current_user.id
-    flash[:notice] = if @comment.save
-                       @post.create_notification_comment!(current_user, @comment.id)
-                       'コメントを作成しました'
-                     else
-                       'コメントの作成に失敗しました'
-                     end
+    if @comment.save
+      post.create_notification_comment!(current_user, @comment.id)
+      flash[:notice] = 'コメントを作成しました'
+    else
+      'コメントの作成に失敗しました'
+    end
     redirect_to("/posts/#{params[:post_id]}")
   end
 

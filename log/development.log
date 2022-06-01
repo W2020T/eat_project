@@ -11860,3 +11860,1004 @@ Completed 500 Internal Server Error in 42ms (ActiveRecord: 11.1ms | Allocations:
 NoMethodError (undefined method `create_notification_comment!' for nil:NilClass):
   
 app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:01:22 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:01:22.385765', '2022-06-01 10:01:22.385765')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 11.0ms | Allocations: 33456)
+
+
+  
+NoMethodError (undefined method `create_notification_comment!' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:02:34 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:02:35.039693', '2022-06-01 10:02:35.039693')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 11.0ms | Allocations: 33719)
+
+
+  
+NoMethodError (undefined method `create_notification_comment!' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:02:54 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:02:54.441515', '2022-06-01 10:02:54.441515')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 10.6ms | Allocations: 33849)
+
+
+  
+NoMethodError (undefined method `create_notification_comment!' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:03:54 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (1.1ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:03:54.577724', '2022-06-01 10:03:54.577724')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:74:in `create_notification_comment!'
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 13.0ms | Allocations: 38211)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'post_id' for Notification.):
+  
+app/models/post.rb:83:in `save_notification_comment!'
+app/models/post.rb:78:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:17:46 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (1.8ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:17:46.921226', '2022-06-01 10:17:46.921226')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:74:in `create_notification_comment!'
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 8.7ms | Allocations: 33985)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'post_id' for Notification.):
+  
+app/models/post.rb:83:in `save_notification_comment!'
+app/models/post.rb:78:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:17:58 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (1.1ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:17:58.655642', '2022-06-01 10:17:58.655642')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:74:in `create_notification_comment!'
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 15.4ms | Allocations: 38448)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'post_id' for Notification.):
+  
+app/models/post.rb:83:in `save_notification_comment!'
+app/models/post.rb:78:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:19:05 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:19:05.797040', '2022-06-01 10:19:05.797040')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:74:in `create_notification_comment!'
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 14.4ms | Allocations: 38395)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'comment_id' for Notification.):
+  
+app/models/post.rb:43:in `save_notification_comment!'
+app/models/post.rb:78:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:19:32 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:19:32.916027', '2022-06-01 10:19:32.916027')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 12.4ms | Allocations: 38396)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'comment_id' for Notification.):
+  
+app/models/post.rb:43:in `save_notification_comment!'
+app/models/post.rb:38:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:28:52 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:28:53.021895', '2022-06-01 10:28:53.021895')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 6.2ms | Allocations: 33913)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'comment_id' for Notification.):
+  
+app/models/post.rb:43:in `save_notification_comment!'
+app/models/post.rb:38:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:31:02 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (2.1ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:31:02.689806', '2022-06-01 10:31:02.689806')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 21.5ms | Allocations: 38405)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'post_id' for Notification.):
+  
+app/models/post.rb:43:in `save_notification_comment!'
+app/models/post.rb:38:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:31:46 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:31:46.248288', '2022-06-01 10:31:46.248288')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 12.4ms | Allocations: 39080)
+
+
+  
+NameError (undefined local variable or method `comment_id' for #<Post:0x00007fd3acf94e30>
+Did you mean?  comment_ids
+               comment_ids=
+               comments
+               comments=):
+  
+app/models/post.rb:44:in `save_notification_comment!'
+app/models/post.rb:38:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:32:05 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:32:05.229548', '2022-06-01 10:32:05.229548')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 14.1ms | Allocations: 38398)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'comment_id' for Notification.):
+  
+app/models/post.rb:43:in `save_notification_comment!'
+app/models/post.rb:38:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:32:19 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (1.1ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:32:20.093667', '2022-06-01 10:32:20.093667')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 12.7ms | Allocations: 39041)
+
+
+  
+NameError (undefined local variable or method `comment_id' for #<Post:0x00007fd3acc77c48>
+Did you mean?  comment_ids
+               comment_ids=
+               comments
+               comments=):
+  
+app/models/post.rb:44:in `save_notification_comment!'
+app/models/post.rb:38:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:34:08 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:34:08.768898', '2022-06-01 10:34:08.768898')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 13.2ms | Allocations: 38362)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'comment_id' for Notification.):
+  
+app/models/post.rb:43:in `save_notification_comment!'
+app/models/post.rb:38:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:34:25 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:34:25.367274', '2022-06-01 10:34:25.367274')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 13.1ms | Allocations: 38397)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'comment_id' for Notification.):
+  
+app/models/post.rb:43:in `save_notification_comment!'
+app/models/post.rb:38:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:35:00 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:35:00.503456', '2022-06-01 10:35:00.503456')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 13.9ms | Allocations: 38363)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'comment_id' for Notification.):
+  
+app/models/post.rb:43:in `save_notification_comment!'
+app/models/post.rb:38:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:38:12 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:38:12.220548', '2022-06-01 10:38:12.220548')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 11.3ms | Allocations: 38485)
+
+
+  
+NameError (undefined local variable or method `comment_id' for #<Post:0x00007fd3a7f0a6e0>
+Did you mean?  comment_ids
+               comment_ids=
+               comments
+               comments=):
+  
+app/models/post.rb:44:in `save_notification_comment!'
+app/models/post.rb:38:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:42:57 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:42:57.953712', '2022-06-01 10:42:57.953712')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (18.4ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 29.9ms | Allocations: 38405)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'post_id' for Notification.):
+  
+app/models/post.rb:43:in `save_notification_comment!'
+app/models/post.rb:38:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 10:44:04 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 10:44:04.138171', '2022-06-01 10:44:04.138171')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 12.9ms | Allocations: 38367)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'visited_id' for Notification.):
+  
+app/models/post.rb:43:in `save_notification_comment!'
+app/models/post.rb:38:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateNotifications (20220601020553)
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE `notifications` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `visitor_id` int NOT NULL, `visited_id` int NOT NULL, `post_id` int, `comment_id` int, `action` varchar(255) DEFAULT '' NOT NULL, `checked` tinyint(1) DEFAULT FALSE NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE INDEX `index_notifications_on_visitor_id` ON `notifications` (`visitor_id`)[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE INDEX `index_notifications_on_visited_id` ON `notifications` (`visited_id`)[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE INDEX `index_notifications_on_post_id` ON `notifications` (`post_id`)[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE INDEX `index_notifications_on_comment_id` ON `notifications` (`comment_id`)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220601020553')[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 11:06:59 +0900
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 11:06:59.850418', '2022-06-01 11:06:59.850418')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 6.0ms | Allocations: 32314)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'visited_id' for Notification.):
+  
+app/models/post.rb:43:in `save_notification_comment!'
+app/models/post.rb:38:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 11:07:32 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 11:07:32.727130', '2022-06-01 11:07:32.727130')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 11.7ms | Allocations: 37446)
+
+
+  
+NameError (undefined local variable or method `comment_id' for #<Post:0x00007fd3acfce568>
+Did you mean?  comment_ids
+               comment_ids=
+               comments
+               comments=):
+  
+app/models/post.rb:44:in `save_notification_comment!'
+app/models/post.rb:38:in `create_notification_comment!'
+app/controllers/comments_controller.rb:8:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 11:17:37 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.7ms | Allocations: 13186)
+
+
+  
+SyntaxError (/Users/watanabe/eat/eat_project/app/models/post.rb:44: syntax error, unexpected ':', expecting ')'
+      @comment_id: comment_id,
+                 ^
+/Users/watanabe/eat/eat_project/app/models/post.rb:48: syntax error, unexpected ')', expecting end
+    )
+    ^):
+  
+app/models/post.rb:44: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:48: syntax error, unexpected ')', expecting end
+app/models/post.rb:44: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:48: syntax error, unexpected ')', expecting end
+app/models/post.rb:44: syntax error, unexpected ':', expecting ')'
+app/models/post.rb:48: syntax error, unexpected ')', expecting end
+app/controllers/comments_controller.rb:4:in `create'
+Started POST "/posts/1/comments" for ::1 at 2022-06-01 11:18:03 +0900
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "content"=>"そうですね", "post_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:4:in `create'
+[31mUnpermitted parameters: :authenticity_token, :post_id[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO `comments` (`content`, `user_id`, `post_id`, `created_at`, `updated_at`) VALUES ('そうですね', 2, 1, '2022-06-01 11:18:03.633144', '2022-06-01 11:18:03.633144')[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT DISTINCT `comments`.`user_id` FROM `comments` WHERE `comments`.`post_id` = 1 AND `comments`.`user_id` != 2[0m
+  ↳ app/models/post.rb:34:in `create_notification_comment!'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/post.rb:51:in `save_notification_comment!'
+  [1m[36mNotification Create (0.9ms)[0m  [1m[32mINSERT INTO `notifications` (`visitor_id`, `visited_id`, `post_id`, `action`, `created_at`, `updated_at`) VALUES (2, 1, 1, 'comment', '2022-06-01 11:18:03.648632', '2022-06-01 11:18:03.648632')[0m
+  ↳ app/models/post.rb:51:in `save_notification_comment!'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/post.rb:51:in `save_notification_comment!'
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 60ms (ActiveRecord: 18.1ms | Allocations: 44011)
+
+
+Started GET "/posts/1" for ::1 at 2022-06-01 11:18:03 +0900
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:22:in `show'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `likes` WHERE `likes`.`post_id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `tag_maps` ON `tags`.`id` = `tag_maps`.`tag_id` WHERE `tag_maps`.`post_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:13
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:15
+  [1m[36mLike Load (1.7ms)[0m  [1m[34mSELECT `likes`.* FROM `likes` WHERE `likes`.`user_id` = 2 AND `likes`.`post_id` = 1 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Post' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:36
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 0) subquery_for_count[0m
+  ↳ app/views/posts/show.html.erb:56
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 0[0m
+  ↳ app/views/posts/show.html.erb:57
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `comments` WHERE `comments`.`post_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:69
+  Rendered posts/show.html.erb within layouts/application (Duration: 44.2ms | Allocations: 26602)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.3ms | Allocations: 31384)
+Completed 200 OK in 82ms (Views: 39.5ms | ActiveRecord: 32.8ms | Allocations: 40211)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 11:18:03 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/posts/1?page=4" for ::1 at 2022-06-01 11:18:11 +0900
+Processing by PostsController#show as HTML
+  Parameters: {"page"=>"4", "id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:22:in `show'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `likes` WHERE `likes`.`post_id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `tag_maps` ON `tags`.`id` = `tag_maps`.`tag_id` WHERE `tag_maps`.`post_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:13
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:15
+  [1m[36mLike Load (0.9ms)[0m  [1m[34mSELECT `likes`.* FROM `likes` WHERE `likes`.`user_id` = 2 AND `likes`.`post_id` = 1 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Post' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:36
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 21) subquery_for_count[0m
+  ↳ app/views/posts/show.html.erb:56
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 21[0m
+  ↳ app/views/posts/show.html.erb:57
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  Rendered posts/show.html.erb within layouts/application (Duration: 37.7ms | Allocations: 11839)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.2ms | Allocations: 16708)
+Completed 200 OK in 52ms (Views: 37.5ms | ActiveRecord: 9.6ms | Allocations: 21270)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 11:18:11 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/comments/1/destroy" for ::1 at 2022-06-01 11:18:14 +0900
+Processing by CommentsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 2 AND `comments`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:17:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:17:in `destroy'
+  [1m[36mNotification Load (1.1ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`comment_id` = 1[0m
+  ↳ app/controllers/comments_controller.rb:17:in `destroy'
+  [1m[36mComment Destroy (3.3ms)[0m  [1m[31mDELETE FROM `comments` WHERE `comments`.`id` = 1[0m
+  ↳ app/controllers/comments_controller.rb:17:in `destroy'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:17:in `destroy'
+Redirected to http://localhost:3000/posts/
+Completed 302 Found in 20ms (ActiveRecord: 9.6ms | Allocations: 8087)
+
+
+Started GET "/posts/" for ::1 at 2022-06-01 11:18:14 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.0ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `comments` WHERE `comments`.`post_id` = 1[0m
+  ↳ app/views/posts/index.html.erb:30
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:34
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 8691)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 13567)
+Completed 200 OK in 23ms (Views: 14.2ms | ActiveRecord: 7.1ms | Allocations: 15149)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 11:18:14 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/posts/1" for ::1 at 2022-06-01 11:18:16 +0900
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:22:in `show'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `likes` WHERE `likes`.`post_id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mTag Load (1.3ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `tag_maps` ON `tags`.`id` = `tag_maps`.`tag_id` WHERE `tag_maps`.`post_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:13
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:15
+  [1m[36mLike Load (0.9ms)[0m  [1m[34mSELECT `likes`.* FROM `likes` WHERE `likes`.`user_id` = 2 AND `likes`.`post_id` = 1 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (1.2ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Post' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:36
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 0) subquery_for_count[0m
+  ↳ app/views/posts/show.html.erb:56
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 0[0m
+  ↳ app/views/posts/show.html.erb:57
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `comments` WHERE `comments`.`post_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:69
+  Rendered posts/show.html.erb within layouts/application (Duration: 25.3ms | Allocations: 15497)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 20366)
+Completed 200 OK in 43ms (Views: 23.1ms | ActiveRecord: 12.6ms | Allocations: 24929)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 11:18:16 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/posts/1?page=4" for ::1 at 2022-06-01 11:18:20 +0900
+Processing by PostsController#show as HTML
+  Parameters: {"page"=>"4", "id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:22:in `show'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `likes` WHERE `likes`.`post_id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mTag Load (1.0ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `tag_maps` ON `tags`.`id` = `tag_maps`.`tag_id` WHERE `tag_maps`.`post_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:13
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:15
+  [1m[36mLike Load (1.2ms)[0m  [1m[34mSELECT `likes`.* FROM `likes` WHERE `likes`.`user_id` = 2 AND `likes`.`post_id` = 1 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Post' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:36
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 21) subquery_for_count[0m
+  ↳ app/views/posts/show.html.erb:56
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 21[0m
+  ↳ app/views/posts/show.html.erb:57
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  Rendered posts/show.html.erb within layouts/application (Duration: 19.0ms | Allocations: 11231)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 16100)
+Completed 200 OK in 33ms (Views: 18.9ms | ActiveRecord: 9.7ms | Allocations: 20662)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 11:18:20 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/comments/2/destroy" for ::1 at 2022-06-01 11:18:22 +0900
+Processing by CommentsController#destroy as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`user_id` = 2 AND `comments`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/comments_controller.rb:17:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:17:in `destroy'
+  [1m[36mNotification Load (1.1ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`comment_id` = 2[0m
+  ↳ app/controllers/comments_controller.rb:17:in `destroy'
+  [1m[36mComment Destroy (1.1ms)[0m  [1m[31mDELETE FROM `comments` WHERE `comments`.`id` = 2[0m
+  ↳ app/controllers/comments_controller.rb:17:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:17:in `destroy'
+Redirected to http://localhost:3000/posts/
+Completed 302 Found in 16ms (ActiveRecord: 7.3ms | Allocations: 6976)
+
+
+Started GET "/posts/" for ::1 at 2022-06-01 11:18:22 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `comments` WHERE `comments`.`post_id` = 1[0m
+  ↳ app/views/posts/index.html.erb:30
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:34
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 8658)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 13534)
+Completed 200 OK in 21ms (Views: 12.8ms | ActiveRecord: 7.0ms | Allocations: 15057)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 11:18:22 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/posts/1" for ::1 at 2022-06-01 11:18:23 +0900
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:22:in `show'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `likes` WHERE `likes`.`post_id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mTag Load (1.1ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `tag_maps` ON `tags`.`id` = `tag_maps`.`tag_id` WHERE `tag_maps`.`post_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:13
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:15
+  [1m[36mLike Load (0.9ms)[0m  [1m[34mSELECT `likes`.* FROM `likes` WHERE `likes`.`user_id` = 2 AND `likes`.`post_id` = 1 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Post' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:36
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 0) subquery_for_count[0m
+  ↳ app/views/posts/show.html.erb:56
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 0[0m
+  ↳ app/views/posts/show.html.erb:57
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `comments` WHERE `comments`.`post_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:69
+  Rendered posts/show.html.erb within layouts/application (Duration: 25.3ms | Allocations: 15496)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 20365)
+Completed 200 OK in 43ms (Views: 24.8ms | ActiveRecord: 12.0ms | Allocations: 24928)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 11:18:24 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/likes/1/create" for ::1 at 2022-06-01 11:18:30 +0900
+Processing by LikesController#create as HTML
+  Parameters: {"post_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/likes_controller.rb:9:in `create'
+  [1m[36mLike Create (1.1ms)[0m  [1m[32mINSERT INTO `likes` (`user_id`, `post_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 11:18:30.276797', '2022-06-01 11:18:30.276797')[0m
+  ↳ app/controllers/likes_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/likes_controller.rb:9:in `create'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 4.8ms | Allocations: 9968)
+
+
+  
+NameError (undefined local variable or method `post' for #<LikesController:0x007fd3a7c194e0>):
+  
+app/controllers/likes_controller.rb:10:in `create'
