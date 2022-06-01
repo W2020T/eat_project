@@ -4,6 +4,7 @@ class RelationshipsController < ApplicationController
   before_action :authenticate_user
   def create
     following = @current_user.follow(params[:user_id])
+    @user = User.find_by(params[:id])
     if following.save
       @user.create_notification_follow!(current_user)
       flash[:notice] = 'ユーザーをフォローしました'

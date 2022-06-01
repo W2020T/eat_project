@@ -13656,3 +13656,901 @@ ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'ind
   
 app/models/user.rb:23:in `follow'
 app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 12:03:33 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (1.0ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 12:03:33.440689', '2022-06-01 12:03:33.440689')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 7.3ms | Allocations: 23329)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/users/1" for ::1 at 2022-06-01 12:03:36 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.7ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 1[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2 AND `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:38
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  Rendered users/show.html.erb within layouts/application (Duration: 23.3ms | Allocations: 18266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 23058)
+Completed 200 OK in 58ms (Views: 22.2ms | ActiveRecord: 15.8ms | Allocations: 43544)
+
+
+Started GET "/relationships/1/destroy" for ::1 at 2022-06-01 12:03:39 +0900
+Processing by RelationshipsController#destroy as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRelationship Load (1.2ms)[0m  [1m[34mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`follower_id` = 2 AND `relationships`.`followed_id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mRelationship Destroy (0.8ms)[0m  [1m[31mDELETE FROM `relationships` WHERE `relationships`.`id` = 1[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 14ms (ActiveRecord: 5.8ms | Allocations: 8269)
+
+
+Started GET "/users/1" for ::1 at 2022-06-01 12:03:39 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 1[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2 AND `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:38
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  Rendered users/show.html.erb within layouts/application (Duration: 11.5ms | Allocations: 7049)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 11934)
+Completed 200 OK in 24ms (Views: 13.3ms | ActiveRecord: 6.9ms | Allocations: 16336)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 12:03:39 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 12:03:40 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (1.3ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 12:03:40.023474', '2022-06-01 12:03:40.023474')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 6.0ms | Allocations: 10740)
+
+
+  
+NameError (undefined local variable or method `user' for #<RelationshipsController:0x007fd3b148e400>
+Did you mean?  super):
+  
+app/controllers/relationships_controller.rb:8:in `create'
+Started GET "/users/1" for ::1 at 2022-06-01 12:03:49 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (1.3ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (1.3ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 1[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2 AND `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:38
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  Rendered users/show.html.erb within layouts/application (Duration: 10.8ms | Allocations: 7048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 11929)
+Completed 200 OK in 27ms (Views: 13.2ms | ActiveRecord: 8.8ms | Allocations: 16325)
+
+
+Started GET "/relationships/1/destroy" for ::1 at 2022-06-01 12:03:50 +0900
+Processing by RelationshipsController#destroy as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRelationship Load (1.7ms)[0m  [1m[34mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`follower_id` = 2 AND `relationships`.`followed_id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mRelationship Destroy (1.3ms)[0m  [1m[31mDELETE FROM `relationships` WHERE `relationships`.`id` = 7[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 15ms (ActiveRecord: 6.7ms | Allocations: 5509)
+
+
+Started GET "/users/1" for ::1 at 2022-06-01 12:03:50 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (1.1ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 1[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2 AND `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:38
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  Rendered users/show.html.erb within layouts/application (Duration: 12.2ms | Allocations: 7047)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 11932)
+Completed 200 OK in 26ms (Views: 13.7ms | ActiveRecord: 8.1ms | Allocations: 16334)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 12:03:50 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 12:03:52 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (1.2ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 12:03:52.344495', '2022-06-01 12:03:52.344495')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 6.2ms | Allocations: 10291)
+
+
+  
+NameError (undefined local variable or method `user' for #<RelationshipsController:0x007fd395267558>
+Did you mean?  super):
+  
+app/controllers/relationships_controller.rb:8:in `create'
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 12:04:42 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.8ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 12:04:42.844203', '2022-06-01 12:04:42.844203')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 9.8ms | Allocations: 25211)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 12:10:02 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.9ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 12:10:02.609222', '2022-06-01 12:10:02.609222')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 6.9ms | Allocations: 8681)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started POST "/__web_console/repl_sessions/15bc77d2d039089bbfd5b73f82322e12/trace" for ::1 at 2022-06-01 12:10:04 +0900
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 12:10:39 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.6ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 12:10:40.042414', '2022-06-01 12:10:40.042414')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 8.7ms | Allocations: 25947)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 12:18:41 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.9ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 12:18:41.473077', '2022-06-01 12:18:41.473077')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 6.0ms | Allocations: 23327)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 12:18:43 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.8ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 12:18:43.766789', '2022-06-01 12:18:43.766789')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 6.4ms | Allocations: 8076)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 12:19:59 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (1.0ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 12:19:59.627989', '2022-06-01 12:19:59.627989')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 9.8ms | Allocations: 21350)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 13:31:32 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.7ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 13:31:32.751871', '2022-06-01 13:31:32.751871')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 6.1ms | Allocations: 23355)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/users/1" for ::1 at 2022-06-01 13:31:35 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (1.1ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 1[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2 AND `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:38
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  Rendered users/show.html.erb within layouts/application (Duration: 22.6ms | Allocations: 15631)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.4ms | Allocations: 20423)
+Completed 200 OK in 52ms (Views: 29.8ms | ActiveRecord: 12.6ms | Allocations: 29222)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 13:31:35 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/relationships/1/destroy" for ::1 at 2022-06-01 13:31:37 +0900
+Processing by RelationshipsController#destroy as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRelationship Load (1.2ms)[0m  [1m[34mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`follower_id` = 2 AND `relationships`.`followed_id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mRelationship Destroy (1.3ms)[0m  [1m[31mDELETE FROM `relationships` WHERE `relationships`.`id` = 8[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 12ms (ActiveRecord: 5.7ms | Allocations: 5516)
+
+
+Started GET "/users/1" for ::1 at 2022-06-01 13:31:37 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 1[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2 AND `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:38
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  Rendered users/show.html.erb within layouts/application (Duration: 14.4ms | Allocations: 7048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 11933)
+Completed 200 OK in 31ms (Views: 16.6ms | ActiveRecord: 8.6ms | Allocations: 16335)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 13:31:37 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 13:31:38 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (1.4ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 13:31:38.548279', '2022-06-01 13:31:38.548279')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 8.3ms | Allocations: 8237)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/relationships_controller.rb:7:in `create'
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 13:36:50 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.6ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 13:36:50.194292', '2022-06-01 13:36:50.194292')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 9.4ms | Allocations: 25209)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 13:47:31 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.6ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 13:47:31.840108', '2022-06-01 13:47:31.840108')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 5.3ms | Allocations: 23305)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/users/1" for ::1 at 2022-06-01 13:47:34 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.9ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (0.9ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 1[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2 AND `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:38
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  Rendered users/show.html.erb within layouts/application (Duration: 21.5ms | Allocations: 15629)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 20421)
+Completed 200 OK in 45ms (Views: 22.1ms | ActiveRecord: 12.9ms | Allocations: 29217)
+
+
+Started GET "/relationships/1/destroy" for ::1 at 2022-06-01 13:47:35 +0900
+Processing by RelationshipsController#destroy as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRelationship Load (0.9ms)[0m  [1m[34mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`follower_id` = 2 AND `relationships`.`followed_id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mRelationship Destroy (1.7ms)[0m  [1m[31mDELETE FROM `relationships` WHERE `relationships`.`id` = 16[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 13ms (ActiveRecord: 6.1ms | Allocations: 5517)
+
+
+Started GET "/users/1" for ::1 at 2022-06-01 13:47:35 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (1.2ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (1.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 1[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2 AND `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:38
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  Rendered users/show.html.erb within layouts/application (Duration: 18.9ms | Allocations: 7048)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 11933)
+Completed 200 OK in 39ms (Views: 20.4ms | ActiveRecord: 12.8ms | Allocations: 16335)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 13:47:35 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 13:47:36 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (1.2ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 13:47:36.399700', '2022-06-01 13:47:36.399700')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 404 Not Found in 21ms (ActiveRecord: 8.6ms | Allocations: 7891)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/relationships_controller.rb:7:in `create'
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 14:00:35 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (26.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.7ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 14:00:35.959463', '2022-06-01 14:00:35.959463')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 31.0ms | Allocations: 23306)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/users/1" for ::1 at 2022-06-01 14:15:01 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (1.1ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 1[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2 AND `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:38
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  Rendered users/show.html.erb within layouts/application (Duration: 19.2ms | Allocations: 14103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 18895)
+Completed 200 OK in 72ms (Views: 24.2ms | ActiveRecord: 8.6ms | Allocations: 27501)
+
+
+Started GET "/relationships/1/destroy" for ::1 at 2022-06-01 14:15:03 +0900
+Processing by RelationshipsController#destroy as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRelationship Load (1.0ms)[0m  [1m[34mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`follower_id` = 2 AND `relationships`.`followed_id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mRelationship Destroy (1.2ms)[0m  [1m[31mDELETE FROM `relationships` WHERE `relationships`.`id` = 19[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 11ms (ActiveRecord: 4.8ms | Allocations: 5517)
+
+
+Started GET "/users/1" for ::1 at 2022-06-01 14:15:03 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.9ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (0.7ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 1[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 1[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 1[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2 AND `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 1[0m
+  ↳ app/views/users/show.html.erb:38
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  Rendered users/show.html.erb within layouts/application (Duration: 10.6ms | Allocations: 7049)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 11934)
+Completed 200 OK in 23ms (Views: 11.6ms | ActiveRecord: 7.1ms | Allocations: 16336)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-01 14:15:03 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 14:15:07 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (1.5ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 14:15:07.440253', '2022-06-01 14:15:07.440253')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 404 Not Found in 23ms (ActiveRecord: 9.5ms | Allocations: 7890)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/relationships_controller.rb:7:in `create'
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 14:18:28 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.7ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 14:18:28.910603', '2022-06-01 14:18:28.910603')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 10.8ms | Allocations: 25211)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 14:24:10 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.6ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 14:24:10.637721', '2022-06-01 14:24:10.637721')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 5.4ms | Allocations: 23305)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 14:24:13 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (1.1ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 14:24:13.574550', '2022-06-01 14:24:13.574550')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 6.7ms | Allocations: 8076)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/relationships/1/create" for ::1 at 2022-06-01 14:24:38 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.7ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (2, 1, '2022-06-01 14:24:38.365430', '2022-06-01 14:24:38.365430')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 9.4ms | Allocations: 25230)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '2-1' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
