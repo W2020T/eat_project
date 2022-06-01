@@ -2,21 +2,18 @@
 <% visited = notification.visited_id %>
 <div class="col-md-6 mx-auto">
     <div class="form-inline">
-
         <%=link_to user_path(visitor) do%>
-
         <%=visitor%>
         <%='さんが'%>
-
         <% case notification.action%>
         <% when 'follow' then%>
         <%="あなたをフォローしました"%>
         <% when 'like' then%>
-        <%= link_to 'あなたの投稿', notification.post, style: "font-weight: bold;"%>
+        <%= link_to 'あなたの投稿', notification.post, style:"font-weight: bold;"%>
         <%= "にいいねしました"%>
         <% when 'comment' then%>
         <% if notification.id == visited%>
-        <%= link_to("あなたの投稿", notification.post, style: "font-weight: bold;")%>
+        <%= link_to("あなたの投稿", @notification.content, style:"font-weight: bold;")%>
         <% else %>
 
         <%=link_to post_path(notification.post) do%>
