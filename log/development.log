@@ -24579,3 +24579,42 @@ NameError (undefined local variable or method `user_id' for #<User:0x00007f9f4ed
   
 app/models/user.rb:23:in `follow'
 app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/2/create" for ::1 at 2022-06-03 20:37:42 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.5ms | Allocations: 4211)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<User:0x00007f9f5987c0d0>):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/2/create" for ::1 at 2022-06-03 20:37:43 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.4ms | Allocations: 4211)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<User:0x00007f9f5a8140d8>):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/2/create" for ::1 at 2022-06-03 20:37:43 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.0ms | Allocations: 4211)
+
+
+  
+NameError (undefined local variable or method `user_id' for #<User:0x00007f9f4e42df98>):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
