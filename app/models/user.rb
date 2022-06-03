@@ -19,7 +19,7 @@ class User < ApplicationRecord
     Post.where(user_id: id)
   end
 
-  def follow(user_id)
+  def follow(_user_id)
     relationships.create(followed_id: user_id)
   end
 
