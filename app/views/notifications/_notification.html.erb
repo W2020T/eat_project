@@ -20,13 +20,14 @@
         <%= @notification%>
         <%= "さんの投稿"%>
         <%= "にコメントしました"%>
-        <div class="p.text-muted.mb-0">
-            <%= Comment.find_by(id: notification.comment_id)&.comment%>
-            <div class="small.text-muted.text-right">
-                <%= time_ago_in_words(notification.created_at).upcase%>
-            </div>
+    </div>
+    <div class="p.text-muted.mb-0">
+        <%= Comment.find_by(id: notification.comment_id)&.comment%>
+        <div class="small.text-muted.text-right">
+            <%= time_ago_in_words(notification.created_at).upcase%>
         </div>
     </div>
+
 </div>
 <% end %>
 <% end %>
