@@ -23313,3 +23313,379 @@ Processing by NotificationsController#index as HTML
 Completed 200 OK in 26ms (Views: 13.5ms | ActiveRecord: 7.7ms | Allocations: 13122)
 
 
+Started GET "/posts/1" for ::1 at 2022-06-03 19:53:44 +0900
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:22:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `likes` WHERE `likes`.`post_id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mTag Load (1.2ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `tag_maps` ON `tags`.`id` = `tag_maps`.`tag_id` WHERE `tag_maps`.`post_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:13
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:15
+  [1m[36mLike Load (0.8ms)[0m  [1m[34mSELECT `likes`.* FROM `likes` WHERE `likes`.`user_id` = 1 AND `likes`.`post_id` = 1 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (1.0ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Post' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:36
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 0) subquery_for_count[0m
+  ↳ app/views/posts/show.html.erb:56
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 0[0m
+  ↳ app/views/posts/show.html.erb:57
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  Rendered posts/show.html.erb within layouts/application (Duration: 23.8ms | Allocations: 17987)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 22743)
+Completed 200 OK in 64ms (Views: 23.5ms | ActiveRecord: 9.9ms | Allocations: 52443)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-03 19:53:44 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/notifications" for ::1 at 2022-06-03 19:55:10 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (0.7ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (0.9ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`id` IS NULL LIMIT 1[0m
+  ↳ app/views/notifications/_notification.html.erb:24
+  Rendered collection of notifications/_notification.html.erb [3 times] (Duration: 6.0ms | Allocations: 4218)
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1[0m
+  ↳ app/views/notifications/index.html.erb:4
+  Rendered notifications/index.html.erb within layouts/application (Duration: 17.3ms | Allocations: 12876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 17672)
+Completed 200 OK in 45ms (Views: 16.7ms | ActiveRecord: 11.7ms | Allocations: 34825)
+
+
+Started GET "/notifications" for ::1 at 2022-06-03 19:55:23 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (1.0ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (0.9ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  Rendered collection of notifications/_notification.html.erb [3 times] (Duration: 4.0ms | Allocations: 3659)
+  Rendered notifications/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 6521)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 6601)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 4.2ms | Allocations: 10018)
+
+
+  
+ActionView::Template::Error (undefined method `user' for #<Notification:0x00007f9f4e6a48f8>
+Did you mean?  super):
+    16:         <%#= link_to("あなたの投稿", @notification.post.content, style:"font-weight: bold;")%>
+    17:         <% else %>
+    18:         <%=link_to post_path(notification.post_id) do%>
+    19:         <%= image_tag avatar_url(notification.user).to_s, class: "icon_mini"%>
+    20:         <%= @notification%>
+    21:         <%= "さんの投稿"%>
+    22:         <%= "にコメントしました"%>
+  
+app/views/notifications/_notification.html.erb:19
+app/views/notifications/_notification.html.erb:18
+app/views/notifications/_notification.html.erb:5
+app/views/notifications/index.html.erb:3
+Started GET "/notifications" for ::1 at 2022-06-03 19:56:27 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (1.0ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (1.0ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  Rendered collection of notifications/_notification.html.erb [3 times] (Duration: 2.0ms | Allocations: 2196)
+  Rendered notifications/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 5057)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 5137)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 4.7ms | Allocations: 8551)
+
+
+  
+ActionView::Template::Error (undefined method `image_name' for nil:NilClass):
+    16:         <%#= link_to("あなたの投稿", @notification.post.content, style:"font-weight: bold;")%>
+    17:         <% else %>
+    18:         <%=link_to post_path(notification.post_id) do%>
+    19:         <img src="<%= "/user_images/#{@user.image_name}" %>">
+    20:         <%= @notification%>
+    21:         <%= "さんの投稿"%>
+    22:         <%= "にコメントしました"%>
+  
+app/views/notifications/_notification.html.erb:19
+app/views/notifications/_notification.html.erb:18
+app/views/notifications/_notification.html.erb:5
+app/views/notifications/index.html.erb:3
+Started GET "/notifications" for ::1 at 2022-06-03 19:56:28 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (1.1ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (1.7ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  Rendered collection of notifications/_notification.html.erb [3 times] (Duration: 1.5ms | Allocations: 1741)
+  Rendered notifications/index.html.erb within layouts/application (Duration: 22.0ms | Allocations: 4335)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 4417)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 5.5ms | Allocations: 6989)
+
+
+  
+ActionView::Template::Error (undefined method `image_name' for nil:NilClass):
+    16:         <%#= link_to("あなたの投稿", @notification.post.content, style:"font-weight: bold;")%>
+    17:         <% else %>
+    18:         <%=link_to post_path(notification.post_id) do%>
+    19:         <img src="<%= "/user_images/#{@user.image_name}" %>">
+    20:         <%= @notification%>
+    21:         <%= "さんの投稿"%>
+    22:         <%= "にコメントしました"%>
+  
+app/views/notifications/_notification.html.erb:19
+app/views/notifications/_notification.html.erb:18
+app/views/notifications/_notification.html.erb:5
+app/views/notifications/index.html.erb:3
+Started GET "/notifications" for ::1 at 2022-06-03 19:56:37 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (0.9ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (1.2ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  Rendered collection of notifications/_notification.html.erb [3 times] (Duration: 5.1ms | Allocations: 4689)
+  Rendered notifications/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 7550)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 7630)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 4.5ms | Allocations: 11044)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<ActionView::Base:0x007f9f4ee15420>
+Did you mean?  super):
+    16:         <%#= link_to("あなたの投稿", @notification.post.content, style:"font-weight: bold;")%>
+    17:         <% else %>
+    18:         <%=link_to post_path(notification.post_id) do%>
+    19:         <img src="<%= "/user_images/#{user.image_name}" %>">
+    20:         <%= @notification%>
+    21:         <%= "さんの投稿"%>
+    22:         <%= "にコメントしました"%>
+  
+app/views/notifications/_notification.html.erb:19
+app/views/notifications/_notification.html.erb:18
+app/views/notifications/_notification.html.erb:5
+app/views/notifications/index.html.erb:3
+Started GET "/notifications" for ::1 at 2022-06-03 19:56:38 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (1.6ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (1.4ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  Rendered collection of notifications/_notification.html.erb [3 times] (Duration: 4.3ms | Allocations: 4236)
+  Rendered notifications/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 6830)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 6912)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 5.3ms | Allocations: 9484)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<ActionView::Base:0x007f9f52e83548>
+Did you mean?  super):
+    16:         <%#= link_to("あなたの投稿", @notification.post.content, style:"font-weight: bold;")%>
+    17:         <% else %>
+    18:         <%=link_to post_path(notification.post_id) do%>
+    19:         <img src="<%= "/user_images/#{user.image_name}" %>">
+    20:         <%= @notification%>
+    21:         <%= "さんの投稿"%>
+    22:         <%= "にコメントしました"%>
+  
+app/views/notifications/_notification.html.erb:19
+app/views/notifications/_notification.html.erb:18
+app/views/notifications/_notification.html.erb:5
+app/views/notifications/index.html.erb:3
+Started GET "/notifications" for ::1 at 2022-06-03 19:57:50 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (2.2ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (1.2ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  Rendered collection of notifications/_notification.html.erb [3 times] (Duration: 2.9ms | Allocations: 2194)
+  Rendered notifications/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 5055)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 5135)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 5.9ms | Allocations: 8549)
+
+
+  
+ActionView::Template::Error (undefined method `image_name' for nil:NilClass):
+    16:         <%#= link_to("あなたの投稿", @notification.post.content, style:"font-weight: bold;")%>
+    17:         <% else %>
+    18:         <%=link_to post_path(notification.post_id) do%>
+    19:         <img src="<%= "/user_images/#{@user.image_name}" %>">
+    20:         <%= @notification%>
+    21:         <%= "さんの投稿"%>
+    22:         <%= "にコメントしました"%>
+  
+app/views/notifications/_notification.html.erb:19
+app/views/notifications/_notification.html.erb:18
+app/views/notifications/_notification.html.erb:5
+app/views/notifications/index.html.erb:3
+Started GET "/notifications" for ::1 at 2022-06-03 19:58:15 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 8.9ms | Allocations: 16345)
+
+
+  
+NoMethodError (undefined method `user' for nil:NilClass
+Did you mean?  super):
+  
+app/controllers/notifications_controller.rb:4:in `index'
+Started GET "/notifications" for ::1 at 2022-06-03 19:58:26 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (1.4ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (1.5ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  Rendered collection of notifications/_notification.html.erb [3 times] (Duration: 2.3ms | Allocations: 1692)
+  Rendered notifications/index.html.erb within layouts/application (Duration: 20.0ms | Allocations: 8951)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 9033)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 16.5ms | Allocations: 26032)
+
+
+  
+ActionView::Template::Error (undefined method `image_name' for nil:NilClass):
+    16:         <%#= link_to("あなたの投稿", @notification.post.content, style:"font-weight: bold;")%>
+    17:         <% else %>
+    18:         <%=link_to post_path(notification.post_id) do%>
+    19:         <img src="<%= "/user_images/#{@user.image_name}" %>">
+    20:         <%= @notification%>
+    21:         <%= "さんの投稿"%>
+    22:         <%= "にコメントしました"%>
+  
+app/views/notifications/_notification.html.erb:19
+app/views/notifications/_notification.html.erb:18
+app/views/notifications/_notification.html.erb:5
+app/views/notifications/index.html.erb:3
+Started GET "/notifications" for ::1 at 2022-06-03 20:01:47 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (0.9ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.5ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (1.2ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`id` IS NULL LIMIT 1[0m
+  ↳ app/views/notifications/_notification.html.erb:24
+  Rendered collection of notifications/_notification.html.erb [3 times] (Duration: 21.4ms | Allocations: 10989)
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1[0m
+  ↳ app/views/notifications/index.html.erb:4
+  Rendered notifications/index.html.erb within layouts/application (Duration: 32.1ms | Allocations: 15671)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.0ms | Allocations: 21179)
+Completed 200 OK in 47ms (Views: 35.7ms | ActiveRecord: 8.0ms | Allocations: 24627)
+
+
+Started GET "/notifications" for ::1 at 2022-06-03 20:01:47 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (0.9ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (1.0ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`id` IS NULL LIMIT 1[0m
+  ↳ app/views/notifications/_notification.html.erb:24
+  Rendered collection of notifications/_notification.html.erb [3 times] (Duration: 2.5ms | Allocations: 1706)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1[0m
+  ↳ app/views/notifications/index.html.erb:4
+  Rendered notifications/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 5666)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 10517)
+Completed 200 OK in 22ms (Views: 11.9ms | ActiveRecord: 6.0ms | Allocations: 13125)
+
+
+Started GET "/notifications" for ::1 at 2022-06-03 20:02:15 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (1.7ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`checked` = FALSE LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 1 AND `notifications`.`visitor_id` != 1 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (1.2ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 1 LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  Rendered collection of notifications/_notification.html.erb [3 times] (Duration: 1.8ms | Allocations: 2394)
+  Rendered notifications/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 5254)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 5334)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 5.1ms | Allocations: 8743)
+
+
+  
+ActionView::Template::Error (undefined method `name' for 2:Integer):
+    3: <div class="col-md-6 mx-auto">
+    4:     <div class="form-inline">
+    5:         <%=link_to user_path(visitor) do%>
+    6:         <%=visitor.name%>
+    7:         <%='さんが'%>
+    8:         <% case notification.action%>
+    9:         <% when 'follow' then%>
+  
+app/views/notifications/_notification.html.erb:6
+app/views/notifications/_notification.html.erb:5
+app/views/notifications/index.html.erb:3
