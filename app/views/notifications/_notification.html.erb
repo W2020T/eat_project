@@ -15,11 +15,10 @@
         <% if notification.id == visited%>
         <%#= link_to("あなたの投稿", @notification.post.content, style:"font-weight: bold;")%>
         <% else %>
-
         <%=link_to post_path(notification.post_id) do%>
         <%#= image_tag avatar_url(notification.user).to_s, class: "icon_mini"%>
-
-        <%#= notification.post.user.name + 'さんの投稿'%>
+        <%= @notification%>
+        <%= "さんの投稿"%>
         <%= "にコメントしました"%>
         <div class="p.text-muted.mb-0">
             <%= Comment.find_by(id: notification.comment_id)&.comment%>
