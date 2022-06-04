@@ -25416,3 +25416,36 @@ Started GET "/user_images/" for ::1 at 2022-06-03 22:29:02 +0900
   
 ActionController::RoutingError (No route matches [GET] "/user_images"):
   
+Started GET "/posts/1" for ::1 at 2022-06-03 22:32:18 +0900
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:22:in `show'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `likes` WHERE `likes`.`post_id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:24:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mTag Load (1.0ms)[0m  [1m[34mSELECT `tags`.* FROM `tags` INNER JOIN `tag_maps` ON `tags`.`id` = `tag_maps`.`tag_id` WHERE `tag_maps`.`post_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:13
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/show.html.erb:15
+  [1m[36mLike Load (0.9ms)[0m  [1m[34mSELECT `likes`.* FROM `likes` WHERE `likes`.`user_id` = 1 AND `likes`.`post_id` = 1 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:20
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Post' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:36
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 0) subquery_for_count[0m
+  ↳ app/views/posts/show.html.erb:56
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT `comments`.* FROM `comments` WHERE `comments`.`post_id` = 1 ORDER BY `comments`.`id` DESC LIMIT 7 OFFSET 0[0m
+  ↳ app/views/posts/show.html.erb:57
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/posts/show.html.erb:60
+  Rendered posts/show.html.erb within layouts/application (Duration: 18.8ms | Allocations: 9695)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 14545)
+Completed 200 OK in 38ms (Views: 21.1ms | ActiveRecord: 10.7ms | Allocations: 18556)
+
+
