@@ -26599,3 +26599,1135 @@ Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:26:58 +0900
   
 ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
   
+Started GET "/relationships/2/destroy" for ::1 at 2022-06-08 11:29:33 +0900
+Processing by RelationshipsController#destroy as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRelationship Load (0.9ms)[0m  [1m[34mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`follower_id` = 3 AND `relationships`.`followed_id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mRelationship Destroy (1.0ms)[0m  [1m[31mDELETE FROM `relationships` WHERE `relationships`.`id` = 1[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 41ms (ActiveRecord: 10.1ms | Allocations: 21917)
+
+
+Started GET "/users/2" for ::1 at 2022-06-08 11:29:33 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 3[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 2[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 3 AND `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 2[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 16.3ms | Allocations: 11754)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 16534)
+Completed 200 OK in 41ms (Views: 16.9ms | ActiveRecord: 11.3ms | Allocations: 28539)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:29:33 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:29:33 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (1.7ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (3, 2, '2022-06-08 11:29:33.989293', '2022-06-08 11:29:33.989293')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 8.2ms | Allocations: 8681)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/relationships_controller.rb:7:in `create'
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:29:45 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.9ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (3, 2, '2022-06-08 11:29:45.940964', '2022-06-08 11:29:45.940964')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 14.8ms | Allocations: 25238)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '3-2' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:29:47 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.8ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (3, 2, '2022-06-08 11:29:47.241466', '2022-06-08 11:29:47.241466')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (8.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 12.9ms | Allocations: 8077)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '3-2' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/users/2" for ::1 at 2022-06-08 11:29:55 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 3[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 2[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 3 AND `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 2[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 16.7ms | Allocations: 11250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 16025)
+Completed 200 OK in 42ms (Views: 17.4ms | ActiveRecord: 12.3ms | Allocations: 28057)
+
+
+Started GET "/relationships/2/destroy" for ::1 at 2022-06-08 11:29:57 +0900
+Processing by RelationshipsController#destroy as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRelationship Load (1.1ms)[0m  [1m[34mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`follower_id` = 3 AND `relationships`.`followed_id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mRelationship Destroy (1.8ms)[0m  [1m[31mDELETE FROM `relationships` WHERE `relationships`.`id` = 2[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 14ms (ActiveRecord: 6.6ms | Allocations: 5518)
+
+
+Started GET "/users/2" for ::1 at 2022-06-08 11:29:57 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 3[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 2[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 3 AND `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 2[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 13.6ms | Allocations: 5934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 10808)
+Completed 200 OK in 27ms (Views: 14.0ms | ActiveRecord: 8.4ms | Allocations: 14233)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:29:57 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:29:58 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (1.2ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (3, 2, '2022-06-08 11:29:58.240754', '2022-06-08 11:29:58.240754')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (2) LIMIT 1[0m
+  ↳ app/controllers/relationships_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 8.4ms | Allocations: 11270)
+
+
+  
+NameError (undefined local variable or method `user' for #<RelationshipsController:0x007f952b5635c0>
+Did you mean?  @user):
+  
+app/controllers/relationships_controller.rb:9:in `create'
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:30:11 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.7ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (3, 2, '2022-06-08 11:30:11.652799', '2022-06-08 11:30:11.652799')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 10.7ms | Allocations: 25251)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '3-2' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:30:13 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.8ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (3, 2, '2022-06-08 11:30:13.851854', '2022-06-08 11:30:13.851854')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 6.8ms | Allocations: 8077)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '3-2' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:45:50 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (0.8ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (3, 2, '2022-06-08 11:45:50.739189', '2022-06-08 11:45:50.739189')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 5.1ms | Allocations: 23309)
+
+
+  
+ActiveRecord::RecordNotUnique (Mysql2::Error: Duplicate entry '3-2' for key 'index_relationships_on_follower_id_and_followed_id'):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/users/2" for ::1 at 2022-06-08 11:45:53 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (1.0ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 3[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 2[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 3 AND `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 2[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 32.6ms | Allocations: 11359)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 16134)
+Completed 200 OK in 58ms (Views: 33.2ms | ActiveRecord: 11.9ms | Allocations: 28189)
+
+
+Started GET "/relationships/2/destroy" for ::1 at 2022-06-08 11:45:56 +0900
+Processing by RelationshipsController#destroy as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRelationship Load (1.1ms)[0m  [1m[34mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`follower_id` = 3 AND `relationships`.`followed_id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mRelationship Destroy (0.9ms)[0m  [1m[31mDELETE FROM `relationships` WHERE `relationships`.`id` = 5[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 11ms (ActiveRecord: 5.2ms | Allocations: 5518)
+
+
+Started GET "/users/2" for ::1 at 2022-06-08 11:45:56 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.9ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 3[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 2[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 3 AND `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 2[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 8.8ms | Allocations: 5934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 10808)
+Completed 200 OK in 20ms (Views: 10.2ms | ActiveRecord: 6.2ms | Allocations: 14233)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:45:56 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:45:57 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (1.4ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (3, 2, '2022-06-08 11:45:57.103243', '2022-06-08 11:45:57.103243')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/relationships_controller.rb:7:in `create'
+  [1m[36mNotification Load (0.9ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE (visitor_id = 3 and visited_id = 2 and action = 'follow' ) ORDER BY `notifications`.`created_at` DESC[0m
+  ↳ app/models/user.rb:36:in `create_notification_follow!'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:41:in `create_notification_follow!'
+  [1m[36mNotification Create (2.8ms)[0m  [1m[32mINSERT INTO `notifications` (`visitor_id`, `visited_id`, `action`, `created_at`, `updated_at`) VALUES (3, 2, 'follow', '2022-06-08 11:45:57.125154', '2022-06-08 11:45:57.125154')[0m
+  ↳ app/models/user.rb:41:in `create_notification_follow!'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:41:in `create_notification_follow!'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 43ms (ActiveRecord: 17.1ms | Allocations: 20466)
+
+
+Started GET "/users/2" for ::1 at 2022-06-08 11:45:57 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (1.5ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 3[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 2[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 3 AND `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 2[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 11.0ms | Allocations: 5934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 10809)
+Completed 200 OK in 24ms (Views: 11.9ms | ActiveRecord: 7.7ms | Allocations: 14235)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:45:57 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
+Started GET "/relationships/2/destroy" for ::1 at 2022-06-08 11:45:57 +0900
+Processing by RelationshipsController#destroy as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRelationship Load (1.2ms)[0m  [1m[34mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`follower_id` = 3 AND `relationships`.`followed_id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mRelationship Destroy (1.8ms)[0m  [1m[31mDELETE FROM `relationships` WHERE `relationships`.`id` = 9[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (20.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 34ms (ActiveRecord: 25.9ms | Allocations: 5508)
+
+
+Started GET "/users/2" for ::1 at 2022-06-08 11:45:58 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 3[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 2[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 3 AND `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 2[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 9.8ms | Allocations: 5933)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 10808)
+Completed 200 OK in 21ms (Views: 10.9ms | ActiveRecord: 6.7ms | Allocations: 14236)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:45:58 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:45:58 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (1.2ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (3, 2, '2022-06-08 11:45:58.638711', '2022-06-08 11:45:58.638711')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/relationships_controller.rb:7:in `create'
+  [1m[36mNotification Load (1.0ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE (visitor_id = 3 and visited_id = 2 and action = 'follow' ) ORDER BY `notifications`.`created_at` DESC[0m
+  ↳ app/models/user.rb:36:in `create_notification_follow!'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 24ms (ActiveRecord: 10.3ms | Allocations: 9662)
+
+
+Started GET "/users/2" for ::1 at 2022-06-08 11:45:58 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 3[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 2[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 3 AND `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 2[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 9.5ms | Allocations: 5937)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 10811)
+Completed 200 OK in 21ms (Views: 12.0ms | ActiveRecord: 6.2ms | Allocations: 14233)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:45:58 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
+Started GET "/relationships/2/destroy" for ::1 at 2022-06-08 11:45:59 +0900
+Processing by RelationshipsController#destroy as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRelationship Load (1.0ms)[0m  [1m[34mSELECT `relationships`.* FROM `relationships` WHERE `relationships`.`follower_id` = 3 AND `relationships`.`followed_id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mRelationship Destroy (1.2ms)[0m  [1m[31mDELETE FROM `relationships` WHERE `relationships`.`id` = 10[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:27:in `unfollow'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 12ms (ActiveRecord: 5.4ms | Allocations: 5508)
+
+
+Started GET "/users/2" for ::1 at 2022-06-08 11:45:59 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.9ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 3[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 2[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 3 AND `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 2[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 10.6ms | Allocations: 5933)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 10808)
+Completed 200 OK in 23ms (Views: 11.3ms | ActiveRecord: 7.6ms | Allocations: 14236)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:45:59 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:45:59 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (1.1ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (3, 2, '2022-06-08 11:45:59.922672', '2022-06-08 11:45:59.922672')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/relationships_controller.rb:7:in `create'
+  [1m[36mNotification Load (1.5ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE (visitor_id = 3 and visited_id = 2 and action = 'follow' ) ORDER BY `notifications`.`created_at` DESC[0m
+  ↳ app/models/user.rb:36:in `create_notification_follow!'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 26ms (ActiveRecord: 10.8ms | Allocations: 9652)
+
+
+Started GET "/users/2" for ::1 at 2022-06-08 11:45:59 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 3[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 2[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 3 AND `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 2[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 10.8ms | Allocations: 5934)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 10809)
+Completed 200 OK in 22ms (Views: 12.1ms | ActiveRecord: 6.8ms | Allocations: 14235)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:45:59 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
+Started GET "/logout" for ::1 at 2022-06-08 11:47:54 +0900
+Processing by UsersController#logout as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms | Allocations: 1216)
+
+
+Started GET "/login" for ::1 at 2022-06-08 11:47:54 +0900
+Processing by UsersController#login_form as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/login_form.html.erb within layouts/application
+  Rendered users/login_form.html.erb within layouts/application (Duration: 1.0ms | Allocations: 327)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 5120)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.9ms | Allocations: 6793)
+
+
+Started POST "/login" for ::1 at 2022-06-08 11:48:02 +0900
+Processing by UsersController#login as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"engineering@science.jp", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'engineering@science.jp' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:71:in `login'
+Redirected to http://localhost:3000/posts/index
+Completed 302 Found in 264ms (ActiveRecord: 2.7ms | Allocations: 2516)
+
+
+Started GET "/posts/index" for ::1 at 2022-06-08 11:48:02 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (0.9ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `comments` WHERE `comments`.`post_id` = 1[0m
+  ↳ app/views/posts/index.html.erb:30
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:34
+  Rendered posts/index.html.erb within layouts/application (Duration: 29.1ms | Allocations: 22973)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 27758)
+Completed 200 OK in 40ms (Views: 24.7ms | ActiveRecord: 11.2ms | Allocations: 31354)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-08 11:48:02 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/notifications" for ::1 at 2022-06-08 11:48:08 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (1.2ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 2 AND `notifications`.`checked` = FALSE ORDER BY `notifications`.`created_at` DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:5:in `index'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/notifications_controller.rb:6:in `block in index'
+  [1m[36mNotification Update (1.3ms)[0m  [1m[33mUPDATE `notifications` SET `notifications`.`checked` = TRUE, `notifications`.`updated_at` = '2022-06-08 11:48:08.116878' WHERE `notifications`.`id` = 4[0m
+  ↳ app/controllers/notifications_controller.rb:6:in `block in index'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/notifications_controller.rb:6:in `block in index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 2 AND `notifications`.`visitor_id` != 2 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (1.1ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 2 AND `notifications`.`visitor_id` != 2 ORDER BY `notifications`.`created_at` DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/notifications/_notification.html.erb:1
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/notifications/_notification.html.erb:2
+  Rendered collection of notifications/_notification.html.erb [1 times] (Duration: 6.1ms | Allocations: 4225)
+  Rendered notifications/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 7275)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 12052)
+Completed 200 OK in 35ms (Views: 14.5ms | ActiveRecord: 11.2ms | Allocations: 19053)
+
+
+Started GET "/notifications" for ::1 at 2022-06-08 11:48:09 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (1.2ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 2 AND `notifications`.`checked` = FALSE ORDER BY `notifications`.`created_at` DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 2 AND `notifications`.`visitor_id` != 2 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (1.4ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 2 AND `notifications`.`visitor_id` != 2 ORDER BY `notifications`.`created_at` DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/notifications/_notification.html.erb:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/notifications/_notification.html.erb:2
+  Rendered collection of notifications/_notification.html.erb [1 times] (Duration: 4.4ms | Allocations: 2201)
+  Rendered notifications/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 4912)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 9783)
+Completed 200 OK in 25ms (Views: 13.1ms | ActiveRecord: 7.0ms | Allocations: 12480)
+
+
+Started GET "/users/3" for ::1 at 2022-06-08 11:48:10 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (1.1ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (1.1ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 3[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 3[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 3[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2 AND `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 3[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 13.0ms | Allocations: 5940)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 10812)
+Completed 200 OK in 29ms (Views: 12.5ms | ActiveRecord: 10.5ms | Allocations: 15232)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:48:10 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
+Started GET "/notifications" for ::1 at 2022-06-08 11:48:12 +0900
+Processing by NotificationsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mNotification Load (1.2ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 2 AND `notifications`.`checked` = FALSE ORDER BY `notifications`.`created_at` DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/controllers/notifications_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering notifications/index.html.erb within layouts/application
+  [1m[36mNotification Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM `notifications` WHERE `notifications`.`visited_id` = 2 AND `notifications`.`visitor_id` != 2 LIMIT 1 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:2
+  [1m[36mNotification Load (1.1ms)[0m  [1m[34mSELECT `notifications`.* FROM `notifications` WHERE `notifications`.`visited_id` = 2 AND `notifications`.`visitor_id` != 2 ORDER BY `notifications`.`created_at` DESC LIMIT 20 OFFSET 0[0m
+  ↳ app/views/notifications/index.html.erb:3
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/notifications/_notification.html.erb:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/notifications/_notification.html.erb:2
+  Rendered collection of notifications/_notification.html.erb [1 times] (Duration: 4.6ms | Allocations: 2201)
+  Rendered notifications/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 4909)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 9781)
+Completed 200 OK in 23ms (Views: 12.0ms | ActiveRecord: 6.3ms | Allocations: 12474)
+
+
+Started GET "/posts/search" for ::1 at 2022-06-08 11:48:14 +0900
+Processing by PostsController#search as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/search.html.erb within layouts/application
+  Rendered posts/search.html.erb within layouts/application (Duration: 1.6ms | Allocations: 931)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 5707)
+Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 1.4ms | Allocations: 7257)
+
+
+Started GET "/posts/index" for ::1 at 2022-06-08 11:48:14 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.3ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `comments` WHERE `comments`.`post_id` = 1[0m
+  ↳ app/views/posts/index.html.erb:30
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:34
+  Rendered posts/index.html.erb within layouts/application (Duration: 17.2ms | Allocations: 8663)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.1ms | Allocations: 13534)
+Completed 200 OK in 42ms (Views: 30.2ms | ActiveRecord: 9.0ms | Allocations: 15052)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-08 11:48:14 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/posts/new" for ::1 at 2022-06-08 11:48:15 +0900
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 677)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5548)
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 1.2ms | Allocations: 7075)
+
+
+Started GET "/posts/index" for ::1 at 2022-06-08 11:48:17 +0900
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mTag Load (1.4ms)[0m  [1m[34mSELECT `tags`.* FROM `tags`[0m
+  ↳ app/views/posts/index.html.erb:7
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts` INNER JOIN `tag_maps` ON `posts`.`id` = `tag_maps`.`post_id` WHERE `tag_maps`.`tag_id` = 1[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/posts/index.html.erb:16
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/post.rb:13:in `user'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `comments` WHERE `comments`.`post_id` = 1[0m
+  ↳ app/views/posts/index.html.erb:30
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:34
+  Rendered posts/index.html.erb within layouts/application (Duration: 19.3ms | Allocations: 8660)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 13531)
+Completed 200 OK in 30ms (Views: 17.0ms | ActiveRecord: 10.1ms | Allocations: 15046)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-08 11:48:17 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/users/index" for ::1 at 2022-06-08 11:48:18 +0900
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 6031)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 10908)
+Completed 200 OK in 22ms (Views: 14.7ms | ActiveRecord: 3.7ms | Allocations: 12571)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-08 11:48:18 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/users/index?page=2" for ::1 at 2022-06-08 11:48:20 +0900
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` LIMIT 1 OFFSET 1[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 5022)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 9899)
+Completed 200 OK in 22ms (Views: 14.7ms | ActiveRecord: 4.7ms | Allocations: 11378)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:48:20 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
+Started GET "/users/2" for ::1 at 2022-06-08 11:48:21 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 2[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mPost Load (18.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 2[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 25.6ms | Allocations: 4242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 9122)
+Completed 200 OK in 37ms (Views: 11.0ms | ActiveRecord: 22.1ms | Allocations: 10988)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:48:21 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
+Started GET "/users/index" for ::1 at 2022-06-08 11:48:26 +0900
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` LIMIT 1 OFFSET 0[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 3958)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 8829)
+Completed 200 OK in 19ms (Views: 12.0ms | ActiveRecord: 4.6ms | Allocations: 10306)
+
+
+Started GET "/user_images/" for ::1 at 2022-06-08 11:48:26 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images"):
+  
+Started GET "/users/index?page=3" for ::1 at 2022-06-08 11:48:27 +0900
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` LIMIT 1 OFFSET 2[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 3965)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 8837)
+Completed 200 OK in 19ms (Views: 12.2ms | ActiveRecord: 4.0ms | Allocations: 10313)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:48:27 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
+Started GET "/users/3" for ::1 at 2022-06-08 11:48:28 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (1.0ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  [1m[36mEntry Load (1.1ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 3[0m
+  ↳ app/controllers/users_controller.rb:37:in `block in show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 3[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 3[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2 AND `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 3[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 12.3ms | Allocations: 5935)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 10806)
+Completed 200 OK in 32ms (Views: 15.1ms | ActiveRecord: 10.3ms | Allocations: 15218)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:48:28 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
+Started POST "/rooms" for ::1 at 2022-06-08 11:48:29 +0900
+Processing by RoomsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "entry"=>{"user_id"=>"3"}, "commit"=>"チャットを始める"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:4:in `create'
+  [1m[36mRoom Create (1.0ms)[0m  [1m[32mINSERT INTO `rooms` (`created_at`, `updated_at`) VALUES ('2022-06-08 11:48:29.599773', '2022-06-08 11:48:29.599773')[0m
+  ↳ app/controllers/rooms_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `create'
+  [1m[36mUser Load (15.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `create'
+  [1m[36mRoom Load (0.9ms)[0m  [1m[34mSELECT `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `create'
+  [1m[36mEntry Create (1.5ms)[0m  [1m[32mINSERT INTO `entries` (`user_id`, `room_id`, `created_at`, `updated_at`) VALUES (2, 2, '2022-06-08 11:48:29.628554', '2022-06-08 11:48:29.628554')[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/rooms_controller.rb:9:in `create'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:9:in `create'
+  [1m[36mRoom Load (0.9ms)[0m  [1m[34mSELECT `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:9:in `create'
+  [1m[36mEntry Create (1.0ms)[0m  [1m[32mINSERT INTO `entries` (`user_id`, `room_id`, `created_at`, `updated_at`) VALUES (3, 2, '2022-06-08 11:48:29.638988', '2022-06-08 11:48:29.638988')[0m
+  ↳ app/controllers/rooms_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/rooms_controller.rb:9:in `create'
+Redirected to http://localhost:3000/rooms/2
+Completed 302 Found in 47ms (ActiveRecord: 29.4ms | Allocations: 19120)
+
+
+Started GET "/rooms/2" for ::1 at 2022-06-08 11:48:29 +0900
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRoom Load (0.8ms)[0m  [1m[34mSELECT `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:14:in `show'
+  [1m[36mEntry Load (0.8ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2 AND `entries`.`room_id` = 2[0m
+  ↳ app/controllers/rooms_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mEntry Load (0.9ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`room_id` = 2[0m
+  ↳ app/views/rooms/show.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mMessage Load (1.9ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`room_id` = 2[0m
+  ↳ app/views/rooms/show.html.erb:9
+  Rendered rooms/show.html.erb within layouts/application (Duration: 11.0ms | Allocations: 5458)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 10266)
+Completed 200 OK in 35ms (Views: 12.8ms | ActiveRecord: 12.9ms | Allocations: 19801)
+
+
+Started POST "/messages" for ::1 at 2022-06-08 11:48:32 +0900
+Processing by MessagesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"content"=>"よろしくお願いします", "room_id"=>"2"}, "commit"=>"投稿する"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mEntry Load (0.9ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2 AND `entries`.`room_id` = 2[0m
+  ↳ app/controllers/messages_controller.rb:5:in `create'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mRoom Load (1.0ms)[0m  [1m[34mSELECT `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mMessage Create (1.4ms)[0m  [1m[32mINSERT INTO `messages` (`user_id`, `room_id`, `content`, `created_at`, `updated_at`) VALUES (2, 2, 'よろしくお願いします', '2022-06-08 11:48:32.826614', '2022-06-08 11:48:32.826614')[0m
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:6:in `create'
+Redirected to http://localhost:3000/rooms/2
+Completed 302 Found in 18ms (ActiveRecord: 6.1ms | Allocations: 9569)
+
+
+Started GET "/rooms/2" for ::1 at 2022-06-08 11:48:32 +0900
+Processing by RoomsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mRoom Load (0.7ms)[0m  [1m[34mSELECT `rooms`.* FROM `rooms` WHERE `rooms`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/rooms_controller.rb:14:in `show'
+  [1m[36mEntry Load (0.7ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 2 AND `entries`.`room_id` = 2[0m
+  ↳ app/controllers/rooms_controller.rb:15:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mEntry Load (1.0ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`room_id` = 2[0m
+  ↳ app/views/rooms/show.html.erb:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:5
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT `messages`.* FROM `messages` WHERE `messages`.`room_id` = 2[0m
+  ↳ app/views/rooms/show.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/rooms/show.html.erb:12
+  Rendered rooms/show.html.erb within layouts/application (Duration: 8.8ms | Allocations: 5284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 10153)
+Completed 200 OK in 20ms (Views: 11.5ms | ActiveRecord: 5.3ms | Allocations: 13583)
+
+
+Started GET "/users/2" for ::1 at 2022-06-08 11:57:35 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 2[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 2[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 10.4ms | Allocations: 4242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 9128)
+Completed 200 OK in 24ms (Views: 12.2ms | ActiveRecord: 7.3ms | Allocations: 11598)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:57:35 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
