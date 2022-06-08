@@ -25,6 +25,7 @@
                 <%=link_to("フォローをやめる","/relationships/#{@user.id}/destroy",{method:"post"})%>
                 <%else%>
                 <%=link_to("フォローする","/relationships/#{@user.id}/create",{method:"post"})%>
+
                 <%end%>
                 <%end%>
         </div>
