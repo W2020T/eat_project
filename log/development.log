@@ -27731,3 +27731,8 @@ Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:57:35 +0900
   
 ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
   
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('8642684200756935945', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('8642684200756935945')[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
