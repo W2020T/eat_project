@@ -26446,3 +26446,156 @@ NoMethodError (undefined method `create' for nil:NilClass):
   
 app/models/user.rb:23:in `follow'
 app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:24:20 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 8.2ms | Allocations: 26247)
+
+
+  
+NoMethodError (undefined method `user_id' for #<Relationship:0x00007f953381e6b8>):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:24:21 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 3.9ms | Allocations: 8878)
+
+
+  
+NoMethodError (undefined method `user_id' for #<Relationship:0x00007f95301160d0>):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:24:22 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 6.1ms | Allocations: 8878)
+
+
+  
+NoMethodError (undefined method `user_id' for #<Relationship:0x00007f9529d2b728>):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:24:23 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 4.5ms | Allocations: 8881)
+
+
+  
+NoMethodError (undefined method `user_id' for #<Relationship:0x00007f953049fc10>):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:24:23 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:23:in `follow'
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 4.2ms | Allocations: 8878)
+
+
+  
+NoMethodError (undefined method `user_id' for #<Relationship:0x00007f952b5f2180>):
+  
+app/models/user.rb:23:in `follow'
+app/controllers/relationships_controller.rb:6:in `create'
+Started GET "/relationships/2/create" for ::1 at 2022-06-08 11:26:58 +0900
+Processing by RelationshipsController#create as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mRelationship Create (14.0ms)[0m  [1m[32mINSERT INTO `relationships` (`follower_id`, `followed_id`, `created_at`, `updated_at`) VALUES (3, 2, '2022-06-08 11:26:58.523803', '2022-06-08 11:26:58.523803')[0m
+  ↳ app/models/user.rb:23:in `follow'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:23:in `follow'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 56ms (ActiveRecord: 25.3ms | Allocations: 24963)
+
+
+Started GET "/users/2" for ::1 at 2022-06-08 11:26:58 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/application_controller.rb:13:in `set_current_user'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:31:in `show'
+  [1m[36mEntry Load (1.3ms)[0m  [1m[34mSELECT `entries`.* FROM `entries` WHERE `entries`.`user_id` = 3[0m
+  ↳ app/controllers/users_controller.rb:36:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 2[0m
+  ↳ app/views/users/show.html.erb:6
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follower_id` WHERE `relationships`.`followed_id` = 2[0m
+  ↳ app/views/users/show.html.erb:8
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`followed_id` WHERE `relationships`.`follower_id` = 3 AND `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `following?'
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`user_id` = 2[0m
+  ↳ app/views/users/show.html.erb:39
+  Rendered users/show.html.erb within layouts/application (Duration: 17.4ms | Allocations: 11353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 16133)
+Completed 200 OK in 44ms (Views: 18.8ms | ActiveRecord: 12.8ms | Allocations: 28176)
+
+
+Started GET "/user_images/default_user.jpg" for ::1 at 2022-06-08 11:26:58 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/user_images/default_user.jpg"):
+  
